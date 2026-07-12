@@ -1,11 +1,10 @@
 Algoritmo MenuCalificaciones
 
-	Definir nombres Como Cadena
 	Dimension nombres[100]
-	Definir calificaciones Como Real
 	Dimension calificaciones[100]
 	Definir cantidad, opcion, i Como Entero
-	Definir suma, promedio Como Real
+	Definir suma, promedio, notaTemp Como Real
+	Definir nombreTemp Como Cadena
 
 	cantidad <- 0
 
@@ -26,7 +25,8 @@ Algoritmo MenuCalificaciones
 				Leer cantidad
 				Para i <- 1 Hasta cantidad Hacer
 					Escribir "Ingrese el nombre del alumno ", i, ": "
-					Leer nombres[i]
+					Leer nombreTemp
+					nombres[i] <- nombreTemp
 				FinPara
 				Escribir "Alumnos registrados correctamente."
 			2:
@@ -35,7 +35,8 @@ Algoritmo MenuCalificaciones
 				SiNo
 					Para i <- 1 Hasta cantidad Hacer
 						Escribir "Ingrese la calificacion de ", nombres[i], ": "
-						Leer calificaciones[i]
+						Leer notaTemp
+						calificaciones[i] <- notaTemp
 					FinPara
 					Escribir "Calificaciones registradas correctamente."
 				FinSi
