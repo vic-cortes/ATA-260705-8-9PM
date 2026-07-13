@@ -1,5 +1,5 @@
 ---
-fecha: 2026-08-08
+fecha: 2026-07-08
 bloque: 0 (transición)
 duracion: ~120 minutos
 participantes:

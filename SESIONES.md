@@ -11,6 +11,13 @@ Búsqueda rápida de sesiones, resúmenes y transcripts por semana y fecha.
 - **Transcript completo:** [week_1/2026_07_07/raw_transcript.txt](week_1/2026_07_07/raw_transcript.txt)
 - **Puntos clave:** Estructura de algoritmos (entrada/proceso/salida), optimización de condicionales, planificación antes de programar
 
+### 2026-07-08 (Martes)
+- **Bloque:** 0 (transición)
+- **Tema:** Estructuras complejas en PSeInt, menús, ciclos, diferencias C vs C++
+- **Resumen:** [week_1/2026_07_08/resumen.md](week_1/2026_07_08/resumen.md)
+- **Transcript completo:** [week_1/2026_07_08/raw_transcript.txt](week_1/2026_07_08/raw_transcript.txt)
+- **Puntos clave:** Condicionales Si/FinSi, menús con Según, ciclos Mientras, refactorización, C++ vs C, diagrama de flujo para evaluación
+
 ### 2026-08-08 (Viernes)
 - **Bloque:** 0 (transición)
 - **Tema:** Estructuras complejas en PSeInt, menús, ciclos, diferencias C vs C++
