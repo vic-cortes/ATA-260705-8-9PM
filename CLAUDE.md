@@ -26,3 +26,15 @@ editing:
 - Control flow: `Para`/`FinPara`, `Mientras`/`FinMientras`, `Si`/`FinSi`.
 - Body is indented one tab inside the `Algoritmo` block.
 - Keep prompts and messages in Spanish, consistent with existing files.
+
+## Sesiones de clase
+
+Cada sesión se registra en una carpeta bajo `week_N/YYYY_MM_DD/` con:
+- `resumen.md` — resumen estructurado de puntos principales
+- `raw_transcript.txt` — transcript completo de la sesión
+
+**Búsqueda rápida:** Consulta [SESIONES.md](SESIONES.md) para un índice de todas las sesiones
+por bloque, fecha y tema. Incluye links diretos a resúmenes y transcripts.
+
+**Estructura de resúmenes:** Los archivos `resumen.md` incluyen metadata YAML al inicio
+(fecha, bloque, duración, participantes) seguida de puntos principales y siguiente paso.

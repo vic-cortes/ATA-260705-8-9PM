@@ -1,3 +1,16 @@
+---
+fecha: 2026-07-07
+bloque: 0
+duracion: ~90 minutos
+participantes:
+  - Profesor
+  - Ismael
+  - Arturo
+  - Otros alumnos
+recursos:
+  - raw_transcript.txt (disponible en la misma carpeta)
+---
+
 # Resumen de la sesión de clase
 
 **Contexto general:** El profesor retoma el curso (aparentemente sustituyendo a otra profesora) y dedica la clase a hacer un diagnóstico de hasta dónde llegaron los alumnos en el **Bloque 0** del curso, antes de avanzar al Bloque 1 (introducción a C).
