@@ -1,5 +1,3 @@
-version: '3.9'
-
 services:
   cpp-course:
     build:
@@ -9,8 +7,8 @@ services:
     # Monta el directorio actual en /workspace dentro del contenedor
     volumes:
       - .:/workspace
-      # Volumen para persistir histórico de bash (opcional)
-      - bash-history:/root/.bash_history
+      # Volumen para persistir histórico de bash (directorio, no archivo)
+      - bash-history:/commandhistory
     # Permite interacción con la terminal
     stdin_open: true
     tty: true
@@ -19,7 +17,11 @@ services:
     # Ambiente de desarrollo
     environment:
       - TERM=xterm-256color
-      - LANG=es_ES.UTF-8
+      # C.UTF-8 existe en debian-slim sin generar locales (evita warnings)
+      - LANG=C.UTF-8
+      - LC_ALL=C.UTF-8
+      # Guarda el historial de bash en el volumen persistente
+      - HISTFILE=/commandhistory/.bash_history
     # Permite acceso a recursos del sistema (debugger, etc)
     cap_add:
       - SYS_PTRACE

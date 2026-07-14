@@ -1,5 +1,7 @@
-# Usa la versión ligera oficial con la arquitectura nativa de tu Mac M1
-FROM --platform=linux/arm64 debian:bookworm-slim
+# Imagen ligera oficial multi-arquitectura.
+# Sin --platform: Docker usa la arquitectura nativa del host
+# (arm64 en Mac M1, amd64 en Linux). Así funciona nativo en ambos.
+FROM debian:bookworm-slim
 
 # Instala herramientas de desarrollo para C++ (compilación, debugging, análisis, formatting)
 RUN apt-get update && apt-get install -y --no-install-recommends \
