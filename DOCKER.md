@@ -9,25 +9,33 @@ Ambiente containerizado para desarrollar y compilar programas en C++ durante el 
 
 ## Quick Start
 
-### 1. Construir la imagen (primera vez)
+**Con Makefile (recomendado):**
 
 ```bash
+# Setup completo (build + up)
+make setup
+
+# Entrar al contenedor
+make docker-shell
+
+# Formatear archivos C++
+make format-cpp
+```
+
+**Manual con docker-compose:**
+
+```bash
+# Construir la imagen (primera vez)
 docker-compose build
-```
 
-### 2. Iniciar el contenedor
-
-```bash
+# Iniciar el contenedor
 docker-compose up -d
+
+# Entrar interactivo
+docker-compose run --rm cpp-course bash
 ```
 
-O interactivo (recomendado para desarrollo):
-
-```bash
-docker-compose run --rm cpp-course /bin/bash
-```
-
-### 3. Compilar un programa C++
+## Compilar un programa C++
 
 Dentro del contenedor:
 
@@ -93,9 +101,50 @@ docker-compose run --rm cpp-course bash -c "
 "
 ```
 
+## Makefile - Comandos útiles
+
+El proyecto incluye un Makefile para simplificar tareas comunes:
+
+```bash
+make help              # Ver todos los targets disponibles
+make docker-build      # Construir imagen Docker
+make docker-up         # Iniciar contenedor
+make docker-down       # Detener contenedor
+make docker-shell      # Entrar a shell interactivo
+make setup             # Build + Up (setup completo)
+make status            # Ver estado del contenedor
+make format-cpp        # Formatear archivos C++ (como black en Python)
+make compile FILE=...  # Compilar un archivo específico
+make clean             # Limpiar archivos compilados (.o, ejecutables)
+```
+
+### Ejemplo: Formatear y compilar
+
+```bash
+# 1. Formatear todos los archivos C++ según .clang-format
+make format-cpp
+
+# 2. Compilar un archivo
+make compile FILE=src/hello.cpp
+
+# 3. El ejecutable se encuentra en /workspace
+docker-compose exec cpp-course ./hello
+```
+
+## Configuración de formato (clang-format)
+
+El archivo `.clang-format` define el estilo de código:
+- Indentación: 4 espacios
+- Ancho de línea: 100 caracteres
+- Estilo: LLVM + Allman braces
+- Espacios después de palabras clave (if, for, while)
+
+Edita `.clang-format` si necesitas ajustar el formato.
+
 ## Para estudiantes
 
 Todos comparten el mismo ambiente Docker, garantizando que:
 - Los compiladores son idénticos
 - Las versiones de librerías son consistentes
+- El formato de código es uniforme (clang-format)
 - Los bugs de "me funciona en mi máquina" se minimizan
