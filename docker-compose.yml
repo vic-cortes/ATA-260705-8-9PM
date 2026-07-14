@@ -1,0 +1,29 @@
+version: '3.9'
+
+services:
+  cpp-course:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cpp-curso
+    # Monta el directorio actual en /workspace dentro del contenedor
+    volumes:
+      - .:/workspace
+      # Volumen para persistir histórico de bash (opcional)
+      - bash-history:/root/.bash_history
+    # Permite interacción con la terminal
+    stdin_open: true
+    tty: true
+    # Nombre del host dentro del contenedor
+    hostname: cpp-dev
+    # Ambiente de desarrollo
+    environment:
+      - TERM=xterm-256color
+      - LANG=es_ES.UTF-8
+    # Permite acceso a recursos del sistema (debugger, etc)
+    cap_add:
+      - SYS_PTRACE
+
+volumes:
+  bash-history:
+    driver: local
