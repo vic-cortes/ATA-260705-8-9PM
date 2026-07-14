@@ -2,7 +2,7 @@
 
 # Variables
 DOCKER_IMAGE = cpp-curso
-DOCKER_COMPOSE = docker-compose
+DOCKER_COMPOSE = docker compose
 CPP_FILES = $(shell find . -type f \( -name "*.cpp" -o -name "*.h" -o -name "*.hpp" \) -not -path "*/\.*")
 CLANG_FORMAT = clang-format -i
 
