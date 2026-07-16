@@ -1,0 +1,643 @@
+Ah, depende. Ejemplo, nosotros vamos a instalar Devian. Nosotros vamos a
+instalar Devian. Este, depende qué vayas a hacer, ejemplo, en en la en la
+industria para temas para temas más de infraestructura de estilo de estilo,
+ejemplo, tener un servidor para correr ys, por ejemplo, o algún automatizador
+de tareas o tener alguna de las herramientas en líneas, usaba Ubuntu,
+pero para temas más del embebido usaba Devian como el como la distribución. Ya,
+ya para el radar, el lo que vivía dentro del radar pues ya era un poco diferente,
+pero para el desarrollo se usaba Devian en general, pero también se puede usar
+un punto sin problema, no es que me pidieron en este curso estandarizar a
+Devian. Está trabajando con Devian. De hecho, no se preocupen, si hoy vamos
+rápido, de una vez hoy empezamos la instalación, este, encontré una opción
+para que no gase tanta memoria de ustedes, no tengan que hacer un reboot,
+no tengan que hacer una partición, sino vamos a utilizar una nueva herramienta
+que tiene Windows, que es un subsistema Linux, que es que se puede desinstalar,
+instalar fácilmente para que no les esté estorbando. Sí,
+el WSL, sí, sí, sí, sí, es uno que que es
+compatible con el 10 y 11, creo. y por ahí lo tienes, pues de una vez también
+este es muy popular, en general se utiliza. A mí me decían que lo mejor era
+algún boot doble, pero yo recomiendo ese porque este no es tan estorboso, ¿no?
+Para su computadora, por ejemplo, si no es la computadora que quieren utilizar
+para todo esto, se puede instalar fácilmente en otra. Entonces, no se
+preocupen. Este, entonces vamos aquí abierto.
+Dime, dime. Les comparto y lo tengo aquí abierto.
+Ah, okay. A ver, de una vez vamos a revisar nada más lo de Ofelia para que
+revisemos la tarea para si más le salen dudas de una vez lo revisamos.
+Este, Tomas quería hacer eso, quería alcal me compartiera la la tarea. A ver,
+a ver si me pueda eh se pudo usar Docker, según yo, sí se puede usar el
+contenedor, eh, pero en este caso no será tan necesario, a menos que lo
+tengas de otra manera instalado. Ahorita si quieres, ahorita revisamos cómo lo
+cómo lo cómo lo pensabas instalar, no pasa nada. Ah, tienes una Mac. Okay, no
+s se puede usar Docker, entonces si si a ti te va a convenir más usar usar el
+Docker o hacer el boot, pero pues como es una Mac, yo no recomiendo hacer los
+boots en las Mac porque son muy delicadas. En general iOS es muy
+delicado con lo que le muevas ahí a su a sus cosas, entonces se pueden ahí poner
+medio medio payasones. Entonces, este, pues sabe que pueda pasar algo o para
+una garantía, no te la vayan a hacer de todos. Ya ves que tienen tienen garantía
+de bastante tiempo las Mac. Sí. Entonces, yo creo que vamos a ver ahí la
+manera de que mejor lo hagas en un Docker. De hecho, no ha tenido nadie que
+tenga Mac, entonces déjame revisarte. Usamos Docker o a ver si te consigo una
+opción más ligera. Va, que rato me han salido con Windows. Va que va. Perdón,
+ahora sí, perdón. Este, Ofelia, el problema que tenías era, ¿cuál? Cuando
+lo querías ejecutar. Este, pues ya que lo ejecuto, eh,
+digamos, yo ingreso dos calificaciones y le pregunto si lo quiere continuar de
+nuevo y le pongo que sí. Y aquí es donde me arroja el
+eredor error como si estuviera guardando el arreglo anterior.
+No estoy segura. A ver, probablemente sí. A ver, te está
+diciendo que tienes el identificador, dice que está en uso o no está en uso.
+Dice en uso. Ah, okay. Yo creo que lo que está
+pasando es que tu variable se está metiendo ahí la dimensión
+como entero. Después le diste, ah, no, calif, le diste, le diste una, ah no,
+ese es un valor calificaciones es el que es un es un, ¿cómo se dice? una
+dimensión califo.
+A ver, vuélvelo a ejecutar. Quiero ver qué va a pasar ahí.
+Dos. Ay, hizo algo raro.
+Sí, entró entró en el bucle del error. Cierra. No pasa nada.
+Ahorita vemos qué bucle es ese, porque también eso no deberías girar, sino
+decirte que te vuelves a ingresar. Ah, caray.
+Sí, cuando pongo nueve como que entra en el Google.
+Sí, ahorita lo revisamos también porque eso no debería ser como un experimento.
+A ver, tres. Okay. A ver, dile que sí. A ver,
+espérame antes de darle. Entraste. A ver, mueve poquito el este,
+quiero ver a qué condición entraste. Mueve el de este a ver, antes de darle
+número, entraste. Ingresa en número de calificaciones. Okay. Que es este de
+acá. Entonces, entraste en el mientras cerrarse igual a S.
+Vuelves a entrar aquí, se vuelve a inicializar la sumatoria de
+cero en números, te escribe eso, lee el valor y después
+entra al al lif. Entonces, y ahí es donde truena,
+¿verdad? Entra en dimensión, ¿no? No, calificaciones, no calif. Okay. A ver,
+dale ahora un número para volver a ver qué te dejaba y lo vamos revisando, no
+pasa nada. Y lo mueve un poquito. Es que la esa me tapa que dice error 123. Es
+identificador. Identificador
+en uso. Okay. A ver, a ver, a ver, a ver, a ver,
+a ver qué le vamos a hacer a este no le muevas. Quiero ver qué está pasando.
+Instancia uno, línea 17. Okay. El problema es que estás
+redimensionándolo. A ver, este, no le muevas. Déjame ver el
+123 exactamente qué da en la documentación aquí del Star Coverf.
+Buena información. Mm,
+espérame, no le muevas para fijarme. 123.
+Y también checamos lo de tu bucle de una vez,
+que son errores comunes que pueden pasar, no se preocupen.
+Creo que es mi tú qué
+no sé si esté aquí en la sentencia que que puse aquí
+que pusiste. A ver. Ah, el bucle que dices.
+A ver, vamos al bucle en lo que yo reviso aquí la documentación.
+Mientras calificaciones. Sí, porque parece que lo estás haciendo después,
+¿no? Perdón. Antes estás con un estás con un mientras que revisa. A ver. El
+bucle dice, "Mientras calificaciones sean mayor,
+dice, mayor a cero y calificaciones sean menor, pero calificación uno."
+Ah, quiere ahí. Okay. A ver, fíjate a ver si no te
+bucle. Vamos a ver si solucionó ese y ahorita vamos con el otro.
+Sí, con
+nueve. No te da otra vez el D ese. Okay,
+entonces no era. Si lo guardaste otra vez. Ah.
+Ah, no se da. Generalmente lo ejecutaba y se guardaba.
+Ajá. A ver,
+a ver si cambio aquí en vez de I o. A ver, chécale así.
+Porque también siento que tiene algo de de que estás este dándole. A ver, dale
+dale. Okay. No, no, no. Espérame, espérame. A ver,
+lo estás haciendo antes, estás este usando
+mientras la calificación sea mayor a cero y calificación sea menor a 10. Es
+lo que le estás diciendo, ¿verdad? Calificación sea menor a 10.
+Sí. Ah, caray.
+Pero ahí estás dentro del rango, ¿no? Eh, sí,
+sí. Mientras el número que yo le dé para ahí este dentro del rango,
+este va a seguir este haciendo la la sumatoria y de números y desplegando la
+calificación en en el arrey. Pero el pero el mientras el el mientras
+es lo que te imprime es el error, ¿no? Ese mientras que tienes adentro, ve lo
+de las sentencias. Este.
+Ajá. Mm.
+Por eso no me confundí ahí, porque el ciclo va a revisar que la calificación
+esté entre 0 y 10, ¿no? Es lo que hace el ciclo.
+Sí, pero entonces si la calificación está
+entre 0 y 10, ¿no es válida? Eh, sí, sí es válida. Pues se me hizo
+raro que que es ese te lleve al error. O sea, es lo que lo que ahorita me está
+sacando de onda, o sea, este ciclo está revisando que se
+cumpla la condición. Bien, ¿no? Sí. Y si no se cumple, debería de volver
+a pedir la calificación. Calificación.
+El problema es parece. Ajá. Es que es que si está dentro del rango no debería
+de pedírtela, ¿no? O sea, si está dentro del rango no
+debería dártel error. Debería de ir afuera, no
+es lo que estoy Sí,
+estoy sacado de onda. Esa suma la estás haciendo antes también, ¿no? Lo que
+estoy viendo, según yo, está al revés. No pasa nada, no pasa nada. Son errores
+comunes. Y de lo del lo lo de la ahorita checamos lo del lo de la dimensión.
+Parece que al redimensionar el el calificaciones es el error que te va a
+dar. Según acá los los sitios dicen que no se deben de redimensionar. Déjame
+revisar, no te preocupes. M ya
+nada más a ver qué qué No te preocupes, déjame ver qué soluciones tiene acá,
+porque me sale un me sale un este, ¿cómo se dice?
+Me sale aquí en un en un Ay, en un forito que ah dice que es mejor que el
+arreglo se dimensione antes de entrar a los a estos ciclos.
+Ah, okay. Debería de estar acá. Ajá. Y no pasa nada si le das un tamaño
+grande, por ejemplo. Sí, parece que pesen o alguien pudo hacerlo así de este
+estilo. Pues acá me sale que al al redimensionar
+el arreglo de problemas. E, no sé si
+ponle un 100, por ejemplo. Sí.
+Ajá. Y quitamos el de acá de dimensión para que ya ya como ya está declarado,
+ya no va a pasar nada. Ahí está. A ver, intento ver qué pasa y ahorita vemos lo
+del ciclo otra vez. Va,
+voy a poner 10 para que Claro.
+Pongo que sí. Ajá. Ahí está.
+Está bien. Así ya con eso ya funcionó. Sí. Sí.
+Entonces aquí veo lo que está pasando es que está está la la validación está al
+revés. Yo lo que haría sería revisar que calificaciones no sea menor a cero. O
+sea, calificaciones sí. A ver, cámbialo por menor a ese de ahí. Cámbialo al
+revés. La flechita al revés es menor a cero.
+O sea, mientras calificaciones sea menor a cero o ahí sí va a tener que ser un
+or. Okay. Okay.
+Porque puede cumplirse una o la otra o mayor a 10.
+Nos salimos del rango. Este caso va a ser voltearlo. Ajá. Ago
+así que se te fue una. Ajá. A ver, intentarle. Ahora sí. Según yo eso
+debería arreglar algo. Ver intenta con números.
+Nueve. Sí, estaba al revés nada más el rango.
+No te preocupes, no pasa nada. Okay,
+ya está. Y a ver, ahora vamos a ver tu código más
+o menos para ver cómo debía haberse hecho la tarea porque ya lo tienes bien.
+Está un poquito espaguetti. Perdón. No, no pasa nada. Este, la idea es que
+funcione poco a poco. Quiero que desarrollen la capacidad de de hacer
+código más más chico, más compacto, buscando minimizar las líneas, ¿no? Que
+a veces no es tan tampoco tan bueno, a veces es bueno tener más líneas, pero
+vamos a ir desarrollando eso, no se preocupen. Okay. Entonces tienes
+algoritmo, tienes tus tus calificaciones, perdón, tienes tus tus
+variables y después defines, le das una dimensión
+a calificaciones que es el array, a cerrarle asignas S para iniciar el ciclo
+y mientras cerrarse a S, la sumatoria empieza en ceros, escribe el número de
+calificaciones, lee el número de calificaciones
+y ahora cuenta a partir de ese número. O sea, revisa si no califo, o sea, no va a
+dar error de que le diste un número negativo. negativo
+o cero, que será cero calificaciones, va a empezar a contar, ¿no? Para y igual a
+1 hasta no calif hacer, o sea, hasta el número que le si le diste cinco, de uno
+a cinco, va escribir, ingresa la calificación y
+le va a ir agregando en una regla en la parte del arreglo, ¿no?
+Sí. Después va a ser una sumatoria, va a ir sumando cada número uno tras otro y
+mientras estemos dentro del rango, o sea, no le des una calificación menor a
+cero o una mayor a 10, o sea, estemos entre el rango de 1 y 10, va a estar va
+a estar, perdón, entre el rango de 0 y 10, porque iba a tomar 0 y 10 porque
+estamos viendo los mayor y el menor, eh, no te va a dar el error del rango, ¿no?
+Y después va a acabar el fin mientras y
+fin para y va a ser la el promedio
+y después te va a imprimir, ¿no? te va a imprimir las calificaciones y te va a
+imprimir el promedio, ¿no? Sí, exactamente. Sí.
+Okay. Y el si no es el de que si escribes un número menor al cero o
+menor, el del si no de ahí. Sí.
+Okay. Y después revisa si ese n se vuelve n o se queda como s.
+Oh, está está perfecto. Está perfecto. Va que va.
+Va que va. Muy bien. Muy bien. Va que va. ¿Alguno
+tiene alguna duda de la tarea o alguno le dio algún error también y quieran
+revisar uno puntual? En este caso, esta solución está bien. Ustedes pudieron
+haber tenido otra. Gracias. Gracias. Este, Ofelia, ustedes ustedes pudieron
+haber tenido otra solución. No pasa nada. Mientras funcione, ¿no? Este, pero
+no sé si alguien por ahí tuvo algún error puntual. Si no, continuamos.
+Nadie por ahí. Nadie por ahí. Un dedito arriba de que no,
+nada más para saber, para yo estar seguro de que más o menos entendió lo
+que pasó. Eh, va. Yo digo que va. Gracias, Alejandro. Yo digo que todo
+bien. A ver, se me olvidó pasar la lista. Bien, déjame ver si todos están
+todos. 1 2 3 4 5 6 7 8 9 personas. Yo le había puesto asistencia a nueve. Okay,
+están bien. Va que va. Okay. Eh, de PCIN, la verdad, pues ya no hay mucho
+que les pueda enseñar. Voy a compartir pantalla. Sí, estaba grabando. Sí. Mm.
+Entonces, me gustaría empezar a que seteáramos el Inux de la manera que les
+dije. De todos modos, si no lo hacen ahorita, si no me siguen ahorita, lo
+pueden este hacer después, no pasa nada. Ven la grabación y van siguiendo los
+pasos. Estaría bien que fuera ahorita porque quiero ver si le sale algún error
+a alguien. Okay, antes de eso, una última cosa de
+PC in. Vamos a crear aquí un
+un algoritmo que se llame nombre, por ejemplo.
+Ahí está. Okay. Hay manera de hay manera de, ¿cómo se dice? Este,
+indicar subfunciones o subprocesos dentro de PCIN. También estas
+subfunciones lo que hacen es que creas una minifunción y esa después la mandas
+llamar dentro de PI, o sea, lo hueles más modular. Vamos a hacer un ejemplo
+rápido nada más y nos pasamos al otro. O si quedan dudas podemos hacer ejemplos
+más complejos, ¿no? Por ejemplo, tu función principal es esta, nombre, ¿no?
+Fuera de esta función principal, así como un main en en C++, puede existir
+otras funciones que sean llamadas dentro de función la función nombre principal.
+Le vamos a poner para que se vea más familiar, main. Ahí está la función
+principal, la función main. Y en imagínse que se van a ejecutar otras
+cosas, ¿no? Entonces podemos nosotros nosotros este
+proponer un subproceso y subroceso y aquí adentro este
+subproceso tiene que tener un nombre, ejemplo, no sé, saludo
+y debe de recibir algo, ¿no? Puede no recibir nada, pero pues en este caso
+imagínate que va a recibir una variable, ¿no? Como en otros lenguajes. Entonces,
+su su saludo recibe una variable nombre y lo que hace es pues literalmente nada
+más escribirla, ¿no? Ejemplo, escribir nombre, ahí está. Entonces saludo recibe
+la variable nombre y la escribe. Pero vamos a ponerle aquí otra cosa, ¿no?
+Hola. Hola.
+Ahí está. Entonces va a escribir, "Hola, tu nombre, ¿no?" Okay. La variable la
+recibe, la escribe y se acaba el subproceso. Igual que otro tipo de
+funciones, también puede regresar valores. En este caso, nada más imprime,
+no regresa nada. ¿Okay? Entonces, ya está. Esta variable, esta función recibe
+o ese su proceso recibe una variable nombre y la imprime y la puedes llamar
+acá. Entonces, por ejemplo, primero hay que definir una variable nombre acá
+dentro porque pues no la hemos definido, ¿no? Entonces, definimos nombre.
+Y es como este caso para
+líneas para string será cadena. ¿Cómo cadena? Ahí está. Ahora hay que hay que
+darle el nombre. que decir que no sé que escriba
+escribir, dame tu nombre
+y pues te espera que tú le escribas, ¿no? Entonces para esperar esamos leerto
+aquí leer y se guarda en la variable nombre. Ahí está. Una vez que lo guarda
+en la variable nombre, ay, aquí me faltó. Ahí está. Una vez que lo guarda
+ahí se lo va a pasar a la función. ¿Cómo llamamos a la función? Invocándola con
+su nombre. Se llama saludo y recibe a nombre. Ahí está. Ahí no pasa
+nada. No se tiene que dentro de dentro de esta función no se tiene que llamar
+exactamente igual que este. No pasa nada. Puede ser así porque está separado
+por funciones. Puede pasar también en C. Aquí puede ser, por ejemplo, acá
+cambiarle, decirle que va a recibir en vez de nombre la variable name. Así. Sí.
+Aquí lo único que indicas es que qué va a hacer con lo que reciba. El caso
+decimos que recibe este le puedes poner papa si quieres, lo que quiera, el
+nombre que tú quieras. Este, Gonzal, no sé, este que recibe recibe una pala, lo
+que quieras, el nombre que tú quieras. Sí, el chiste es indicar qué vas a hacer
+con eso. Okay. Entonces, no da error, se fijan,
+porque acá definimos nombre y esa variable se la pasamos acá. O sea, la
+para esta función name se convirtió en la variable nombre, o sea, recibió
+nombre. No dice aquí luego es un poco confuso la programación funcional. Aquí
+tiene dudas de lo que les estoy diciendo.
+Aquí lo que estamos haciendo es llamando la otra función y dándole una variable
+que va a tratar de la manera que lo indicamos acá. ¿Sí? Entonces, si
+ejecutamos este código, ay, me va a hacer guardarlo.
+Hm. mis exámenes que hoy les hice a los chavos de doy una materia de control en
+mecatrónica. Entonces, este, ¿cómo le ponemos?
+Este es el machote del presupuesto, ¿no? Este es un punto doc. Le vamos a poner
+main, así como va. Listo, ahí está.
+Listo. Nombre, Óscar. Hola, Óscar. Ya está, ¿no? ¿Qué es lo
+que hace esto? Por ejemplo, aquí faltó un enter, un espacio, perdón, otra vez
+ejecutarla de nuevo. Reiniciar. Ócar, ahí está medio raro. Ahí está.
+Hola. O Óscar, Óscar, lo escribí mal. Okay. Entonces, lo que hace es que la
+función de afuera es llamada acá dentro. Estas funciones pueden ser más
+complejas, no tienen que ser tan sencillas. Puede ser ejemplo, una
+función que reciba algo y te entregue otra cosa para definir funciones que no
+son de este estilo de proceso, que hacen cosas, sino que hacen cosas y aparte te
+regresan un valor, se utiliza la declaración
+función, así y le ponemos un nombre, no sé, eh, calcular, sí, a este le voy a
+borrarlo de aquí y vamos a decir que es main, como lo que habamos puesto, ¿okay?
+En este caso, ah, hay otra manera de también indicar que la función va a ser
+otra cosa, o sea, que la función va a ser una operación o va a recibir algo.
+Puedes hacerlo con la famosa flechita, así, la función calcular
+va a llamarse con esta, no sé, este, con otra con otra
+función que se va a calcular con mayúscula y esta va a recibir valores,
+no sé, eh, para calcular el área de un triángulo, base, coma, altura. No,
+necesitamos nada más esas dos. Ahora sí nos metemos y dentro de esta
+función podemos, ejemplo definir también variables si queremos definirlas en esta
+función, no en la función principal. También se puede hacer aquí. Solo
+recuerden cada vez que la llamen esta esta variable se va a definir
+nuevamente. En este caso queremos definir la variable que nos va a dar el
+resultado del área, ¿no? Un real porque va a ser un double y resultado
+va a ser el producto de la operación. Puede ser flecha o igual el producto de
+la operación de base por altura este entre dos, ¿no?
+Entre dos. Ahí está. Falta aquí. Ah, no se puede así, pero también podemos
+hacerlo así, poner las las los este paréntesis para indicar que estamos
+dividiendo todo entre dos. ¿Sí? Entonces, eso nos va a dar la altura del
+triángulo. Ya se acaba la función. Ahora en main, pues, ¿qué necesitamos definir
+en main? definir los las variables para los valores del triángulo. No sé, vamos
+a ponerle este la base la vamos a llamar B, la altura la vamos a llamar este A.
+Y esto va a ser definido, van a estar definidos como reales también, ¿no? Como
+real. Ahí está. Ya tenemos definido B y A.
+Y ah, perdón, me faltó también área, ¿no? Porque esto acá nos va a regresar
+el resultado y eso se va a guardar en el área, ¿no? Para imprimirla después.
+Entonces igual escribimos para meter valores. Escribir.
+Dame la base. Dame base. Ahí.
+Leer B. Otra vez escribir
+altura. Leer. A. Se guarda en A, que es la
+altura. y hacemos la operación, ¿no?, que sería
+área es igual o flechita, como vimos la otra
+vez, área es igual a la función que definimos arriba. Para llamarla, pues
+vamos a tener que hacerlo con la función esta de aquí, que es calcular. Sí, ahí,
+perdón. Calcular. Y esta función recibe base y
+altura, que sería base por altura. Ahí está.
+Y qué va a hacer la función calcular con mayúscula, que es esta de acá, va a
+recibir base con altura, se lo va a pasar a la función, a la función de
+verdad. Esta va a calcular el resultado, que es una una variable que definimos
+adentro. Calcula el resultado y se lo pasa a área. Sí, se lo va a dar. O sea,
+este le da los valores a esta, esta hace el resultado, se lo regresa y esta lo
+regresa a área. Entonces, área va a valer la operación de aquí. ¿Sí?
+Entonces, ya la hicimos. Ahora hay que hay que escribir nada más el
+área es, no sé,
+área es me faltó una coma, una una un acento, pero ya no pasa nada. Área y
+supone que debe de funcionar. Vamos a ver
+a ver si no me da un error. ¿Dónde está la ejecución?
+Ah, no coincide los tipos. ¿Dónde está? No,
+que me equivoqué. Reto. Error puede hacerlo
+maricológico ter no puede ser de ese tipo.
+No, vato de tipo apropiado. A ver, aquí ya me equivoqué yo. Vamos a ver.
+A área. Ah, es que no dice dónde está el error.
+Ah. Línea 11. M. Está leer B.
+Ah, me equivoqué. Ay, esta es base y esta no era H. Esta era
+los tipos. Espérame, lo arreglo. Ah,
+hice mal. No va a decir este vato ya se equivocó.
+Ahorita lo arreglamos. Área como real.
+Vamos a decir a ver si nos deja.
+Mm pase. Ah, caray.
+Okay, parece que funcionó. No sé, no sé qué tenía, la neta. No sé ni cómo lo
+resolví. Vamos a ver. 10
+cero. A mí también me da cero.
+Sí, ¿verdad? Sí.
+Mm. Es que no usamos área o sí. Resultado
+sería o o no. No, calcular ya le da el resultado a la al de este al valor. A
+ver, espérame porque ya sé que puede ser esto también.
+No, cero. ¿Qué estás haciendo tú? Espérame, ahorita lo arreglamos.
+Me equivoqué aquí. A ver. No, no sé qué está haciendo esta cosa.
+¿Qué andas haciendo tú? La operación aquí me la ando inventando.
+Como les dije el otro día, PS también para mí es nuevo.
+Ahora no me gusta trabajar con estas cosas.
+A ver, ahí
+lo que pasa creo es que estás regresando calcular, ¿no? Y tienes estás usando
+resultado adentro. Ajá. No es que resultado debería de
+regresarme, o sea, calcular debería regresarme esa opción. Es lo que no
+entiendo. ¿Por qué no me lo regresa? Es que no estás definiendo la variable
+con minúscula calcular. Ah, no, pero ya me disculpa.
+A ver, no, no te preocupes. A ver, vamos a ver otra cosa. Tal vez tienes razón.
+No, es que sí creo que sí tiene que Es que dentro de la función nunca se
+define, como quien dice la variable calcular,
+entonces no retorna nada. Okay.
+La única que se define es la de resultado. No la retorna.
+Okay. Okay. Yo le cambiaría el el el resultado,
+bueno, el calcular con minúscula hasta arriba en la función porque pues
+se devuelve un valor, ¿no? No un verbo, ¿no? O sea, hasta arriba diría.
+Ajá. Acá esa de acá dices
+en vez de calcular resultado, o sea, resultado
+sería mi opinión. Sí. los datos que se llamen como sustantivos
+y los procesos, verbos, funciones. Okay.
+Y que esta me regrese eso. A ver,
+según hay que llamarla así, parece.
+Okay, así no me da error. Ahora vamos a ver. Discúlpenme, no esperaba que nos
+fuera a dar esto. ¿Dónde está? Acá está el de este.
+Ahí está. Sí, sí, está ya parece que está bien. Mira, 10* 2 20 / 2. Gracias.
+Disculpen, esto no es mi especialidad. Va que va. Pero entonces parece que sí
+tiene sentido. Entonces hay que definirlo en sí para que lo regrese,
+¿verdad? lo que entendí. Okay, va que Pero bueno,
+se entiende que podemos hacer subprocesos. En este caso no los van a
+necesitar ustedes para la primera evaluación, pero pues lo encontré el fin
+de semana encontré eso y dije, "Ah, caray, parece que ya se hace solo, ¿no?
+Okay, tengo entendido. Bueno, hacer una pregunta. Me comentaron que los de las
+clases de 8 a 9 y 9 a 10 son los que están inscritos en lo de vehículos,
+¿verdad? Todos aquí están lo de vehículos, ¿no?
+Vinieron para lo de vehículos. Sí,
+perfecto. Sí, porque ya no sabía cómo diferenciarlos, pero ya vi cómo Sí.
+Entonces, su tarea va a ser un poco diferente, pero va igual ser un
+pseudocódigo. Ustedes al final ustedes tienen que hacerme un SU.
+Entonces, la evaluación de esta unidad va a ser que me empiecen a definir un
+pseudocódigo para un mini ACU, que no va a ser todo porque un ACU es algo enorme,
+sino que empecemos a definir señales de entrada, salida, empezar a ver esto que
+llamamos los este los requerimientos de su de su ACU a futuro, empezar a
+definirlos para sobre esos trabajar, pero por ahora vamos a estar trabajando
+con con el PCIN para su evaluación en general. Okay.
+De PC, pues la verdad creo que eso era lo último que quería que viéramos y
+ahora me gustaría que empezáramos a ver su seteo de de Linux,
+empezar a setear Linux y empezar a generar el entorno donde vamos a
+trabajar. De esto ya no tienen dudas que está medio raro. De todos modos voy a
+darle otra investigada si encuentro otra información como exactamente lo que
+tenemos que hacer. Te los digo que les digo, esto no lo había usado yo antes.
+Todo bien. Sí, todo bien. Igual no sabía que en PC
+se podían usar funciones. Sí, yo también no sabía.
+Sí, me enteré el domingo, entonces este
+ayer. Entonces, ya sabemos que sí se puede. Va que va. Okay. Entonces, como
+dijo ahorita un compañero de ustedes, para esto vamos a usar el famoso WSL.
+Nada más dejen que me Ahí está, ya cerró. PC in ya me lo dejó cerrar y para
+eso voy a cerrar esta Power Shell. Ustedes pueden seguirme allá o pueden
+este hacerlo después. Si me siguen y les sale algún error, me avisan para
+revisarlo, pero para nosotros ahorita voy a setear lo más que pueda las primer
+parte y y si no alcanzamos mañana nos aventamos la segunda parte, no pasa
+nada. Okay. Nosotros vamos a trabajar con algo que se llama WSL, que es
+Windows subsistem, algo Linux, según yo es son las siglas. Es un subsistema
+Linux que puedes tú tener en Windows 10 y Windows 11. No estoy seguro si por
+otra versión está disponible. Según yo, Windows 10 y 11 sí lo pueden utilizar.
+Entonces, para poder usarlo, vamos a irnos a su Power Shell. Para entrar a la
+Power Shell ponen Power. Power Shell. Con que pongan Power ya les va a
+aparecer seguramente. Y esta es la aplicación de Power Shell que es una
+comandera. Entonces vamos a darle clic derecho, ejecutar como administrador.
+Les va a pedir permiso. Esperamos a que abra.
+me pido permiso, le doy que sí y ya me abre mi terminal de Power Shell. Okay,
+es importante que sea como administrador porque luego puede darles problemas si
+no le ponen. Okay. Entonces, por ejemplo, ustedes pueden revisar si no
+tienen por ahí alguna alguna distribución ya instalada. El comando
+para invocar a WSL es escribir WSL, se va a pintar en amarillo. Luego
+guion list les va a dar la lista de las distribuciones que puedan tener
+instaladas. Entonces list y luego escriben guion guion verbos. Así es
+verbose. H esto aquí les va a entregar qué distribuciones tienen instaladas.
+Por ejemplo, yo tengo Devian y está detenida, si se fijan, estado y la
+versión es dos. Si ustedes invocan ese comando que es WSL list, les va a decir
+si tienen por ahí alguna este distribución instalada. Si no les da
+nada, nada más les va a decir que no hay nada o que no encuentra nada. Les voy a
+pegar, voy a quitar esto aquí. Les voy a pegar aquí este de aquí.
+Está Lisber. Okay, yo ya tengo instalado Devian. Sí. Este, si yo le si yo vuelvo
+a ejecutar el comando para instalar Devian, se me va a hacer un un desmadre.
+Entonces, lo que voy a hacer es este, por ejemplo, vamos a instalar otra
+distribución. O, bueno, el comando para Devian es este, ¿no? Nada más para
+tenerlo listo. Es WSL guion install, luego guion D y escriben
+devian así con mayúsculas. Si quieren especificar una versión, la ponen
+después del nombre de Devian. Ponen Devian 20 algo, eh, 20.02 o cosas así
+como untu. En este caso, con que escriban Devian les va a poner la más
+reciente. Con esa podemos trabajar. La idea es que todos estandaricemos
+trabajar con Devian. Este, no hay problema si usamos un buuntu como piden
+estandarizar, vamos a usar Devian. En este caso, si ustedes le dan enter, a mí
+me va a dar un error porque va a decir que ya la tengo. Ahí está. Ya tiene la
+distribución instalada, ¿no? Mm. Si usted cuando ustedes le den la primera
+vez va a empezar a cargar toda la distribución y va va a tardar ahí un
+ratillo y cuando termine de instalarla pues les va a avisar. Ejemplo, no vamos
+a instalar Ubuntu, pero vamos a hacer, voy a hacer yo Ubuntu para que entiendan
+más o menos cómo funciona. Por ejemplo, si yo instalo una distribución que no
+tengo, ejemplo gu D y escribo Ubuntu, me va a instalar el ubuntu. Hay que
+esperar, ejemplo, ahí está. Es puede ser la un mayúscula de las demás minúsculas.
+descargando y tenemos que esperar. Ustedes les va a salir descargando
+devian. Sí, pueden escribir instal de Fedora y les va a instalar Fedora que es
+otra distribución. Ustedes pueden elegir la que ustedes quieran. Aquí les voy a
+pegar el que van a usar ustedes. Igual pueden jugar con otras distribuciones si
+quieran instalar. Si quieren tener otra por ahí no les casi no les gasta espacio
+este est esta herramienta de Windows. Ubuntuus sí pesa. Ese sí va a tardar.
+Vamos a esperar a que termine. Va a tardar un ratito. Devian casi no pesa
+nada. También es una razón por la que prefiero que usemos Devian.
+No va a tardar tanto descargando, lo va a hacer más rápido. Ubuntuus, sí, sí se
+lleva lleva un ratito, ¿no? Entonces, vamos a esperar un poquitillo a que le
+salga, a que se descargue. Y vamos a No, sí va a tardar un rato,
+pero hay un punto quisiera ver que se haya sido mejor con el devian, pero
+bueno, este, yo en este caso la voy a cancelar. Si ustedes le escriben control
+C, se cancelan las ejecuciones. Ahí está. Se fijan, se canceló. Se dejó de
+instalar Ubuntu. Voy a revisar si se instaló otra vez con el Lisbert Bost. No
+se instaló. Okay. Este caso, ¿saben qué? Me gustaría mejor ahorita que alguien de
+ustedes me compartiera su pantalla, lo voy guiando y que instale bien, ¿qué les
+parece? Esa persona pues ya lo va a tener
+instalado al 100, pero los demás van a ver cómo se hace. ¿Qué les parece? Así
+le hecho en las otras clases en este caso porque no quería como que tardar
+tanto, pero si alink se anima, podemos instalarlo de una vez en el suyo.
+Les digo, no les va a gastar casi nada de espacio porque Devian no pesa.
+Alin se animael. Ah, ¿quién puso? Yo ya lo instalé. Okay,
+no pasa nada. Okay, vamos a hacer esto. Voy a desinstalar mi Devian. No pasa
+nada. Este, si quieres yo puedo compartir.
+Ah, a ver, para qué va. Sí, sí, sí. Es que dije para no
+desinstalar el mío porque luego es un tema, luego me puede dar un error o
+algo, pero de hecho a mí me roja como
+a ver un time out o no sé que sea esto.
+Ah, no vaya a ser que tengas problemas. ¿Qué te dio?
+Que dice el término W no se reconoce como nombre. Ah, te está dando un
+problema de MD. Wel es mi porque s he tenido temas con
+ella. Ah, código de error. Sí, es es un problema más más más de
+adentro. Eso del cement y lo de abajo. No pasa nada. Es es ese te traigo una
+solución. Qué bueno que lo encontramos. Ahora acabo de pasar con otra lut, ¿no?
+Nada más que él lo solucionó una reiniciada que le dio su compu y
+funcionó. Ah,
+pero no sabemos si te va a funcionar a ti. Perdón. Esto qui la reinicias
+ahorita después de la clase me dices, bueno, mañana me dices en caso de que no
+te funcione. Okay, ahorita, ahorita yo me despacho el mío. Me me despacho el
+mío. Ah, mira, un tip windows screen guarda
+capturas de pantalla. Mis imágenes capturas de pantalla. Perfecto. Si sí,
+eso también funciona. Okay, les voy a volver a compartir. Pasa nada. Mm.
+Okay, de una les enseño otro comando, ¿no? Si
+ustedes, por ejemplo, digamos que instalan una instalan distribución que
+no querían, ¿no? Digamos que que este instalaron Ubuntu por accidente, ¿no? Y
+se instaló todo el Ubuntu completo. Si ustedes quieren este deshacerse de
+alguna de alguna distribución, el comando es fácil. Primero hay que
+primero hay que escribir este lo voy lo voy a pegar aquí en el chat. Ahorita lo
+escribo yo. Es WSL y guion guion shoot down. Entonces,
+shoot doble guion, perdón,
+shoot down. Este comando apaga todos los los servicios de de este WSL. Entonces,
+apaga todas las distribuciones para que tú las tú la puedas este, ¿cómo se
+dice?, eliminar. Para eliminar una una distribución. Vamos a WSL, escribimos
+guion guion, escribimos un register, así. un register y escribimos el nombre
+exactamente como viene en la lista que tienen acá en la tabla que les genera
+register de esto de aquí se fijan anulando el
+registro la operación se completó correctamente ya terminó la la
+desinstalación de les pego este comando acá también por si alguien lo quiere
+intentar ahí
+a ver si lo pegó así y ahora lo voy a volver a instalar voy a
+aplicar el comando que quería hacer es WSL L gu install y indico la
+distribución con guion D de bien. Ahí está y ahí está descargando GNU de
+bien que se fijan no pesa nada. Por le digo, no se preocupen por su por su
+computadora, no les va a usar casi nada de espacio. Si vieron luego luego
+descargó. Ahora hay que esperar a que lo instale. Este puede tardar un poco más,
+pero si fijan también es rápido. Y está una vez que lo terminen de
+instalar, lo quería que vieran, les va a iniciar, les va a iniciar Devian.
+iniciando Devian y les va a pedir el setup inicial de todos los Linux. Dame
+un username, es lo primero que te va a pedir. Ejemplo, yo recomiendo que usen
+minúsculas. Ejemplo, yo le voy a poner Óscar G. Ahí está mi username
+y ahora me va a decir, "Listo, ya te guardé username. Ahora dame un password.
+No se asusten que si cuando escriben no aparecen las letras, así está
+configurado. Por ejemplo, yo estoy escribiendo mi contraseña. Ta ta ta la
+estoy tepeando. No va a aparecer, pero se está escribiendo, aunque no aparezca.
+Le doy enter. Me va a pedir repetirla. Repítanla exactamente igual. No la vayan
+a perder porque si la perdemos es muy difícil recuperarla. Lo mejor, lo más
+fácil a veces es este reinstalar todo Linux para volver a crear un usuario.
+Entonces, tengan cuidado, guárdenla bien, enter y si todo está bien, va a
+dejarlos, los va a terminar y va a aparecer ahora una consola de color que
+es verde con azul. Significa que ahorita estamos dentro de Linux de Demian, de la
+distribución de Linux Devian. Aquí ya podemos empezar a utilizar comandos, por
+ejemplo, LS. LS, ese comando nos lista todos los los
+ficheros. De todos modos, después de eso sigue una clase de comandos básicos de
+Linux, no se preocupen, tarda un rato porque generalmente el System 32 tiene
+un montón de ficheros y de archivos. LS nos lista todo lo que hay en esa
+dirección, ¿no? Por eso tarda tanto. Sí. Okay. Otro comando que podemos checar.
+Ah, me fui hasta abajo. ¿Dónde está? ¿Dónde está? ¿Dónd está? ¿Dónd? Ahí
+está. Ah, aquí está. Otro comando que podemos
+checar es el PWD que nos dice cuál es nuestra nuestra dirección actual. Aquí
+no la imprimió. Si se fijan, estamos en esta dirección. Okay, ahorita ya no le
+hacemos nada a Devia, mejor les voy a enseñar a entrar y salir. Exit nos saca.
+Ya estás, nos sacó. Si tú quieres iniciar una distribución específico,
+tienes que acordarte cuál es la distribución que que tienes instalada
+para para iniciarla. El este el comando para iniciar la distribución, para
+meterte a trabajar es otra vez WSL y nada más tienes que indicar cuál es
+tu, ¿cómo se dice este? ¿Cuál es el nombre de tu de tu
+distribución? La que quieres iniciar. Nada más déjenme con este.
+Ah, ¿dónde está? Ahí está. Okay. Escribes nada más WSL,
+que no me lo sé de memoria gu D y distribución e indicas el nombre. O sea,
+así nada más, sin ninguna otra opción. Le das enter y te esperas y te va a
+meter a tu a tu distribución. Ya estamos otra vez dentro de Linux. Sí, en este
+caso esto serviría para que empezáramos a trabajar en la ventana de comandos de
+Linux. Pero WSL ya tiene una extensión que es compatible con Visual St code,
+Visual Studio Code. Entonces, cuando instalemos Visual Studio Code, lo vamos
+a relacionar y vamos a poder hacer código en el editor de código y tener
+que estar trabajando con la comandera para hacer código. La comandera solo nos
+va a servir para compilar y hacer diferentes acciones, pero para código
+vamos a trabajar en Visual Studio como archivos, pero va a ser un entorno Linux
+en Visual Studio. Sí, ya hay una manera de hacerlo compatible, no se preocupen.
+Entonces, por ejemplo, una vez que tengan Devian instalado y ya puedan
+entrar y salir, hagan lo que siempre se recomienda hacer cuando instalas un
+nuevo un nuevo una nueva distribución, es aplicarle el famoso update. Van a
+escribir sudo aptate. Este es el el santo grial de esto de
+todos los días. Enter. te va a pedir la contraseña porque estás estás trabajando
+como superusuario. Vas a meter tu contraseña, le das enter
+y va a empezar a aventarse el update. Hay que esperar a que se lo aviente.
+Cuando instalas una nueva distribución, lo mejor es aventarse un update al
+inicio. Okay, ya terminó. Y ahora hay que aplicarle un outgrade
+sudo apt up, perdón, upgrade upgrade. Ahí está.
+Si tú le das enter ahorita, te va te va va a revisar lo que tiene que hacer el
+el upgrade y te va a decir, "Oye, esto te va a pesar tantos megab." ¿Lo
+quieres? Va, le pones y le pones y, le das yes, enter. Lo hace. Si tú escribes
+el comando con un guion y, ya le das por hecho que no te interesa cuánto pese,
+que lo haga. Ejemplo, le voy a dar, le voy a dar ahorita con guion y no me va a
+preguntar nada, va a ser todo. Hay que esperar a que termine. Listo, ya
+terminó. Si no le hubiera puesto el guion y me va
+a preguntar si lo quiero hacer. Ahorita de todos modos lo hacemos en guion y
+para que vean qué pasa. Este, estos upgrade update updates, updates, perdón,
+y upgrades es recomendable hacerlos una vez a la semana, no tan seguido porque
+pues es es este puede después trabarse, pero sí es recomendable estarlos
+haciendo una vez a la semana, dos semanas, una vez al mes periódicamente
+para que se mantenga actualizado su su distribución. ¿Okay? Entonces ahora hay
+que instalar las herramientas en su debian tiene que instalar las
+herramientas básicas que vamos a utilizar. Las herramientas que vamos a
+utilizar van a ser otra vez consudo, aptando
+install. Es de indicarle que vamos a instalar varias cositas. Primero vamos a
+instalar la el build guion essential, así como va escrito
+essential. Esto de aquí va a instalar esa esa esa, perdón, esa paquetería en
+el en el en el Devian que nos sirve para compilars C. Vamos a instalar GDB, así
+GDB. Vamos a instalar Git, que Git es para
+control de versiones. Vamos a instalar Make, pero es para este configurar este
+despliegues de C y otras tipos de cosas, automatizaciones. Y vamos a instalar
+nano. Mm. En este caso no le voy a poner el guion y
+damos enter y me pregunta, mira este sumary te pone este vamos a hacer un
+upgrading a cero, pero vamos a instalar 113, vamos a remover cero y no un not
+upgrading a cero. Entonces te dice el tamando de la tamaño de la descarga es
+de 124, necesito 499 MB y tienes tantos gigas availables, o sea, es el espacio
+que yo tengo. Me pregunta, ¿continuamos? ¿Sí o no? Si yo quiero continuar, y si
+pongo el guion y no me va a preguntar, lo va a hacer y ya. Sí.
+Esperamos y ahí está, ¿no? Vamos a esperar. Va a
+tardar porque va a instalar. Si se fijaron, instalé todas las herramientas
+de madrazo. Ustedes podrán poner este sudo aptal y primero buil essential,
+enter instala buillential. Luego sudo aptal GDB GDB instala nada más GDB.
+Después lo mismo para Git y después para Nano, después para mak, pero en este
+caso si escribes todas separadas por espacio, te va a instalar una tras otra.
+Entonces puedes meter una vez todas las herramientas. Este, ¿alguien pone aquí
+mejor beam? Ese es de Virtual Machine, ¿no? Este, Víctor, eh,
+no es el editor de texto. Ah, ah, es como el Visual Studio. Okay.
+Okay. No, Bim es terminal.
+Es una terminal. El Tú hablas tú hablas de nano, pues
+es como nano, pero sí un poco más avanzada.
+Okay. Es que sí, el nano está horrible. Me refería que
+sí definitivamente dijiste una terminal dije, ay no, con Bim no lo conozco, no
+lo he usado. Sí, es muy bueno. Ajá.
+Ah, ahorita este ah, vamos a instalarlo así que bueno, mañana lo instalamos y lo
+calamos. Digo, tiene su grado de dificultad, pero
+una vez que lo dominas este ya es mucho más rápido. Yo sé lo básico realmente.
+Okay. Yo yo nunca lo he usado, no he escuchado yo de BM. Yo normalmente usaba
+usaba este nano cuando no tengo acceso a ninguna aú
+a ningún editor de código. Por ejemplo, en la en la en los este servidores, como
+trabajas con servidor web costinger, todo lo tienes acceso a terminal,
+entonces usas nano, esas modificaciones, pero no sabía que existía BIM. Eh,
+B. Sí, es justo como que el también como IMAX. Alguien puso IMAX prácticamente.
+Ah, perfecto. Y si no, pues usamos Tomas. La idea es
+que usaran Visual Studio según lo que viene en el temario, pero usamos varias,
+aprendemos varias, no se preocupen. Se sirve que también yo aprendo BIM porque
+pues también estamos aprendiendo aquí todos juntos. Va que va. Entonces, ahora
+tienen instaladas todas las herramientas. Hay que revisar que sí
+estén bien. Primero vamos a revisar GCC, que es la de la que va con BUL, con el
+BUL Essentials. Van a escribir gssc- versión y hay que corroborar que no de
+un error. Si se fijan, no de un error, nos entrega los datos de esta versión
+que tenemos instalada. Después hay que revidar G+, que es el que hace los
+compilados Gon versión. Y también lo tenemos bien.
+Se fijan, da los datos de GCC y G+. Y ahora el último. Vamos a revisar que
+tengamos Git instalado. Es Git-U versión.
+y tenemos la versión 2.47.3, o sea, tenemos todo ya listo para trabajar, o
+sea, con lo que tenemos ahorita ya podíamos empezar a programar en C, pero
+antes de eso hay que setear Visual Studio. Sí. Y antes de eso hay que les
+voy a dar una clasecita de comandos también, ¿okay? Pero me gustaría que
+hasta ahora ya tuvieran listo su entorno para trabajar, que se endebian. Si
+alguien es una partición o algo así, otra cosa, me avisa, no pasa nada.
+Mientras no le dé problemas, no pasa nada. Sí, no se preocupen. Va que va. Y
+mi idea es que más adelante cuando trabajemos temas más complejos no nos
+atoremos porque hay distribuciones. La mayoría de las cosas básicas entre las
+distribuciones es compatible entre Fedora, Ubuntu, Devian, pero llega un
+punto de cosas más complejas donde ya no son tan compatibles y pueden tener
+problemas los que no tengan el Devian. Sí. Entonces, este, incluso entre
+versiones de Devian luego no en compatibilidades. Entonces, para tener
+cuidado con eso. Va que va. Hasta aquí nadie tiene dudas. Inténtenlo en casa a
+ver qué les qué les da. No, les voy a poner aquí los comandos porque los tengo
+aquí guardados. Voy a poner estos el chat se borra, pero
+aquí los pueden pegar si los quieren guardar en un lado y el otro. Estos
+comandos son para revisar que estén instalados. Va, que va este.

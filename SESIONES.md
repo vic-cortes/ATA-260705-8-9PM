@@ -20,6 +20,17 @@ Búsqueda rápida de sesiones, resúmenes y transcripts por semana y fecha.
 
 ---
 
+## Semana 2
+
+### 2026-07-13 (Domingo)
+- **Bloque:** 0→1
+- **Tema:** Revisión de tareas, funciones en PSeInt, setup de WSL y Debian
+- **Resumen:** [week_2/2026_07_13/resumen.md](week_2/2026_07_13/resumen.md)
+- **Transcript completo:** [week_2/2026_07_13/raw_transcript.txt](week_2/2026_07_13/raw_transcript.txt)
+- **Puntos clave:** Arrays dinámicos y redimensionamiento, validación de rangos, subprocesos/funciones en PSeInt, WSL setup, instalación de Debian, herramientas build-essential/GDB/Git/Make
+
+---
+
 ## Cómo usar este índice
 
 - Para búsqueda rápida por fecha, usa Ctrl+F (o Cmd+F en Mac) en este archivo
