@@ -4,19 +4,33 @@ Búsqueda rápida de sesiones, resúmenes y transcripts por semana y fecha.
 
 ## Semana 1
 
-### 2026-07-07 (Lunes)
+### 2026-07-06 (Lunes) — Primer día
+- **Bloque:** 0 (introducción)
+- **Tema:** Presentación profesor, presentación alumnos, filosofía del curso, evaluación diagnóstica
+- **Resumen:** [week_1/2026_07_06/resumen.md](week_1/2026_07_06/resumen.md)
+- **Transcript completo:** [week_1/2026_07_06/raw_transcript.txt](week_1/2026_07_06/raw_transcript.txt)
+- **Puntos clave:** Background Óscar (Continental, Airbus, doctorado), "pensamiento del arquitecto", 9 alumnos con perfiles diversos, evaluación diagnóstica
+
+### 2026-07-07 (Martes)
 - **Bloque:** 0
 - **Tema:** Diagnóstico, pensamiento algorítmico, memoria y punteros
 - **Resumen:** [week_1/2026_07_07/resumen.md](week_1/2026_07_07/resumen.md)
 - **Transcript completo:** [week_1/2026_07_07/raw_transcript.txt](week_1/2026_07_07/raw_transcript.txt)
 - **Puntos clave:** Estructura de algoritmos (entrada/proceso/salida), optimización de condicionales, planificación antes de programar
 
-### 2026-07-08 (Martes)
+### 2026-07-08 (Miercoles)
 - **Bloque:** 0 (transición)
 - **Tema:** Estructuras complejas en PSeInt, menús, ciclos, diferencias C vs C++
 - **Resumen:** [week_1/2026_07_08/resumen.md](week_1/2026_07_08/resumen.md)
 - **Transcript completo:** [week_1/2026_07_08/raw_transcript.txt](week_1/2026_07_08/raw_transcript.txt)
 - **Puntos clave:** Condicionales Si/FinSi, menús con Según, ciclos Mientras, refactorización, C++ vs C, diagrama de flujo para evaluación
+
+### 2026-07-09 (Jueves)
+- **Bloque:** 0
+- **Tema:** Validación de entrada, arreglos (arrays), llenado e iteración
+- **Resumen:** [week_1/2026_07_09/resumen.md](week_1/2026_07_09/resumen.md)
+- **Transcript completo:** [week_1/2026_07_09/raw_transcript.txt](week_1/2026_07_09/raw_transcript.txt)
+- **Puntos clave:** Validación con while/repetir, definición y dimensionamiento de arreglos, llenado automático con for, operaciones sobre arrays (promedio, búsqueda, edición), tarea: menú con agregar/ver/borrar/editar datos
 
 ---
 

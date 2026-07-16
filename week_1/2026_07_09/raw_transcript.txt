@@ -1,0 +1,469 @@
+también bienvenido, Felia. Este es tu primer día. Eh, estamos viendo cosas muy
+básicas todavía, pero si en algo sientes así como que no entiendes o requieres
+que nos regresemos, nos regresamos. Eh, también hay otros grupos donde entraron
+personas nuevas, entonces he estado ahí como que queriendo ahí ayudar para que
+no se vayan a a quedar atrás. Eh, ahorita estamos viendo cosas básicas, es
+la ventaja. Vamos empezando. Todavía no entramos directo a la programación en C
+en C++, perdón. Todavía estamos con pseudos, pseudocódigos y la introducción
+de los algoritmos, pero mi idea era que ya la siguiente semana si alcanzábamos
+ya empezáramos a ver este C++. Eh, bienvenida. Eh, e igual no sé si nos
+quieres decir algo sobre ti, mínimo normalmente lo que les pregunto el
+primer día. Sí, pues ahora sí que gracias. Eh, mi
+nombre es Ofelia Guadalupe. Este, pues me dedico ahorita al área de diseño
+mecánico, pero anteriormente estuve un ratito en
+el área de software automotriz. Eh, sí, en software en bebido. Estuve
+más o menos 3 años. eh atendía proyectos de código legacy,
+entonces pues ya eran como que eh código de producción y todo eso y
+pues me gustó mucho. Entonces por eso trato de adentrarme más a este mundo
+para pues tener más oportunidad. Ya veo.
+Sí, va que va que va. Perfecto. ¿Dónde
+trabajabas? Estoy en Sidec todavía, de hecho. Sí,
+estoy en la misma empresa acá en Querétaro.
+Es el centro de de investigación el que me comentaba alguien más aquí. Sí, yo
+que trabajé en Continental. Sí, me acuerdo del SIDEC que está allí en
+Querétaro. Sí, sí, también conozco ahí.
+Sí, somos también la misma rama. Este, pero me presento rápido. Soy Óscar
+Godíz, este, ingeniero en mecatrónica, maestro en ciencias y ahorita estudiante
+de doctorado, pero también trabajé 4 años en Continental, el área automotriz
+completamente para varias marcas. Entonces, mi experiencia está más de ese
+lado, ¿no? Y en la parte de desarrollo de IA, eh no, pues qué padre, es es muy
+buena experiencia la que tienes y ahorita el curso empieza fácil, les
+decía a todos para que no se vayan a desesperar, o sea, que eres nueva
+también vas a decir, "Ah, está como que muy fácil ahorita, pero poco a poco se
+va a poner este más complejo. De hecho, cuando pasemos a las especialidades,
+pues ya depende de la que elijan." Se va automotriz, su proyecto final es
+literalmente hacer un ECU de comunicación CAN. Entonces este, eso ya
+está muy complejo. Y entonces eh para que no se me vayan a
+desesperar, no se preocupen. Va que va. Entonces, bueno, eh ayer
+revisamos este chavos, revisamos la parte de de de la pseudocódigos, perdón,
+revisamos, ejemplo, la parte de cómo hacer una especie de switch, así como al
+estilo de C, una especie de switch para elegir entre diferentes casos. Este, les
+iba a dejar una tarea, nada más que dije, bueno, mejor me esperaba hoy que
+viéramos más del de otro tema también un poquito más avanzado para dejarles mejor
+una tarea más completa y que la revisemos el lunes para que no sea así
+como de un día para otro. Este,
+les iba a comentar hoy hoy me hoy va a ser una clase sencilla, de todos modos
+va a ser este rápido. Vamos a ver un nuevo tipo de caso. Lo que quiero es que
+aprendamos también a a cómo restringir tipos de datos o tipos de de variables
+que que perdón, tipo de valores que recibamos antes de asignárselos a una
+variable. Esto debido a que luego existen problemas. Por ejemplo, tú
+declaras una variable y esta variable es de cierto tipo, ¿no? Puede ser una
+entero. Y e y imagínate que estás haciendo una división entre dos números.
+Imagínate que el entero de abajo en un momento se vuelve cero o alguien te da
+un cero, pues la división no va a funcionar, ¿no? Probablemente el
+programa va a crashear. Entonces, en vez de que crashee o para evitar ese tipo de
+problemas, lo que hacemos es eh agregar una validación o un catch. En
+pseudocódigo es más difícil, eh, aquí lo vamos a hacer de otra manera, pero
+cuando hagamos código ya del real se agrega un catch o un manejo de errores
+que lo que hace es que para que no crashe el programa, pues lo que este
+guarda guarda el error, guarda lo que pasó y pues ahí decides tú si le mandas
+un anuncio al al usuario, ¿no? Para que corrija lo que lo que te pasó. Entonces
+quiero que hagamos algo parecido. También quiero que veamos este, ¿cómo se
+cómo se llama esto? Veamos arreglos de una vez. Veamos lo que es arreglos, cómo
+llenar arreglos, que es creo que ya lo que veríamos ya al último de este de
+esto de pseudocódigos. Va que va. Entonces vamos a trabajar con
+el de siempre, el PC in nada más. Déjen lo abro.
+Ahí está. Okay,
+para los que este no se acordaban, PCIN es un es una herramienta muy sencilla.
+Eh, los que no lo tengan instalado, eh, lo buscan literalmente así. PS
+mayúscula, E minúscula, I mayúscula, I N minúscula
+y T minúscula, o sea, es P S E int. Sí, eso lo pueden buscar en internet, lo
+buscan así. La página es es gratis eh, perdón, el software es gratis, lo buscan
+en internet, les va a dar la página y tiene una opción de descargar. Descargan
+para el el sistema operativo que ustedes utilicen
+y ya le dan que sí a todo en la instalación. Van a escalar un instalador
+y van a tener un entorno como este. Este PCIN les decía ayer, el entorno básico
+es que literalmente pone un algoritmo y fin de algoritmo. Todo lo que esté
+dentro de esto con identación se va a ejecutar. Todo lo que escribas aquí va a
+ser parte del código. Obviamente hay que dentar, hay que ver, hay que indicar
+dónde inicia el algoritmo y dónde termina. Confira algoritmo y aquí es
+donde empiezas a programar. Aquí adentro, por ejemplo, aquí dice que hay
+que darle un nombre porque no tiene nombre. Ahorita vamos a trabajar con una
+validación, ¿no? Vamos a ponerle algoritmo validación.
+Sí. Okay. Este, para los que son nuevos, eh,
+voy a subir las grabaciones. ¿Ya están listas? Ya, ya me aparecieron ya todas
+listas en en el drive. Las que se han estado haciendo ya las voy a subir para
+los que son nuevos puedan verlas y ver un poquito de lo que se hizo antes.
+Este, lastimosamente va a quedar hasta donde yo llegué porque antes de mí no
+los profes pues eran variados y creo que no hay grabaciones de esas clases que
+eran las primeras de ustedes. Van a parecer nada más de las que yo llegué
+hacia adelante. Okay. Por ejemplo, como les decía el otro día, ya dentro del
+algoritmo, lo primero que vamos a hacer, y esto se parece mucho cuando trabajas
+en C++, perdón, es que las variables que vayas a utilizar, todo lo que quieras
+que se guarde en la memoria, que son las variables, que reciba valores y que esos
+valores se queden en la memoria, deben de definirse. O sea, no puedes después
+decir así de la nada que A o B es igual a algo y esperar que se guarde, ¿no? En
+ese lenguaje no funciona así. Hay otros que sí, como Python, pero en este caso
+con C, C++ C, C++ no podemos hacer eso. Tenemos que definir la variable antes de
+poder utilizarla. Este, de hecho, se puede definir en el momento, o sea,
+puedes escribir int a ig ejemplo en en C++ y va a funcionar, ¿no?
+Pero no es muy limpio. Lo mejor es definirlas primero y después mandarlas.
+Sí. Lo que no puedes hacer es declarar la variable sin definir el tipo y darle
+un valor. O sea, lo mejor es declararlas antes para también que tú indiques el
+tipo y no estar indicándolo después. ¿Okay? Entonces, la el comando para
+definir en este en este perdón, esta herramienta que es PC in es como vimos
+el otro día la palabra definir. Es que me faltó la mayúscula
+definir. Y pues empiezas a darle aquí las variables, ¿no? Por ejemplo, podemos
+definir otra vez una edad y hay que indicar qué tipo de dato es. En este
+caso se indica así como entero. Tenemos varias opciones. Karter, que es un char,
+tenemos lógico, que es el buleano, real, que es el flotante. Y también está la
+otra opción que era, ay, se me olvidó, la de cadena, que nos daba un string.
+Este caso podemos guardar la variable, perdón, este, definir la variable dat
+como un entero. Entonces va a recibir valores de ese tipo, de tipo entero. Y
+si recibe valores que no son enteros, los va a truncar.
+Eso es lo que va a pasar si le das un valor que no suena entero y pues va a
+trabajar, o sea, se va a regir bajo las reglas del tipo entero.
+Entonces, eh vamos a imprimir en la consola.
+para imprimir. Acuérdense que es el comando escribir y queremos escribir, no
+sé, ingresa tu edad, ¿no? Cerramos las comillas y ya se guarda.
+Okay. Entonces, esto nos lo va a imprimir en pantalla. El comando para
+asignar una variable, un valor y esperar a que el usuario se la dé es el comando
+leer. Sí, leer lo que va a hacer es esperar. El código no se va a seguir
+ejecutando. El cocódigo, perdón, no se va a seguir ejecutando hasta que no
+reciba un valor. Sí. es leer y va a esperar el valor y cuando lo tenga se lo
+va a agregar a la variable que tú digas acá. Si tenemos otra variable le ponemos
+otra variable, ¿no? Este caso se lo queremos agregar a edad. Mm. Y ahora
+podemos, ejemplo, hacer una especie de validación pequeña. Eh, a ver, en la
+edad este debe de cumplir varias cosas. Una es que es un entero, ¿no?
+Normalmente no decimos que cumplimos 25.5 años, ¿no? Este, decimos, "No, pues
+tengo 25, tengo 26, entonces son enteros, pero eso ya lo definimos
+arriba. Otra restricción que yo vería es que no
+puedes tener una edad negativa, ¿no? Tu edad siempre tiene que ser un número
+positivo. Si yo pues te pido que ingreses la edad y tú
+me das un -1, un -4, un menos 40, un -25, pues se supone que esa edad pues
+está mal dada, ¿no? Obviamente este código pues lo va a recibir porque -25
+sigue siendo un entero, -1 sigue siendo un número entero, solo que es negativo.
+Entonces, el código seguiría funcionando, pero lo ideal sería como en
+este caso no tenemos eso de catch ni prohibiciones de ese estilo, lo mejor
+sería nosotros definir una manera de validarlo utilizando lo que ya sabemos.
+Por ejemplo, a mí se me ocurre que para validar esto podemos utilizar el ciclo
+while, el mientras que vimos ayer. Este, por ejemplo, podríamos decir para que
+siempre se esté validando cada vez que se dé algo, mientras edad sea eh menor,
+lo indicamos con el menor. Menor a cero, hacer, o sea, el do. O sea, mientras
+edad sea menor a cero, vamos a hacer. Y al darle el enteros declara también el
+fin del mientras o todo lo que esté dentro de mientras y fin mientras va a
+ser parte del ciclo. Obviamente hay que identarlo. Si no lo identas le te va a
+dar error. Alentarlo decimos que estamos dentro. Entonces mientras edad sea menor
+a cero, ¿qué vamos a hacer? En este caso, pues como edad menor a cero es
+algo que no es válido, porque no tendría sentido. Decimos, "Oye, este,
+la edad es inválida, ¿no? Edad inválida. ingresa un
+número positivo. Ahí está, ¿no? Y volvemos a leer edad,
+¿no? Porque pues necesitamos ver si si lo cambia, ¿no? O sea, volvemos a leer
+edad. Si ahorita el usuario vuelve a escribir edad y ya es un número
+positivo, pues nos vamos a salir del ciclo del ciclo mientras.
+Y pues ya le podríamos decir que, no sé, podríamos decir, escribamos al final
+nada más como para avisar que la edad se ha registrado con con éxito.
+Registrada los puntos esto. Y recuerden, para
+imprimir variables es coma y la variable ya también la va a imprimir. Okay, vamos
+a ver qué qué hace este código. Lo guardamos.
+Me va a preguntar que dónde lo guardo. Ahí.
+Van a ver aquí mis archivos del trabajo. Ah, no, son puros son puros recibos del
+SAT. Ah, vamos a ponerle Sí, validación, así como le pusimos. Ahí está.
+Ah, okay.
+Entonces, lo ejecutamos y, por ejemplo, ya imprime lo primero,
+¿no? Que venía acá, ingresa tu edad, por ejemplo, vamos a darle un menos para que
+empiece, para que se meta el error. Vamos a darle un -25, no me equivoqué,
+-56. y te dice invalid ingresa un número positivo porque pues entra entra en el
+while, cumple la condición del while y que sean menor a cero, entonces va a
+estar ahí trabajando. Si le doy un cero también va a dejar de funcionar. En caso
+ahí, por ejemplo, lo mejor era poner que fuera edad menor igual a cero, ¿no? O
+sea, también el cero pues es una edad, pues dirías, "Ah, caray, no,
+¿cómo decirlo? No tiene sentido que tenga 0 años, pero por ejemplo hay otra
+opción. Ejemplo, este, no sé, es un lugar, no sé, un un bar donde no dejan
+entrar menores de edad, por ejemplo, mientras la edad sea menor a 18, también
+no te va a dejar avanzar, no sé, algo por el estilo, ¿no? Ya si le damos una
+edad correcta, no sé, 26 que es positivo, pues ya registra la edad. Este
+código funciona bien. La validación en este caso se hace con esta especie de
+ciclos, ¿no? La manera en que se me ocurre que las puedes hacer, pero pues
+normalmente en el código real las validaciones hacen de otras maneras. Hay
+funciones para hacerlo, hay funciones para cachar los errores. Le decimos cach
+porque en vez de tronar el el código y detenerte, este le eh literalmente cacha
+el error, o sea, hace un catch y después este pues ya hace lo que tú le pidas,
+¿no? Por ejemplo, puede regresarte el código de error, puede imprimirte una
+advertencia, puede seguir ejecutando, puede pedir que reingreses un valor, ya
+va a depender de tu de tu script. Entonces, en este caso, la validación la
+estamos haciendo con un ciclo. Y se acuerdan que vimos otro ciclo ayer
+también que se llamaba el ciclo repetir, que era un ciclo que a diferencia de
+mientras era repetir, hacía lo de adentro y luego revisaba la condición
+hasta que sea hasta que hasta ahí va a revisar si la conición sigue cumpliendo.
+Estos ciclos se parecen al Wild do y al doil. Sí, por ejemplo, mientras se
+parece al while porque mientras revisa revisa la condición y después ejecuta la
+acción. El repetir primero ejecuta la acción y después revisa después revisa
+la condición. Entonces, el repetir me recuerda mucho al al Duwiile, porque el
+DUIL primero hace y luego revisa, ¿no? Este caso, pues ya depende de la valción
+que quieras hacer, la puedes hacer este con mientras o con o con repetir. Este,
+bueno, esto lo quería enseñar porque parte de la evaluación que van a tener
+pues es es hay que validar algunos datos. Entonces, para que tengan algunas
+maneras, obviamente hay otras, seguramente se hay varios aquí que son
+muy creativos, seguramente se les va a ocurrir alguna otra manera de de validar
+lo que estamos haciendo. Este, pero eh cualquier manera es es es
+correcta, ¿no? Mientras funcione lo que estén haciendo.
+Okay. De esta parte, ¿tienen dudas? ¿Alguna duda? Les digo, sigue siendo
+bastante sencillo, ¿no? Para que pasemos al, ¿cómo se
+dice?, al llenado de cadenas. Va que va. Okay.
+Ah, gracias, gracias. Ya vi los dedos levantados. Okay.
+Ahora vamos a ver otro tema. Imaginen algo. Vamos a imaginar algo.
+Ahí voy a borrar esto. Aquí pues tú puedes definir el número de
+variables que quieras, ¿no? Por ejemplo, imaginamos que imagínate que tienes un
+grupo de personas y cada persona tiene eh son tu salud, ¿no? Y cada uno tiene
+una calificación diferentes, ¿no? Lo podríamos aquí escribir, definir.
+Ejemplo, ustedes que son más poco más de 10 personas, según yo si son más de 10.
+Imagine que tengo estas 10 calificaciones de ustedes, ¿no? Y para
+estarlas guardando, yo quiero definir las variables de calificación. En este
+caso, pues tendría que definir calificación uno, calificación dos, cal,
+cal, cal 3, cal cu y bla bla bla, hasta llegar a a cal 10, ¿no? Supongan eso.
+¿Por qué? porque pues son ustedes son 10 personas, entonces necesito definir
+las 10 calificaciones. Ejemplo, aquí pongo que quiero que sea como real
+porque los esas calificaciones pueden ser números decimales, pueden ser
+flotantes o doubles. Entonces, pues define las calificaciones, pero
+imaginen que pues no son 10 personas, sino que es un salón grande donde en vez
+de 10 son 40, 45 alumnos, 35 alumnos. Este, pues ya se vuelve un poco
+ineficiente tener todas esas variables ahí definidas, ¿no? Las 45, las 35.
+Okay. Para eso PCIN o el pseudocódigo te permite
+definir un una variable en vez de perdón, una variable diferente que se
+llama arreglo. El arreglo, como su nombre lo dice, si
+usted escuchado de las cadenas, es un array, un arreglo, es es un es una una
+serie de caracteres o una un string que lo que hace es guardar un valor en
+cierta posición, ¿no? Por ejemplo, un arreglo de tres podría ser normalmente
+se una representación como gráfica de verlo sería como dibujar algo así.
+Imagínense que tienes aquí varios números, no sé, tienes 1, com 2, com
+3,4,5, no significa que así se declaren aquí,
+sino que quiero que lo vean más o menos. Imagínense que tienes estos números que
+están que están guardados, quitar el insert aquí está, que están guardados
+dentro de una especie de vector, una especie de de fila de valores donde cada
+uno tiene un valor y una posición. Eso es un arreglo. Y PCI nos permite definir
+arreglos. Imagínate que en vez de tener las estas 35 calificaciones, pues mejor
+declaro un arreglo de 35 posiciones, ¿no? Y ese arreglo le estoy cambiando
+valores, le estoy haciendo cosas. Obviamente sigo teniendo 35 valores que
+cambiar o o con cuáles trabajar, pero ya no tengo
+35 variables, sino que tengo una sola variable, nada más que la esa variable
+incluye esos valores. ¿Sí? Entonces se vuele más limpio y obviamente hay que
+estar el esfuerzo de de trabajar con cada una ahí está. Sí, sigue habiendo
+desgaste computacional por el por ese número de de ese número de valores, pero
+pues es mucho más fácil trabajarlos, ¿no? Ya los tengo ordenados, ya puedo
+estar trabajando con ellos, puedo acceder al número que yo quiera y todo
+eso teniendo solo una un perdón, una variable para almacenarlos a todos. Al
+igual que en diferentes este lenguajes, para acceder a las posiciones,
+literalmente llamas a tu arreglo e indicas la posición que quieres revisar.
+Por ejemplo, puedes poner arreglo entre y entre corchetes en la quiero ver la
+posición dos del arreglo, ¿no? Te va a dar el valor de la posición dos y
+posición tres. Vamos a hacerlo este vamos a hacerlo así como pasito pasito
+para que se entienda. Por ejemplo, vamos a definir
+para poder definir un arreglo, aquí tenemos que definir primero la variable,
+¿no? Definimos una variable calificaciones, por ejemplo, vamos a
+guardar aquí todas calificaciones, perdón,
+como en este caso como van a ser números reales como real. Y ahora después de
+definir la la dimensión, perdón, la la ah la variable, hay que darle una una
+dimensión. Con la palabra dimensión
+tú puedes darle un tamaño diferente a esta a esta variable. Decimos dimensión,
+calificaciones y hay que definir entre corchetes un número. Por ejemplo, vamos
+a darle un cinco. Ahí está. Sí. ¿Qué pasó ahí? Es medio raro la manera en que
+se hace aquí. Normalmente en ot en otros lenguajes o lenguajes de que son de
+código, tú literalmente ya defines un arreglo y ahí lo dejas. Este, obviamente
+al definir el arreglo le das tú una vez la dimensión, tienes son como funciones
+que ya reciben números y te regresan el arreglo. En este caso, primero hay que
+definir una variable, indicar de qué tipo van a ser los este los lo que va a
+llevar dentro y después a esa variable hay que indicar que va a ser
+dimensionada. Entonces ahora calificaciones va a ser un arreglo de
+cinco valores, todos van a ser reales. Es lo malo que va a guardar ese tipo de
+valores, nada más porque tú dijiste que calificaciones era real, entonces va a
+estar guardando flotantes. Pero entonces primero hay que hay que definirla y
+luego dimensionarla. Normalmente en el lenguaje normal este defines el array,
+ahí mismo lo dimensionas. Este caso hay que definirlo y ya después le dices,
+"Ah, y aparte de que, perdón, de que es un real, quiero que sea un arreglo de
+reales." Entonces, ya aquí ya lo dimensionas. Entonces vas a tener cinco
+valores para, perdón, vas a tener un arreglo que le
+caben cinco valores, ¿no? Digamos que lo queremos llenar. ¿Cómo lo llenamos? La
+manera más sencilla, al igual que en los demás códigos, en los demás lenguajes,
+es llamar a tu a tu variable, o sea, la variable calificaciones, que es una ray,
+indicar en qué posición quieres estar. Por ejemplo, vamos a llenar la posición
+uno y a esa posición asignarle un valor. Puede ser tanto como igual, como vimos
+ayer, tén flechita, que indica que se va a guardar el valor ahí. En este caso
+vamos a trabajar con igual, no sé, vamos a poner que la calificación no es de
+100. Sí, ya está. Entonces, ya llenamos uno de los espacios que tiene el
+arreglo. Nos quedan otros cuatro libres. Podemos repetir, podemos repetir, por
+ejemplo, esta operación. Lo voy a copiar y pegar nada más para no estar
+escribiendo y no sé. Para la posición dos
+le damos un nueve, ¿no? La posición tres le damos un ocho.
+La posición tres no tienen que ir en orden, ¿no? Por ejemplo, la posición
+tres le damos un ocho. Esta de acá no no es necesario ir en orden. Pueden irse al
+al espacio que ustedes quieran. Por ejemplo, en vez de poner cuatro, ponemos
+un cinco y a cinco le va a asignar el 10. Sí. y va a dejar el espacio de
+cuatro libre, pero se lo podemos llenar después.
+Cuatro y en esa posición podemos tener un 8 también, ¿no? Entonces, este
+arreglo se va a llenar de esta manera. Va a ser una cadena que va a tener un
+10, 9, 8, 8 y 10. Acuérdense que ya cuando lo leas pues sí va a venir en
+orden, ¿no? Pero para el llenado puedes llenarlo como tú quieras. Este llenado
+literalmente es este, ¿cómo decirlo? Es a mano, no es lo más ideal. No, se vas a
+decir, "Ah, caray. Dime este, Alejandro. Una duda super rápido.
+Eh, la posición cero en el index, en el pseudocódigo, no la cuenta según yo,
+este no la cuenta, pero ahorita revisamos si me sale algo de out of
+index, o sea, que nos salimos del índice, es que sí la está contando, por
+ejemplo, con el cinco. Sí, según yo no la cuenta, por eso lo
+estoy poniendo así. Les digo, el PCI no es no es mi especialidad. Este esto
+herramienta la estamos viendo juntos casi casi. especialidad es el C y el
+C++, pero ahorita vemos que qué va a pasar, ¿no? Según yo no lo cuenta, como
+esudocódigo, no tiene esas reglas, ¿no? Como el lenguaje que empezamos a
+intentar desde cero, pero en este Pero ahorita revisamos, según yo no debería
+darnos error. Va, gracias Alejandro. Es una buena observación, de hecho se me
+olvidó, tenía que habérselos dicho. Ah, y acordarnos, estos son números reales.
+Por ejemplo, este ocho podría ser también fácilmente un 8.5 porque son
+flotantes o doubles. Entonces, no va a haber problema si no son enteros todos.
+Porque dijimos que es real, que puede tener tanto números enteros como números
+números decimales. Okay. Entonces, para leerlos vamos a imprimir, por ejemplo,
+escribir ahí.
+Ah, perdón, ¿dónde está?
+No me deja poner. Ahí está. No me dejaba poner mayúscula. escribir, no sé,
+calificaciones, ¿no? Y me va a dejar ver una de las calificaciones. Sí. Entonces,
+si le digo la calificación de posición uno, debería dejarme ver
+esa calificación de ahí. Podrías ver otra, no sé, escribir calificaciones y
+podrías darle otro valor, no sé, el valor dos. Ah, sí, fíjense una
+cosa, no puedes imprimir el arreglo así nada más. O sea, yo no puedo yo no puedo
+imprimir poniendo, ah, sí, calificaciones,
+imprímeneme todas las calificaciones, ¿no? Escribiendo la variable
+calificaciones. Yo pensaba que sí, pero hace rato que que quise como que ver
+cómo funcionaba este tema de los arreglos, este, veía como que me daba un
+error. Ejemplo, vamos a inscribir la calificación uno y la calificación
+tres a ver qué pasa. Entonces, si
+ejecutamos esto, ¿dónde sale? ¿Dónde me va a salir la pestaña? Es que me salen
+diferentes partes. Okay, aquí está. Mira, se ejecutó. Vamos a reiniciarlo si
+quieren. Ahí está. Se guardaron todas y pues nos ejecutó, nos imprimió nada más
+dos, ¿no? Que era la uno y la tres. Okay. Esto pues es no es nada eficiente,
+¿no? O sea, lo están viendo, van a decir, "Ah, esto esto no es nada
+eficiente. ¿Cómo vas a estar llenando este cadenas y este tipo de cosas a
+mano?" O sí, obviamente no es nada eficiente.
+Lo ideal es que esto se llenara de una manera un poco más automática y una
+solución que a todos se nos va a ocurrir y a ustedes también y a mí también es
+que pues usemos ciclos, ¿no? Usemos un ciclo for que incremente, usemos un
+ciclo while el que ustedes quieren depende de su necesidad. En este caso
+podemos utilizar un for e ir llenando las calificaciones una a una. a su vez
+ir ir escribiendo las calificaciones uno a uno o por ejemplo preguntarle al
+usuario, ¿qué calificación quieres ver? Y que te dé y que te dé un valor y ese
+valor vaya y lo busque directamente en la en la calificación. Por ejemplo, que
+te dijera leer este decir, "A ver, ¿qué calificación quieres?" Y tú le digas la
+calificación en el espacio cinco. Entonces aquí en vez de buscar por un
+número, buscaría por una variable, ¿no? Que la variable se la darías tú. Lo
+vamos a intentarlo, ¿no? Por ejemplo, vamos a escribir aquí
+eh leer. Y acá yo lo que haría sería
+definir un contador o un número que me indique
+dónde puedo buscar la perdón, cuál va a ser la posición, por ejemplo, el famoso
+I. y lo definimos como un entero, ¿no? Decimos, "Okay, voy a voy a crear esta
+variable que sea i, que lo que me permita es que le pida al usuario un
+valor para I y que el código vaya y busque el valor I en las calificaciones.
+No, voy a quitar esta." Y se supone que ahora va a guardar todas, pero me va a
+preguntar cuál quiero ver. Entonces, ¿podemos ejecutarlo. Lo voy a voy a
+reiniciar. Ah, mira, se ejecutó solo otra vez, pero vamos a ejecutarlo de
+cero. Me abrió la pantalla en otra pestaña. Aquí está. Eh, me pregunta,
+¿qué calificación quieres? No, ejemplo, queremos la uno, ahí está, ¿no?
+Entonces, fue a buscar usando I que nosotros le damos, fue a buscar dentro
+de la ray, no sé, ejemplo, reiniciamos, queremos la cinco y nos da otra,
+queremos la tres y nos da otra, ¿no? Okay. Entonces, este caso tú puedes
+manipular dónde quieres estar y también le puedes dar variables para buscar.
+Entonces ahorita pues lo que vimos el llenado fue a mano y también las
+peticiones. Entonces no es lo más no es lo más eficiente. Una una manera más
+eficiente que se me ocurre es utilizar un ciclo for. Por ejemplo, vamos a
+definir aquí este las vamos a usar las mismas variables para no cambiarlas.
+Definimos calificaciones como real, lo dimensionamos y también aquí tenemos un
+icomo entero que lo voy a pasar abajo para que se vea más ordenado. Ahí está.
+Okay, dimensionamos calificaciones en un cinco con con perdón que le caben cinco
+valores y tenemos el i que vamos a estar usando como contador, digamos. Entonces,
+para los for en este en PCIN, la indicación que perdón, el comando que
+indica que vas a iniciar un ciclo for es literalmente for es para entonces con la
+palabra para y que es la variable
+y este puede ser flechita o puede ser igual para i = a 1. Por ejemplo,
+empezamos en uno hasta este cinco, que es el valor total.
+Y ya empezamos el ciclo, ¿no? Y ahí de hecho nos agrega el fin para, dice, a
+ver, el ciclo va a ir de para a fin para. Ah, otra cosa, ya nos respondió
+este el código de que parece que en este caso sí empieza a contar en uno, eh,
+porque vimos que no se salió del índice. Lo que preguntaba Alejandros, parece que
+para esta cosa sí cuenta desde uno, no desde cero. Okay, entonces ya declarando
+así el ciclo for, ya podemos pedirle cada cosas, ¿no? A ver, para igual a 1
+hasta 5, ¿qué queremos hacer? No sé, vamos a decir que para cada una le pida
+al usuario ingresa la calificación. la calificación
+y que nos diga ay que nos diga con la variable en cuál
+cuál estamos ingresando, ¿no? Con i que va a empezar en uno, luego va a pasar a
+luego va a pasar a a dos, luego tres, cuatro y así viceversa, porque este for
+va contando de uno a cco. Okay, aquí lo que hice fue agregar la variable i otro
+coma porque quise imprimir otro pedacito de texto, ¿no? Que nos aparezca un dos
+puntos después de la variable. y vamos a ir leyendo
+y asignando a calificaciones en la posición I en la que estamos, ¿no? Okay.
+Y de una vez, ¿no? De una vez nos aventamos. Aparte del llenado, vamos a
+aventarnos la impresión, ¿no? Si quieres ver todo lo que hay dentro de un arreglo
+o parte del arreglo, por ejemplo, en este caso queremos ver todo, vamos a
+irnos de i igual a 1 otra vez hasta cco que es el tamaño completo del
+arreglo. Lu si lo hago hasta tres, pues me me va a imprimir nada más parte del
+arreglo. Hacer, nos abre de una vez, nos abre de
+una vez ahí el ciclo y nos mete con la recuerden identar. Si no entan les va a
+dar error. Este, escribimos para cada para cada paso del de este for la
+calificación de esa posición, ¿no? Calificación.
+En este caso, damos un espacio, agregamos calificación i, que va a ser
+la que vamos a imprimir ahora, y esta calificación va a tener un valor de pues
+calificación en esa posición, ¿no? Calificaciones
+en posición I. Sí. Y ahí se acaba el ciclo, ¿no? A ver, vamos a ver qué va a
+pasar. Vamos a guardarlo. Vamos a ejecutar
+y no sé. Calificación un nuete. Calificación dos, la calificación 3 8 la
+calificación 10. Ay, ejemplo, me iba a equivocar. 10. Y la
+calificación última, a las 5 10 y después nos las imprime de regreso, ¿no?
+98 10. Aquí pues nos faltó un poquito más de estética, ¿no? Ponerle unos
+espacios y algo que ejemplo aquí podría poner un espacio acá y imagino que ya se
+vería mejor. Y por ejemplo podemos reiniciarlo,
+darle otra vez 9 10 8 9 10. Okay. Y si se fijan, este, ya nos
+imprime un poquito más bonito. Este, otra cosa, ponle, ahorita se fijaron que
+me estaba equivocando al escribir eh las calificaciones cuando se las estaba
+dando para llenarlo. Aquí podríamos poner, por ejemplo, una condicional que
+esté revisando mientras que esté revisando, por ejemplo, que estos
+valores sean válidos. Ejemplo, mientras el valor que le dimos, o sea, I,
+este, esté dentro del rango. Por ejemplo, imagínate que las
+calificaciones solo pueden ir de cero a 10. es el rango que manejas. Este,
+mientras estemos de este de este rango, eh, perdón, mientras nos salgamos de ese
+rango, repetimos la operación, ¿no? Decimos, "A ver, te saliste el rango, te
+ponemos este, dame una calificación de cero a 10 y ejecutamos otra vez estas
+dos líneas, ¿no? Y le estamos diciendo al usuario, a ver, vuélvelo a escribir,
+vuélvelo a escribir, vuélvelo a escribir hasta que nos escriba una calificación
+dentro del rango válido, ¿no? Entonces, este, otra cosa, si tú escribes, por
+ejemplo, escribes una calificación para la posición dos y después vuelves a
+escribir una calificación diferente en la posición dos, la nueva va a
+reemplazar a la anterior. Aquí sí se reemplazan los valores, ¿no? Este,
+entonces recuerda que si escribes otra vez en la misma variable, en la misma
+posición de este arreglo, se va a reemplazar el valor nuevo.
+Mm. Este, entonces aquí, ¿qué puedes hacer? Por ejemplo, hay cosas más
+interesantes. Yo diría, por ejemplo, puedes hacer un un script, un perdón, un
+pseudocódigo que se llenen las calificaciones. Ponle que tú le pasas
+una lista de calificaciones de unas 20 calificaciones y después ejecutas una
+operación de promedio, ¿no? El promedio estará chido, ¿no? Lo que puedes hacer
+es que hagas un ciclo que recorra todo el array y en cada posición te esté
+sumando esas esas calificaciones y que al final te haga una división entre el
+número de las calificaciones, ¿no? te diga, "A ver, este son 20, entonces voy
+a sumar las 20 y después los voy a dividir entre las 20, ¿no? Y eso te va a
+dar un promedio." Entonces, lo recorres, pero lo vas sumando mientras se recorre.
+Podrías hacer algo por el estilo. Entonces, este, este caso quería que
+vieran eso, querían ver que quería que vieran que existe otro tipo de datos que
+son estos los arreglos que se pueden utilizar. Esto les va a servir porque la
+evaluación necesitan estar almacenando. Entonces, los arreglos se me hacen la
+mejor opción para almacenamiento. En este tipo de pseudocódigo creo que no
+hay otra manera de almacenar. Hay que estar como almacenando variables
+para que se estén guardando, perdón, valores que se estén guardando para
+después consultar, borrar y editar. Okay, entonces este
+no sé si tengan duda de algo de esto. Todo bien, todo flama.
+Ah, gracias, gracias. Va que va. Entonces,
+ahora sí les voy a dejar una tarea. Estaba pensando en algo del promedio,
+algo así. Ahorita que se me ocurre ya utilizando lo que vimos ayer de los
+ciclos de de los ciclos de mientras de las de la de los menús que vimos ayer y
+ahora combinarlos con esto que son los los arrays, ¿no? Por ejemplo, podrías
+dejarles algún menú que les dé las opciones, ¿no? Les diga, "A
+ver, este menú te dice, puedes agregar valores a tu a tu base de datos, ¿no?
+Que va a ser un array, por ejemplo, varios arrays. El menú te dice, a ver,
+¿qué quieres hacer? quieres agregar nuevos datos, borrar datos, editar
+datos, ¿no? Y que encuentren ustedes la manera de hacer algo parecido, algo que
+funcione, ¿no? Entonces, voy a voy a dejarles algo por el estilo.
+Va, que va. Entonces, déjenme ver si no me faltó nadie de de pasar lista
+para agregarlos y para no confundirlos. Eh, el lunes empezamos con más cosas,
+¿no? Ahorita quería terminar con esto porque lo que sigue ya es un poquito más
+denso, entonces quiero terminar este tema ahorita. Déjenme fijarme nada más
+cuánta gente hay. Entonces, aquí debe de salir.
+¿Dónde está la lista de personas? Acá está.
+A ver si no me falta nadie. ¿Cuántas personas tengo ahorita?
+Tengo 1 2 3 4 5 6 7 8 9
+3 4 5 6 7 8 9 10 11 y en la lista tengo ahorita 1 2 3 4 5 6 7 8 9 10. Me falta
+uno. Déjenme ver quién es el que no le saqué. Ah, Héctor.
+Listo, ahí está. Okay. Terminé la grabación.

@@ -1,0 +1,678 @@
+subir ahí a a las estas. Okay. Sí, es que estaba viendo otros grupos hoy que
+eran ya llevaban un poco más de tiempo. ¿Sabes si esa semana pasada fue la
+primera de clases o hubo más antes? Disculpa tantas preguntas. Ese quiero
+tener su para avanzar bien con ustedes. Para para mí fue la primera semana. Este
+yo me inscribí literalmente me escribí un domingo que
+fue el el pues como el el
+ah se me fue la palabra. la exposición esta que te dan y te explican de qué va
+el curso y el lunes Ajá, el webinar, muchas
+gracias. El webinar y el lunes empezamos, o sea,
+el lunes de la semana pasada y pues estuvimos fue la primera semana
+básicamente. Okay. Domingos el webinar es como de el
+día que les dan como información. Okay. Okay.
+Para que va. No, no te preocupes. Este, gracias. Tamb que pone Carlos que es la
+primera que se primera clase. Okay.
+La mayoría va va empezando. Se ha visto poco. No pasa nada. Eh, también por un
+lado me gusta porque puedo yo darle ya el el camino pues que más o menos
+considero que sea un poquito más didáctico para ustedes, no se preocupen.
+Entonces, a partir de hoy con lo que lo que voy a hacer hoy es que les voy a
+hacer una pequeña evaluación que no cuenta, no se preocupen, no va a afectar
+su avance ni ni su calificación aquí ni nada, solo es esas evaluaciones
+diagnósticas. Si alguno ha ido, ha tomado alguna clase universitaria o
+preparatoria, van a recordar que les dan tipo de evaluaciones solo para más o
+menos entender cómo cómo están y yo también poder dirigirlo así ya para
+también no regres tratar de no regresarme todo, sino tal vez compatar
+algunos temas para los que son todavía más nuevos y ir avanzando, ¿no? De todos
+modos está bien que se vea desde cero porque este este curso está hecho así,
+¿no? Si ven el temario, el bloque cero es nada de código, casi casi lo mucho
+pseudocódigo. Seteamos Linux y después se tiamos BS Code y empezamos a
+trabajar. La idea del curso es que empiecen a trabajar desde desde cero, o
+sea, como si fueran como si estuvieran viendo una un curso de programación para
+personas que no programaban nada, ¿no? Que es el enfoque de esto y está bien. O
+sea, lo que eso les ayuda a desarrollar algo que se llama el pensamiento, el
+pensamiento de del arquitecto. Sí. En cuando ustedes vayan a trabajar después
+de este curso y que empiecen a trabajar o conseguir trabajos de este estilo, se
+van a dar cuenta que hay otras áreas en la programación que son más de diseño o
+de diseñar arquitecturas, por ejemplo, y ese es el pensamiento del arquitecto,
+¿no?, que es bastante difícil de desarrollar. El arquitecto a veces ya ni
+programa, sino que simplemente propone propone estructuras
+y normalmente los puestos de arquitecto están muy bien pagados, al igual que los
+desarrolladores senior. Entonces también es un camino que pueden tomar. Entonces
+es bueno que veamos también esa parte. Entonces, más adelante vamos a ver temas
+de arquitectura más avanzada, como cómo proponer una arquitectura de verdad,
+esas que ya están bien pesadas, esto lo que está viendo en el temario, pero pues
+va a ser poco a poco, ¿no? curso es un poco largo, eh, pero es complejo. La
+complejidad aumenta bastante a partir del módulo 3 cu estaba viendo y la
+complejidad ya se vuelve bastante elevada, pero se espera que para ese
+momento con lo que les vaya enseñando ya estén a un a un nivel este acorde a si
+no nos vamos a ir tan rápido, pues es mejor irnos poco a poco gateando, luego
+caminando y luego corriendo. Okay. Entonces, dicho eso, voy a presentarme
+así para para que me conozcan. Tengo entendido que han tenido como
+varios profes, no sé si son ustedes o los de las 9, porque tengo otro las 9.
+Este, yo soy Óscar Godí, soy ingeniero en
+mecatrónica. Bueno, eso fue lo que estudié hace unos años, ingeniero en
+mecatrónica, este tengo una maestría en ciencias en sistemas computacionales y
+tengo y estoy y estoy estudiando un doctorado en ciencias de la ingeniería.
+Actualmente, mi enfoque actual en el doctorado es más del lado de de
+modelación matemática y un poco de IA, ¿no? Estamos haciendo ahí unas redes
+neuronales, pero más del lado de optimización, no tanto, perdóneme, no
+tanto del estilo Python, sino más el lado buscando optimizar, ¿no? Más algo
+llamado control, si lo han escuchado. Si alguno por aquí es mecatrónico, debe
+haber llevado ese tipo de materias. Este, entonces, bueno, mi experiencia
+está combinada, no solo soy de no solo soy parte académica así tipo e o de
+universidad universitario. La de esa, no es no es mi Ay, perdón, es que me llegó
+un mensaje y me distraje. No, ahora sí voy a empezar. Ah, este,
+Carlos en el Teque Morelia, eh, es mi alma mat y hace poco regresé, ¿no?, al
+Teque Morelia a seguir a volver a estudiar. Pero les cuento un poquito, mi
+experiencia no es solo académica de la parte académica, eh, apenas es algo que
+estoy retomando. Eh, yo al terminar la carrera trabajé cerca de 4 años en una
+empresa que se llama Continental. Eh, algunos de ustedes las deben de ubicar
+como la las que hacen las llantas. Continental Automotive. Bueno,
+Continental Tyres. Yo estaba en un área de Continental que se llama Automotive.
+El Continental Automotive es la otra gran sección de Continental. Era pues ya
+no existe este esa área de Continental es la que se dedica al sector
+automotriz, pero más del lado de la movilidad autónoma, más del lado de
+desarrollo de radar, desarrollo del Idar, este flasheo de radar, desarrollo
+de los algoritmos de conducción. De hecho, mi área específica o mi puesto
+específico era ingeniero de algoritmos de de de asistencia al conductor y de
+conducción autónoma. Este Continental
+eh fungía como una especie de proveedor para varias marcas de carros de ese
+estilo. Ahí no era venta directa, sino que las marcas de carros iban, oye,
+quiero sacar este nuevo modelo, pero quiero que tenga estas features de de
+conducción autónoma, ¿no? Una las features de ADAS, quiero que tenga, no
+sé, este, el blind spot detection, detector de de punto ciego, quiero que
+tenga el RBVB, el Rear Virtual Bumper, que es para las reversas, entonces
+quiero este tipo de features. Entonces Continental se encargaba de que las
+desarrolláramos y pues que se fuera como código embebido en un radar que ellos le
+vendían a esa empresa. Entonces la empresa sacaba su carro y ya traía toda
+la tecnología, ¿no? De Continental. Una marca que nos compraba mucho era
+Volkswagen porque casi casi eran socios de negocios. Los dos son alemanes.
+Entonces este era la marca que más nos compraba. Pero fuera de Volkswagen, yo
+trabajé muchísimas marcas porque me movían de proyecto en proyecto. Estuve
+trabajando para General Motors, Ford, Honda, Toyota, este BMW, Mercedes,
+Mitsubishi, entre otras, ¿no? Casi todas las marcas, menos las chinas, pero sí me
+tocaron casi todas, japonesas, alemanas, estadounidenses,
+este, estuve en varias italianas, incluso con Fiat.
+Este, yo brincaba de proyecto en proyecto porque mi área era más que nada
+la parte algorítmica. Después cuando me volví arquitecto todavía brincaba más de
+proyecto en proyecto porque en ese momento yo ya entraba casi casi en a los
+inicios del proyecto para proponer una arquitectura y me movían a otro, ¿no?
+Entonces tengo los dos perfiles, fui ingeniero y desarrollador y también fui
+fui arquitecto y fue en esa área donde estuve trabajando bastante tiempo.
+Después viene el tema de los chinos con el mercado automotriz y hay un montón de
+cambios este eh así demasiados demasiados cambios.
+Y yo decido mudarme a otra área, me llamó la atención otra área que es el
+área aeroespacial. Y ya trabajé con una empresa, no mucho, una empresa
+canadiense, se llama Airbus, no es francesa, pero tiene casi todo en
+Canadá, Airbus. Y en Airbus lo que yo hacía era trabajar con la parte de la
+asistencia de vuelo, este, vectores de aproximación, ese tipo de cosas y
+también algo de análisis de datos que ellos usaban para tomar decisiones,
+¿no?, dentro de su empresa, como es una una superproductora de de aeronaves, da
+mantenimiento y todo el show. Entonces, este, me encargaba de un poco de de
+análisis de de grandes volúmenes de datos con ellos. Ese proyecto fue corto,
+eh, duré eh 8 meses, era un contrato temporal, obviamente, normalmente cuando
+trabajan con empresas extranjeras así va a ser. Este, se los digo ahorita, eh, lo
+van a vivir así, no pasa nada. Es bastante detenido trabajar así de
+temporal, de hecho, te da mucha libertad.
+Este, pero generalmente con empresas extranjeras, no todas, la mayoría te dan
+contratos temporales, más porque no eres no eres ciudadano, ¿no? Y como que no
+quieren como que gente se vaya a vivir para allá, no sé, hay son temas más
+políticos, ¿no? De ellos, pero cuando trabajas para otros lados es así. Y
+mercado para mexicano hay mucho, eso sí como que gusta mucho de contratar
+mexicanos más que nada en Canadá, en Alemania también. Entonces, hay buen
+mercado para todos nosotros que estamos trabajando en esto o que queremos
+incursionar en este tema. Eh, después de eso regresé al postgrado,
+me tomé un descanso, se terminó y ya tenía ya más de 4 años en industria y
+dije, "Bueno, vamos a tomarnos un descanso entre comillas porque dije,
+vamos a meternos un posgrado, ¿no? Me meto a la maestría, la termino, me
+empieza a gustar también la investigación, la verdad me está
+gustando bastante y termino de una vez, como tramé la maestría en el mismo Tec,
+me dicen, "No, pues de una vez quédate el doctorado, ¿no? Aunque esté en el Tec
+Morelia, pues colaboro con muchas escuelas, ¿no? con la UNAM, como el IPN,
+ya que el área en la que trabajo actualmente es aplicada también en
+vehículos, pero también estoy en el área de percepción, que es para las cuando
+les hablaba de la parte de IA más que nada. Entonces, eh tengo mucha
+experiencia con la parte de desarrollo de redes neuronales, pero más pensadas
+en el área de control, ¿no? Porque las redes neuronales más famosas normalmente
+son los Transformers, que son las redes neurales estilo GPT, que es un
+transformer, un un modelo de lenguaje enorme. Este son las más populares ese
+tipo de redes neuronales, también las de clasificación por de visión artificial,
+las que son este convolucionales también son muy populares, pero este yo estoy en
+un área más a la parte de redes neuronales para control, ¿no? que es
+para sistemas embebidos también, o sea, una red neuronal que que no va a
+clasificar imágenes o va a ser un un generador de texto, por ejemplo, pero sí
+está trabajando a la par con un brazo robótico, ¿no? Para la parte de cómo se
+mueve o o un vehículo como en el pasado, lo que trabajaba antes. Entonces, mis
+temas de investigación ahorita son esos. es lo que estoy haciendo actualmente.
+Ahorita este es es verano, pero en el doctorado pues ya no tienes verano, o
+sea, ya es este como avanzas una tesis, pues estás todo el tiempo ahí
+trabajando. Eh, tengo 26 años, van a decir, "Ah, caray, está muy joven para
+estar el doctorado." Pero es que la maestría la empecé casi casi antes de
+salirme de trabajar, ¿no? O sea, ya la había empezado, pero ya cuando decido,
+cuando me termina ese trabajo es cuando decido ya nada más quedarme la maestría,
+¿no? No buscar otro trabajo. Sí, ya llevaba un semestre o dos, no tantos y
+ya ahí me quedé. Eso ayudó pues a que terminara un poco más más joven ese ese
+etapa. Eh, ¿qué más? ¿Qué más? Me gustan las matemáticas, me encantan. Es como mi
+área mi área favorita. Mi mi formación es ingenieril. Si por aquí hay
+matemáticos, formación es muy ingenieril, pero fuera de eso eh me metí
+mucho en la parte teórica, en varias ramas. Eh, durante la escuela concursaba
+bastante en varios tipos de concursos. Eh, por ejemplo, en los nacionales de
+cinchas básicas que eran de matemáticas y física y varias veces pues llegamos a
+ganar ahí a nivel nacional nos fue bastante bien, pero eso es más logros
+tipo académico, no no son tan enfocados a lo industrial, pero sí ayuda un poco,
+¿no? A la parte en la parte del trabajo porque genera eso que llamamos como ese
+tipo de de trabajo que te perdón, que vean que trabajas, sabes trabajar en
+equipo, ese tipo de cosas. Se los digo porque hace rato en otra clase un chavo
+me comentaba eso, ¿no? Pues yo empecé con esto porque la verdad no he
+encontrado trabajo de mi área, he tenido que hacer trabajos así un poco separados
+o o estar en cosas diferentes. Y yo le decía que pues eso no importa, la verdad
+este lo que trabaje siempre va a aportar. O sea, puede que no sea tu área
+o exactamente tu área, pero todo lo que hagas se los aseguro, que siempre
+aporta, sea poco, sea mucho, siempre va a aportar, siempre va a hacer la
+diferencia en una entrevista que digas que tienes experiencia también en esto,
+o sea, también en esto he trabajado, ¿no? Y lo puedo comprobar este porque
+cualquier trabajo, ¿qué te da? aprender a trabajar en equipo, que normalmente
+ahorita las empresas buscan eso, cómo trabajar en equipo y también buscan
+mucho como tú la capacidad que tú tengas, no tanto para programar, sino
+cómo puedes plantear la resolución de un problema en sí y ya después ya se
+avienta la programada. Eh, yo se los digo y ya se los puedo aseverar por la
+experiencia que tengo. Bueno, en mi ramo así era. Este, como desarrollador, mi
+chamba era 90% análisis de un book o de algún problema con los radares, eh, o
+cualquier cosita o algún requerimiento. 90% de análisis por días y 10% de
+código. Casi casi analizaba 3 días el problema y lo resolvía en uno, ¿no? O en
+o en menos de uno o en horas, o sea, era era muy poco lo que se programa. Creo
+que en promedio, cuando resolvías un book, hacías de promedio 10 líneas de
+código, ¿no? Entonces, la idea de que vean desde cero este tipo de cosas y que
+aprendan pseudocódigos o algo de este tipo de pensamiento es que se lleven esa
+enseñanza, que empiecen a trabajar así en vez de escribir mucho, que resulta
+ser menos óptimo, escribir menos, pero solucionar más.
+Entonces, este es la idea de eso. Por eso empezamos desde cero y les decía,
+pues por si ahorita volvemos, me regreso un poquito algo, no se me vayan agüitar.
+Este va a ir subiendo de complejidad, eso se los prometo. Va a ir subiendo de
+complejidad. De todos modos, si tienen dudas, revisamos aquí el temario, ya les
+voy diciendo, ¿saben qué? Esto es para esto y esto es para esto. Tengo
+entendido que ustedes empiezan con un tronco común ahorita y después se separa
+en dos vertientes. No sé si me equivoco o ya ustedes eligen desde el inicio su
+vertiente porque hay dos, ¿no? Hay un camino de para vehículos y un camino
+para IA. por ahí me pueda aclarar cómo se cómo lo
+cómo lo está cómo se lo ofrecieron o cómo lo lo contrató él este curso.
+Este, bueno, a lo que yo había entendido, no sé cuando estuvieron los
+demás chicos en en el webinar, eh si era un tronco base y ya acabando estos el
+tronco base que sí está largo, este al final había como hay una serie de
+especializaciones que podemos escoger. Perfecto. Sí, sí. No, y las
+especializaciones también están largas, o sea, por lo que estuve viendo,
+temarios de cada una, este, y ahorita que yo entré ahorita a preparar más
+cosas para la parte automotriz del lado de la automotriz voy a estar en ambas.
+Solo que en la automotriz es la que ahorita como que estoy aportando como
+más temas para que se puedan agregar. Este es está largo también esas
+especializaciones y son bastante complejas, o sea, el nivel es complejo y
+eso es bueno porque allí afuera eso a eso te enfrentas normalmente a cosas un
+poco más complejas o a veces no tan complejas pero un poco tediosas de
+analizar. Entonces, les juro que el nivel va va a aumentar para que no se
+vayan a a desesperar. Así vamos a empezar desde muy bajo y es bueno porque
+C+ más no es un lenguaje sencillo, es un lenguaje de bueno, lo consideran bajo
+nivel, yo diría que es medio nivel porque creo que C solito sí es bajo
+nivel, pero eso ya está muy pasada. Eso es eso es querer sufrir, aprender C y
+C#ARP. Este C+ más es suficiente. Es el que se usa normalmente en el tipo de
+empresas que trabajan con con sistemas embebidos, que son radares y todo lo que
+tengan que ver con sistemas viviendo en en dispositivos electrónicos, más que
+nada dispositivos que no tienen tanta memoria y que están hechos para ese tipo
+de aplicaciones. Entonces, este, vamos a empezar así. C
+es la mejor herramienta que puedes usar hablando de ese estilo. C+ más, perdón,
+porque C++ te ofrece que que puedes hacer matemáticas muy bien y no necesita
+tantos recursos porque es de diríamos pues de bajo nivel, como dicen dice dice
+la la clasificación oficial, ¿no? Eh, y un lenguaje de bajo nivel es más
+difícil, pero es más óptimo, ¿no? A diferencia de Python, que también me
+gusta, también he trabajado con Python mucho tiempo, este es de más alto nivel,
+es más fácil de utilizar, es, por ejemplo, para data análisis y para y
+para entrenamiento de de modelos de redes
+neuronales, es un monstruo Python, pero cuando queremos hacer matemáticas o
+sistemas de control, pues ya no da porque necesita muchos recursos para
+funcionar. Este, entonces temas más es una muy
+buena opción y verlo así desde abajo a una una complejidad a la que vamos a
+llegar, este es bastante bueno y van a ver que les va a servir bastante. De
+todos modos, yo me voy a esforzar y casi casi me voy a asegurar de que el curso
+se enfoque a algo que ustedes les sirva de verdad, ya sea en automotriz o a el
+que ustedes elijan de los dos, ya que tengo experiencia en ambos, ¿no? En
+automatriz también usábamos IA y del lado académico también he aprendido y
+colaborado con algunas empresas que luego luego se acercan a las empresas
+porque quieren ahorrar, se acercan a las universidades y hacen que chambemos,
+¿no? Y a nosotros nos pagan con con transferencia académic transferencia
+tecnológica, le dicen que a mí me da puntos ante el CONASIT, este como
+investigador. Entonces he colaborado con algunas también del área biomédica y así
+y he estado también en esas áreas bastante bastante actualizado. Yo quiero
+hacer eso, quiero que se enfoque el curso de ese lado. La verdad, dar clases
+a mí me gusta mucho. Es algo que que descubrí en la durante la investigación,
+ya que nos pidían dar clases. Me apasionan los cuando me gusta un tema me
+gusta enseñarlo y yo quiero enfocarlo a la parte a la parte más aplicada que es
+un problema ahorita actualmente en México, que la mayoría de las
+universidades, no todas, pero y no es culpa de la universidad, más que nada
+del tipo de docentes que tenemos que están un poquito chapeados a la antigua,
+que no han visto que ahorita actualmente lo que más sirve para los alumnos que
+que en el área de tecnología es enfocar casi todo a que a que vaya dirigido a a
+que van a trabajar saliendo de de estudio. estudiar, ¿no? O si van a
+estudiar un posgrado, saliendo del posgrado también van a trabajar.
+Entonces casi no se enfoca en eso. Pero yo, por
+ejemplo, la universidad trato de hacer eso con mis alumnos en la universidad de
+de maestría y de literatura, trato de enfocarlo todo a industria sin, obvio,
+sin dejarlo teórico de lado porque también es necesario, pero trato de
+darles ese enfoque y voy a tratar que aquí también sea igual. Me gusta darles
+ese enfoque para que ustedes de verdad les sirva, ¿no? Que lo que estén
+aprendiendo sí lo vayan a utilizar. Sí. Entonces creo que voy a hacerle, o sea,
+perdón, a partir de la evaluación de hoy voy a definir más o menos dónde están
+para no regresar tanto, pero también no quiero dejar los que acaban de llegar
+sin conocer algunas cosas. Obviamente al terminar este módulo ya completamente,
+lo que voy a tratar de que tengan ya es que tengan su Linux completo listo para
+utilizar. Ya vamos a decidir si quieren tener un boot o tenerlo en una máquina
+virtual o hay otras opciones. Y pues también ya todo el el el ID listo para
+empezar a a que trabajemos. Pues obviamente vamos a vamos a empezar con
+hola hola mundo y de ahí vamos a empezar a brincar a cosas cada vez más avanzadas
+como a Rise que no son tan difíciles, pero después vamos a brincar a cosas
+estilo punteros que ya empiezan a ser un poco más complicados y hasta que
+lleguemos a casi casi si toman el vehicular llegar a la comunicación CAN,
+que es la comunicación que existe en el dentro del vehículo eh de los sistemas y
+del lado de IA llegar a llegar a la parte casi casi de cómo de cómo poder
+crear una capa neuronal del OC que es mucho más complejo que hacerlo con
+Python. Entonces, ya después de toda esa explicación larguísima, me gustaría que
+que ustedes este también me hablaran de ustedes un poquito. No sé quién quiere
+empezar, me cuenten un poquito de ustedes más
+para conocerlos algo y poder, no sé, darles un pequeño también de la de lo
+que ustedes quieran hacer. Adelante, Víctor.
+Hola, ¿qué tal? Buenas noches, un gusto y vaya que si tienes un currículo muy
+amplio, digo, a pesar de de tu corta edad, sí
+sí tienes mucha experiencia y eso, la verdad es que también es algo que yo
+esperaba también de este curso. Entonces, eh bueno, mi nombre es Víctor
+Cortés, yo actualmente soy ingeniero mecatrónico, pero realmente nunca no me
+dediqué mucho, digamos, de lleno a la mecatrónica, pero sí tengo un poco de
+noción más o menos de lo que mencionabas. Actualmente trabajo yo como
+desarrollador backend. Eh, me más que nada el lado de
+de JavaSpray, Python, lengas de alto nivel. Realmente digo, sí he utilizado
+Python para cuestiones de análisis de datos, incluso R, pero siempre me quedé
+con esa espinita de aprender un poquito más de bajo nivel. Sí, en su momento en
+la universidad llevé C+ más y creo que C también, pero nunca como de manera
+profesional. Entonces, me llama la atención la parte ya de de desarrollar
+mi habilidad como valga la redundancia desarrollador de C+ más, pero
+profesionalmente, sobre todo en el ambiente automotriz y la verdad es que
+estoy con muy buenas expectativas de este curso y con mejor actitud para
+aprender. Perfecto. Sí, no, no te preocupes. Este,
+no, pues de hecho JavaScript, tengo muchos amigos que se dedican a ese en
+ese mercado. Java, Java de JavaScript como Fronen y Python como Backen y es un
+mercado muy grande, entonces no es es bastante bueno lo que te dedicas. Todos
+los lenguajes tienen su su mercado, ¿no? Entonces ahorita al tener Cas más lo que
+van a hacer ustedes es que van a ampliar a otro mercado también que van a tener
+ahí a la mano. Va, que va. Muchas, muchas gracias, Víctor. Qué bueno que
+también eres mecatrónico. Este, ¿quién quiere seguir?
+quiera quien quiera ya. As qui nada más activen su micrófono y denle, no pasa
+nada. Bueno, yo soy Ismael, gusto. Soy de
+Sonora. Aquí son las
+son las 7 apenas. Ah, sí, una hora antes.
+Sí, estamos en las 7. Eh, y pues yo la verdad eh llevo, ¿qué serán?
+como 5 años trabajando en la industria. Este,
+de soy ahorita estoy trabajando como
+ingeniero en integraciones. Eh, conecto servicios de terceros a una
+solución de chatbot en mi trabajo está bien, pero no es lo que no es lo que
+soñé cuando estudié esto. Entonces, últimamente dije, "Bueno, tal vez es
+momento de irme a otra empresa hacer otra cosa." Y entonces me puse a hacer
+le lit coats y me di cuenta de que estaba así super oxidado,
+eh, culpo a Claude por esto y dije, "Bueno, quizás es momento de volver a
+las bases, ¿no? Y volver a tomar así la educación seriamente, ¿no? Y bueno, por
+eso vine a tomar el curso, porque quiero volver a
+a ganar soltura en la resolución de de algoritmos y poder llevar una una
+entrevista formalmente, ¿no? correctamente como debe ser.
+Perfecto. En mi trabajo uso JavaScript. Genalmente
+todo lo que es desarrollo es JavaScript y en el backend también usamos Note, así
+que también es JavaScript y ya no más pienso en Jason para siempre. Ya me echa
+perder con el Java, pero bueno. Ah, no, no pasa nada. Les digo,
+JavaScript tiene un mercado muy muy grande.
+Eh, igual aparte de C, les recomiendo se pueden meter a la parte de desarrollo
+desarrollo nativo con con Reat, que no es JavaScript exactamente, pero si ya
+conocen JavaScript, ya no es tan difícil cambiarse también esa área, verla poco a
+poco. Hay mucho, mucho mercado de ese lado, más que nada con las aplicaciones
+bancarias que están apareciendo. Entonces, este,
+bueno, tengo amigos que se dedican a ese mercado, ¿no? y y pues la verdad ganan
+muy bien, entonces este no es no es mala idea, ¿no? Aparte de sé que también
+entren al otro. Eh, en este caso no es malo cambiarse empresa, como tú
+dices, claro que no. De hecho, nuestras generaciones van a son tienden más a
+eso, te lo digo. Este, a estar cambiando de empresa es un poco difícil encontrar
+qué es lo que quieres hacer, ¿no? Yo también digo cambié de empresa varias
+veces y de trabajo, bueno, dos, tres veces nada más y ahorita estoy en la
+investigación, que era algo que no pensé que terminaría haciendo, ¿no? Pero me
+terminó gustando y puede que a futuro otra vez me guste regresar a industria,
+quién sabe, ¿no? Entonces, no pasa nada. Nuestras generaciones ya están hechas
+para estar de un lado para otro, ¿no? O sea, ya no es como antes que te casabas
+con una chamba. Eh, y eso es bueno porque la diversidad. Muchas gracias,
+Ismael. No sé quién más quiere seguir. No sé. Arturo,
+hola. Hola. Buenas noches. Buenas noches.
+Este, yo soy de Guanajuato. Este, ya tengo rato trabajando en la tecnología,
+nada más que ya tengo buen rato como en posiciones como más eh de
+administrativas, ¿no? Y orquestando equipos. Ya tiene rato que no estoy como
+ah programando directamente. Este sé fue mi mi primer lenguaje.
+Bueno, ya tengo 40 años, ya estoy más más viejo
+de aquí. Este, entonces cuando cuando estuve en la prepa sí usaba C y sí
+llegué a hacer algo de bajo nivel en aquellas épocas, pero estamos hablando
+ya finales de los 90s. Eh, pero ya después nunca nunca en ningún trabajo eh
+trabajé casi a bajo nivel, pero siempre fue algo que que me gustó bastante eh
+cuando estuve en la escuela, en la universidad también, entonces siempre
+estuve como buscando eh esa oportunidad. Actualmente estoy en
+una empresa japonesa que también es Rambo Automotriz. Entonces, justo por
+ahí hay proyectos que vamos a empezar a hacer ya como a nivel de producción, ya
+con maquinaria, con PLCs y eso. Y justo estaba empezando a investigar un poco de
+de cómo hacer lo más eficiente sin lenguajes, bueno, porque los chavos que
+que están conmigo son de alto nivel o en Python,
+en en JavaScript. Entonces, ya como pensando en en sistemas como más eh
+embebidos y de recursos más en en en hardware más limitado, eh justo estuve
+indagando en C, fue como llegué a este curso y pues la verdad estoy como un
+poco otra vez como esa chispa de emoción de de retomar aquello que que nunca
+hice, ¿no? Que fue como trabajar con lenguajes de bajo nivel. Este, C+ más
+pues no me tocó realmente tampoco. Yo cuando cuando aprendí objetos fue con
+Java, pero no con no con S+ más, pero siempre tuve también como la espinita de
+de aprenderse más más. Entonces sí traigo mucha expectativa de de este
+curso. Ah, qué va, ¿no? Perfecto. ¿En qué
+empresa japonesa estás? Es una empresa que se llama TQ1. Es hac
+en bueno ya aquí aquí nada más hacen interiores de carros y y lo que es lo
+que son asientos, inyecciones, los cubretelas, pero ya en Japón sí son como
+unostro, tienen como son esas como empresas que le llaman Saibatsu, que
+tienen como que barcan de todo, que hacen muebles, madera, está en toda la
+industria, ya tiene es una empresa que tiene como más de 100 años allá en
+Japón, entonces allá sí tienen como como más variedad. Aquí se enfocan como nada
+más en la parte de de inyección de de lo que son los asientos y tableros y en los
+recubrimientos, ¿no? Pero tiene clientes grandes porque le maquilan eh bueno,
+aparte de las empresas japonesas como Toyota y Esodo, justo han estado
+agarrando proyectos aquí de de Tesla también.
+Órale. Órale. Está
+está bastante bien, ¿no? No sabía que existía esa empresa. Y
+qué padre trabajar. Sí, trabajar al extranjero. Bueno, tú ya tienes un
+trabajo que yo me imagino que era así fijo con ellos. con Japón nunca me ha
+tocado más que cuando trabajé con Honda y Toyota, pero éramos pues indirectos,
+¿no? Ajá. Si no, yo estoy directo aquí con
+ellos, entonces sí es sí está interesante trabajar con ellos.
+Pero estás en México, ¿no? No estás allá.
+Sí, sí, sí. No, sí. Dije, "Ahí sí, porque me tocó ir
+alguna vez y y no, yo no viviría en Japón. Me gustó mucho, me encantó.
+Eh, fui a cuando fue Toyota nos llevaron una semana para para empezar el
+proyecto. Le dicen el pack es una reunión al principio, ¿no?, que había
+que definir. Y en aquel tiempo yo estaba con algo nuevo que era casi casi el
+único que lo estaba trabajando. Entonces, me tocó de pura suerte y me
+mandaron y me encantó el país, solo que dije, "Ay, vivir aquí tocar ser un poco
+deprimente." Porque la gente se veía muy muy estresada.
+Sí, sí. No, no saben ser felices, pero bueno. Bueno,
+oh, pero fuera de eso me encantó. sea para turistear está chidísimo.
+Sí, yo no me he tocado ir todavía. Eh, a lo mejor el próximo año. El cuando me
+iba a tocar fue cuando estuvo toda la pandemia, entonces por ahí no no se
+complicó. Ya después agarré proyectos acá que me han retenido acá, pero pues
+no no pierdo la esperanza de que ya me toque pronto, que me manden para allá.
+Sí, no, no, esperemos que sí, no pasa nada.
+Esperemos el próximo año te toca. Va,
+va que va. Gracias, Arturo. Y veo que también tienes experiencia más de
+liderazgo, entonces también es muy bueno. Eh,
+a ver, Carlitos, hola, hola, ¿qué tal a todos? Muy
+buenas. Por te dije, Carlito, sí, te puedo
+decir, Carlos, mejor que no digas que no no no no. Está bien, está bien. Este,
+no, pues un gusto, un gusto. Mi nombre es Carlos Caravantes. Yo, este soy,
+fíjate, soy ingeniero en control automático, entonces estoy muy muy
+familiarizado con el área del control. De hecho, cuando estuve haciendo mi
+servicio social, trabajé con con un este, bueno, ayudé, no no es trabajo,
+pero ayudé a un estudiante de doctorado de la de control automático. Entonces,
+estoy muy familiarizado con con esa área que me gusta bastante. Este, me gustan
+mucho también las matemáticas y bueno, yo me decidí más por el área del eh data
+engineering y el cloud. Entonces, yo trabajo actualmente como ingeniero de
+datos y pues me desempeño más usando eh servicios en la nube de de Asure y AWS
+para manejar flujos de datos, ¿no? Bases de datos, big data,
+todo eso. Eh, el lenguaje que más uso es este Python con Apache Spark, pues para
+el procesamiento eh de terabytes de información, ¿no? O sea, ya nos vamos a
+lo que es realmente el big data, pero este yo en la en la prepa justamente
+estudié programación y bueno, pues es muy muy de academia, ¿no?, que te
+enseñan. Este, yo empecé con C+ justamente, después Java, después un
+poco de Android Studio y me gustó. Entonces, este, al igual que creo que
+era eh Arturo, este quise irme más para, o sea, me gusta el bajo nivel, pero no
+me fui más para arriba, ¿no? Entonces vi este curso como una oportunidad para
+retomarlo, para refrescar. este aprendizas más antiguo, ¿no? Creo que ya
+hay muchas cosas que han incorporado otros lenguajes. Este conozco también
+Java, escribe programado Frontic React. Eh, Java pues lo aprendí en la lo vi
+también en la universidad y este y pues es un mundo que me gusta mucho, ¿no?
+Entonces, más este creo que creo que te ayuda mucho a a desarrollar ese
+pensamiento y sobre todo la parte eh automovilística que también me interesa
+bastante. Entonces este pues espero espero
+aprender mucho de ustedes y poder aportarles lo poco que sé. Muchas
+gracias. Ah, gracias, Carlos. Sí, sí, aquí todos
+vamos a aprender de todos, no te preocupes. Sí, no es este es un mundo y
+digo, vamos a ir poco a poco, vamos a ir desde abajo hasta arriba. Incluso va a
+haber temas que porque vi el temario y pues sé es un mundo y hay temas que
+también yo no domino completamente ya más adelante de los que son más
+avanzados. Entonces les digo, les aseguro que aquí vamos a aprender
+también yo para poder enseñarles a ustedes. Este, pero no se preocupen, o
+sea, no como que va a llegar a inventármelo, ¿no? Sino que vamos a este
+me voy a tener que preparar. Entonces, aquí vamos a aprender todos. E incluso
+si yo me equivoco algo, ustedes díganme sin sin problema, eh, algo que digan,
+"Ah, este aquí se le fue algo." Porque en ser si se te va alguna alguna algún
+problema en durante la escritura es un problema encontrar dónde fue. Entonces,
+si ustedes me dicen, "Lo prefiero." ¿Ibas a decir otra cosa, Carlos? Perdón,
+creo que te te interrumpí. No, no, no, no. Ya era todo. Muchas
+gracias. Perfecto. Este, ya casi acabamos, ¿eh?
+Perdón, estamos hoy nada más que ya casi casi conocerlos.
+Este, Alejandro, por ahí.
+Hola, ¿qué tal? Buenas noches. Hola, Alejandro.
+Eh, pues bueno, yo soy Alejandro Coronado. Eh, soy de Saltillo, Saltillo,
+Coahuila. Eh, tengo 31 años y trabajo como
+ingeniero de controles. Eh, justamente ya en la industria
+automotriz, pero es más enfocado como a la parte de eh automatización
+industrial, ¿no? Lo que son las ensambladoras y toda esa parte.
+Eh, y pues del curso me llama mucho la atención, pues a todo lo que es la la
+parte de programación, solamente que ahora me gustaría más enfocarla ahí a la
+parte eh informática, ¿no? De un lenguaje informático.
+Entonces, vi y creo que es una buena oportunidad.
+Perfecto, Alejandro. Sí, sí, es buena, es buena oportunidad. Claro que sí. Es
+es más del lado de producción. Sí, sí. En Saltillo está todo eso en el norte,
+la parte de producción de todo ese tipo de cosas.
+Sí, correcto. Qué va. Muchas gracias, Alejandro.
+Este, Juan, hola, ¿qué tal? Buenas noches. ¿Sí me
+escucho? Sí, escucho.
+Ah, okay. Un saludo a todos. Este, yo me llamo Juan Anuel. Yo soy de la frontera
+de Tamaulpas, Matamoros. Aquí son las 9:40.
+Ah, su mecha. Sí, por eso escogiste horario.
+Bueno, yo yo tengo 24 años. El mes pasado lo cumplí. Soy recién egresado.
+Yo trabajo como eh técnico metrólogo. No tiene nada que ver con programación,
+pero pues es lo que me tocó. Este,
+yo soy ingeniero electrónico, me gusta más este la parte de programación. Yo he
+trabajado con para crear aplicaciones de producción, por ejemplo, integración de
+fuentes de voltaje, este, las DAX. Entonces, creamos programitas que son
+secuenciadores para los operadores. Entonces, ya van ya va recabando datos
+de la misma pieza del producto y se va se van guardando, ¿verdad?, bases de
+datos. Eh, pero es en eso lo trabajé nada más
+que nada con C#ARP en Visual Visual Studio y pues me gustó mucho eso. Eso lo
+vi en prácticas y también vi algo de bajo nivel con microcontroladores como
+STM32 y los y los ADM. Este, la por la parte automotriz y
+porque vi este curso pues me interesó mucho, ¿verdad? Porque integra lo que es
+la parte bueno, lo que yo visualicé primero, ¿verdad? eh la automotriz y la
+programación y me gusta mucho la pues la programación y pues los vehículos eh con
+Buscan estoy algo familiarizado porque pues también he realizado análisis más
+que nada físicos como soy electrónico por eso por ese ámbito y pues yo no
+tengo mucha experiencia pero pues es lo que lo que hay.
+No te preocupes, todo suma, toda la experiencia suma. Sí, tu experiencia con
+C este es muy muy de bajo nivel. Sí, no vamos a bajarnos tanto cuando es
+programar microcontroladores, por ejemplo. Es es padrísimo, pero sí es es
+muy de bajo nivel eso de ahí. Obviamente es muy buena área para también para
+trabajar. Va que va. Muchas gracias, Juan. Este, Fernando,
+buenas noches. Buenas noches.
+Bueno, me presento. Soy Fernando Gutiérrez. Eh, prácticamente soy recién
+egresado de la carrera de robótica de la UDG aquí en Guadalajara. Aquí es donde
+resido actualmente básicamente. Eh, tengo 22 años. Eh, actualmente
+trabajo como ingeniero de pruebas de servidores de IA tan más a nivel
+hardware. Este eh tengo algo de experiencia, pues por
+lo de la experiencia, digamos este académica con sí, con el trabajo de
+microcontroladores como SP32, Típico Arduino, algo de Raspberry Pie y pues sí
+me ha tocado trabajar algo con C y sensores y demás cosas y motores y
+pues todo lo que es algo una parte de lo que es de control, precisamente control
+clásico e básico, Este, y por eso precisamente me llamó la
+atención este curso, porque pues quería ver cuál era
+el contraste de la parte académica con con lo que se aplica en la en la
+industria, ¿no? Y en el temario por ahí vi ahí este temas como ROS, que yo Ross
+2, yo trabajé algo con Ross eh con ROS 1, el básico,
+y que quisiera actualizarme con con Ross 2. Por ahí vi algo de filtro de Calman,
+filtro extendido de Calman. También me interesa esa parte.
+E yo trabajé a nivel académico nuevamente con el filtro de Calman
+normalito. Quisiera ver cómo sería el filtro
+extendido de Calman y pues comprenderlo, ¿no? También a nivel como usted
+menciona, a nivel matemático. Sí, sí. No, está más más más sonón.
+Muy bien. Básicamente eso es lo que me llama la
+atención. No, no. Muy bien.
+No, no está gracias a ti. Está perfecta tu experiencia. O sea, este haya sido
+académico, tu experiencia es muy buena. Es muy raro que vean el espíritu de
+Calman en la escuela. De hecho, este es bueno que ya lo sepas. Eh, lo vamos a
+ver más como usuario. Pues lo sé más como
+usuario. No, no creas que investigue más cómo usarlo, pues, ¿cuál es su
+aplicación? No, pero pero está bien, o sea, hay hay bueno, se pelea que se
+enseñe, pero aquí sabe por qué no quieren, pero este hay muchos ingenieros
+que que no saben que existe y no pasa nada, no es culpa, pero es bueno saberlo
+de vez en cuando. Si no te sirve para tu área, pues también no pasa nada si no lo
+conoces, ¿no? Pero sí lo vamos a ver, ¿no? Lo tenemos que ver en algún
+momento. Ross también, sin duda, lo tenemos que ver en algún momento. Creo
+que en el tronco común no está Ross, pero creo que está en el de en el de
+vehículos y creo que es en el área de IA. De ahí
+hasta Ros. Órale. Tal vez en los dos. No, no,
+seguir ahí tendríamos que investigar. Sí, sí. Yo pensé que estaba en el de
+vehículos, ¿no? Entonces, no pasa nada. Eh, tenemos que ver Ross de todos modos
+y ya más adelante pues ya les explico que qué más que es que es Ross. Eh, ¿qué
+más? ¿Qué más? Muchas gracias, Fernando. Gracias.
+A ti y vamos con ¿Quién me falta? ¿Tú ya pasaste, Víctor.
+Ya, ya. Fui el primero. Ah, okay. Y creo que nada más me falta
+es Edweni se así está bien pronunciado. Hola, ¿qué tal? Se pronuncia Edpgeni.
+Edggenny, perdón. Edggenny. Perdón, perdón. Ya pasa a ver.
+Bueno, yo estudié este la carrera técnica en informática. Bueno, no es
+carrera, estudié en un CETIS. Salí con esa carrera técnica. De ahí empecé a
+estudiar ingeniería en ciencias de la computación en la bo
+trabajar, bueno, hacer una cómo una pasantía en una empresa de aquí de
+Puebla. En aquel entonces eh lo que hacía era la sanitización de datos para
+carga masiva base de datos y en una conversación así que empecé a escuchar
+que de tenían este que hacer un proyecto para el área de tránsito de del estado
+de Coahuila, creo. Y fue así de estaban ahí discutiendo de
+cómo le iban a hacer para mapear este el tema de de multas con los vehículos que
+estaban mapeando y yo así sin pensar ni nada más dije, "¿Y por qué no hacen unas
+listas este una cuál fue mi respuesta?" unas listas
+listas sincronizadas, algo así les dije. Y sí se rieron porque pues nada que ver
+con ahora sí que yo respondí desde lo poco o nada que sabía,
+pero lo que le llamó la atención a al líder de de ahí al jefe de sistemas como
+tal fue al no tanto el que mi respuesta estuviera bien o que estuviera mal, sino
+al hecho de dar una respuesta en base a lo que yo sabía, ¿no? Entonces, a partir
+de ahí pasé de ser el que limpiaba los datos de Excel en Excel.
+Ajá. Ah, me invitaron a colaborar, a
+colaborar ya en un proyecto como tal con ellos. Les gustó mucho cómo trabajé
+porque ahora sí que en una semana tuve que aprender PHP y tuve que aprender
+Typescrit para manejar Angular y de ahí me ofrecieron una base y ya me
+quedé como desarrollador web y en 6 meses ya pasé a hacer el este el backend
+le. Ah, su mecha. No, pues está re bien. Qué
+rápido. Sí, como digo, este, vivo en la ciudad
+de Pola, no sé si lo mencioné. Entonces, es como lo que me llamó la atención de
+esta área es justamente el área automotriz, más que nada por toda la
+industria automotriz que está aquí situada en Puebla.
+Entonces, es algo en lo que realmente quisiera incursionar, ya que eso de
+programación web, ahora sí que para yo siempre había dicho que nunca me iba a
+dedicar al desarrollo de sistemas web. Ahí aprendí a a nunca digas nunca porque
+pues a eso me dediqué los últimos 6 años, pero ya llega un punto en el que
+es todo repetitivo, salen nuevas herramientas, salen nuevas tecnologías,
+pero siempre es lo mismo, siempre es lo mismo. Y ya estar un poco frustrado de
+que el de eso de que el cliente no sabe lo que quiera hasta que ve el problema,
+ya empieza a ser un poco cansado para mí. Entonces, ya quisiera cambiar un
+poquito de área. Sí, sí. Y más que nada porque pues sí,
+también este aprendí a programar a bajo nivel allá por el 2010. Aprendí con el
+lenguaje C de Denis Richi. Entonces quisiera retomar esto y más que
+nada porque hace como tres cu meses me llevé una oferta laboral
+la cual tuve que rechazar. Era una muy buena oferta. Era en el extranjero, en
+el país de Chipre. Okay.
+Es una isla, es muy remota, pero pues por lo que ofrecían que eran $5,000
+dije, me voy a Rusia. Est re bien. Pero este el hecho de no tener este
+actualizado mis conocimientos de y menos aún de Cas más porque de brinqué a Java,
+entonces como que quisiera retomar o no perderme de esas oportunidades.
+Tal vez lo hubieras aceptado. Estado bien que la aceptaras. Eh, a veces
+recuerda que los trabajos eh normalmente uno entra a aprender también, o sea, no
+tienes que llegar siendo s super experto mientras tengas la un poquito base
+sólida nada más y ya estando ahí seguramente pules los conocimientos,
+pero también no sé, tal vez te exigían mucho y ahí sí mejor decidiste no no
+tomarlo también es válido. Más que nada te voy a hacer eso. Sí, me
+dio un poco de miedo porque el área era un área en la que nunca he este
+incursionado, que es el área fite. No tengo ni idea de esa área.
+Parece que como mis últimos 6 años han sido enfocados al
+desarrollo web, al desarrollo de sistemas tipos de sistemas CRM, CRPs.
+Entonces, del área fintage sí dije, "No, pues qué hago ahí, ¿no?
+Sí, sí, tienes razón. No, no te preocupes. Entiendo, entiendo,
+pero no pues este tienes buena buena experiencia. Qué bueno que ya eres un un
+líder, o sea, lit eh es difícil llegar a ese nivel. Entonces este muchas
+felicidades. Eh sí, Edg, ¿verdad? Me dijiste Edgen.
+Edggenny, sí, porque soy muy malo con los nombres y el tuyo es un poco
+complejo, entonces me va a costar un poco más. Perdón.
+No, no te preocupes. Me digo sus nombres porque literalmente
+me aparecen escritos aquí, ¿eh? Pero si si no los tuviera ya se me hubieran
+olvidado. Perdón. Soy soy muy muy malo con los nombres. Bueno, con las caras
+malo con los nombres. Va que va. Miren, pues con ustedes me demoré un poquito
+más en esta parte de las presentaciones. Es que este grupo lo vi pequeño, eh,
+imagino que porque es un poco ya tarde y dije, "Ah, pues estaría bien que
+seayaros un poquito con las presentaciones, pero creo que me cedí,
+no se preocupen." De todos modos tenía preparada ya una evaluación, eh, no pasa
+nada, la iba a subir de todos modos a a su Classroom. Eh, la voy a subir de una
+vez, no la quis subir antes para que no les apareciera. La iba a subir apenas.
+Esta es una es una, ¿cómo decirles? Es una evaluación muy muy sencilla.
+Eh, bueno, no sencilla entre comillas, ¿no? Porque me decían que algunos no han
+tomado nada todavía. Eh, lo que quería pedirles es que la resolvieran, ¿cómo se
+dice?, a conciencia, o sea, que la resolvieran sin revisar nada o
+así. Lo que quiero ver es exactamente saber en qué nivel más o menos estamos
+todos aquí, ¿no? Entonces, les pediría esa parte, ¿no?, que lo hiciéramos, lo
+hiciéramos a conciencia. O sea, lo que se acuerden, les decía, no vale para
+calificación, no les va a pasar nada si si se equivocan, o sea, no pasa nada.
+Quiero ver nada más más o menos que recuerdan. Em,
+tenía aquí había hecho uno más pequeño para ustedes, recordando que ustedes
+apenas han llevado, según yo, menos este clases que las otros grupos que tengo.
+Voy a dar una segunda repasada porque estoy pensando que tal vez el otro sí lo
+puedan resolver. Si no les voy a poner el que había hecho para ustedes, el que
+es un poco más más sencillo. Este, pero aquí varias personas ya veo
+que tienen bastante experiencia, entonces eh tal vez no no se les haga
+tan difícil. M.
+Sí, creo que no creo que el que les ha hecho está bien, no está no quedó tan
+sencillo. Está muy fácil, pero es muy parecido al otro. ¿Dónde está de este
+para adjuntar? Y ahorita lo subimos de una vez.
+Aquí está. Echame el diagnóstico y ahorita pues ya no alcanzamos a que lo
+hagan. Ahorita conmigo aquí no pasa nada. Eh, lo pueden adjuntar de aquí
+hasta las este 9:30 de nuestra zona horaria. Para los que están del otro
+lado va a ser una hora más adelante, o sea, sería 10:30. de los que están
+atrás, este, a las 8:30, ¿no? Este, pero los que están en zona horaria de CDMs,
+este, que es en Guanajuato, Michoacán, donde estoy yo, este, lo entregan
+ahorita desde las 9:30, nada más me lo entregan. Es un PDF el que van a
+encontrar, me pueden subir un TXT, me pueden subir lo que quieran de
+respuesta, o sea, nada más póngales número o algo para poder yo
+identificarlas y poder saber más o menos qué es lo que me entregaron. Ya lo estoy
+apuntando, se los voy a subir y ahorita me van a me dicen si les aparece.
+A ver, aquí está. Normalmente no vamos a trabajar así las
+tareas nada este caso porque como es el primer día con esto, no estoy seguro, no
+estaba seguro cómo hacer este tipo de de evaluaciones. Más adelante ya me van a
+explicar aquí como más o menos cuál es la metodología que se maneja con ellos,
+porque hay que cuidarla, ¿no? Ejemplo, hay que pasar lista y todo eso me
+estaban diciendo. Hoy no pasé lista, pero voy a marcar a los que estoy viendo
+aquí. Creo que hoy se las van a perdonar, me imagino, porque es nueva
+nueva nuevo tipo de clase, pero
+sí, este es el el el 26, a ver, 260705-8
+a 9 pm. Según yo ya le di enviar y asignar a
+todos. Este debe aparecerles donde dice trabajo
+en clase en el Classroom. Si les aparece me avisan.
+Ahorita que me avisita que les aparece ya para para movernos. A ver, este, de
+todos modos voy a en lo que me dicen, les voy a ir poniendo aquí un una
+asistencia. Eh, veo son ahorita hay 1 2 3 4 5 6 7
+personas. Aquí nada más tengo seis en la lista. Ahorita agrego a los otros. Ah,
+gracias, Carlos. Ya aparece. Deja ver, déjame poner los que me aparecen aquí
+que dejaron en una lista. Es este Juan. Aquí está.
+Este, según yo no va a valer, pero la voy a tomar por si voy a preguntar
+mañana. Si quieren que se valga, pues ya la dejo aquí marcada. La de ustedes es
+Alejandro Coronado.
+Fernando, Héctor no está.
+Este, hay un hay uno que es FRNN D, que imagino que es Fernando SK LR. No es
+ninguno de ustedes, ¿verdad? O sí,
+pero creo que no ninguno de ustedes. 89.
+Ah, sí, es Fernanda, perdón. Al parecer es está abreviado.
+1 2 3 4 5 6 7 8 9. Aquí hay ocho hoy. Entonces nada más faltó ella. Okay. No,
+esto está fácil. Ya no los marco a todos menos a menos a ella. Okay. ¿Qué más?
+¿Qué más me hace falta? Creo que sería todo. Por ahí los puedo dejar ir para
+que también ya descansen y pero ahorita vient eso. O sea, les digo a conciencia,
+no pasa nada. O sea, es es lo que se acuerden más que nada. ¿Están de
+acuerdo? Ya mañana los veo para a partir de lo que ve ahorita más o menos pensar
+cómo vamos a empezar. Va que va que levantaron los deditos.
+Tale que va. Entonces los veo los veo ya mañana. Muy buenas noches. Voy a parar
+la grabación y la voy a subir. Yo creo que ahorita que me en cuanto me aparezca
+disponible. Sale. Gracias. Gracias a ustedes.
