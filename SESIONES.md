@@ -1,60 +1,201 @@
-# Índice de Sesiones de Clase
+# Índice de Sesiones
 
-Búsqueda rápida de sesiones, resúmenes y transcripts por semana y fecha.
-
-## Semana 1
-
-### 2026-07-06 (Lunes) — Primer día
-- **Bloque:** 0 (introducción)
-- **Tema:** Presentación profesor, presentación alumnos, filosofía del curso, evaluación diagnóstica
-- **Resumen:** [week_1/2026_07_06/resumen.md](week_1/2026_07_06/resumen.md)
-- **Transcript completo:** [week_1/2026_07_06/raw_transcript.txt](week_1/2026_07_06/raw_transcript.txt)
-- **Puntos clave:** Background Óscar (Continental, Airbus, doctorado), "pensamiento del arquitecto", 9 alumnos con perfiles diversos, evaluación diagnóstica
-
-### 2026-07-07 (Martes)
-- **Bloque:** 0
-- **Tema:** Diagnóstico, pensamiento algorítmico, memoria y punteros
-- **Resumen:** [week_1/2026_07_07/resumen.md](week_1/2026_07_07/resumen.md)
-- **Transcript completo:** [week_1/2026_07_07/raw_transcript.txt](week_1/2026_07_07/raw_transcript.txt)
-- **Puntos clave:** Estructura de algoritmos (entrada/proceso/salida), optimización de condicionales, planificación antes de programar
-
-### 2026-07-08 (Miercoles)
-- **Bloque:** 0 (transición)
-- **Tema:** Estructuras complejas en PSeInt, menús, ciclos, diferencias C vs C++
-- **Resumen:** [week_1/2026_07_08/resumen.md](week_1/2026_07_08/resumen.md)
-- **Transcript completo:** [week_1/2026_07_08/raw_transcript.txt](week_1/2026_07_08/raw_transcript.txt)
-- **Puntos clave:** Condicionales Si/FinSi, menús con Según, ciclos Mientras, refactorización, C++ vs C, diagrama de flujo para evaluación
-
-### 2026-07-09 (Jueves)
-- **Bloque:** 0
-- **Tema:** Validación de entrada, arreglos (arrays), llenado e iteración
-- **Resumen:** [week_1/2026_07_09/resumen.md](week_1/2026_07_09/resumen.md)
-- **Transcript completo:** [week_1/2026_07_09/raw_transcript.txt](week_1/2026_07_09/raw_transcript.txt)
-- **Puntos clave:** Validación con while/repetir, definición y dimensionamiento de arreglos, llenado automático con for, operaciones sobre arrays (promedio, búsqueda, edición), tarea: menú con agregar/ver/borrar/editar datos
+Navegación centralizada de todas las sesiones del curso por bloque, semana y fecha.
 
 ---
 
-## Semana 2
+## 📚 Resúmenes Semanales
 
-### 2026-07-13 (Domingo)
-- **Bloque:** 0→1
-- **Tema:** Revisión de tareas, funciones en PSeInt, setup de WSL y Debian
-- **Resumen:** [week_2/2026_07_13/resumen.md](week_2/2026_07_13/resumen.md)
-- **Transcript completo:** [week_2/2026_07_13/raw_transcript.txt](week_2/2026_07_13/raw_transcript.txt)
-- **Puntos clave:** Arrays dinámicos y redimensionamiento, validación de rangos, subprocesos/funciones en PSeInt, WSL setup, instalación de Debian, herramientas build-essential/GDB/Git/Make
+### Bloque 0: Pseudocódigo PSeInt
+
+| Semana | Fechas | Tema Principal | Resumen |
+|--------|--------|---|---|
+| **1** | 06-09/07/2026 | Pensamiento algorítmico, condicionales, ciclos, arreglos | [📖 SEMANA_RESUMEN.md](sessions/week_1/SEMANA_RESUMEN.md) |
+
+### Bloque 0→1: Transición a C++
+
+| Semana | Fechas | Tema Principal | Resumen |
+|--------|--------|---|---|
+| **2** | 13-16/07/2026 | Linux terminal, máquinas de estado | [📖 SEMANA_RESUMEN.md](sessions/week_2/SEMANA_RESUMEN.md) |
 
 ---
 
-## Cómo usar este índice
+## 📅 Sesiones por Fecha
 
-- Para búsqueda rápida por fecha, usa Ctrl+F (o Cmd+F en Mac) en este archivo
-- Para ver detalles de una sesión, abre el `resumen.md` correspondiente
-- Para revisar lo que se dijo textualmente, consulta `raw_transcript.txt`
-- Los resúmenes incluyen metadata en YAML (fecha, bloque, participantes) para fácil referencia
+### Week 1: Bloque 0 Fundamentals
 
-## Convención de archivos
+#### Sesión 1 - Lunes 06/07/2026
+**Contexto, Profesor y Estudiantes**
+- Presentación del profesor (Continental, Airbus, investigación en IA)
+- Filosofía del curso (pensamiento del arquitecto)
+- Perfil de estudiantes
+- Evaluación diagnóstica
 
-Cada sesión tiene su carpeta bajo `week_N/YYYY_MM_DD/` con:
-- `resumen.md` — resumen estructurado con puntos principales
-- `raw_transcript.txt` — transcript bruto de la sesión
-- Otros archivos según sea necesario (código compartido, ejercicios, etc.)
+| Archivo | Descripción |
+|---------|---|
+| 📄 [resumen.md](sessions/week_1/2026_07_06/resumen.md) | Resumen estructurado |
+| 📋 [raw_transcript.txt](sessions/week_1/2026_07_06/raw_transcript.txt) | Transcript completo |
+
+---
+
+#### Sesión 2 - Martes 07/07/2026
+**Pensamiento Algorítmico y Memoria**
+- Estructura entrada → proceso → salida
+- Condicionales optimizados (descarte)
+- Introducción a memoria y punteros
+- Ejercicios de clasificación
+
+| Archivo | Descripción |
+|---------|---|
+| 📄 [resumen.md](sessions/week_1/2026_07_07/resumen.md) | Resumen estructurado |
+| 📋 [raw_transcript.txt](sessions/week_1/2026_07_07/raw_transcript.txt) | Transcript completo |
+
+---
+
+#### Sesión 3 - Miércoles 08/07/2026
+**Estructuras Complejas en PSeInt**
+- Tipos de datos (Entero, Real, Carácter, Cadena)
+- Condicionales Si/FinSi
+- **Menús con Según/FinSegún** (CLAVE)
+- **Ciclos Mientras/FinMientras**
+- C vs C++
+
+| Archivo | Descripción |
+|---------|---|
+| 📄 [resumen.md](sessions/week_1/2026_07_08/resumen.md) | Resumen estructurado |
+| 📋 [raw_transcript.txt](sessions/week_1/2026_07_08/raw_transcript.txt) | Transcript completo |
+
+---
+
+#### Sesión 4 - Jueves 09/07/2026
+**Validación y Arreglos**
+- Validación de entrada con ciclos
+- **Arreglos (arrays)**: dimensión, llenado, lectura
+- Operaciones sobre arrays (promedio, búsqueda, edición)
+- Tarea: Menú con operaciones sobre arreglos
+
+| Archivo | Descripción |
+|---------|---|
+| 📄 [resumen.md](sessions/week_1/2026_07_09/resumen.md) | Resumen estructurado |
+| 📋 [raw_transcript.txt](sessions/week_1/2026_07_09/raw_transcript.txt) | Transcript completo |
+
+---
+
+### Week 2: Bloque 0→1 Transition
+
+#### Sesión 1 - Domingo 13/07/2026
+**Cierre de Bloque 0 y Setup de Desarrollo**
+- Revisión de tarea: MenuCalificaciones (validación, errores comunes)
+- **Funciones en PSeInt** (SubProceso, Función con retorno)
+- **Setup de Linux vía WSL**: instalación de Debian
+- Instalación de herramientas: gcc, g++, gdb, make, nano
+
+| Archivo | Descripción |
+|---------|---|
+| 📄 [resumen.md](sessions/week_2/2026_07_13/resumen.md) | Resumen estructurado |
+| 📋 [raw_transcript.txt](sessions/week_2/2026_07_13/raw_transcript.txt) | Transcript completo |
+
+---
+
+#### Sesión 2 - Lunes 14/07/2026
+**Comandos Linux Básicos**
+- **Navegación**: `ls`, `pwd`, `cd`
+- **Manipulación de archivos**: `mkdir`, `touch`, `cat`, `cp`, `mv`, `rm`
+- **Edición**: `nano` (introducción)
+- **Características**: autocompletado con Tab, permisos
+
+| Archivo | Descripción |
+|---------|---|
+| 📄 [resumen.md](sessions/week_2/2026_07_14/resumen.md) | Resumen estructurado |
+| 📋 [raw_transcript.txt](sessions/week_2/2026_07_14/raw_transcript.txt) | Transcript completo |
+
+---
+
+#### Sesión 3 - Martes 15/07/2026
+**Comandos Linux Avanzados**
+- **Visualización de archivos grandes**: `less`, `head`, `tail`
+- **Búsqueda de contenido**: `grep` (búsqueda dentro de archivos)
+- **Búsqueda de archivos**: `find` (nombres y extensiones)
+- **Edición profunda**: `nano` (atajos, creación de archivos)
+- **Automatización**: `echo` con redirección
+
+| Archivo | Descripción |
+|---------|---|
+| 📄 [resumen.md](sessions/week_2/2026_07_15/resumen.md) | Resumen estructurado |
+| 📋 [raw_transcript.txt](sessions/week_2/2026_07_15/raw_transcript.txt) | Transcript completo |
+
+---
+
+#### Sesión 4 - Miércoles 16/07/2026
+**Máquinas de Estados (State Machines)**
+- **Definición y componentes**: estado, evento, transición, acción
+- **Ejemplos prácticos**: semáforo, puerta automática, relevador, elevador
+- **Diagramas de transición**: lazos cerrados/abiertos, bifurcaciones
+- **Tablas de transición**: alternativa a diagramas
+- **Estados especiales**: ERROR, reintentos
+- **Implementación en PSeInt**: `Según` (equivalente a `switch`)
+- **Ciclos infinitos**: monitoreo permanente en embebidos
+- Tarea: Diseño de máquina de estados
+
+| Archivo | Descripción |
+|---------|---|
+| 📄 [resumen.md](sessions/week_2/2026_07_16/resumen.md) | Resumen estructurado |
+| 📋 [raw_transcript.txt](sessions/week_2/2026_07_16/raw_transcript.txt) | Transcript completo |
+
+---
+
+## 🔗 Quick Links
+
+### Por Concepto
+
+**Estructuras de Control:**
+- Condicionales: [Sesión 1.3](sessions/week_1/2026_07_08/resumen.md)
+- Ciclos: [Sesión 1.3](sessions/week_1/2026_07_08/resumen.md)
+- Menús: [Sesión 1.3](sessions/week_1/2026_07_08/resumen.md)
+
+**Datos y Validación:**
+- Tipos de datos: [Sesión 1.3](sessions/week_1/2026_07_08/resumen.md)
+- Validación: [Sesión 1.4](sessions/week_1/2026_07_09/resumen.md)
+- Arreglos: [Sesión 1.4](sessions/week_1/2026_07_09/resumen.md)
+
+**Desarrollo Embebido:**
+- Setup Linux: [Sesión 2.1](sessions/week_2/2026_07_13/resumen.md)
+- Terminal Linux: [Sesión 2.2](sessions/week_2/2026_07_14/resumen.md), [Sesión 2.3](sessions/week_2/2026_07_15/resumen.md)
+- **Máquinas de Estado**: [Sesión 2.4](sessions/week_2/2026_07_16/resumen.md) ⭐
+
+### Por Especialidad
+
+**Especialidad Automotriz (Vehicular):**
+- Concepto base: [Sesión 1.1](sessions/week_1/2026_07_06/resumen.md) (Filosofía, Continental, ADAS)
+- Fundamental: [Sesión 2.4](sessions/week_2/2026_07_16/resumen.md) (Máquinas de estado para ECU)
+- Próximo: Mini-ACU con máquinas de estado
+
+**Especialidad IA:**
+- Referencia: [Sesión 1.1](sessions/week_1/2026_07_06/resumen.md) (Investigación en redes neuronales)
+
+---
+
+## 📊 Estadísticas
+
+| Métrica | Valor |
+|---------|-------|
+| **Bloques completados** | 2 (Bloque 0, Bloque 0→1 en progreso) |
+| **Semanas** | 2 |
+| **Sesiones** | 8 |
+| **Horas totales** | ~14.2 (390 min + 460 min) |
+| **Archivos de sesión** | 16 (8 resumen.md + 8 raw_transcript.txt) |
+
+---
+
+## 🚀 Próximos Pasos
+
+1. **Próxima semana**: Bloque 1 - C++ Básico
+2. **Temas pendientes**: Compilación, debugging, estructuras de datos
+3. **Proyecto**: Mini-ACU para especialidad automotriz
+4. **Evaluación**: Proyecto Bloque 0 (en equipos)
+
+---
+
+**Última actualización**: 17/07/2026  
+**Resúmenes disponibles**: ✅ Semanas 1-2 completas  
+**Próxima actualización**: Post-sesión week 3

@@ -41,15 +41,47 @@ C++ files (`.cpp`, `.h`, `.hpp`) son compilados con `g++` dentro de Docker.
 
 ## Sesiones de clase
 
-Cada sesión se registra en una carpeta bajo `week_N/YYYY_MM_DD/` con:
-- `resumen.md` — resumen estructurado de puntos principales
-- `raw_transcript.txt` — transcript completo de la sesión
+### Estructura de carpetas
 
-**Búsqueda rápida:** Consulta [SESIONES.md](SESIONES.md) para un índice de todas las sesiones
-por bloque, fecha y tema. Incluye links diretos a resúmenes y transcripts.
+Cada sesión se registra en una carpeta bajo `sessions/week_N/YYYY_MM_DD/` con:
+- `resumen.md` — resumen estructurado de puntos principales + metadata YAML
+- `raw_transcript.txt` — transcript completo de la sesión (sin editar)
 
-**Estructura de resúmenes:** Los archivos `resumen.md` incluyen metadata YAML al inicio
-(fecha, bloque, duración, participantes) seguida de puntos principales y siguiente paso.
+### Resúmenes semanales
+
+Cada semana tiene un archivo `SEMANA_RESUMEN.md` con:
+- Contexto general de la semana
+- Temas principales por sesión
+- Progresión temática
+- Hitos y evaluaciones
+- Conceptos clave establecidos
+- Próximos pasos
+
+### Búsqueda de sesiones
+
+**Resúmenes rápidos por semana:**
+- `sessions/week_1/SEMANA_RESUMEN.md` — Bloque 0 (pseudocódigo PSeInt)
+- `sessions/week_2/SEMANA_RESUMEN.md` — Bloque 0→1 (Linux + máquinas de estado)
+
+**Resúmenes detallados por sesión individual:**
+- `sessions/week_N/YYYY_MM_DD/resumen.md` — Contenido específico de la clase
+- `sessions/week_N/YYYY_MM_DD/raw_transcript.txt` — Transcript completo
+
+### Temas principales por bloque
+
+**Bloque 0 (Week 1):**
+- Pensamiento algorítmico
+- Condicionales y ciclos en PSeInt
+- Menús (Según/switch)
+- Validación de entrada
+- Arreglos (arrays)
+
+**Bloque 0→1 (Week 2):**
+- Comandos Linux (terminal)
+- Herramientas de desarrollo (WSL, Debian, build-essential)
+- **Máquinas de estado** (fundamental para sistemas automotrices)
+- Diagramas de transición
+- Implementación en PSeInt y C++
 
 ## Docker & Makefile (Bloque 1+)
 
@@ -74,3 +106,96 @@ make help               # Ver todos los targets
 
 **Desarrollo:** Código en `/workspace` sincronizado en tiempo real. Compila y ejecuta dentro del contenedor.
 Misma versión de compilador para todos (sin bugs de "me funciona en mi máquina").
+
+## Máquinas de Estado (State Machines)
+
+Concepto fundamental para especialidad automotriz. Se introduce en **Bloque 0→1**.
+
+### Definición
+
+Una máquina de estado es un sistema que:
+- Reporta constantemente su estado/estatus
+- Cambia de estado solo en respuesta a eventos
+- Fórmula: `Estado(t+1) = f(Estado(t), Evento)`
+
+**Regla de oro:** "No basta preguntar qué ocurrió, sino **en qué estado estaba el sistema**"
+
+### Componentes
+
+- **Estado**: situación actual del sistema (ej. 0=apagado, 1=encendido)
+- **Evento**: disparador que provoca cambio (ej. presionar botón, señal de sensor)
+- **Transición**: cambio de un estado a otro
+- **Acción**: operación ejecutada durante/después de transición
+
+### Representación
+
+**Diagrama de transición:**
+- Círculos = estados
+- Flechas = transiciones (etiquetadas con evento)
+- Lazos = ciclos cerrados (regresan al origen)
+
+**Tabla de transición:**
+| Estado Actual | Evento | Nuevo Estado |
+|---|---|---|
+| Cerrada | Detecta | Abriendo |
+| Abriendo | Fin apertura | Abierta |
+
+### Implementación en PSeInt
+
+```pseudocodigo
+Algoritmo MáquinaEstado
+  Definir estado Como Entero
+  Definir evento Como Entero
+  Definir activo Como Lógico
+  
+  estado ← 0      // Estado inicial
+  activo ← Verdadero
+  
+  Mientras activo Hacer
+    // Reportar estado
+    Según estado Hacer
+      Caso 0:
+        Escribir "Estado: A"
+      Caso 1:
+        Escribir "Estado: B"
+    FinSegún
+    
+    // Leer evento
+    Leer evento
+    
+    // Transiciones
+    Según estado Hacer
+      Caso 0:
+        Si evento = 1 Entonces
+          estado ← 1
+        FinSi
+      Caso 1:
+        Si evento = 2 Entonces
+          estado ← 0
+        FinSi
+    FinSegún
+  FinMientras
+FinAlgoritmo
+```
+
+### Casos de uso automotrices
+
+- Sensores binarios (encendido/apagado)
+- Puertas automáticas (cerrada → abriendo → abierta → cerrando)
+- Relevadores (abierto ↔ cerrado)
+- Sistemas de control (ECU con múltiples estados)
+- Tratamiento de errores (normal → error → reintentar → normal)
+
+### Ciclos infinitos en embebidos
+
+En Arduino/ESP32, las máquinas de estado viven en `loop()`:
+```cpp
+void loop() {
+  switch(estado) {
+    case 0: /* hacer algo */ break;
+    case 1: /* hacer otra cosa */ break;
+  }
+}
+```
+
+El loop se ejecuta indefinidamente monitoreando sensores y eventos.
