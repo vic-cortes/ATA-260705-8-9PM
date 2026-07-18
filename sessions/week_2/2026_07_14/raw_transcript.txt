@@ -1,0 +1,698 @@
+y otra si tenían algún algún algún error este no este mejor este instala Devian
+que le va a pasar lo mismo que con los de Macbunto y Devian son muy parecidos
+nada más que cuando vayamos en temas más avanzados ahí podríamos ya tener
+problemas con las con las distro las distribuciones que algunas libreradas no
+sean compatibles con una de alguna de las dos. Este lo que podemos hacer ahí
+es que no pasa nada si está las Devian con WSL Devian casi no pesa nada. Ubuntu
+sí pesa un montón. Dean no pesa nada, se va a instalar rapidísimo. ¿Qué pasó,
+este, Víctor? Sí, pues de hecho lo que iba a preguntar
+nada más es de que que si es que se puede tener problemas porque hasta donde
+tengo entendido Ubuntu está sobre Devian, entonces a final de cuentas
+también se podía decir que es Devian, pero pues un poquito más pesado, como
+dijiste. Sí, sí, sí, sí.
+Posiv son muy parecidos, pero si hay ciertas diferencias este a nivel ya más
+más específico. Lo que quiero evitar es que tengamos problemas de compatibilidad
+porque puede que no pasen, ¿no? O sea, no estoy asegurando que vayamos a tener
+problemas, pero cuando llevé el tema ahorita que estamos planeando sus este
+que estamos poniendo en orden estas dos clases que es la de las 8 y la de las 9,
+que no había como un profesor específico, cuando lo llevé a la
+reunión, si me comentaron, pues tal vez hay que estandarizarlo, ¿no? para no
+tener problemas de compatibilidad, pero no digo que los vayamos a tener porque
+dije, bueno, tal vez nunca nunca los tenemos, tal vez Ubuntu y Devia nos
+funcionan correctamente para la CQ fabricar, que son los proyectos más
+avanzados, pero si nos dan problemas vamos a tener ahí este unos casos este
+entonces los de Mac me preocupaban, pero con el Docker ya lo solucionaste. Este,
+Ismael tiene Ubuntu, mira, por ahora no pasa nada. O sea, la primer parte del
+curso, todas las partes, esas partes del curso que sean que son las más básicas,
+este, no va a pasar nada. Todo lo que sea C en general, según yo, no va a
+haber problemas de compatibilidad. Me preocupaba con las clases más avanzadas.
+Ahorita no creo que pase nada, entonces lo podemos trabajar con Ubuntu y vamos
+viendo la posibilidad de que ustedes pongan su Docker file, por ejemplo, creo
+que va a ser la opción más fácil o la virtual machine. No sé qué les parece a
+ti, Genny también. Este, ver si si lo si después vemos lo
+del Docker File, nada más que eso lo vemos después, o sea, después le pido a
+Víctor si me pasa el Docker File, este, lo reviso y ya les digo cómo instalarlo,
+¿no? De todos modos hasta Víctor nos apoya, ¿no? Que él ya sabe más de
+contenedores. Sí, les digo, los contenedores son un tema un tema enorme
+y la ventaja es que tenemos aquí Víctor que ya los conoce, ¿no? Okay. Y había
+alguien más, alguien le había dado un error. No me acuerdo a que alguien aquí
+le había dado un problema. Este,
+no me acuerdo quién fue al alguien de aquí, no sé si era eras
+tú, Ofelia o era era, no me acuerdo, alguien que me compartió pantalla al
+final. Ah, sí, ya lo pude descargar desde la
+desde Microsoft Store. Okay. Y ya te dejó instalar todo y
+setear, ¿eh? Sí.
+Ah, perfecto. No, te iba a decir que que bueno, mi solución iba a ser que también
+instalaras un un Docker porque no encontré mucha documentación, solo
+encontré que decían que a veces hay problemas internos. Por ejemplo, otro
+otro compañero tuyo no lo pudo solucionar y estuvimos tratando y nos
+tocó ahí que hiciera otra manera de en la instalación, pero
+era que su su computadora no era no era completamente compatible, ya está un
+poco vieja, entonces ahí tuvimos unos problemas, de hecho no puede abrir,
+incluso visto el estudio bien este, entonces ahí tuvimos que hacer un algo
+un poco más drástico, pero qué bueno que se solucionó. Entonces ya contigo
+también ya quedó, pero yo creo que voy a adoptar la solución de Víctor para los
+terrores. También un Docker, que eso pues ya nada más lo seteamos.
+Va que va. Entonces, esmalto que tienes Ubuntu, trabajamos en Ubuntu, no te
+preocupes. Este, los comandos son parecidos. Los comandos de terminal,
+según yo, varían nada. O sea, los básicos no varían nada. Ya los más
+avanzados tal vez sí, pero los básicos no van a variar nada en la terminal del
+Linux y Devian. Digo, debuntu y Devian. Yo también uso Ubuntu generalmente, nada
+más que Devian. Otra cosa por usar Devian como es muy ligero ese puede
+vivir más fácil en un en un en un en un en un controlador, ¿no? Por ejemplo, en
+una placa de SP32, ahí puede vivir tu código más fácil que SP32. tiene su
+propio su propia manera de recibir código y ejecutarlo. Pero, por ejemplo,
+también si te vas a una placa, no sé, una que sí te reciba un sistema
+operativo como una como una Jetson Nano, una Ori nano, por ejemplo, ya no es
+necesario este cargarle el el Linux de de Nvidia, sino que puedes ver la manera
+de cargarle uno más ligero, como cargarle Devian, ¿sí? como son
+personalizables, entonces de es como una opción de bajo de bajo costo, ¿no? Que
+son temas que vamos a ver más adelante, cómo ahorrar ahorrar recursos, porque
+todo esto se tiene que ejecutar en en embebido, ¿no? Ese es el final, la
+finalidad del curso. Vamos a empezar ahorita con todo normal, pero a poco a
+poco vamos a empezar a a desviarlo algo más embebido, cada vez más más
+eficiente. Va que va. Entonces sí, por ahorita no
+hay no hay más problemas. Primero déjenme ver cuántas personas tengo antes
+de que se me olvide, que ayer casi no les paso lista. Tengo 11 5 6 7 8 9 10
+11. Eh, ¿qué comentó Juan? ¿Qué maestro?
+¿Nos puede contar un poco de su experiencia y de su doctorado? Yo no
+pude asistir a las primeras clases y pues veo que también otros se se unieron
+se unieron después. Este, ¿sí? No, sin problema. Nada más déjame
+pasarlo de la lista. Te platico un poquito ahorita. Este, si este no es que
+a mí me me saca es temas esos temas y no me para la boca es el problema.
+O sea, yo sí hablo de temas que me gustan, no, ya no me callas. Y luego lo
+que me preocupa lo que decir, "Oh, este güey ya se puso a es como los profes que
+te cuentan sus divorcios, ¿no?" A ver, es Alejandro, ya lo ya le pasé lista.
+Arturo es el que me faltaba. Arturo Origel
+son 2 3 4 5 6 7 8 9 10 11. Tengo, tengo 1 2 3 4 5 6 7 8 9 10. Me falta otro.
+Sería Ofelia, me faltaba. Ahí está. Ya son 11. Ya están los pases todos. Okay.
+Este, así te digo, o sea, no, mi doctorado es en ciencias de la
+ingeniería, nada más que mi especialidad es este. Bueno, en el tecnológico los
+doctorados son en ciencias de la ingeniería, pero se dividen en cuatro.
+es modelado matemático, ciencias de la ingeniería electrónica, el otro es como
+más de materiales y el último es uno más administrativo, ¿no?, que es como más
+estilo industrial, como este eh algo como control de procesos, operaciones,
+es más estadístico. Eh, yo estoy yo estoy combinado en dos, yo estoy en
+electrónica y en modelado matemático. Yo brinco entre los dos. Este, que mi
+especialidad al final tiene que ser una y se supone que va a ser este modelado
+eh modelado matemático. Eh, pero trabajo con el departamento de electrónica
+también y mecatrónica también es departamento. Ya te ahí te están
+moviendo para todos lados. Mi línea de investigación es este los sistemas
+dinámicos, los sistemas que varían en el tiempo, que son adaptativos, ya que pues
+eh los sistemas de vehiculares son sistemas de este estilo. Eh, los más
+nuevos, los que son adaptativos ya son así. O sea, un sistema adaptativo es un
+sistema variante en el tiempo. Por ejemplo,
+una función lineal es una función que recibe A y siempre te entrega B, ¿no?
+Entonces realiza una operación y convierte ese valor A a B. Es lo que
+hace una función lineal. Entonces, es lineal. ¿Por qué? Porque es predecible.
+que sabemos que siempre hace lo mismo. Los sistemas ya que son que son ya
+variantes en el tiempo es que tienen por ahí alguna condición que los hace que
+pues no siempre pase eso o que de repente a veces reciba a A y entregue
+dos respuestas, ¿no? Por ejemplo. Entonces son sistemas que se van
+adaptando. Ejemplo, ahorita entrega A, recibe A y entrega B y después entrega
+recibe A y entrega C. Sí. Entonces, son sistemas que cambian esos modelos
+matemáticos. Se ven de una Ajá. Como la IA. Sí. Por eso es una una de mis áreas
+de estudios que desarrollamos también. este
+eh una un sistema en variante que es variante en el tiempo, su modelo
+matemático se ve así. El modelo lineal es que pues tienes una ecuación
+diferencial normal, que son las derivadas de la función, la función en
+sí y alguna y algún algún resultado por ahí. Lo resuelves con métodos fáciles.
+Normalmente utilizas la plus y ya queda lo que quieras, ¿no? Pero una función,
+una función que ya empieza a variar con el tiempo, aparece dentro de la ecuación
+diferencial también ciertos factores en la función. Por ejemplo, tienes la
+derivada de la derivada de algo, ¿no? Derivada de y respecto del tiempo. Esa
+derivada pues siempre va a estar ahí. Pero imagínate que ahora le agregas una
+que la multiplicas por una función. Por ejemplo, le pones la función 10t que
+multiplica la derivada. ¿Okay? Entonces, en el tiempo cero esa derivada vale cer
+porque t valdría cer, ¿no? Tiempo uno sería 10 veces la derivada de y, tiempo
+dos 20 veces la derivada de y. Entonces, si te fijas, la el modelo matemático
+va cambiando en el tiempo porque va modificando los coeficientes, se podría
+decir. Entonces, sistemas ya son variantes, esos les llamamos sistemas
+variantes y pues ahora el problema es cómo los controlas.
+Entonces tienes que proponer ciertas soluciones que ya son más avanzadas, ya
+es con furier y con ecuaciones diferenciales parciales. Propones
+ciertas ciertas condiciones, propones las soluciones y ya propones un modelado
+más exacto y una solución que te exprese la función de transferencia o cómo se va
+a comportar el sistema en tiempo y frecuencia, ¿no? Entonces, es tipo de de
+sistemas son variantes, les digo, y el control también va a ser variante, o
+sea, el sistema va a ser también con control variante porque hay que trabajar
+con eso. Entonces, las IA son un ejemplo, como dice Ismael, en la
+práctica, la IA es, ejemplo, la red neuronal es simplemente una capa con
+neuronas que se conecta con otras neuronas y cada neurona ejecuta una
+operación. Entonces, estas neuronas jalan un vector, le hacen algo, se lo
+pasan a la siguiente capa. Estas le hacen otra cosa, se lo pasan a la
+siguiente capa. es un algoritmo sencillo, pero para que funcione una red
+neuronal hay que inyectarle cierta noilenidad porque está emulando al
+cerebro humano. Entonces, si el cerebro humano funciona de manera extraña, que
+de hecho no lo hemos terminado de entender, es lo maravilloso del cerebro
+humano, que cuando a mí me preguntan si la se va a volver mal o se va a volver
+Skynet, yo siempre he defendido que que no sabemos. Es el mito de la es decir
+que se va a volver mal o que va a evolucionar, se va a volver una supería.
+Ese es el mito. No significa que no lo vaya a hacer. El mito es aseverarlo. La
+verdad es que estamos en una zona gris donde no sabemos qué va a pasar, pero
+por ahora yo me inclino más al no. ¿Por qué? Porque si tú le preguntas a un
+neurocirujano cómo funciona el cerebro, un cirujano del cerebro o un
+neurocientífico, te va a poder explicar el a lo mucho el 30 40% del cerebro
+completo. Si tú una persona que se dedica al código, a la I, al desarrollo
+en general, le pagas el código de chaque PT, aú aún así sea un código monstruoso,
+con el tiempo te lo va a poder explicar o lo va a poder entender. Sí, al 100%
+sería posible entender el 100% del código. Entonces, el cerebro sigue
+siendo infinitamente complejo, más complejo que las máquinas.
+Entonces, por ahora no va a pasar, ¿no? Pero esos sistemas y de todos modos,
+aunque no sean tan complejos como el cerebro, ya son complejos. Entonces la
+IA requiere cierta no linealidad. Esa se la inyectas con ¿qué? Con funciones
+random, se lo inyectas con con estadística, aplicas unas campanas y le
+dices, "A ver, con esas campanas aplícame cierta cierta función este
+estadística y veme variando valores para que nunca siempre pase lo para que no
+siempre pase lo mismo." Entonces, tú le inyectas una especie de no linealidad.
+Yo todavía estoy a favor de que no es completamente no lineal porque siguen
+siendo operaciones matemáticas y esas todas las puedes controlar. No hay
+ninguna función matemática en la computadora que no que sea completamente
+random. ¿Por qué? Porque todas dependen de algoritmos. Entonces todas son
+determinantes. Este, maneras para hacerlas
+indeterminantes sería trabajar con sistemas físicos que sí fueran caóticos.
+un sistema físico caótico. No sé, no sé si vieron el caso de una empresa que se
+de ciberseguridad que encripta con utilizando este la firma de calor de
+unas lámparas de lava o algo así. Es esa firma calorífica, la lámpara de lava es
+caótica. ¿Por qué? Porque es es un sistema de calor que se está generando
+ahí y cuando pasa la gente le afecta porque hay entropía, cuando hay cosas
+ahí le afecta porque hay entropía, sube la temperatura, baja la temperatura y
+como es entrópico no es como es entropía, perdón, no es predecible, es
+caótico el sistema. Entonces, ese sistema ser caótico,
+este, ese sí es completamente random. Entonces, ellos usan una cámara de
+calor, toma fotos al espectro, al al calor, y utiliza eso, lo convierte en
+números y eso lo utiliza para decodificar. Entonces, si se fijan, el
+sistema de ellos este se vuelve random. ¿Por qué? Porque depende de un sistema
+fuera de la computadora que es físico, convierte esos valores a números y ahora
+sí en cripta. Es la única manera que existe a esta
+hora de volver algo completamente random, utilizar un sistemas físicos que
+sí sean caóticos, pero el modelado matemático dentro de la computadora
+nunca va a ser completamente caótico. ¿Por qué? Porque lo rigen scripts, lo
+rigen código. Entonces, tú lo estás controlando al fin y al cabo. Entonces,
+este, las sías son caóticas. En mi rama de estudio principal es sistemas
+dinámicos. O sea, ahorita estamos haciendo una estamos haciendo un sistema
+dinámico para control de vehicular. Ese va a ser mi tesis doctoral. Este, en mi
+tesis de maestría ya hice una fusión sensorial, fusioné el IDAR con cámara,
+esa fue mi tesis de maestría, este, fusionar la cámara con el liar y crear
+un minisistema ADAS donde la cámara me entrega las las objetos, me los
+clasifica y liar me entrega las distancias y las geometrías. Entonces,
+está chido porque ahora este eliminas el problema de la visión artificial, que es
+que la percepción afecta, la oclusión afecta. Entonces, Laidar quita eso. El
+dice, "A ver, bueno, la cámara puede estimar distancias." Sí, la cámara puede
+estimar distancias por la por hay visión artificial que estima distancias, pero
+pues, por ejemplo, si tú acercas un carrito de juguete a una cámara mucho,
+puede llegar a pensar que el carro es grande. Es de verdad, eso llamado
+percepción. Este la oclusión es que algo tape algo, ya lo tapó, ya valió madre,
+ya no lo ve. Entonces, este, el liar quita esa parte. O sea, lo que hace el
+Liidar es, yo te doy distancias, geometrías, tú nada más clasifícame qué
+es lo que estamos viendo, ¿no? El control para ese vehículo es una
+combinación de dos sistemas, de dos de dos de dos sensores. El problema era la
+fusión. ¿Cómo fusionas datos de cámara con datos de liar? Si tenemos que
+aplicar transformaciones. Eso fue toda la propuesta que tuvimos que hacer. Y
+ahora ese sistema se está llevando se está llevando más allá, se está llevando
+más allá, más al tema de con el sistema dinámico completo. Queremos hacer un
+sistema que ahora en vez de nada más no solo fusione cámara y liar, sino hacerlo
+más barato, que ahora fusione radar con liar, por ejemplo, para no depender de
+la cámara, que es caro procesar la cámara, procesar los datos de la cámara.
+Entonces, mejor radar la Idar, hacer un sistema dinámico que también conviene
+tal vez un tercer sensor, es la propuesta que tenemos ahorita, y que sea
+adaptable, o sea, se pueda poner en un vehículo, en un en un sistema ADAS, en
+un ECU que diseñemos nosotros o se pueda meter en un robot, por ejemplo, también
+un robot que pues también se puede controlar con ese tipo de sistemas, con
+un Slam y este esas son mi área de investigación principal, pero trabajo en
+varias también hacemos IA, yo trabajo en la parte del del pensamiento de de cómo,
+o sea, la manera de este estudios de cómo piensan las máquinas en lo que
+llamamos este inferencia. También trabajo un poquito en eso. Doy pláticas,
+de hecho, luego con el gobierno me invita a dar pláticas de de que de más
+este divulgativas sobre el tema y pues saco estos temas que les digo de que de
+que no son sky y más más dedicado al público en general. Este, entonces esa
+área también la trabajo un poco. Proponemos nuevos métodos de
+entrenamiento, ese tipo de cosas. Y mi otra área final es que mi asesor de
+tesis, mi asesor, el doctor es este trabaja con los biomédicos aquí en el
+Tec. Entonces, de repente también me jala proyectos más del lado biomédico y
+también con los de materiales. Ahí me traen para todos lados. Soy como el el
+el ahorita el handy man que trabaja explotan. Este,
+de hecho, la razón por la que me quedé en el tec es que me convencieron, no me
+dijeron aquí, quédate, no, no te vayas. Entonces ahí por eso ando ahí. Stalin
+preguntó usar liar después. Y yo estoy proponiendo eso, le estoy diciendo que
+podemos hablar, podemos nosotros ver la manera de que hagan un sistema físico ya
+más adelante cuando estemos este cuando estemos en en los en los temas ya más
+especializados, que ver la manera de que ustedes con una placa, no sé, un SP32 o
+ya veremos qué placa les conviene, hagamos una especie de mini
+procesamiento de señales, ¿no? Que conectemos un algo que tome las medidas
+y con el ACU que van a estar desarrollando ver cómo trabaja con esas
+señales. De hecho, aquí tengo un liar. Déjame fijo. Aquí lo tenía porque aquí
+tengo una caja. Aquí está. Ejemplo, este es un liar 2D. No sé si lo alcanzan a
+ver. Es un sombrerito. Este es un liar 2D. Es una especie de
+sombrerito. Luego lo ves en algunos algunos objetos. Este es 2D. ¿Por qué?
+Porque es un es un liar giratorio. El liar está acá dentro, o sea, el del
+láser y va girando. Lo pones encima de algo y pues, ¿qué? Te va a entregar el
+alrededor, las medidas alrededor. Este es este lo utilicé alguna vez. Necesito
+sirva, la verdad, pero no sé si los ven a dejar usar liar porque es muy caro.
+Ejemplo, este este liar de de Slaptech, Slamtech es la marca, está como en unos
+cuatro o cinco, entonces este están caros, no sé, pero puedo proponer un
+liar lineal que no es giratorio. El liar lineal es literalmente lanza láser, mide
+la distancia de regreso. Muy preciso. Podemos proponer uno de ese, esos no
+están tan caros, menos de 500 pesos a veces podemos trabajar con uno de esos,
+podemos trabajar con otro tipo de sensor, ¿no? Pero sí vamos a proponer
+una unas prácticas así. Y otra duda ahorita que hablamos de IA, creo que es
+una de las especialidades. Ah, sí, hay una hay una especialidad de IA. Eh, eso
+les iba a preguntar ayer les pregunté, no sé si ustedes a los de las 9 me
+dijeron que las clases de 8 de 8 a 10, o sea, la 8 a 9 y 9 a 10 son especialidad
+vehicular y las clases de 6 a 7 y 7 a o son IA. No sé si alguien por aquí está
+este está alguna clase mal, no sé.
+O o no
+me puedo cambiar. Este, yo creo que sí porque pues este
+son el curso es tronco común hasta cierto punto y después se separa en dos,
+pero ya para vehículos sí hice algunas modificaciones en el tronco común. Quité
+unos temas de IA, que ejemplo quité resapis, quité esas cosas porque la
+vehicular no nos sirve tanto y metí mejor este comunicaciones CAN CBOS y
+cosas así que es la comunicación dentro del vehículo, ¿no? En vez de una red API
+para comunicar algo más más web, más este más estilo software. Entonces este
+sí es algunos cambios pequeños yo en la en el tronco común para estas.
+Entonces sí, este, pero eso eso lo tienes que hablar con este coméntale a
+Alfonso Ismael a ver qué me dice, porque los de los de la otra clase, las clases
+de las otras ya van más avanzados, eh, los recibí un poquito más avanzados en
+en los temas, entonces ya con ellos ya estamos en C, ya estamos programando en
+C. Este, pero pregúntale a ver qué podemos hacer, cómo lo podemos acomodar.
+Tal vez vemos la manera de aquí que yo te dé algo más rápido para que puedas
+cambiarte. Sí, pero pues coméntale. Ah, sí, este está en el grupo. Está es
+el grupo de WhatsApp. Está el contacto. El grupo de WhatsApp es el número de el
+administrador que es una foto con un celularcito. Sí, se llama Alfonso. Creo
+que dice que es cuentra de empresa. Él es el director de la academia. Si esos
+cambios no los puedo los tiene que hacer él. Este, ¿alguien más preguntas?
+Aspiradoras robóticas. Sí, algunas usan liar, la mayoría, pero siempre hay otros
+sensores, otras opciones, ¿no? En el mercado. Las de Liderar pues son las más
+precisas. Ya más adelante cuando continuemos ya
+veo si ese todavía sirve, lo conectamos y les enseño cuál es la lectura que
+hace, ¿no? Y les enseño cómo lo pueden trabajar. Pero para los sensores que
+ustedes van a utilizar, si si llegan a aceptarme la propuesta de que sea
+también trabajo físico, ya que pueden hacer embebido, embebido, embebido, de
+verdad, o sea, conectando ustedes en su casa, este, van a ser seguramente más
+básicos, ¿no? Porque sí están carillos. Va que va.
+Este, ya después eh después cuando avance más la investigación les traigo
+ahí más cosillas, ¿no? Colaboramos con gente fuera del país, ya después les
+hago actualizaciones. Trabajamos con mi asesor, este estudió en Alemania,
+entonces él él trabajó con unos alemanes y yo también con ellos porque le dio la
+ayuda ese señor. Este entonces este ellos ellos están muy avanzados. Estos
+teas están muy avanzados los de la universidad allá de es un instituto Mat
+Plan Mat Plan allá en Alemania uno de los institutos este está muy avanzados y
+también trabajamos con la de Varsovia, la de Polonia, pero sí este ya son otro
+tema. Ya más adelante les traigo más updates, va que va. Entonces, ahorita
+les voy a dar, vamos a dar un poquito. Quiero que veamos comandos Linux para
+que no vaya a decir y se aventó la clase platicando. Les digo como los profes
+luego en la en la escuela e va a ser examen de de mi vida, ¿no?
+Eh, okay. No, yo sí soy bueno para platicar. Ya después vemos cómo vemos
+ahí alguna un convivencia o algo y vemos cómo también me cuentan ustedes, porque
+algunos me contaron algunas cosas, se me hizo muy interesante. En general hay que
+todos tienen diferente experiencia. Voy a compartirles pantalla
+y después también dudas puntuales. Pregúntenme pues si alguno después
+interesa por el posgrado acá también. Obviamente es eso ya es más para obtener
+un grado más que una certificación, pero si les interesa también después ese lado
+académico lo pueden ver. Es ya ya depende de qué les gusta. A ver, a mí me
+gustan las dos, me gusta lo académico y lo y lo laboral. Ahorita pues también lo
+académico me está gustando. Ah, mira, ya te lo puse Juan Alfonso Quesada y ese es
+el número este Ismael. para que va. Okay. A ver, hoy quiero que
+veamos un poquito de de comandos de Linux. Déjenme cerrar esto.
+Y se van va van a ver más grande el editor porque hice un control más porque
+me di cuenta en las grabaciones que luego se veían muy chiquito las letras,
+entonces hice un se va un poquito más grande todo para que para que no haya
+como que ahí problemas de lectura. Luego las grabaciones tardan en renderizar,
+entonces un ratito se ven como que borrosonas.
+Entonces hoy ya ayer ya tenemos Linux la mayoría ya casi todo está listo hoy con
+Linux. Entonces, quisiera que empezáramos a ver
+los comandos básicos para saber cómo movernos.
+Veríamos Linux, veríamos este, según yo hay un tema más, dejaríamos la
+evaluación y empezaríamos a pasar ahora sí a lo fuerte que es empezar a hacer C,
+¿no? Empezar a hacer C++, que que todavía ya están ansiosos. Entonces, en
+este caso, recordar lo de siempre, ¿no? Los que van a tener el WSL
+para entrar a Linux, se van a venir aquí a a su extensión de WSL de Remote
+Explorer y pues van a elegir su distribución. En este caso es Devian,
+¿no? Eh, si se fijan ya va haciéndose unitorial, ¿no? Por ejemplo, aquí tengo
+carpetas que he hecho en otras clases que hemos estado llevando ya C++
+y por ejemplo es como una miniomputadora, o sea, aquí van a irse
+guardando ya archivos, carpetas y todo lo que vayan haciendo. Aquí me dice, te
+quiero ir directamente a estas ubicaciones en la computadora, pero no,
+ahorita quiero irme a la raíz, a la raíz en Devian. Hay que esperar a que abra el
+remoto. Si tienen una máquina virtual, pues nada más la encienden, se meten y
+pues es una computadora, ¿no? La máquina virtual.
+Este a WSL también podemos acceder de otra manera. Podemos irnos a Power Shell
+en lo que abre esta Power Shell es la otra manera de entrar. Abrimos. Déjenme
+que me cargue la terminal. Aquí está. Y pues ya nada más invocamos el comando
+WSL D y D. Bien que es la distribución. Ahí está. Y ya encendimos el este la
+comandera. Acá lo feo es que pues cuando hagas código y lo haces desde aquí,
+desde la comandera, pues es más difícil porque tienes que usar comandos como cat
+o nano para para trabajar con archivos. Este ahorita pues este lo ventaja es que
+ya configuramos Visual Studio Co, entonces los archivos los puedes manejar
+desde acá, desde Visual Studio y las ejecuciones desde su terminal también,
+pero en caso de que pues que nada más queramos ver ejecuciones de terminal,
+aquí lo hacemos. Si se fijan, va a ser casi lo mismo. Mira, aquí ya abrió, ya
+abrió este Devian. Entonces voy a voy a abrir una terminal new terminal y se
+fijan estoy también en Linux tal vez en otra ubicación porque acá me mandó
+Sistem 32 si le pongo PWD que es el para ver dónde estamos me dice que estoy en
+Sen 32 otra aplicación me dice que estamos en home Oscar. Okay. Pero pues
+podemos trabajar en ambas. Ahorita vamos a estar con esta para irnos
+acostumbrando. Okay. Entonces, hoy quiero que empezamos empecemos a ver
+este pequeños pequeños comanditos en empezar a a que nos perdón, a que nos
+familiaricemos más que nada y pues vamos a ir viendo algunos. Mm, ¿dónde está mi
+Aquí está, perdón, es que no me lo sé todos de memoria. Los básicos, los más
+básicos sí estaba poniendo aquí mi listita. Okay. El comando más básico
+aquí en Linux, el más el más sencillo de utilizar y el que el que generalmente
+van a ver a la gente que se dedica o que tiene ese tipo de distribuciones usar
+siempre es el LS, como que es una obsesión estar siempre sabiendo dónde
+estamos. Sí, pero ver que hay ya me confundí. Perdón, es una obsesión
+luego estar viendo qué hay dentro, ¿sí? donde estamos o qué hay en la ubicación
+donde estamos. Entonces, el comando que lista lo que hay en la ubicación en la
+que estás, o sea, eso solo va a enseñarte a ver si aquí hay algo
+adentro, te lo voy a listar. Si hay ficheros, si hay archivos, no sé este,
+lo que hay. Ejemplo, el comando es LS, es como una lista de es como LS de list.
+LS, enter y te va a decir, mira, acá adentro tienes esto, ¿no? Tienes tres
+carpetas que son estas. Okay. Y te va a decir,
+eso es lo que hay dentro, ¿no? Lo único que hace es este indicarte es lo que
+tienes. Puedes, ese caso, las carpetas se pintan de azul. Los archivos
+normalmente no se pintan, aparecen como una como letras como estas. Ejemplo, te
+puede aparecer un archivo por aquí. Ejemplo, si nos metemos, voy a meterme
+una que tenga archivos, no sé, ahorita les enseño cómo se meten, pero vamos a
+meternos. Si aquí uso list, ay, es minúsculas, perdón. Aquí ya me aparecen
+archivos, ¿no? Tengo estos archivos, tengo este archivo punto et aquí,
+ejemplo, aquí me los pinta por el tipo de archivo et. Estos son los de++, C++ y
+los TXT. Okay. Aquí hay archivos acá atrás, se fijaron, había carpetas. Okay.
+Okay. Entonces, eso es eso es lo que hace el comando LS, que es el más
+básico, decirte qué hay en la ubicación en la que estás. Si te cambias de
+ubicación, pues va a cambiar el contenido probablemente.
+Okay. Este, lo el otro el otro este comando que podríamos ver ahorita una
+vez es el PWD. PWD es el comando de pregunta de, "Oye,
+¿dónde estoy?" Sí, ejemplo, PWD te va a decir siempre la ubicación en la que
+estás. Si escribimos PWD aquí nos dice, "¿Estás en home Óscar?"
+Si nos vamos al otro terminal que abrimos acá, PWD nos va a entregar el
+otra la otra ruta. Acá estamos en este MNT Windows System 32. Estamos en una
+carpeta más delicada, si se fijan acá, incluso LS acá me va a tardar en abrir.
+Le voy a dar LS, le voy a dar enter. Va a tardar. ¿Por qué? Porque System 32
+probablemente tiene un montón de ficheros y de archivos, se fijan. Tiene
+un montón, ¿no? LS me lo está listando todos. Por ejemplo, si me fijo acá, ¿se
+fijan? Está grandísima la lista de archivos. hasta acá arriba
+y LS pues lo que hace nada más decirme, mira, estos son todos los archivos que
+tienes en esa ubicación. Okay. Y PWD, la otra nos dice dónde estamos. LS nos dice
+qué hay donde qué hay aquí donde estamos y PWD nos dice dónde estamos. ¿Qué pasó,
+Juan? E
+otros comandos más propios. Mandé otros comandos, le digo.
+Ah, man, es otro comando. Es para ver como las ayudas de los
+diferentes programas. No sé si está implementado en en WSL.
+Okay. Okay. No, ese no lo había usado yo. Es que hay otras opciones. Hay una
+que es este, literalmente hay una que es como especie de help también. Vamos a
+intentarlo. Ah, Manuel Page, vamos a ponerle a ver
+qué nos sale. Ah, este parece que no está.
+A ver, man, man dice, no parece que ese no lo encuentra, pero este voy a ver
+después, tal vez no está implementado aquí. Después vemos cómo lo agregamos.
+Yo no lo había usado, la verdad, pero bueno. Este,
+otro comando, otra cada comando luego tiene sus variantes. Por ejemplo, LS
+tiene variantes. Este, Ajá. Mira, eh, ya nos puso Genny
+ciertas diferentes flags por y esas flags son las variantes que le vamos a
+agregar al al al comando. Por ejemplo, LSU-L
+te va a dar la lista de lo que hay y te va a dar más detalles. Por ejemplo, lo
+ponemos así y fíjense, nos da la lista de lo que tenemos. Está las carpetas,
+nos dice que en total hay 12 entre carpetas y lo que tienen adentro.
+carpetas, carpetas, esta carpeta y nos da datos. Por ejemplo, estos son
+permisos de edición y escritura. Después lo vamos a ver más adelante. Permisos de
+edición. Nos dice los los que tienen acceso. Esto de aquí, según yo, es un
+código de de del proceso y fechas de creación o de edición, ¿no? Okay.
+Entonces, LSL, así como nos puse Genny, agregar la la bandera L más información.
+Sí, ya en la documentación van a encontrar todas las banderas. Por
+ejemplo, este hay otra manera. LSU-A sirve para ver archivos ocultos, por
+ejemplo. Sí. Luego Linux suele y y también Windows suele ocultar archivos.
+Luego las carpetas ocultas que se ven transparentes en Windows son archivos y
+carpetas ocultas. LS-La, pues ya en vez de darnos 12 en la misma ubicación ya
+nos da 48, ¿no? Porque nos está enseñando todos los archivos ocultos que
+están por ahí. ¿Se fijan? Los ocultos, los que no estaban hace rato, tienen
+diferentes permisos, ¿no? Porque pues este les digo, este esta columna de aquí
+dice los permisos de escritura y de lectura. La primerita lo vamos a ver más
+adelante, pero por ahora vemos aquí dice, "Está esto y están estos ocultos,
+¿no? Okay. ILS, pues si vemos en en el chat
+van a ver Genny creo que puso un montón de de especiales. Ver si alcanzo a verlo
+aquí puso, ejemplo, guion A te muestra carpetas, archivos. Ah, bueno, yo puse
+la guion te muestra cuerpos ocultos todo el formato de lista L guion L y con más
+y con y con y con ciertos detalles y H. Ese no lo he usado. A ver, LS G-H, a ver
+qué nos da. Gu, dice, muestra tamaño en formato humano.
+Okay, este caso no lo vi. No pasa nada. Ah, okay.
+Es ls gu la L H. Ser LH, me imagino, ¿no? L H. Imagino
+que H de Human también no lo encuentra. Bueno, ahorita
+la en lugar de Ah, ay, qué menso. Y acá es LH
+o LH. Así cualquiera es la combinación de todos.
+Lo pusiste separado del del guion. Perdón, perdón, perdón. Me norteo. Ahí
+está. Gracias Kenny. Sí, Se Kenia. Ah, es que no veo que abre los micrófonos.
+Va, que va. Eh, acá te lo ponen en formato más más humano. Mira, acá en vez
+de tener como procesos, los procesos, los IDs de los procesos, aquí en vez de
+eso te da tamaños, ¿no? Queamente son bytes, bytes y kilobytes y te da los
+permisos. Okay, perfecto. Sí, o sea, hay muchas variaciones seguramente para cada
+comando van a haber muchas variaciones. Este, de hecho, hay comandos para quitar
+y agregar permisos. También los vamos a ver, tal vez no hoy, tal vez después,
+porque esos son más complejos, pero van en la documentación de Devian
+Ubuntu o la que quieran van a encontrar todos esos son miles. Miles, me
+atrevería a decir miles de miles, no sé. Bueno, no, cientos de miles vamos a
+decir, ¿okay? o decenas de miles, no sé, lo
+exjero también. Bueno, este es este este es el este es
+el comando LS, que es ver listas listas de lo que hay de lo que hay donde estás
+tú. Pwd como vimos hace rato, nos dice dónde estamos. LS nos dice qué hay en
+dónde estamos. Okay, para que va la otra otra, ¿cómo decirlo? Otro comando base
+que se usa siempre es el change directory, que es CD.
+CD nos dice Chase directory, o sea, donde quieres cambiar. Por ejemplo,
+vamos a aplicar un LS básico. LS básico me dice, mira, acá abajo tienes tres
+carpetas. Okay. Entonces, yo tengo la oportunidad
+de moverme a cualquiera de ellas utilizando el comando change directory.
+Y por ejemplo, vamos a movernos a la carpeta programación. Programación. Mm.
+Td programación. Ya nos movió en el usamos LS. Ahí tenemos con de hecho está
+vacía. LS no nos dio nada. Significa que la carpeta está vacía. Entonces, ya nos
+movimos a la carpeta para regresarnos, o sea, para a revertir
+es es la carpeta que entramos, el comando exchange directory espacio dos
+puntos. Ese nos regresa al paso anterior,
+ejemplo, podemos verificarlo con PWD. Sabemos que estamos en home Oscar. De
+hecho, si damos otro CD dos puntos, nos vamos a regresar hasta home. Fíjense, si
+escribo aquí PWD, ahora estamos solo en home porque nos regresamos otro más.
+Aquí vamos a ver que hay un ls en home. Solo existe una carpeta que es la que
+teníamos. Vamos a regresar esa carpeta con otra vez change directory. Un
+trucazo. Si escribes ciertas letras de la carpeta que quieres y das tab, te la
+va a autocompletar. A menos que haya carpetas que se parezcan en ciertos en
+ciertos en ciertos estructuras. Por ejemplo, voy a escribir Ócar G. Me meto.
+Aquí en Óscar G tenemos una carpeta programación y una carpeta programas.
+Estas ya nos pueden causar problemas. Por ejemplo, vamos a decir, "Okay, voy a
+escribir la palabra pro y voy a decirle, "A ver, complétamelo."
+Te va a completar hasta programa. ¿Por qué? Porque programa es la es el es la
+estructura que se repite en esas dos carpetas que se llaman casi igual. Son
+iguales hasta hasta esa parte, hasta programa, porque el otro ya tiene y el
+otro tiene una S. ¿Sí? Entonces, si le volvemos a dar, pues no nos va a dejar.
+Ya tenemos que completarla. Entonces, será programación, por ejemplo, nos da
+hasta aquí y ya decidimos. Bueno, si agrego una S es programas, si agrego una
+C y le doy otra vez, ahora sí me lo va a completar porque ya le ya le avisé cuál
+es la que quiero. Luego hay veces este a veces pasa en en algunas
+distribuciones que si das el tab te itera entre entre nombres, archivos,
+¿sí? Ejemplo, aquí nos daría programas, si le vuelvo a dar otro, me da
+programación, si le vuelvo a dar otro, me da programas, ¿no? Se te va iterando
+también. Este caso no lo hace. Si le doy CD programación, ya me metí a la nueva
+carpeta. Entonces, eso es lo que hace CD. es CD,
+indicas a dónde te quieres mover y te vas moviendo. Y CD dos puntos es
+para revertir, para regresar. Hay un hay un comando CD que te lleva hasta el
+inicio, o sea, te lleva hasta la raíz del usuario SD. Y el símbolo es una es
+una es como un es como una guion onduladito. Ese no lo tengo en mi
+teclado, pero aquí lo tengo yo en mi bloque de notas. Lo voy a pegar. Es este
+de aquí. Lo alcanzan. Si lo alcanzan a ver. Es el guion. Ajá. El que me
+pusieron. gu onduladito. Si pones cd espacio guion onduladito, te vas a
+regresar a la parte del inicio del usuario, ¿no? Este caso no lo voy a usar
+porque luego moverse desde ese tipo de carpetas de las de raíces eh se vuelve
+un desastre. Entonces, si pero si tú quieres regresar hasta el inicio, si ya
+te perdiste y estás regresando, avanzando, te puedes ir hasta atrás.
+Sí. A ver, C de solito. Vamos a intentar ese que dice. Este no lo he intentado.
+Gracias. Estamos en,
+vamos a ver aquí con PWD dice que se solito te lleva a un home. Okay.
+CD home. Ah, si yo escribo CD home, pues sí me va a regresar, ¿no? Se supone,
+¿no? Bueno, me regresa al que estamos queremos que es home, ¿no?
+Es, ejemplo, algunos que los que me ponen en el chat, sinceramente no los
+conozco. Este, les digo, son demasiados y pues algunos no los usas nunca,
+algunos sí los usas. Ahorita lo que hice fue este ponerme a recordar y a revisar
+documentación los que los que vieran como más importantes. Va, que va. Todos
+los vamos calando después, ¿no? De hecho, cuando
+tail así se escribe, Ismael, que pones tail. Vamos a calarlo así nada más. No
+hay que agregarle alguna algún parámetro sobre un archivo. Este, ¿qué hace?
+Tampoco lo conocía. Si quieres abre tu micrófono, dime,
+dime, explícame qué hace. Es No pasa nada.
+Ah, ese es útil. Ese te muestra el final de un archivo.
+Órale. Y tiene una contraparte que se llama
+head que te muestra pues el el principio. Órale. Yo realmente
+cualquier otros archivos utilizo el cat o otros o no.
+O les ajá o también el otro, ¿cómo se llama? El nano también nano. Que te
+genera aquí una especie y te plotea todo el código y lo puedes modificar aquí
+dentro de la terminal. Nada más que para archivos grandes nano es un es una
+tortura. Claro, el estilo porque le puedes especificar número de líneas y
+que se esté refrescando. Entonces, por un archivo de locks cuando estás
+monitorizando algo, tienes los loc. Ah, no, pues está super bien. Sí, es la
+cola. Perfecto. Eso no lo conocía. Gracias. Este, cuando creemos un archivo
+lo calamos a ver cómo nos va para lo que está superinesante porque
+ahita que me dijiste que te enseña lo último en el inicio, luego pensé, pues,
+¿qué aplicación le voy a dar? No, pero ahorita que me hablas de lo dije, "Ah,
+pues sí, cierto, no, para lo estará super bien."
+Este, pon aquí Juan, para los que quieran saber sobre la lógica,
+conversaciones de los directorios de Linux. Ah, pues mira, este, aquí Juan
+también les puso un link interesante por ahí. Guárdenlo porque creo que los chats
+no se guardan aquí en aquí en este en Meet cuando se acaban las reuniones. Es
+es el link. Guárdenlo por ahí también lo voy a copiar yo lo voy a guardar. Okay,
+va que va. Otro otro comando básico. Después vemos estos también los voy a
+guardar. Me voy a acordar de Tail Head. Este, otro comando básico que les va a
+servir es el make directory. Ese comando se escribe así, MK de dir y significa
+make directory, o sea, crear un directorio. Ejemplo, déjenme fijarme
+dónde estoy para no crear un lugar donde no quiero. Aquí, ejemplo, les digo, por
+eso el LS es una adicción, todos ponen LS, ls siempre estás ahí. A veces pones
+ls, aunque ya lo hayas puesto antes, ¿no? Parece como cuando quieres sumar
+uno más un en la calculadora para estar seguro. Pero, por ejemplo, aquí reviso.
+Ah, estoy en LS, tengo estas tres carpetas, no sé, quiero crear aquí mismo
+otra carpeta nueva, ¿no? Este, le vamos a poner nueva, así como va. Me cadir
+nueva. Okay. Si me vuelvo a fijar con ls, ya aparece mi nueva carpeta, ¿no? La
+carpeta con el nombre nueva ya me aparece creada. Puedes eh la carpeta se
+va a crear donde el directorio pues se va a crear donde estés. Por ejemplo,
+aquí como estaba yo en la carpeta Óscar G, que están esas tres carpetas, ahí se
+agregó la nueva. Si yo quiero crear una nueva carpeta dentro de programación que
+no tiene nada, por ejemplo, programación, aquí le le pongo para que
+me lo complete. CD de programación, aquí no hay nada. Entonces aquí puedo crear
+una nueva carpeta MK de nueva dos. Y si me fijo, ya aparece, ¿no? Dentro de
+programación. Me voy a regresar. CD dos puntos espacio dos puntos. Nos vamos
+para atrás. Sí. Entonces, por ejemplo, este,
+vamos a crear una otra nueva carpeta con MKIR. No sé, vamos a ver si estamos bien
+donde está. Dijimos que estábamos. Sí, estamos donde queremos. Aquí vamos a
+crear una nueva carpeta MKIR. Este, le vamos a poner este
+el nombre de usted de su clase ATA 7 8 a9.
+Y ya se creó la carpeta, ¿no? Ya está la nueva carpeta. Ata 89. Nos vamos a meter
+ahí. ATA 8 la completo. 89. Ya estoy dentro. Ahora vamos a usar otro comando
+que también es interesante, el comando touch. El comando touch te crea un
+archivo vacío. Ay, perdón. Este comando es interesante
+porque pueso te crea el archivo, nada más no no te lo modifica. Primero te lo
+va te lo crea con touch. Touch, ay, perdón, minúsculas, perdón.
+Se escribe así, así como de tocar. Touch va y te crea el archivo. El comando es
+touch más el nombre del archivo. Por ejemplo, vamos a crear un archivo notas
+punto. Le vamos a dar una extensión txt. No, tienes que indicar la exención
+también. Entonces, Touch notas te va a crear el archivo en esta ubicación en la
+que estás. Le va a poner ese nombre. Si le doy enter y me fijo con ls, ya me
+aparece el archivo txt dentro de la carpeta que creé hace rato con MKDir.
+MKDR crea directorios, Touch crea archivos. Okay. Ahora el que les decía
+hace rato, el comando que les digo que luego sirve. El comando lo que me dice
+es qué hay dentro del archivo. Me deja ver qué es lo que tenemos. Por ejemplo,
+si yo escribo cat y y e indico el nombre del archivo, que es el comando que hay
+que darle, ejemplo, notas.txt, me va a decir que adentro, pues no hay
+nada. Entonces no va, ¿cómo se dice? No va no va a hacer nada. O sea, no me va a
+entregar nada. ¿Por qué? Porque el archivo el archivo este está vacío. Sí.
+Okay, voy a revisar más para estar seguro si estamos donde queremos. Okay,
+estamos en notas para escribir un texto rápido. Y esto lo van a empezar a ver
+que se parece a cuando automatizas en Windows o Linux utilizando archivos CMD,
+esos archivos, esos archivos por por lotes. Este, una manera rápida de
+escribir es utilizando eco. Eco lo que hace es literalmente trabajar con una
+línea de texto, un string y se lo y ejemplo si escribes eco y escribes el
+string, normalmente lo que hace directamente la comandera es imprimirlo.
+Pero hay una variante, por ejemplo, vamos a escribir hola hola notas. Sí,
+este archivo de aquí no quiero que se imprima ni que se haga el eco,
+literalmente que es eco como de de de imprimir, sino que quiero que se guarde
+en el archivo que tenemos. Tenemos que estar en la ubicación del archivo para
+que funcione, porque si no damos la ubicación bien, no va a funcionar. En
+este caso, tenemos que estar en la carpeta donde se encuentra el archivo.
+En este caso, el archivo es notas y está dentro de la carpeta en la que estamos
+actualmente, según el LS que hice hace rato. La flechita indica que eco se va a
+guardar ahí esa palabra se va a guardar la palabra hola nota dentro de esto. Y
+vamos a darle enter. Ahí está. Okay. Entonces, esto de aquí ya agregó, se
+supone, texto al archivo. Sí, vamos a verificarlo con el famoso CAT que les
+decía. Es CAT, el nombre del archivo que quieras revisar. XT. Y se fijan, ya nos
+da ya nos da contenido, o sea, ya tiene cierto contenido el archivo. Si yo
+agrego, si yo agrego más este más este ecos, vamos a ver qué pasa. Vamos a ver.
+Eco y ahorita vamos viendo qué variaciones tiene también este ejemplo.
+Eco y le agrego otra cosa, ¿no? Este, buenas noches.
+Y lo vamos a guardar otra vez en nota. Vamos a ver cómo se comporta.
+Ay, me falta una coma XT. Okay. Y ahora repetimos el de antes. Ah, si se mueven
+con las flechitas aquí en la terminal, flechita hacia arriba, les saca comandos
+anteriores y se pueden regresar con flechitas hacia abajo, ¿no? Para en caso
+a veces que tengan comandos que van a repetir exactamente, pueden ir a
+buscarlo. Así busqué el decat que habíamos usado y lo revisamos. Si se
+fijan, este eco reemplazó lo anterior, ¿sí? O sea, la línea que teníamos antes
+se borró y Eco puso esta nueva que era buena noche. Hay manera de indicarle que
+lo que quieres es que agregue línea nueva, no que esté esté borrando la
+anterior. Por ejemplo, la variante para que Eco no borre no borre la línea la
+línea que ya estaba y cree la y y agregue la nueva es, no sé, buenas
+noches, no sé, agregamos la palabra saludos y para que no se borre
+agregamos doble flecha. Esa es la variación. notas.txt.
+Damos y verificamos a ver cómo nos quedó. Y se fijan, agregó la siguiente
+línea nada más y no borró la anterior. Esa es la variable.
+Hay otro. Dime, dime. Para este un comando que me gusta mucho.
+Es el comando take. Take, carpeta nueva. Lo que hace es
+crear la carpeta, entrar y entrar en ella. Mard, no estoy seguro si existen
+todas las distribuciones, pero se puede instalar sin problema. Okay, esa no. O
+sea, creo que sí la había escuchado, pero no sé si en esta esté. A ver, vamos
+a revisar, vamos a ver qué hace take, ejemplo.
+Vamos a ver dónde estamos. LS, estamos en la carpeta de ATA notas. Vamos a
+regresarnos antes de hacerlo. CD. Y ahora estamos una carpeta atrás que es
+donde está nuestra carpeta nueva. Vamos a aplicar el comando take. Vamos a calar
+el que nos da Genny Take y vamos a crear este
+carpeta take. Así le vamos a poner carpeta gu bajo take. A ver qué pasa.
+Eh, no parece que no lo tiene aquí, pero dice que se puede instalar. Después
+vemos esa parte de cómo agregar comandos que no tengamos, pero está interesante
+porque pues te ahorra un paso. Si vas a crear una carpeta, probablemente lo
+siguiente que vas a hacer es entrar. Entonces, tener take ya puesto, pues es
+mejor. Va, que va, pero GR Ging, no pasa nada, pues lo vamos a revisar poco a
+poco. Otro comando que sí tiene este esta distribución es el comando de de es
+una esp, es SP, pones CP, que es copy, y copia archivos y los pega ahí mismo, por
+ejemplo, se escribe así. Ah, perdón, déjen meto, ¿dónde estamos? Estamos en
+esta. Voy a meterme a la carpeta que creamos ahorita, la carpeta 89. Ya estoy
+adentro. LS minúsculas. Veo que tengo el archivo, el comando se
+escribe así, CP, que es de copy y vamos a decir que vamos a copiar el archivo
+notas txt. Después de escribir el archivo que vamos a copiar, hay que
+darle un nombre al nuevo archivo. Le vamos a poner copia.
+Copiar notas. Le damos enter, revisamos y si se fijan
+ya aparece también la copia, la copia del de de este nuevo archivom.
+Luego hay un hay hay comandos también para renombrar para renombrar y borrar
+los archivos. Por ejemplo, vamos a a renombar a renombrar un archivo, perdón,
+para hacerlo el comando es MV, o sea, de de no me acuerdo cuál es la que qué abre
+esto, pero pues me acuerdo que el comando SMB, que es para renombrar mop.
+Okay, entonces estamos cambiándole cambiándole su nombre. Entonces, este,
+lo que hacemos ahí con MB es cambiarle el nombre a un archivo, por ejemplo,
+porque según yo también MB sirve para mover, pero si cambias los parámetros te
+sirve para mover como para cambiar nombre, que en esencia es lo mismo, ¿no?
+Cambiar nombre o cambiar un nombre general de una de una dirección es como
+refactorizar, ¿no? Entonces cambiar un nombre, un solo nombre entra en el en la
+categoría de refactorizar. Entonces, por eso entiendo que que el comando move
+sirve tanto para mover como cambiar nombre. ¿Okay? Entonces, por ejemplo,
+vamos a ver, vamos a cambiarle nombre a la copia que creamos, copia notas.
+Y le vamos a poner este respaldo, ¿no? Respaldo a notas.
+Le damos enter, revisamos y se fijan, ya no se llama copia nota, sino que se
+llama respaldo notas. Y según yo, si a MOP cambiamos los cambiamos este los
+este los parámetros, bueno, por ejemplo, vamos a crear una nueva carpeta. Estamos
+aquí, aquí mismo dentro de la carpeta que creamos vamos a crear una nueva
+MKIR. Le vamos a poner este carpeta. Sí, carpeta
+carpeta pruebas. Estoy haciendo un desastre de de carpetas por todos lados,
+pero no pasa nada. Después lo arreglamos. Ahita. Vamos a ver el
+comando para empezar a ser borrados. Este, por ejemplo, aquí creamos una
+nueva carpeta, la buscamos, ya está ahí. Carpeta pruebas. Vamos a decir que
+respaldo no queremos que esté acá, no esté en otro lado. Ahí aplicamos el
+comando MB de move y decimos respaldo. Ay, respaldo. TXT es el nombre del
+archivo que queremos mover. Si a MUP le damos este de parámetro un valor de otro
+nombre que va a ser MOP, en automático va a cambiar el nombre. Pero si en vez
+de darle como para el segundo parámetro, no un nombre, sino una ubicación, por
+ejemplo, decimos que decimos la carpeta. Ay, ay, perdón, carpeta
+pruebas e indicamos con el diagonal. Ah, ¿dónde que me faltó? ¿Que me faltó?
+Ah, creo que no está, no está. Perdón, perdón, perdón. Ah, es
+que se llama respaldo notas. Perdón, no respaldo. Ay, ahí está. Si nos movemos
+por acá, recuerden que esa cosa es el el otro de acá, pero recuerden que dentro
+de la terminal, la ubicación donde está este punterito blanco no es donde van a
+editar, va a editar la posición anterior. Por ejemplo, si yo quiero
+agregar algo entre el punto y la O, tengo que ponerme en el punto. Ejemplo,
+si yo quiero agregar aquí y fíjense, cambia la posición anterior. Entonces,
+se llamaba en realidad respaldo notas, ¿no? Ahí está. Reviso ls. Respaldo
+notas. ya no está aquí, sino que probablemente va a estar en la otra,
+¿no? Donde lo movimos se movió de carpeta, ¿no? Entonces, MOP
+sirve para cambiar nombre y para mover, que en teoría sería el generalización,
+la generalización de refactorizar, refactorizar un archivo. Okay, antes de
+irnos, porque ya se va a acabar este faltan otros estos, pero los vamos a
+seguir viendo. Hay un comando que es remove. el el comando remove borra borra
+un archivo. Entonces, por ejemplo, RM de remove le dices que quieres borrar, por
+ejemplo, quiero borrar este quiero borrar este archivo que quedó el
+de respaldo. Respaldo, notas remamos. Si volvemos a ver qué hay dentro de la
+carpeta, ya no hay nada porque ya lo borramos. Hay más comandos, vamos
+ahorita para borrar carpetas, todo eso, pero como quedan 5 minutos tengo que
+brincar todavía otra clase. Este, por ahora lo voy a dejar aquí para no
+saturarlos. Todo mundo te va a quedar grabado y pues este, déjenme ver si
+encuentro la página de de de documentación completa y se las se las
+paso para que va. Déjenme ver si no me faltó nadie de pasar lista antes de que
+se vayan. Ah, ¿dónde quedó esta?
+Ah, este es mid.

@@ -1,0 +1,472 @@
+Okay, está la grabación y les voy a compartir pantalla.
+Que me dé la opción está tardando mucho. Ahí está.
+Es mandando unos mensajitos quién es. Este, va. Okay, vamos a continuar con
+este tema de con este tema de este de comandos nada más. Déjenme salirme de
+este que estaba es hace ratito. Este ya es este ya sé ya no tardamos en llegar.
+Nada más este ignoren ese es esta esta sintátis horrible, ¿no? Estaba dándoles
+una clase de de cómo optimizar ese tipo de cosas para que no tengan
+cómo se no tengan que escribir if. Bueno, este bueno, vamos a empezar.
+Vamos a meternos a nuestro a nuestro Devian como siempre. Voy a quitar esto.
+Esperar un ratito. No más dejen que cargue. Anda un poco lenta la
+computadora, no sé por qué, pero ahorita debe de cargar. Okay, ahí
+está. Vamos a Devian. Esto lo hago porque pues para empezar a
+acostumbrarnos a estar siempre en el en este espacio que es mucho más cómodo de
+trabajar que estar en una comandera por fuera.
+Quiero enseñarles un poquito de comandos un poquito más más especializados, ya
+más de visión, por ejemplo. Okay, ya estamos en Devian. Dejamos. Sí,
+estamos ya ya bien aquí para trabajar. Entonces,
+repaso rápido, ¿no? Les decía, este, los comandos más básicos que que tiene Linux
+son los de son los que son para ver dónde estás, qué hay, donde estás, cómo
+moverte. Entonces, los comandos más básicos de Linux sirven para movernos
+entre directorios, para revisar directorios, para listar archivos y todo
+eso, ¿no? Que es lo que lo que uno hace en su computadora Windows, luego
+picándole al explorador de archivos, moviéndose entre carpetas, picando,
+dándole clic derecho, ver información. ese tipo de cosas en Linux se hacen,
+bueno, se pueden hacer como en Windows porque pues tiene una interfaz de
+usuario cuando lo instalas como máquina virtual, por ejemplo, o como un doble
+boot o cuando le cambias la le cambias el sistema operativo a tu compu y le
+pones un Linux. Este tiene también su GUI, o sea, tu su interfaz para usuario.
+Obviamente nada amigable, pero lo puedes hacer así. Pero en Linux siempre es más
+cómodo moverse, moverse de esta manera, trabajar de esta manera. Entonces, el
+equivalente a lo que hace el humano al moverse, lo puedes repetir siempre en la
+comandera. Entonces, de la vez pasada, ¿se acuerdan? LS era el más básico. LS
+les dice que hay aquí, ¿no? Algunas variaciones del LS es agregar el L gu L
+y les da más datos, ¿no? Y el que nos pasó, no me acuerdo si fue Geno, no me
+acuerdo quién fue, nos dijo sí que si LSU- escribías LH, te daba los datos más
+humanos, ¿no? Te explicaba un poquito mejor lo que estaba pasando, lo que ya
+te daba tamaños. Mm. Okay. Entonces, cuando hacemos eso, ¿qué
+nos da? nos da nos da nos da estas listas, ¿no? Esto de los permisos les
+digo, después lo vamos a ver más a profundidad cómo estar dando quitando
+permisos, pero en este caso pues más o menos les explico, les explico qué son,
+¿no? E esto, estos este tipo de de sintapsis, por ejemplo, la D significa
+directorio, la R es permiso de de lectura de de de reading.
+Este W es permiso que tiene permiso, tenemos permisos para escribir y permiso
+de ejecución. Este de aquí, ¿sí? Entonces, de aquí para acá nos está
+diciendo eh que es un directorio. Tenemos permiso de escribir, leer y de
+ejecutar. E esto estos permisos son los que tenemos, ejemplo nosotros como
+usuario, como usuario sudo, como superusuario. Entonces, se fijan,
+tenemos todos, ¿no? Y los tenemos igual para todas las carpetas, ¿no? Y tiene
+sentido, ¿no? Si tú eres el superusuario el administrador, pues no deberías por
+qué no tener esos esos permisos. ¿Sí? Entonces, por después vamos a ver más
+adelante cómo estar cambiando para ir cambiando este tipo de de letritas para
+quitar agregar permisos. Eso nos va a servir más para otras cosas, como por
+ejemplo cuando tengas más de un usuario, este, quieres quitar alguno y que el
+otro sí tenga y cosas por el estilo, pero por ahora
+me perdón, nada más les explico más o menos qué es lo que significan estos
+después porque esos son más complejos, pero sí. Okay.
+E, bueno, también LS, ya viendo más a profundidad este comando, porque dije,
+bueno, de una vez les voy a explicar otra otra variable, es tú puedes ver con
+ls un tipo de un tipo de archivo. Si tú escribes LS, escribes asterisco y
+escribes una extensión, por ejemplo, archivos C++ serían C++.
+le estás diciendo, "Oye, donde estoy yo ayúdame a listar todos. El asterisco es
+de todos, todos los archivos que terminen con la extensión CPP. Si se
+fijan, no hay." Entonces, me dice, "No, pues no no hay archivos con la extensión
+CPP porque pues en realidad también no hay archivos, son puras carpetas, si se
+fijan. Vamos a ver ejemplo, si nos movemos con CD, que era el otro comando
+que vimos, a CD nueva. En nueva tenemos también está vacía por si aquí se oye
+cosas. Entonces vamos a movernos, por ejemplo, a la carpeta CD era ATA, esta
+que está acá ATA 8 a9. Esa sí debe haber cosas. Ahí está.
+Tenemos tenemos este archivos. Entonces lo podemos escribir ls. Lístame todos
+los archivos que terminen con punto txt, por ejemplo. Se fijan, solo hay uno y es
+ese, ¿no? Pues si abriera dos, pues los listaría. El asterisco solo te dice,
+"Lístame todo tipo de archivos." Este pues te sirve cuando quieres
+filtrar, ¿no? En el LS, cuando no tienes acceso a ver a ver archivos acá en una
+manera más eh navegando por la computadora, pues de la terminal también
+puedes filtrarlos. El otro comando importante, se acuerdan
+que era que era CAT. El comando CAT nos permitía ver el contenido del archivo,
+el que utilizamos ayer, por ejemplo, CAD, este notas XT nos va a decir que
+hay adentro, ¿no? Buenas noches, saludos. que te habíamos escrito antes.
+Este para archivo, este es para este CAT, este es general, se puede usar para
+cualquier archivo, pero hay a veces que los archivos son muy grandes. O sea,
+cuando un archivo es muy grande y utilicemos CAT, lo que va a pasar es que
+nos va a imprimir, bueno, generalmente lo que va a hacer es que nos va a
+imprimir parcialmente el archivo. Así lo lo primerito, va a irse varias líneas y
+probablemente no lo imprime completo. nos dice, bueno, aquí como tres puntos o
+te pone algo y te indica que el archivo continúa, pero no te lo imprimió todo el
+CAT. Para, ¿cómo dice? Para poder revisar archivos grandes o archivos que
+estén divididos por páginas, por ejemplo, o por algo parecido, algo por
+el estilo, se puede utilizar se puede utilizar el comando les.
+El comando les te permite moverte en archivos este más grandes, por ejemplo,
+comando les txt. Y si se fijan, abre como una especie de
+de terminal más grande y te va aquí dibujando el archivo, ¿no?
+Te lo hace, pero en este caso pues es un archivo TXT, entonces no tiene no tiene
+tanta, ¿cómo se dice? Este, te va a estar dibujando aquí que todas las
+páginas es la misma. Si se fijan, si se fijan, ya no estamos dentro de la de la
+terminal de comandos, sino que entramos a una especie de interfaz, porque si
+subo y subo no me deja salir. No significa que estemos viendo diferentes
+páginas, sino que estamos viendo lo mismo en bucle. Vean acá la barra.
+Sí, en la barra estamos solo en este espacio, nada más que si yo voy rápido,
+pues me regresa, no es como un book, pero fíjense, solo nos está enseñando lo
+que contiene el archivo. Pone un skipping de que pasamos al otro, pero
+bueno. Entonces, nos indica lo que contiene el archivo. Y aquí dentro, si
+el archivo fuera grande, nos podemos mover con las flechitas. Las flechitas
+de de del teclado es para moverse. Si escribimos diagonal es para buscar
+texto. Por ejemplo, vamos a escribir diagonal. No sé.
+Saludos. Ay, perdón. Y busca el t ejemplo. Saludos, ¿no?
+Ejemplo, algo que no existe aquí dentro, no sé. O la palabra sal. Ahí está.
+También la encuentra. Eh, la palabra esta, tal, esta no existe, por ejemplo,
+si fijas, no le encontró ese patrón, no encontró esa palabra, esa serie de
+caracteres. Entonces, no lo encuentra. Entonces, para movernos con flechitas,
+para buscar diagonal. Y si esta cosa aquí, ay, gey, ya me metí. ¿Cómo me
+salgo? La salida es con Q. Listo. Si le das a la letra Q te saca, te dice esta
+ya se acabó tu tu exploración por el archivo. Pero les nos permite leer
+archivos más grandes. No, tienes un archivo, no sé, este caso es un archivo
+txt, pero si tienes un archivo de código enorme y no tienes acceso a verlo aquí,
+ejemplo, en el Visual Studio que estamos trabajando, si no lo puedes revisar acá,
+pues lo puedes revisar fácilmente aquí también. Sí, ojo, este este comando no
+permite editar, sino simplemente leer. Eh, vamos a ver más adelante uno que sí
+nos permite editar, pero en este caso les no permite editar, solo te dice,
+"Oye, este, ahí está, ahí está el contenido, ¿no? Nada más que no no lo
+puedes mover. Va que va. Eh, el comando head, como nos dijo ayer este el otro
+compañero, no me acuerdo cuál fue de ustedes, con los nombres y tengo memoria
+de teflón. Este, el comando head nos muestra las
+primeras líneas del archivo. Ejemplo, si escribimos notas txt,
+pues nos enseña las primeras líneas. Obviamente pues el archivo notas pues
+nada más tiene dos líneas, entonces este no hay problema porque pues las primeras
+líneas son esas. Sí. Y el contrario de este es el archivo, el el comando el
+comando tail. Con el comando tail podemos ver las últimas las últimas este
+líneas de este archivo, que son las mismas porque pues tiene dos líneas,
+¿sí? Pero para un archivo más grande lo que verían sería, por ejemplo, primero
+varias líneas y después pues ahí se termina, se corta, solo te enseña
+algunas líneas y detail te enseñaría, pues te dice aquí, de aquí para arriba
+no te enseño, pero te enseño lo último, ¿no? Lo que te va a enseñar más o menos.
+Estos dos de aquí también se pueden modificar, no son se pueden poner así
+directamente, se usan, pero también puedes tú indicar cuántas líneas quieres
+ver. Por ejemplo, de head, yo le puedo decir guion n para decirle, quiero ver
+las primeras ejemplos y de las primeras dos líneas de notas pun txt. Notas tiene
+dos líneas, entonces nos va a enseñar todas. Sí, pero vamos a decirle, quiero
+de head que nada más me enseñes las la primera línea de notas.
+Sí. y nada más nos enseña la primera línea, o sea, la de hasta arriba head-n
+el número y el archivo te va a decir, te va a dar las el número de líneas que tú
+le digas. Entonces el comando se modifica con un guion N y un número. Ese
+número va a indicar el número de líneas. Puede ser guion- N10 que te va a dar las
+primeras líneas, guion- N20 te da las primeras 20 líneas y así nos vamos.
+Y este, como ya lo debieron haber deducido, tail tiene lo mismo, ¿no? Si
+tú escribes este guion N G2 con tail, te va a dar las últimas dos líneas, que en
+este caso pues también son todas porque pues tiene dos líneas, pero escribamos
+tail con una línea, nos va a dar la última nada más porque en vez de pedirle
+la primera con head, la primera línea, estamos pidiendo la última. ¿Listo?
+Entonces, en vez de buenas noch que me faltó la e, este, te va a dar saludos.
+Hm. Es una manera de modificar de modificar tail y es un poquito más
+avanzado, ¿no? Entonces también otro que que es interesante es el comando eco.
+¿Se acuerdan? Eco nos permitía meter texto a un archivo. Si usábamos eco, por
+ejemplo, eco, eh, una un tex, unas letras, por ejemplo,
+hola, así, hola. y escribimos el archivo, lo que queremos
+escribir, digamos este, perdón, flechita en dirección al archivo que queremos
+notas.txt la escritura y podemos con cat, la que
+usamos hace rato, leer el archivo, ¿no? Otra vez notas txt. Si se fijan,
+sobrescribió, acuérdense, una flechita, por ejemplo, eco con una flechita,
+sobrescribe el contenido por el nuevo. Dos flechitas
+no sobrescriben, sino que escriben en la nueva en la última línea. Agregan algo
+al final. Si volvemos a usar CAT, ya tenemos dos veces la la repetida la
+palabra porque la escribimos dos veces. Escribimos una vez con el primero y el
+segundo como llevaba doble flechita, la escribió otra vez al final. Vamos a
+agregar más texto, ¿no? Por ejemplo, vamos a escribir este
+otra vez. Buenas noches para que no se no no extrañarlo.
+Ah, notas pun txt se agrega. Cat va a enseñarnos que pues
+se agregó, ¿no? Ahí está. Okay. Bueno, Eco pues nos permite meter comandos
+línea por línea, ¿no? No, este, en algunos casos, en algunos casos es
+bueno, por ejemplo, si estás trabajando algún algún alguna automatización, por
+ejemplo, en ese otro rubro, pero si estás trabajando, ejemplo, una
+automatización con Yenkins, que es un es un framework de automatización para
+despliegues, para continuous integration, continuous development,
+para diferentes cosas, lo que hace es un orquestador que ejecuta archivos,
+ejecuta, ejecuta comandos por bloques, ejecuta lo que tú quieras, también
+triguerea. Entonces este, imagínate que en una automatización en Yenkins es
+necesario que tú estés metiendo comandos a un TXT línea por línea o un lock, por
+ejemplo, que estés llenando un lock, un archivo lock que te esté diciendo,
+bueno, ah, si tu si tus scripts no tienen la capacidad de crear lock, si tú
+lo quieres crear usando el Jenkins, por ejemplo, este ejecutador, tú en Yenkits
+programas que esté ejecutando un programa de bloques que sea de eco, o
+sea, un uno un en terminal y cada cierto tiempo, cada vez que pase algo, escriba
+eco en la terminal, algo, un lock, y lo mande a un archivo lock y esté
+escribiéndolo en la última línea usando las dos flechas. Entonces ahí eco pues
+tiene una buen tiene un buen uso, ¿no? Y dices, bueno, entonces para para eso me
+serviría, ¿no? Por ejemplo, hay muchos usos, pero ese es un ejemplo puntual que
+les digo, o sea, suena medio raro decir, ay, voy a estar escribiendo línea por
+línea, pero pues debería llegaría a tener usos, ¿no? Porque un lock
+normalmente es un archivo que se va llenando línea por línea porque solo se
+va llenando cuando hay cambios donde se agrega la hora y fecha del cambio y qué
+pasó o la hora y fecha de un error y cuál fue el error, ¿no? Por ejemplo,
+entonces es un archivo lock general. Bueno, eco solo nos permite hacerlo por
+por línea, como ahorita vieron. Hay hay un comando que nos permite editar un
+archivo, pero podemos editarlo ya de la manera que nosotros queramos. Sí, es
+poco incómodo, pero eh vamos a utilizarlo. Se llama Nano. Nano. Le
+podemos dar un archivo y él nos va a permitir entrar. Se parece a les sean
+que les nos abre como otra como otra sub otro otra terminal o algo así como una
+especie de de ambiente para leer el archivo página por página o avanzando
+con las flechas y buscar texto incluso. Nano nos hace algo parecido, solo que
+este sí nos va a permitir modificar. Por ejemplo, vamos a ver.
+De hecho, BME es como les ah que me decías ayer, ¿verdad? Ah, ese también
+está bien. Ahorita vemos si nos creo que no nos jaló ayer. Ahorita lo intentamos.
+Va, que va. ¿Se fijan? Ejecutamos nano el nombre del archivo. Sí, al ejecutar
+eso nos metemos a algo parecido a lo que teníamos con les nada más. Acá tenemos
+un montón de funciones. Fíjense abajo, de hecho, te da te da como una pequeña
+guía para que como este caso estás estás editando archivo. Entiendo, ya no puedes
+salir de mí. Ah, no, ahorita intentamos. ¿Qué pasa?
+No, no, no, no lo he usado, la verdad. Este, no se puede salir para no para no
+usarlo, porque yo las primeras veces que utilicé
+Nano se los digo por mi experiencia, porque hubo un tiempo cuando reinicias
+el equipo, este, cuando yo este ya hace unos años, luego con mis compillas ahí
+en la universidad eh nos tocó un pedacito de pandemia, entonces
+buscábamos qué hacer aparte de las clases y no se nos ocurrió eh ofrecer
+algún un cuero servicio de freelance, ¿no? Y sí tuvimos un cliente, una
+persona que nos pidó, una persona que nos pidió un código, un un un perdón, un
+un sistema fronten para su su negocio de hielo, ¿no? Él era él fabrica,
+era una hielera. Entonces nos pidió eso y aparte de ayudar en el backen, pues me
+tocó a mí aventarme la chamba del DevOPS, ¿no? Esa esa chamba la hicimos
+aprendiendo a la par y me acuerdo de cuando mis primeros mis primeros
+intentos de de DevOps eran eran BPS de Hostinger y de otras otras este
+plataformas de alojamiento. Calamos varias para ver cuál nos convenía más.
+Me acuerdo que en algunas de esas la comunicación con con el con este con
+esos servidores era usando una comandera como esta y no veías nada más más que la
+comandera. Entonces, eh subíamos subimos el código a Gitcop, hicimos unos unos
+unos este que perdón que el servidor lo clonara, que estuviera ahí como que
+recibiendo los nuevas autualizaciones y entonces de repente de repente nos
+tocaba hacer una que otra modificación en ese momento que no podíamos este
+mandar a Guitofijalar y yo entraba con Nano a ver qué hacía y de repente ya no
+ya no me acordaba cómo salir, no era un show. Pues les dio que hablan de Bim
+dicen eso no me trae como recuerdos de me trae malos recuerdos. Entonces, pero
+en Nano sí lo conozco ya. Entonces, aquí sí, aquí sí puedo salir. Entonces, Nano
+te da esta especie de mini interfaz. Fíjense, aquí me puedo mover, me puedo
+mover a lo largo del archivo y obviamente aquí yo puedo agregar, borrar
+cosas y y modificar. Por ejemplo, yo podría borrar así, tengan cuidado, como
+está en modo insert, si te mueves va a borrar el anterior. Ejemplo, si yo me
+pongo acá, va a borrar la última. A, ¿sí? Si yo me pongo aquí, por ejemplo,
+agregamos otra letra aquí, ¿sí? Este comando de aquí, si yo le doy, si yo le
+doy borrar ahí, no va a borrar la I. ¿Por qué? Porque va a borrar el
+anterior, que sería la A. Sí, no borra o modifica la posición en la que está,
+sino la anterior, la de acá atrás. Ejemplo, aquí puedo agregar otro, ¿no?
+No reemplazó la I, sino que me agregó otro acá. Esto es por comodidad para no
+estar este borrando cosas que no quieras. Por ejemplo, aquí no me gustó
+que los hola tengan un montón de as y me salía una grosería, perdón,
+se me salen a dar clases, este, pero no es a propósito, eh, un estilo es que me
+empiezo a sentir en confianza con los alumnos, entonces como que para
+divertirlos, para que se sientan ustedes también menos nerviosos, de repente me
+salen, eh, por si me llega a salir una, no piensan que siempre hablo así, pero
+bueno. Entonces, ejemplo, aquí ya edité, ya este ya quité ejemplosas que no me
+gustaban. ¿Alguien puso algo en el chat? Control C para guardar. Ay, no lo
+alcancé a ver. Ahorita ahorita los reviso. Bueno, este aquíemplo tú puedes
+hacer modificaciones, incluso puedes moverte aquí abajo y agregar más
+líneas, ¿no? Nueva línea. Nueva línea otra vez. Otra vez. Ejemplo.
+Acá no sé. Puedes empezar a estar moviendo aquí tu tu archivo,
+modificándolo, haciéndolo cosas. este archivo es muy bajo, es es mu es es muy
+corto, no hay tanta complejidad, pero pues aquí por por ejemplo con nano
+podrías entrar un archivo de de código, por ejemplo, un archivo C++ o un archivo
+de lenguaje que tú quieras y aquí te tocaría modificarlo. Aquí lo podrías
+modificar, cambiar cositas dentro del código, obviamente de una manera más
+incómoda, pero también hay comandos que puedes utilizar de otra manera. Por
+ejemplo, control maso, guarda, guarda el archivo.
+Sí, si yo escribo, si yo escribo este, por ejemplo, control o control maso, o,
+voy a guardar el archivo. Si yo doy enter, confirmamos nombre. Si yo control
+X, nos salimos del archivo. Control K, se supone que corta una línea. Yo la
+verdad nunca lo he usado. Vamos a ver qué hace control K. ¿Qué dice?
+A ver. Control+ K. Ah, no sé. Creo que hay que seleccionar,
+¿no? A ver, me muevo. Ah, a ver. No sé. Enter. Mueve esto.
+Perdoné que también este no me gusta mucho.
+Por ejemplo, control masu dice que pega una línea. Okay. Bueno, no hay no hay un
+no hay un ¿cómo se dice? No hay nada este copiado. Vamos a ver si así.
+Control K y control U.
+Es no un comando. Bueno, no sé. Aquí abajo de to que nos pone también,
+ejemplo, si tú no sabes cómo qué estás haciendo, puedes ejecutar el, ¿cómo se
+dice? Con el G
+te da una ayuda. Bueno, aquí me sacó porque me está reconociendo los comandos
+por fuera también, pero bueno, este nano es un es un ambiente que te sirve para
+editar, pero pues puede que te meten problemas. Se supone que el control maso
+me va a funcionar. Bueno, ahí está, mira, mira. Le damos
+control o y pero antes me va a preguntar, me
+cambió, me dice, "Oye, este, vamos a escribir al al archivo notas txt." Si
+quieres confirmar, das enter y ya guardó los cambios, se supone. Vamos a ver si
+es cierto. Control X me saca. Revisemos cat y parece que sí se los quedó, ¿no?
+Esos comandos de copiar y pegar en se los debo porque la verdad no los he
+usado la nunca nunca me he animado a copiar y pegar ahí adentro, pero ahorita
+que mi documentación decía que así se hacía. Pero bueno, los comandos
+controlan, guarda el archivo, enter, confirma el nombre. ¿Qué refiero a
+confirmar nombre? Cuando le das control o te pregunta si quieres guardar en este
+archivo porque tú ya tienes oportunidad de cambiar, por ejemplo, como ponerle
+otro nombre. Entonces, ya no reemplaza el anterior, sino que te crea uno nuevo,
+¿no? Con un un nombre nuevo y un contenido nuevo. Y control X, una vez
+que guardas te puede salir, ¿no? Por ejemplo. Okay. Este, ay,
+ay, perdón. Nano. Nano también funciona. Vamos aitarlo según la documentación.
+Nano también puede crearte un archivo, por ejemplo, un archivo que no exista.
+Vamos a crear un archivo. Hola. Punto. Le vamos a cambiar la
+extensión. Vamos a hacer un archivo de C++.
+Fijan, no me dio error. El archivo no existía. Lo que hizo fue que lo creó y
+me dio chance a que editarlo. No sé. Vamos a hacer un código chiquito.
+Ejemplo, include
+a stream. Ahí cerramos. Mm. Este, aquí metemos una
+función, una función main que más adelante les voy a explicar por
+qué tenemos que declararla. Normalmente para que corra un archivo de ese estilo
+necesita existir una función principal que se ejecute. Esta puede llamar a
+otras funciones sin problema. Dentro de la función después les voy a explicar
+porque también soy in entero, pero hay funciones del estilo void que son otro
+tipo de funciones y así. Ahorita no se asusten, nada más quiero que vean que
+pues pueden ejemplo en nano modificar, crear un archivo nuevo al que le puedan
+meter código. En este caso digamos que voy a agregar aquí otra cosita especial
+que es el perdón using
+namespace eh STD.
+Listo. Okay. Ya con este ID yo podría, por ejemplo, usar el comando C out, que
+es es el Cout, es equivalente a un print, o sea, hace una impresión al
+escribir que teníamos en los pseudocódigos que estábamos viendo
+antes. Y aquí pues le decimos, "No sé, quiero que me
+imprimas el el favorito de todos, ¿no? El hola mundo, que si lo haces en un si
+lo haces en un lenguaje, tú ya te puedes considerar programador en ese lenguaje,
+ya pueden ponerlo en su CB como seniors. Entonces, ejemplo, ahí creamos un
+archivo, le doy control o me pregunta si confirmo este nombre.
+Si le doy enter, ya lo guardó. Si doy control X, me saca. Y si me fijo el
+archivo, ahí está. Lo podría yo explorar con catol.
+CPP y pues me da aquí el el archivito, ¿no?
+Ya cuando estemos programando en C este eso está supercillos es un mundo básico.
+Ah, de hecho, de hecho, yo cometí un error aquí en esta en esta función. Como
+tengo una función main, no agregué es ese tipo de función int eh generalmente
+requiere y por más practicidad tener un return cero para indicar dónde
+terminamos de ejecutar. Cuando la función es void, que significa que se
+ejecuta como especie de ciclo, no necesita tener un return cero porque esa
+se ejecuta de manera cíclica, entonces no tiene que tener un final donde de un
+return de que aquí se acaba la función, ¿no? Si han visto otros tipos de
+lenguajes, el return nada más te indica lo que retorna la misma función, o sea,
+lo que entrega. Un return cero dentro de main indica que ahí termina la
+ejecución. Te sirve, por ejemplo, cuando tienes condicionales y quieres que si
+cumple algo también ahí mismo me saque, no me saque y se detenga.
+Este, ejemplo, yo me equivoqué, no lo puse, se me olvidó, la verdad, perdón.
+Este, generalmente si no lo pongo me va me empieza ahí ya a fregar el eh el ID,
+entonces como que te empieza a malacostumbrar.
+Entonces este les iba a comentar, después vamos a ver
+eso. Por ejemplo, las funciones int eh son las que generalmente se usan, pero
+por ejemplo cuando trabajas con embebidos que viven en en ciertos
+microcontroladores, lo mejor es que tengas un void, porque si se han
+trabajado con Arduino, que es un que es una placa muy escolar o con alguna que
+es más de producción como, no sé, un SP32,
+este tipo de ese tipo de controladores lo que hacen es que ejecutan el código
+en ciclo porque tú los enciendes, tienen código cargado que tú cargaste y pues él
+dice, bueno, cada vez que me enciend Yo voy a hacer esto porque pues este soy un
+controlador, o sea, no soy una computadora en sí, sino una especie de
+circuito integrado que va a empezar a ejecutar operaciones. Entonces, para eso
+sirven después esos. Bueno, ya me desvíó un poquito, perdón. Para eso sirve Nano.
+Nano lo que hace es permitirte editar. Alguien puso cosas en el chat, tal vez
+pusieron cosas interesantes de de Nano de que de alguna ayuda.
+Vamos a leerlas para antes de que se me vayan a juntar tantos. El de Bam, el de
+Bam la verdad no lo he usado como pusieron. tiene truco
+este, no sé a qué se refiere. Quick. Ajá. Okay. Salir.
+Este es para estos que pusieron son para B, ¿verdad?
+Va. Gracias, Arturo. Se controló para guardar y para salir o estoy confiéndome
+de SO. Okay, esos son para BIM. Hola. Ahora
+todo tiene sentido. Write and kit. Ah, okay. Sí. W.
+Tu de guardar, Q de salir, guardar y salir. Okay, okay, okay. Nada más
+estaban comentando los de BIM. Me pensé que había alguna alguna pregunta.
+Va, que va. Bueno, Denano hace eso. El copiar y pegar se los se los debo. Lo
+voy a revisar. Perdón, perdón, perdón. No me los todos de memoria. Tuve que
+recurrir alguna documentación para traerles todos. Okay. Hay otro comando
+que sirve que es bastante bueno. Por ejemplo, ¿no les ha pasado que luego si
+tienes muchos archivos en tu en tu computadora es difícil encontrarlos y
+luego recurres al este al buscador al buscador de archivos escribes un nombre
+y tarda ahí Windows como 2 horas en filtrarte un montón de archivos y
+después decirte que no lo encontró. No se más le ha pasado. Aquí hay un comando
+parecido. Este uno es Grap. Hay uno que se llama
+Grab también. Este, en este caso, primero vamos a ver a fine, así fine de
+buscar un archivo de este fine, perdón, un
+comando que se llama fine, que tiene diferentes diferentes parámetros, ¿no?
+Ejemplo, si yo pongo un punto fine, va a buscar en la carpeta en la carpeta que
+estamos. Ejemplo, vamos a decirle con un nombre, ¿no? Vamos a decirle busca find
+gu name e indicamos el archivo que estamos buscando. Por ejemplo,
+notas.txt. Y pues ahí nos da la dirección donde
+está. Pues aquí está dice, "Aquí está notas.txt.
+Si quieres, por ejemplo, buscar archivos que tengan la misma la misma este
+extensión, por ejemplo, si no te sabes bien el nombre, pero dices, bueno, el
+archivo que estoy buscando es un un archivo C++ Cpp. Fine se puede se puede
+utilizar así. Fine punto, que significa que estamos buscando aquí dónde estamos.
+Pine name y escribimos escribimos la escribimos asterisco entre
+entre este comillas punto cpp ejemplo
+escribimos esterarisco punto la extensión y nos va a dar el archivo que
+está ahí. Ahorita se ve chistoso porque dio si estás en la carpeta donde están
+este pues te va a dar los que están ahí, ¿no? Entonces ejemplo, vamos a regresar
+ejemplo, aquí estamos en este de acá y vamos a volver a ejecutar esos de arriba
+que teníamos. Por ejemplo, vamos a buscar notas y te dice dónde está.
+Bueno, está de donde estás tú. Vas a la carpeta ATA 8 a9 y ahí va a estar el
+archivo notas. Si usamos el otro, el que el que usamos para buscar archivos con
+ese con ese comando, ahí tenemos ahí va a haber más archivos. ¿Por qué? Porque
+hay unos que tiene este el server de Visual Studio Code donde estamos
+trabajando, o sea, este este minier local que se crea para poder ejecutar el
+ambiente, esta partición. Si se fijan, le dijimos, a ver, donde
+estamos ahorita, busca los archivos que tengan esta extensión. Entonces, va y
+nos da el que tenemos, el ATA 89 CPP, el que que hicimos hace rato, el hola.
+Estos de aquí, si se fijan, este punto antes de hace que se vuelvan ocultos,
+pero también te ayuda a buscarlos. Eh, programas if.cpp, que es un programa que
+estábamos haciendo hace rato, el condicional y estos de acá, ¿no? Busca
+todos los que tenga esta extensión. Por ejemplo, si lo cambiamos a otra
+extensión, no sé, TXT, pues también te da los archivos que sean
+de texto, ¿no? Por ejemplo, explicación, explicación, que son archivos que está
+usando para otras cosas y archivos de notas, ¿no? Entonces, fine te puede
+ayudar a buscar en cierta ubicación lo que estés buscando. Por ejemplo, si
+quieres buscar a más profundidad, lo que puedes hacer es regresarte todavía más,
+regresarte hasta la raíz y aplicar fine. Obviamente si es un si es un archivo
+común, por ejemplo, archivos de código, archivos TXT, probablemente va a tardar,
+te los va a listar, pero va a tardar, ¿no? Te decir, mira, estos son todos los
+que encontré, ¿no? Ahí tienes que buscar. Si tú te vas hasta la raíz y te
+sabes el nombre del archivo y lo escribes, te va a escribir dónde está.
+Por ejemplo, si ya sabes exactamente cómo se llama.
+Okay. Este también sirve para buscar carpetas. Sí, para buscar carpetas hay
+que decirle fine. Otra vez decimos que donde estamos y
+le agregamos el parámetro type y escribimos d de directory. Entonces
+punto buscamos en este desde aquí le decimos que el tipo es tipo D, que es
+directory y le le damos un nombre para buscar. No sé, le decimos, queremos que
+busques un directorio que se llama, según yo, le pusimos nueva a una carpeta
+y ahí y está donde estamos nosotros, ¿no se acuerdan? Estamos estamos donde están
+esas carpetas. A mí aquí mismo está la carpeta nueva, pero pues ya te dice
+dónde está. Si estuvieras poquito más atrás, lo vamos a ver si nos deja
+regresar, porque a veces no parece que sí nos dejó.
+Entonces, por ejemplo, si vuelvo a ejecutar aquí el file nueva, me dice que
+está dentro de la carpeta carg y ahí está esta carpetita que estamos
+buscando. Entonces, voy a volver a meter.
+Ya estamos acá otra vez. Ese es el comando fine. El de Grab según yo, está
+más adelante aquí mis en mis notitas, pero ahorita déjame ver cuál sigue. Ah,
+este GREP, la variación que tiene, ya me salió, es el que sigue. Este, el el
+comando Greb, ¿qué hace? El comando Grap busca palabras dentro del archivo. O
+sea, ese no solo busca el archivo, busca archivos, sino que ese busca palabras
+dentro de un archivo. Solo que tienes que indicar eh qué archivo es. Si no lo
+indicas, pues indicas este, por ejemplo, puedes indicar la extensión y va a
+buscar en varios archivos. Por ejemplo, si tienes muchos archivos de código y te
+quieres acordar en cuál guardaste cierta función, si te acuerdas del nombre de la
+función, lo escribes, usas GREP y le dices, voy a búscarme en todos los
+archivos de, no sé, todos los C++. Y te tien que encontrar esa esa palabra. Por
+ejemplo, GREP se escribe así. Grab. Queremos buscar la palabra es Grep.
+Escribes la palabra que quieres buscar. Por ejemplo, queremos buscar la palabra.
+Ay, perdón. Pero tenemos que estar d están los archivos. Perdón, perdón.
+Vamos a movernos a la carpeta. Esto. Okay. Ejemplo, queremos buscar la
+palabra. Mm, no sé en el texto, ¿se acuerdan que
+hicimos una que era, déjame subir para acordarme que tenían
+estas cosas? Eh, este no, este ya lo revisamos.
+Este de aquí. Este, quiero buscar la palabra nueva
+y la voy a buscar dentro del archivo notas.txt. Entonces, para usarlo es grab
+estás buscando y el nombre del archivo. Entonces, le das y pues en notaste xt
+encontró dos coincidencias, ¿no? La palabra nueva línea y nueva línea otra
+vez, porque la coincidencia es hasta aquí. Entonces, pues también la toma en
+cuenta. También puedes buscar en grupos de archivos con la misma extensión. Por
+ejemplo, digamos que Grab y estamos buscando
+hola y vamos a buscar en todos los archivos
+que sean de extensión C++, por ejemplo. Fijan, hicimos uno donde hicimos un hola
+mundo, entonces debería de encontrar el hola. Y se fijan si me dicen, mira de
+encontré esta coincidencia en el archivo, en este en uno de los archivos
+con hola mundo. Algo que no me gusta es que, ¿cómo se dice? No indica en qué
+archivo lo encontró, por ejemplo, ¿no? Nada más te dice que encontró una
+coincidencia. Eso te puede traer problemas, ¿no?
+Ejemplo, hay hay otra opción. Puedes decir puedes decir que quieres buscar
+sin importar porque luego también discrimina entre mayúsculas y
+minúsculas. Tengan cuidado, pero puedes indicarle que no quieres que discrimine
+para que le digas no quiero que discrimines mayúsculas ni minúsculas se
+escribe, se escribe greb, se agrega guion i. Esto ya no le interesa si las
+condiciones las encuentra en mayúsculas o minúsculas, perdón, faltó el espacio,
+¿sí? No, ejemplo, si escribimos hola y después decimos que busquen todos los
+CPP, va a encontrarlo, aunque el hola que
+encontró no es la H mayúscula, ¿no? Mm. Eh, ¿qué razón? Una vez nos acabamos
+este no está faltan más. Okay, entonces por ahora aquí lo vamos a dejar. ¿Les
+parece bien? porque sí se consumió un montón, pero quiero que vean la mayoría
+posible, ¿sí? Por si algunos los llegan a necesitar y porque en el temario me lo
+pusieron así, perdón, ya casi acabamos esto. Una vez acabemos lo de lo de los
+comandos, eh, ya casi casi me tocaría tocaría una clase teórica que tengo que
+darles y ya les podría dejar la evaluación para que pasemos al rango
+donde vamos a empezar a trabajar con programación con C básica, pero vamos a
+empezar a ver C. Sí, sí, ya, ya, ya vamos a terminar de todos
+modos. Ya, Alejandro, ya este vamos a seguir. Eh, ¿dónde dejé mi No, este es
+mi mi personal dónde está?
+Esto de aquí. Okay, se está en la grabación nada

@@ -1,0 +1,711 @@
+Ya ya vamos a pasar a nuevo tema para para avanzar, a menos que alguien tenga
+una duda de lo anterior. Si no, vamos a seguir. Nadie tiene
+dudas, ¿verdad? Quiero estar seguro nada más.
+Perfecto. Vamos a seguir. Miren este de lo de Inuts hay más comandos,
+obviamente, y van a encontrar si gustan en internet muchísimos más.
+Eh, pero eh la idea de la clase era que viéramos más o menos los ejemplos de
+uso, cómo estarlos llamando y todo eso. Ahora encontrar miles y miles de
+variaciones de todos, pero eh durante la marcha y y durante el curso vamos a ver
+vamos a ver los más puntuales y vamos a ver algunos que no vimos. Por ejemplo,
+no vimos programas para comandos para compilar, pero esos ya se van a ver
+ahorita en que pasemos ya casi al rango C. Digo, el rango con C más. Ahí les
+enseñó ese comando, no es difícil, no se preocupen. Okay, ahora quisiera pasar yo
+a un tema un poquito unito un poquito nuevo. Este, tengo entendido que aquí
+todos son de la especialidad automotriz. Entonces, yo modifiqué un poco el
+temario, agregué un tema nuevo a esta a este primer rango para que se fuera
+viendo. Es que me di cuenta que, ejemplo, no veía máquinas de estados,
+aparte de lógica. Es bueno ver lógica y todo como tal. La lógica es fácil, pero
+no ven lo que es una máquina de estados. ¿Por qué? ¿Por qué quiero que vean la
+máquina de estados o por qué quiero que entiendan la máquina de estados? Mínimo
+lo básico por ahora, porque del lado de ustedes su especialización, eh el
+proyecto final es es más del lado más del lado de de de circuito, perdón, de
+código de código embebido. Entonces, en realidad ese tipo de códigos trabaja
+mucho con ciertos sistemas o partes del sistema del vehículo que tatuan como
+máquina de estados. ¿Qué es una máquina de estados? es un es un sistema que está
+avisando constantemente en el estatus en el que está o en la condición en la que
+está, o sea, el estado en el que está, así como dice su nombre. Por ejemplo, un
+un sensor, un sensor puede estar encendido. Podemos decir que el estado
+uno es el encendido, el estado cero es el apagado y le agregamos un tercer
+estado, el estado error, no está encendido, pero está fallando. Entonces,
+es un ejemplo muy burdo y muy básico, pero eh imagínate que tienes la
+computadora del carro y ese estado lo va a leer porque la computadora es un
+micocontrolador, entonces y tiene código, tiene código, tiene C, C++ 6,
+PC+ trabajando en eso. Entonces, cuando reciba ese código de error, pues
+probablemente la computadora realiza una acción que es mostrarte un testigo.
+Cuando va el mecánico, le mete escáner, el escáner encuentra cuál es el error,
+que probablemente es el sensor que falla y pues ya deciden si lo reprograman o lo
+quitan y ponen uno nuevo. Okay, pero bueno, les voy a les voy a presentar
+pantalla porque para eso voy a usar una presentación que se usa normalmente aquí
+en la escuela. Entonces, déjenme les comparto.
+Hm. Me la abro nada más. Es un documento.
+Eh, casi yo no soy de presentaciones, les digo. Estoy peleado con las
+presentaciones y discúlpenme si mis presentaciones son algo son algo este no
+muy no muy coloridas o no muy bonitas, pero pues si ahorita les ahorita
+hablamos de eso. Ya les digo si están si quieren mejor, ¿cómo se dice? Mejor que
+cambie o utilizar otra vez PowerPoint, ¿no?
+Okay. Aquí está. Mm. ¿Dónde está abrir. Me baje, no sé por qué mi compu está muy
+lenta en general. Listo.
+Va que va. Les digo, las presentaciones, mis
+presentaciones son no son muy bonitas, perdónenme. Las hago con un las hago con
+un lenguaje, un lenguaje de generador de texto, se llama Slats, donde te permite
+hacer texto con programación. Entonces este queda quedan más estructuradas,
+¿no? Este es Latex, Víctor, este parecido, nada más que es un poquito más
+más técnico, eh, queda queda todo más estructurado y todo, pero si se fijan
+sacrifica lo estético, ¿no? Bueno, este
+bueno, aquí esas se las voy a subir porque es autoexplicativa. Entonces,
+una máquina de estados es un sistema, como les digo, funciona por modos o o
+está mostrando el estatus, está mostrando donde nos encontramos. Okay.
+El estado es donde estamos ahorita, es lo que estamos lanzando ahorita. No sé
+si somos una señal, si somos un componente. Lo que estamos reportando
+ahorita, ese es nuestro estado. Será como un valor, podemos decirlo que es un
+valor un valor entero h que está indicándole al sistema dónde estamos,
+¿no? Una señal discreta, ¿no? ¿Qué estamos haciendo? Si estamos bien, si
+estamos funcionando. Okay. Normalmente la operación básica para cambiar un
+estado es estado actual más evento. ¿Qué es el evento? Cualquier cosa que te
+genere un nuevo estado. Por ejemplo, ¿con qué me refiero? cualquier cosa sea
+a qué qué conveniente, ¿no? Cualquier cosa. Pero bueno, el estado actual más
+evento con el evento me refiero, por ejemplo, imagínense la máquina de
+estados más básica que se les ocurra. En este caso, a mí se me ocurre un botón.
+Un botón. Pues no sé, tendremos un por aquí. Aquí físico. No, no tengo. Bueno,
+un botón. Un botón es este es un actuador. Si tú lo presionas pasa algo,
+¿no? Imagínate que tienes un botón que enciende una lámpara, una lamparita de
+mesa. Si tú le picas una vez al botón, la lámpara enciende. Si tú le vuelves a
+picar, la lámpara se apaga. Esa es la esa es la máquina de estados más
+sencilla que se me puede ocurrir. El estado actual, pues es en el que estés,
+por ejemplo, si empieza apagada, es el estado actual. El evento es el botonazo
+y el nuevo estado es que está encendida y luego el estado actual ahora es estar
+encendida, el nuevo evento es el botonazo y ahora el nuevo estado estar
+apagada. Se fijan oscilan esos dos. Ahorita más adelante van a ver un
+diagrama de esa máquina que es la más básica, que es casi casi un ciclo, ¿no?
+Aquí les pone algunos ejemplos. El semáforo tiene tres estados, verde, rojo
+y blanco, los estados de encendidos de los tres leds. Otra cosa, normalmente la
+máquina de estados, este, por regla no puede estar en más de un estado a la
+vez. Sí, siempre tiene que respetarse que estamos en uno, uno a la vez, no
+estamos en dos, como el semáforo que no está en dos. Aquí está la lámpara con el
+botón, una puerta automática, una elevadora, lavadora, el ecua automotriz
+que es para lo de su especialidad, es una máquina de estados más compleja
+porque esa tiene se divide en minimáquinas de estados que juntas crean
+a la máquina de estados grande ecua automotriz. cada esta máquina de estados
+revisa los estados de las que la que la componen y eso va a indicar el estado
+total. Por ejemplo, eso ya va a depender las reglas que tengas. Puedes, ejemplo,
+si tienes algo muy muy delicado y tienes este tres subsistemas que lo estás
+revisando, ejemplo, dices, "Bueno, si falla uno, como el sistema, mi sistema
+es delicado, yo, para mí el de total del sistema es que estamos en estado malo,
+¿no? Falló uno, el estado para mí, el total es malo porque con uno ya es
+suficiente para provocarme problemas. No sé si eres un poco permisivo, puedes
+decir que dos buenos y uno y uno fallando. Para ti todavía sigue siendo
+que el estado total de la máquina es bueno. Sí.
+Ahorita si se confunde algo me dicen. Okay. Otro otra máquina de estados
+básica que van a ver en todos lados es el famoso relevador. Aquí alguien no sé
+si los ha visto. El relé es un el relé un componente electrónico que es padre.
+¿Por qué? Porque este combina electrónica con un parte medio mecánica
+ahí adentro. El relevador es un componente que tiene siempre tiene que
+tener este corriente alimentándola y tiene una pequeña entrada de señal. Esa
+señal le decimos que es la señal de su control. Cuando esa señal este llega, o
+sea, se activa o llega ahí, se cierra su se cierra su, ¿cómo se dice? Se cierra
+un pequeño un pequeño ahí este relé mecánico, de hecho su nombre es relé
+mecánico, una especie de solenoide que se cierra ahí. Entonces, lo que hace es
+cerrar circuito, por eso chasquea. Ya depende cómo lo configures, ¿no? El el
+relé tiene un estado este normalmente abierto y normalmente cerrado.
+Normalmente abierto es que normalmente el circuito está abierto, está abierto y
+normalmente cerrado es que normalmente está cerrado y cuando llega la señal de
+control se abre, o sea, normalmente está cerrado el circuito, se abre y el otro
+está abierto normalmente, o sea, como un interruptor y se cierra. Sí, aquí tengo
+un relevo, ahorita lo agarré. Esto es un relevarcito, mire, fíj,
+o sea, tal vez no tiene que ver mucho con el programación, pero pues si que
+este es un ya está soldado otras cosas, ¿no? Pero la bolita azul, el cubito azul
+es el relevador. Cuando lo conectas chasquea porque hace ahí un, perdón,
+funciona con un actuador mecánico, ¿no? Es una máquina de estados. ¿Por qué?
+Porque dependiendo el que elijas, ejemplo, la configuración que elijas, la
+máquina de estado siempre va a estar reportando, ejemplo, el siempre abierto,
+digamos que el abierto es un cero porque está abierto el circuito, siempre va a
+estar reportando cero hasta que el evento lo haga cambiar a uno, ¿sí? De
+repente se para la señal y se vuelve a abrir, ¿no? Y el otro siempre cerrado
+hasta que el otro haga. Entonces este es eso es en la noción más básica que van a
+tener ustedes, que perdón que tenemos nosotros una máquina de estados es esa,
+la máquina de estados más simple que es binaria, que actúa entre dos casos.
+¿Okay? Este, aquí ponemos otra vez el diagrama
+de el diagrama del flujo de la señal. Ejemplo, el estado, la la situación
+actual. Estoy aquí, lo que les decía hace rato. Ocurre algo y cambiamos el
+estado. Entonces, el estado es donde es la situación o es lo que está
+reportando. El evento es pues el disparador puede ser lo que quieras. Por
+ejemplo, el evento físico de nosotros era el botón. El del elevador es un
+evento de señal, o sea, es un voltaje que llega. para otro tipo de sistemas
+puede ser una señal incluso una señal este discreta, pero que o un seno, por
+ejemplo, está así, luego está así y dependiendo del valor que tenga nuestra
+máquina de estados va cambiando eh, perdón, la redundancia a su estado, ¿no?
+La transición es el cambio de un de un de un momento a otro. Eso es importante
+porque a veces las transiciones no simplemente son lineales, a veces pasan
+cosas en medio y la acción es que pues hay máquinas de estado que dependiendo
+dónde estén se ejecuta una acción también. Sí.
+Ejemplo, ejemplo del flujo de la señal. Véanlo, es verde el flujo de va para
+acá. ¿Cuál es la señal? Tiempo. Es un un contador. Viene verde, tiempo cambia
+amarillo, tiempo se pone rojo. Luego pasa el tiempo y regresa a verde. Vean
+como esta máquina de estados es cíclica, ¿no? Se mueve de verde amarillo rojo y
+de rojo a verde y otra vez se repite y luego otra vez se repite. Entonces es
+una especie de máquina cíclica. No todas son así. Hay algunas que son lineales.
+Pue, por ejemplo, podría una serde, amarillo, rojo, luego amarillo, verde,
+luego verde, amarillo, rojo, luego rojo, amarillo, verde. Sí. O puede ser algunas
+que son en una sola dirección. Hay máquinas que solo son verde, amarillo,
+rojo, ahí se acaba y ya no vuelve a hacer nada. Tienes que venir y
+mecánicamente o de alguna manera regresar al verde. Sí, ya va a depender
+del sistema que tú fabriques. Todo ahorita hasta ahora es una introducción.
+Esto se va a estar retomando porque a lo largo de esta especialidad eh el enfoque
+principal es este tipo de sistemas más estilo máquina de estado, no significa
+que vamos a estar haciendo puras máquinas, sino que el enfoque general y
+partes de del sistema automotriz es con máquinas de estado, no todo. Hay partes
+del sistema automotriz que son analógicas, lo que significa que son
+este continuas y ya no funcionan con estados porque los estados son este
+discretos, o sea, enteros. Okay,
+aquí pon una tablita. Esta no me acuerdo. Es que esta la uso para dar
+clases esta diapositiva. Entonces ahí como que tengo para dejo espacio para mi
+rayadero. Okay. Entonces, un ejemplo dos. Aquí les pongo el diagrama que les
+dije de la máquina de estados más básica. Es un ciclo cortito. Está
+encendida, acción es el botón, apagada. La acción es el botón, encendida, la
+acción es el botón, apagada. Estamos oscilando entre uno y otro, ¿no? Y el
+mismo evento es activador. Hay máquinas que que los eventos son diferentes. En
+este caso, la característica de esta es que el evento del mismo evento botón
+hace cambiar el estado entre uno y otro. Este puede haber máquinas que no sean
+así, que el estado cambie dependiendo dependiendo la acción. Entonces,
+aparecen nuevas flechas en el diagrama de flujo. Eh, más adelante vamos a
+empezar a hacer máquinas de estado o diagramas más avanzados. Mm. De hecho,
+el primer hito pide que creo que, bueno, yo quiero proponer que diseñen una
+pequeña máquina de estados muy básica, este,
+y que tenga varios flujos, ¿no?, de la señal. Esa es otra tabla,
+por ejemplo, este es un ejemplo que luego uso de la
+puerta automática, estados de cerrado, abierto, cerrada, cerrando, ¿no? Eh, una
+puerta automática, pues ustedes han estado ahí en un han estado ustedes en
+llegando a un gimnasio, algo, hay atorriquetes, por ejemplo, está la
+puerta automática, está cerrada, normalmente está cerrada. El evento es
+detectó la persona, empieza a abrir. Sí. Luego termina de abrir, significa que
+está abierto. Pasó el tiempo y se empieza a cerrar
+otra vez. ¿Por qué? Porque son esas se cierran en automático, se abren como
+detectan una persona, ya sea con facial, con huello, con lo que quieras, y se
+vuelven a cerrar después de ciertos segundos. Bueno, si la configuras así,
+después pues terminó de cerrar y regresamos al estado original. Se fijan,
+ese también es cíclico. El único camino que sigue es cerrada, abierta, o sea,
+abriendo, abierta, cerrando, cerrada. Mm.
+Pero no, este, perdón, esa es una configuración básica. Podría pasar que
+que el estado, voy a dibujarles aquí otro color para que se vea más. Aquí
+está. Digamos que
+viene una persona, ¿no? Viene una persona,
+un palito. Ahí está. Viene una persona y la persona está registrada, ¿no? Está
+bien, está dada de alta, no sé, un gimnasio. Pagó su mensualidad.
+La puerta automática detecta la persona y como está de alta, pues pasa a este
+a este estado, dura un ratito y logra abrirla.
+Luego de este estado al siguiente la condición es que pues cuenta, ¿no? Pon
+otro color de aquí a acá contó, no sé, 5 segundos.
+Okay, contó 5 segundos y después pasó a cerrando y terminó de cerrarse la
+puerta. Okay, ese es el caso bonito, ¿no? Donde donde la persona sí estaba
+dada de alta. Okay. Otro caso, ¿no? Viene una persona que que se le olvidó
+pagar la mensualidad, ¿no? Y pues [ __ ] ¿no? No lo va a dejar pasar. Entonces,
+en este caso, aquí está el borradorcito. Este va a ser el otro caso
+en este caso, ¿qué va a pasar? Va a venir, va a venir la máquina, o sea, la
+máquina va a ver a la persona, la va a tratar de detectar,
+o sea, va va a ejecutar esa esa condición. la va a tratar de detectar.
+Este, resultó que no era la persona, o sea, no no está registrada o o no ha
+pagado su membresía, entonces pues pasó de la estatus cerrada
+abriendo porque te toó la persona, pero como falló regresamos a este, ¿no? Este
+es otro caso que podrías tener. Ya dentro del torniqueto, la puerta
+automática puede haber diferentes componentes que afecten estos estados,
+¿no? Por ejemplo, si falla alguno, el estatus del de la puerta automática va a
+dejar de estar encerrado y aparecería como el extra una una rama extra que
+sería de error, ¿no? Y hasta que no fueras y lo resolvieras no va a volver a
+funcionar. ¿Qué dice? Hay un elevador, hay un elevador está en el estado de la
+puerta, no cierra. Si espera y trata de nuevo. Un elevador está al estado de la
+puerta, no cierra, espera. Ah, okay, okay. Sí, sí, sí. el estado de error,
+¿no?, de que algo pasó de que pone Ismael, el estado de de que, por
+ejemplo, en este caso, esta puerta automática, ¿no? Estos son cuatro
+estados muy básicos, pero podríamos agregar uno nuevo, ¿no?
+Voy a borrarlo para más o menosicarlo, quitar estos chavos de aquí,
+por ejemplo, podrías tener el estado el estado un nuevo estado que no tenemos
+aquí. Aquí es para escribir. Aquí está. Pero es que esto es para pizarrón, ¿no?
+No sé. Un nuevo estado. Error. Mm.
+El estado de error. Tengo que quitarlo. Ahí está.
+El estado de error. ¿Dónde lo metemos? Por aquí. Así. Ahí está.
+Es uno de los estados ahora registrados, ¿no? Digamos que la puerta abre. Sí,
+estamos ahora en abierto. Luego se quiere cerrar, pero resulta que hay una
+persona ahí en medio, ¿no?, que está estorbando. Entonces, como dice Ismael,
+podía entrar a un estado nuevo que aquí no está registrado y pues tendríamos que
+indicar también qué evento lo dispara. No se detectó persona, se va a error y
+después espera cierto tiempo, como el alcalde pasó tiempo, espera ciertos
+segundos y vuelve a intentar cerrar, ¿no? Y si está en error, no se cierra,
+se mantiene ahí. Luego a los 5 segundos vuelve a revisar y si ya no está la
+persona, ahora se va al estado de cerrando y luego cerrada. Sí. Okay.
+Okay. Hasta ahorita se entiende más o menos que es la máquina, ¿no? Al fin y
+al cabo es un una especie de una especie de minisistema nada más. Sí.
+La máquina de estados, como su nombre lo dice, es un un, ¿cómo decirlo? Un
+sistema que está reportando. Suena feo, pero una máquina de estado es un sistema
+que está reportando su estado, su estatus. en inglés para que para que no
+suene tan chistoso, ¿no? Al decir estado estato, una máquina de estado reporta su
+estado, ¿no? Mm. Ejemplo, aquí está el diagrama más el
+diagrama más bonito. Ya lo rayamos allá, pero aquí también lo
+vamos a no lo vamos a despachar. Bueno, vean este diagrama, ¿no? Ya empieza a
+ser más complejo que el diagrama que vimos arriba. El diagrama de acá arriba
+era una pues era un botón encendido, botón apagado, botón encendido, era
+cíclico. Okay. Este de aquí es cíclico en cierta es cíclico también, perdón. Es
+cíclico, pero fíjense, este tiene un tiene una característica curioso que es
+curiosa, que es un estado de varios lazos. Un lazo es un camino que se
+sigue. Sí, en este caso, como son ciclos, podemos considerar esos lazos
+como cerrados. Entonces, vamos a ver si tú te encuentras en el estado cerrando,
+¿con qué me refiero a que lazo cerrado? Que si tú te para saber si un sistema es
+de lazo cerrado, o sea, o o la máquina de estados es de estilo cerrada de de de
+que de que el camino siempre te lleva al mismo punto, ¿cómo se resuelve? Perdón,
+¿cómo se cómo se obtiene? Fácil, como el nombre que perdón, como lo dije ahorita,
+que el punto en el que estemos, perdón, que del punto en el que estemos, si
+recorremos el diagrama, con el tiempo regresemos al mismo. Vamos a ver.
+Empezamos aquí. Sí, empezamos aquí. Si seguimos las
+flechas nos va a llevar a este. Si seguimos la flecha nos va a llevar
+abriendo. Si seguimos la flecha nos va a llevar abierta. Y seguimos la flecha nos
+va a llegar acá. Si se fijan, ¿están de acuerdo conmigo que que nos lleva al
+punto de inicio, verdad? Otra vez. Este caso es muy fácil, ¿no? Y me van a
+decir, pues sí, es obvio, ¿no? Pero pero para sistemas más complejos no pasa así.
+Eh, voy a ver si les traigo alguno, alguno que traiga truquito, ¿no? Que que
+sea contrainttuitivo, nada más que no tengo ahorita de esos a la mano. Es que
+es que no se esos no se pueden diseñar así no más. Bueno, entonces si vemos
+así, si seguimos este flujo nos lleva al mismo punto. Entonces eso
+nos dice esto es lazo cerrado. O sea, es un es una máquina de estado cíclica. Sí.
+Siempre que estés en un estado, al parecer en t tiempo, en un tiempo t o
+un tiempo t, eso ya va a depender del tipo de máquina y cuánto espere en cada
+en cada en cada estado. Pasando el tiempo, vamos a regresar al punto
+inicial. Okay. Bueno, este
+les digo, es un lazo cerrado, pero esa está curiosa porque la lámpara que vimos
+hace rato también el lazo cerrado. El semáforo era un lazo cerrado, pero
+fíjense aquí en este caso
+los ¿cómo se dice? Vemos que existe un segundo lazo, ¿no? Vamos a ponernos aquí
+otra vez encerrando aquí. Si se fijan, si en vez de tomar el
+primer camino, tomamos este y luego este, luego este, también
+regresamos al nuevo al nuevo punto, ¿no? Si se fijan, esta máquina de estados no
+tiene solo un lazo, sino que tiene dos lazos. ¿Qué significa eso? Que hay dos
+posibles combinaciones para moverse. En algunos puntos de la máquina de
+estado va a haber ciertas bifurcaciones, es lo que nos dice eso. Por ejemplo,
+aquí en Serrando tenemos una bifurcación. En los demás al parecer no
+lo tenemos. En otro no tenemos una bifurcación, sino tenemos dos entradas.
+Sí. Entonces, la máquina de entrada de estado se empieza se empieza a volver
+cada vez más compleja. Son dos entradas, pero se fijan, la entrada es la misma.
+Lo que va a provocar el abrir siempre va a ser e el factor persona, ¿no? Okay.
+Este, hasta ahorita no tienen dudas de esta parte. Esta parte puede ser un poco
+confusa. Luego un dedito arriba. Si no,
+perfecto. Va, que va. Gracias. Bueno, entonces
+digan, esta máquina de estado se vuelve más compleja. De hecho, aquí aparece el
+el que nos decía este el que nos decía Ismael, ¿no? El estado de que se
+atraviesa o que no se puede cerrar y se vuelve a abrir. Bueno, el otro era de
+que no se puede abrir, se espera y luego vuelve a intentar. Bueno, ya tienes dos
+lazos, está curioso, ¿no? Y este aquí de los dos empezamos
+encerrando, pero por ejemplo si empezamos en abierta y seguimos el
+camino y tomamos este nuevo, también nos lleva el mismo, ¿no? Este, salir de
+abierta nos lleva de regreso al estado abierta. Salir de cerrada nos lleva de
+regreso al estado cerrada. Sí. Eh, también fíjese que hay estados hay
+estados que puede que se pueden alcanzar con dos caminos, por ejemplo, abriendo,
+abierta y cerrando se pueden alcanzar con tanto con el lazo azul, que es el
+lazo de adentro, como el lazo rojo, que es el principal, pero opción cerrada no
+se alcanza con con el lazo azul, solo con el lazo rojo. Es importante para las
+clasificaciones. Ahorita como es una introducción, nada más qué quédense eso
+en cuenta, ¿no? que las características las revisas aquí
+en ese tipo de diagramas. Va que va. Les digo, este este
+diagrama es bastante complejo, simplemente lo vamos siguiendo. Por
+ejemplo, el caso el caso bonito, la puerta está cerrada, nos encontramos
+aquí el el de inicio cerrada. Vamos a dibujar otro colorcito. Okay. El
+caso bonito es está cerrada, viene una persona, como vimos hace rato, pasa, o
+sea, si la persona sí está dentro del sistema, se abre. O bueno, digamos es
+una puerta que se abre para todos, una puerta esas de hoteles, de esas de las
+entras de los lobis. Bueno, viene la persona, detecta la persona con el
+sensor de este de proximidad, se abre. Okay. Termina de abrir, o sea, fin
+abrir, ahora está abierta, se espera unos segundos y empieza a cerrarla. Aquí
+empieza ahí empiezan dos caminos. Si el la puerta no tiene nada que le estorbe,
+regresa al estado de cerrar con el fin cerrar. Pero si hay una persona por ahí
+estorbando, toma este nuevo camino. La persona sigue ahí adentro entre la
+puerta, entre las dos puertas, entonces no la puede cerrar. Entonces empieza a
+cerrar, empieza a cerrar, empieza a hacer el cerrando, el estado de
+cerrando, se empieza a cerrarla poco a poco, como los portones eléctricos luego
+o estas puertas en los supermercados que se cierran así como así que cuando te
+pones en medio se detienen de golpe y se empiezan a abrir otra vez. Así, veanlo.
+Entonces, llegas tú, está en el estado de que se empieza a cerrar, pero como
+detecta que ahí sigues se vuelve a abrir. Sí, es lo que está pasando. Sí,
+que hago tanto capié en esta parte, pero siento que es la parte que más se les
+complica luego esto de de de cómo se cuál es el flujo de la señal, ¿no? Le
+vamos a poner señal para no confundirlos.
+Cierre eléctrico de las cajuelas. A ver, no nunca he trabajado con eso,
+pero vamos a pensar, vamos a intuir más o menos cuál va a ser su sistema.
+El cierre automático de la cajuela es que pues se le le puedes dar ahí con la
+patita abajo. No sé si lo han visto. No sé si te refieras a ese, el de las
+camionetas que le das como le acercas la patita y se pierde a cerrar solo. Ajá.
+Sí, según yo no traen según yo no traen sensores esas para cerrarse, como dice
+Ismael, porque sería muy caro. ¿Cómo pones un sensor? Ahí está muy difícil
+porque pues eh no sé, o sea, sería necesario tener un dos sensores, por
+ejemplo, ahí a los lados como los de las puertas automáticas para estar revisando
+que no existe nada en medio. Estaría bien, pero normalmente las marcas buscan
+abaratar. Yo no he visto que se detengan esas. Lo que sí he visto es que cuando
+tú le das, ejemplo, ahí la el el sistema de la el sistema de la cajuela va a ser
+un sistema que va a responder cuando tú pases la patita, ¿no? Entonces, esa va a
+ser el estado. El estado, ejemplo, cuando abres la cajuela, el estado se
+convierte en abierta, ¿no? ¿Están de acuerdo? Ese es un nuevo estado y cuando
+le pasas la patita, pasa cerrando y luego ha cerrado, ¿no? Y cuando tú le
+das al botonazo de de la cajuela o le das a tu botón en el control que abre la
+cajuela, pasa abriendo y luego abierta, ¿no? Se fijan, hay dos hay dos
+disparadores, uno para cerrar y uno de y uno de ¿Cómo se y uno de y uno para para
+abrir que pusieron que un que tiene ay fuerza o de consumo de corriente. Okay.
+Yo la verdad no había visto. Yo que trabajé con la Tijuán, me acuerdo que
+esa sí te mataba, yo creo. Pero esa parte pues yo no la veía. Lo de las
+cajuelas, ¿no? Pero pues estaría bien que tuviera sensores, ¿no? Ya todo
+debería tener sensores para evitar ese tipo de problemas.
+Okay. Okay. Ah, esta es una tabla. De hecho, de hecho, esto después les va a
+servir a ustedes. Ahorita, pues nada más tengan en cuenta que esas tipo de tablas
+lo que hacen es trabajar con estado, actual evento nuevo estado. No hay es
+una especie de correlación. cerrada. Evento desencadena este cuando está es
+cuando está ese cuando está ese estado. Este evento desencadena el que sigue.
+Cuando está ese estado que era el anterior este evento desencadena el que
+sigue. Es una especie de si se fijan para dibujar esas tablas tienes que
+seguir esta trayectoria, ¿no? Vas para acá y luego de aquí vasando, ¿no? O sea,
+se va haciendo una especie de normalmente el que está acá es el nuevo
+inicial, ¿sí? El que está al final para cuando tengan que hacer su tablita.
+Okay. De hecho, aquí te pone estos son
+teorías, digo, eso siempre esto va a ser teoría básica porque es es una
+introducción a la máquina de estados. Este, la máquina de estados aquí les
+pone es es una reflexión, es una buena reflexión que pues no basta preguntarse
+qué ocurrió, sino en qué estado estaba el sistema, porque pues como decirles
+este vamos a imagina que eh vamos a vamos a irnos al de la cajuela, ya que
+lo sacar, ¿no? Tú abres tu cajuelita, ¿no? Con un botón, la mayoría de los
+carros ya le das al botón y tiene los resortes, se libera se libera el seguro,
+los viejos se libera el seguro, el resorte la levanta poquito, ¿no? Ya la
+mayoría de los carros viejos ya era así. En los nuevos pues trae una especie ahí
+de amortiguador, ¿no? Ahí como de hidráulico que cuando se abre pues ahí
+se sube despacito. Okay. Imagina que tú le das al botonazo, se abre la cajuela y
+después le das otra vez al botonazo. La cajuela pues no se va a abrir abrir,
+¿no? Ya se abrió. La única opción que te queda es volver a cerrar, ya no puedes
+volverlo a abrir. Por eso dice aquí lo importante en la máquina de estados.
+Bueno, es es necesario hacerlo, preguntar qué ocurrió, pero no podemos
+dejar de preguntar en qué estado estamos. ¿Por qué? Porque en el caso de
+la cajuela, el que ocurrió es que diste el botón de abrir, o sea, estás pidiendo
+que abra. Esa es esa es la señal. Estoy pasando, estoy dándole con el control al
+botón de abrir. Entonces, te debes de abrir. Entonces, si el te hay que
+preguntarse en qué estado está, porque pues si le das a abrir, la cajuela solo
+se va a abrir si el estado actual es que está cerrado. Sí. Si el estado actual es
+que está abierto y le das a abrir, pues ya no va a funcionar la acción,
+simplemente se va a estar ejecutando, pero pues no va a pasar nada. De hecho,
+va, aquí lo pon si la puerta está cerrada y esta persona abre, si la
+puerta está cerrando esta persona vuelve a abrir. Si la puerta está abierta y
+detta persona, quizás no cambia, ¿no? Porque ya estaba abiertam.
+Okay. Okay. Va que va. Bueno, eso aquí son ejemplos tras ejemplos, ¿no? Pero ya
+nos queda claro más o menos que es una máquina de estados. Mm. Ahora quisiera
+hacer un ejemplo más enfocado en desarrollo, ¿sí? Un ejemplo más. Ya está
+muy bonito ver diagramas y todo eso, pero cómo empezamos a traducir esto a
+código aunque sea básico. Entonces, para eso nos vamos a ir al al famosísimo que
+que ya lo extrañábamos, el PC in como todav no estamos usando C, pues no
+tendría sentido hacerlo en C y tener que explicarles en el momento las funciones
+que estoy utilizando. Okay, vamos a crear, no sé, ¿qué les parece si
+empezamos programando la lámpara? la lámpara que es el más básico, que aunque
+diga que está básico, este puede que nos tardemos un ratito. Dime, Ismael,
+dime, dimeel, ¿qué pasó? Ah, que vi que levantaste la mano. Ah,
+perfecto, perfecto, perfecto. Okay, entonces vamos a ponerle, no sé, pues el
+nombre que quiera, ¿no? Este caso, pues lámpara. Lámpara.
+Okay. Y pues el el algoritmo en este caso yo
+lo haría cuando trabajamos con máquina de estado, yo usaría el comando que en
+CS es switch. En este caso, pues para PC in se utiliza se utilizan los estados
+mientras, ¿se acuerdan? Usabas el mientras o usabas el según. Sí, como
+switch. Entonces, para las máquinas de estado, generalmente cuando estás
+trabajando con C se usa switch para trabajar con máquinas de estado. ¿Por
+qué? Porque switch es una es es una herramienta, decimos que es una
+estructura de control, no es una condicional. Ya más adelante vamos a ver
+eso. Una condicional, pues, ¿qué hace? Decide entre entre dos caminos o varios
+caminos, varias condiciones, ve si se cumple, si se cumple, ejecutan algo.
+Este, a diferencia de Switch, Switch no revisa si algo se cumple, no revisa eso,
+simplo que simplemente recibe un valor y ese valor debe estar asignado a algún
+caso específico. Entonces, Switch lo que hace es como ser una especie de grifo o
+redirigidor de la señal. va la señal y le va y la va redirigiendo diferentes
+caminos dependiendo los valores que esté reportando, ¿no? Fíjate, es una máquina
+de estados. Bueno, es una es una manera de programar fácil máquinas de estados.
+¿Por qué? Porque Switch depende del caso que elijas, o sea, del valor actual. Mm,
+para que va, se parece a lo IF, pero también ifir para máquinas de estados,
+obviamente, porque a veces hay que revisar, hay que hacer, hay que hacer,
+hay que hacer cositas cuando pasan ciertas cosas. Entonces, para eso nos
+sirven los ifi, pero eh el pan de cada día dentro de dentro de la máquina de
+estados es el switch. Okay, va que va. Seguimos con esto para no distraer
+bueno. Eh, yo lo que haría, este es el script lámpara. Otra vez usamos el
+definir. Vamos a definir un estado porque vamos a estar trabajando con un
+estado que el estado de la lámpara, ¿cuál va a ser? El que va a estar
+brincando entre apagado y encendido. Este va a ser un entero,
+pero ocupamos un ciclo infinito. Sí. Vamos a ver si ponemos un Sí, de hecho,
+de hecho, switch normalmente se ejecuta dentro de ciclos, ¿no? Hay switch que se
+ejecutan en cascada y se rompen con un break dentro del ciclo para que para que
+no ejecute los demás. Hay unos que a propósito les quita los breaks para que
+ejecuten lo que sigue debajo de ese de ese de ese case. Pero ya no les digo de
+eso porque los voy a confundir porque todavía no vemos eso. Okay. Pero sí,
+este puedes meterlos en un ciclo a un ciclo infinito a los a los perdón a los
+switch y por ejemplo que ese switch esté revisando el estado permanente de un de
+un sensor. S. Si te interesas, por ejemplo, estás trabajando con una placa
+que está revisando, que está revisando constantemente el estado de un sensor,
+entonces el ciclo está repitiendo y cada vez revisamos el estatus. Y si de
+repente llega a ser estatus dos de error, pues nos vamos al problema, va
+que va. Definimos estado como entero, definimos el botón de una vez, definimos
+el botón, que es eh va a ser nuestra va a ser la representación física de la
+acción, pero en este caso programada, o sea, no estamos haciéndolo de verdad de
+manera física, pero es una representación de definir botón igual
+como un entero, porque pues imagino que vamos a ver si podemos ahorita ponerle
+que presionar sea un uno y volver a presionar, no sé, otra vez un uno, no
+sé, ahorita definimos la acción, no se preocupen.
+definir eh salir, ¿no? Un salir como lógico, o sea, vamos a definir una
+un como ahorita que dijo este mal que hiciéramos un ciclo, pues para el ciclo
+lo que voy a hacer es agregar un salir o una opción i, lo que quieran. La voy a
+poner yo salir porque para acordarme que esa la que voy a usar cuando quiero que
+se acabe el ciclo. Entonces, ahí.
+Okay, el estado vamos a iniciarlo apagado. ¿Qué les parece que estado, el
+valor inicial sea estado cero, que sería apagado para nosotros? ¿Okay? Y el
+salir, para que se ejecute el ciclo, vamos a decir que el salir empieza como
+falso. Más adelante lo que va a hacer para
+romper el ciclo es que cuando se cumpla esta condición, salir se vuelva a
+verdadero y nos salgamos. Que va. Okay. Entonces, si el estado cero es apagado,
+el estado uno va a ser encendido. Va que va. Okay, vamos a iniciar un ciclo
+mientras que se esté repitiendo, mientras salir sea igual a falso.
+Entonces, mientras esté cumpliendo lo que declaramos arriba que salir es
+falso, vamos a repetir el ciclo infinito. Ya cuando nosotros lo
+deshagamos adentro, pues se va a dejar de repetir. Entonces, va a ser mientras
+salir igual a falso, hacer escribir.
+Vamos a vamos a escribir, no sé, vamos a vamos a decir, vamos a darnos el
+estado actual, ¿no? Cada vez que repitamos el ciclo. Una vez el estado
+actual para estar como que traqueándolo. Vamos
+a poner dos puntos. Dejen, voy porque esto que estén todos juntos me da
+ansiedad. Okay.
+Okay. Estado actual. Okay. Y ahora hay que estar imprimiendo ese
+estatus. Mm. Okay, vamos a agregar este,
+¿cómo decirlo? Vamos a agregar un un un switch. Ahora sí vamos a crear el el
+switch. El switch en este caso en PC se declara
+como un segund según estado, que es la variable que que metimos nosotros allí
+arriba, que ahorita está en cero. Según estado, hacer
+metemos. Ah, me falta declarar el fin. Fin
+segundo. Ah, ¿dónde está? ¿Dónde está?
+Pin según. Ay, aquí para que no se vea tan feo. Voy a
+meter esto aquí. Ajá. Según estado hacer. Y aquí vamos a empezar a declarar
+los cases, ¿no? El estado normal es cero.
+Ahí está. Ay. Ah, este no. Ay, se me olvidó. Esto
+no va. Ahí, ahí está. Perdón, estaba pensando en los dos puntos. Okay. El
+estado cero, que es en el que estamos ahorita. Vamos a meternos en ese estado.
+Vamos a decir que ay que escriba que la lámpara está apagada. Esto es para
+completar el de arriba, ¿no? V a decir estado actual y dependiendo cómo esté,
+si está en uno o cero, pues va a decir que el estado actual es apagado o
+encendido. Lámpara apagada.
+Ah, ahí. apagada.
+Y si el estado es uno, pues la lámpara está encendida, ¿no?
+Escribir lámpara
+encendida. Ahí está. Okay, ahora terminamos el segundo porque ese nada
+más lo metí para para estar reportando el estado como para tener una manera de
+saber dónde está. Voy a hacer este para atrás. Ahí está. Okay. Ahora vamos a
+simular el botón físico, ¿no? Ese de aquí es como una manera de de que nos
+esté diciendo, "A ver, así andas ahorita, ¿no? Voy a agarrar esto y para
+que se vea más estético, lo voy a meter aquí al mismo nivel que el que el que
+que aquí y dentado y aquí. Ahora vamos a simular el el
+botón. Digamos que digamos que el número el valor uno, o sea, en el switch, el
+nuevo switch que vamos a declarar, digamos que el valor uno es el es la
+opción del botón, el valor uno. Entonces vamos a decir que presiona uno
+encender o apagar la Bueno, vamos a poner para presionar botón para no que
+sea más pro. Para presionar botón. Okay. Y otra opción, vamos a darle otra
+opción, la opción que nos deje ya salirnos del ciclo, ¿no? Para que no se
+esté repito. Escribe esa le vamos a dar, vamos a darle el dos por conveniencia.
+Les decía que normalmente el dos es el state de error. Es como el es como la
+conveniencia de state de error. Normalmente es dos en los en los
+sistemas de este estilo de máquinas de estado. Okay. Entonces, presiona dos
+para detener, ¿no? Para apagar esto. Okay. Y
+aquí vamos a esperar a que el usuario se elija una, ¿no? Porque le estamos dando
+elegir y lo vamos a guardar en botón, ¿no?
+Vamos a leer botón. Okay. Entonces, si botón es uno, significa que lo presionó.
+Si botón es dos, significa que queremos salir y ahorita que adelante pongo una
+condición para cuando botón sea dos salir se vuelva se vuelva verdadero y
+nos saque. Okay. Entonces, ya tenemos el botón. Ya nos haría falta otro switchito
+aquí. Un segund botón
+hacer porque va este va a recibir el valor uno o dos del botón. Entonces, va
+a revisar si es uno, si es dos. Para el uno, pues presionamos el botón.
+Entonces aquí hay que tener cuidado nada más como
+como el el valor el valor del estado es un entero, no es un boliano, tenemos que
+revisar qué valor estamos ahorita porque puede ser 0 un pero como un entero puede
+haber un problema. Entonces para asegurarnos dónde estamos vamos a
+revisar con un ciclo. Ay, era con minúscula. Si estado es igual a cer,
+entonces voy a bajar poquito. Entonces estado
+se vuelve igual a uno. Sí. Y si eso no pasa,
+si no el estado, ay, el estado se vuelve cero, ¿no? Si estamos en cero, pasamos a
+uno. Si estamos en uno, pasamos a cero. Estamos intercalando entre los dos.
+Okay. Aquí acabamos el sí y aquí acabamos nuestra
+nuestro botoncito, ¿no? Y ahora pues el otro caso es el dos. Si le dimos que dos
+al botón significa que queremos salir. Entonces, pues aquí nada más decimos que
+salir se convierte en verdadero. Verdadero. Okay.
+Okay. Terminamos el fin según. Déjenme revisar aquí en mi en mi script.
+Según yo no lo veo ya mal. Tenemos todo ya dentado. ¿Qué más? ¿Qué más nos haría
+falta? Ah, nos falta el el otro caso. Ay, perdón, el fin del segundo. Y ahora
+este podemos agregar por ahí, ejemplo, una validacioncita.
+Ahí está este de aquí. Podemos agregar una validación de que si
+alguien escribe, no sé, un botón inválido o algo, digamos que es
+inválido, ¿no? Para estar ahí para acordarnos que también existe el la
+opción de fou en en C+ más. El de otro modo de aquí es el default.
+Dice, cuando hagan cualquier otra operación decirle, pues no, dame una
+opción válida, noción válida.
+Listo. Okay. Y una vez que se termine eso, si nos salimos de los dos del
+mientras, pues nada más para avisarnos que nos salimos aquí una especie de
+terminaste el programa o programa terminado, lo que quieran.
+Vamos a darle una revisada rapidita porque no vaya a ser definir estado
+entero, entero. Lógico. Parece que está a bien. Okay, vamos a
+guardar. Guardamos
+y ejecutamos. Ahí está. Okay.
+Entonces, según nuestro código, como se va a meter al fin mientras en cuanto
+empieza, porque lo declaramos como falso, el salir, entonces el el ciclo
+mientras se cumple se empieza a hacer lo que lo que estipulamos, ¿no? Eh, se
+imprime el estado actual, escribir estado actual y si ese estado es cero
+está apagada y si es uno está encendida. Como empezamos con cero, pues el estado
+actual debería ser apagada, que me faltó una a, pero pues es apagada. Ahí está.
+Okay, ahora vamos a presionar el botón a ver qué pasa, ¿no? Vamos a darle el uno
+y no le hizo nada. Okay. Eh, vamos a darle uno.
+No, no, no. ¿Qué? Ah, le piqué acá dentro. Control Z.
+Control Z. Ahí está. Okay. Yo creo que ya sé qué pasó.
+Perdón, perdón, perdón, perdón. Aquí está.
+Ahí está. Listo. Me ha equivocado ahí en una letrita.
+Ahí está. Perdón, se fijaron. Se puse acá estado, pero en vez de O puse P. No
+me había fijado. Perdón, perdón. Son errores de humano. Okay. Entonces, por
+ejemplo, primero estaba apagada, dimos uno, ahora está encendida. Si damos otro
+está apagada, si damos uno, está encendida. Okay. Es como está
+presionando un botón. ¿Están de acuerdo? Está uno. Apagida apagada. Estamos
+oscilando. Se, si se fijan, se cumple la condición que vimos en el diagrama que
+nos dibujaba la lámpara. No existe un solo lazo que es cerrado porque
+cualquier opción al pasar el tiempo o al ejecutar la acción de botón, perdón, en
+este caso porque la acción que nos lleva es la opción de de presionar el botón,
+nos va a llevar siempre al punto que estábamos. O sea, si estamos en un
+punto, siempre que pase tiempo se ejecute una acción, vamos a regresar al
+mismo punto. Sí, perdón, ese es un lazo cerrado. Entonces, aquí con el tiempo,
+si seguimos ejecutando el eh la el presionar el botón, vamos a seguir
+apagando y encendiendo la lámpara. La otra opción que hay es darle dos para
+detener el sistema, pero antes de eso vamos a darle una opción inválida, ¿no?
+Cuatro. Si nos dice, nos dice que bueno, no le imprimió es el otro de acá. Vamos
+a decirle que ahí, ¿cómo se llama? Dos. Ahí está, ya terminó el programa que nos
+faltó este de acá. Lo revisamos.
+Okay. Bueno, pero el funcionamiento básico está ahí, ¿no? ¿Están de acuerdo
+conmigo? Sí. ¿Se fijan? el la máquina de estados que que propusimos pues es
+sencilla, no no es no es la más compleja, pero de todos modos la lógica
+que se lleva a realizarla no es tan fácil. Sí, menos en un lenguaje que no
+conocemos como PCI. Bueno, en mi caso quizá algo que estado viendo con ustedes
+a la par en C ya estoy familiarizado con esas cosas. Ya más adelante cuando
+vayamos avanzando les digo con el EQ va a tener que trabajar con una especie de
+máquina de estados. Sí. Entonces, ¿qué les iba a decir? Les voy
+a dejar una tarea de esto para el fin de semana. ¿Están de acuerdo? Voy a dejar
+una tarea de este tema para el fin de semana que quiero que resuelvan y voy a
+ver ya de máquina de estados ya no veríamos mucho más porque solo quiero la
+introducción. Les voy a enseñar a cómo dibujar una este, o sea, voy a poner voy
+a poner unos ejercicios. ¿Qué es lo que me faltó hacer hoy? poner unos
+ejercicios para enseñarles a más o menos tratar de modelar una máquina de estados
+a partir de una un requerimiento y eso va a ser parte del otro tema que es
+requerimientos. Les voy a enseñar lo básico de cómo modelar un perdón, de
+cómo escribir un requerimiento, lo que decimos cuando un cliente te pide algo,
+¿cómo tú puedes pasar esa petición a algo formal? Sí, a un requerimiento más
+técnico de, a ver, él me está pidiendo esto, se tienen que cumplir estas
+condiciones. ¿Qué está relacionado con esto? Una vez que terminemos eso, ya
+pasamos al tema de que les voy a hacer su primera evaluación de proyecto. Sí,
+porque parte de la evaluación es que definan ustedes una minimquina de
+estados, la inicial de su sistema que va a ir creciendo a lo largo del curso y
+también van a tener que definirme sus requerimientos. Obviamente no les voy a
+pedir los requerimientos acá s super padres, sino quiero nada más ver la
+noción de requerimientos, que es volver lo más atómico lo que te está pidiendo,
+como lo que hicimos con los problemas que los dividíamos en partes, algo así,
+pero ahora con peticiones, obviamente les voy a enseñar, no se
+preocupen, va que va. Este qua quería este
+aprovechar ahorita primero les voy a pasar lista este ahorita este dejé de ya
+dejé de lado el tema porque quería preguntarles, quiero hacer una especie
+de sondeo, quería tomar estos estos minutitos porque luego tengo que correr
+a la otra clase antes de las 9, por eso normalmente me salgo me salgo unos
+minutitos antes o a veces antes porque a veces tengo hacer cosas o tengo que irme
+a a tomar a tomar a dar la otra clase, perdón. Espero quería hacer un sondeo
+con ustedes. He estado haciéndolo con todos los grupos para medir mi
+rendimiento. Quería preguntarles y sean sinceros, sin
+problema, no pasa nada. Si están están conformes con la manera que se ha dado
+la clase, si esperarían que fuera más rápida. Yo sé que estos temas son muy
+básicos y muchos de ustedes ya tienen experiencia previa. Yo sé que sí suele
+ser aburrido cuando los cuando los cuando ves código otra vez y ves ciclos
+y ves estas cosas más ahorita que estamos viendo pseudocódigos cuando
+pasemos a C que vamos a empezar viendo los las estructuras básicas. Obviamente
+también se me van a aburrir un poquito, pero quería preguntarles eso. Ahorita
+consideran que vamos despacio. El tema de máquinas de estados es un tema
+difícil. Sí, ahí va la contraparte de la moneda. Si estamos viendo PCIN, si
+estamos viendo pseudocódigos fáciles, se les puede hacer sencillo, pero máquinas
+de estados, que es un tema que que es muy raro de ver, que no se enseña
+normalmente, es un tema que se le puede complicar a algunos. Entonces, si luego
+voy rápido y en máquina de estados también me voy rápido, me preocupa que
+algunos se traben. Entonces, yo les quería decir, si les pregunto, ¿están
+conformes con la velocidad? Pero de todos modos, si en un tema sienten que
+estamos muy despacio y es un tema sencillo, puedo acelerar el paso. Al
+mismo tiempo que si un tema sienten que hay que profundizarlo más, podemos
+detenernos más. Sí, obviamente con el consenso mayoría.
+quería preguntarles a ustedes este que tengan recomendaciones que este no sé,
+tal vez eh los 5 minutos que me toma al inicio o así para esperar es porque me
+piden darles una tolerancia para poder ponerles bien su falta sin retardo.
+Entonces este trato de esperarlos, pero si no quieren que sea así también puedo
+empezar más rápido. Son un poquitas algunas reglas que que me pusieron, pero
+eh los temarios yo trato, yo la verdad mi manera de enseñar es así, es es este
+a veces de divagar, pero tratando de darles ejemplos más prácticos. Sí. Eh,
+no me gusta que memoricen código nada más me gusta que entiendan dónde lo
+pueden aplicar allí afuera. Entonces, por eso luego puedo ser así un
+poquito un poquito más insistente en ciertos temas o que repito muchas cosas,
+pero es más que nada porque la evaluación con el tiempo se vuele más
+difícil y me gustaría que tuvieran un buen EQ, un buen ACU diseñado porque
+pues al final lo voy a evaluar yo y como se supone que debo yo dar mi visto bueno
+de que ya son profesionales al final de este curso, pues tengo que hacerlo de
+una manera imparcial y y suena feo, pero tengo que hacerlo de una manera, ¿cómo
+se dice de una manera ruda, no tengo que ponerme serio en esa evaluación.
+Entonces, yo quisiera que ustedes mínimo, tal vez si no se diseña un un
+ICU perfecto, me sepan explicar cómo funciona. Con eso yo me doy por buen
+servido, qué es lo que buscan las empresas para que ustedes puedan
+conseguir un buen trabajo de este de este rubro. Entonces les digo, sí, este,
+tengan comentarios, díganmelos, no pasa nada.
+Eh, estoy sondeándolos porque estoy sondeando a todos los grupos. Quiero
+saber que cómo se cómo se sienten, si o por ejemplo hoy que las diapositivas se
+las puse, pero eran muy de mucho texto, casi no imágenes, puedo hacerlas un poco
+más vistosas este y regresando a PowerPoint, ¿no? O sea,
+en vez de hacerlas con Latt. ¿Qué ponen aquí? Siento el ritmo, está
+bien. Cosas que no recuerdo. Okay. Sí, esa es la razón por la que luego me
+alento un poquito. Sí. Pero este se les preguntaba eh con
+sinceridad porque porque tengan confianza de acercarse conmigo en serio
+también. Si no, si no este si hay algo que no les guste no lo quieren sacar en
+la clase también no pasa nada, vengan conmigo, no tengo problema. Yo la verdad
+eh voy a voy a tratar de hacer los ajustes que ustedes me digan, aunque me
+busquen solo. Yo yo eh normalmente, ejemplo, eso suena feo, suena suena
+suena como fuera de lugar, pero aquí en el tecnológico, bueno, en la
+universidad, yo soy de los profes pues como más queridos por del lado de que mi
+índice de reprobación es muy bajo. Yo soy una yo soy muy muy muy amable, muy
+tranquilo con los muchachos. Entonces, como que en general soy como que el que
+buscan, no por ser barco, porque en realidad mis exámenes son rudos y mi
+manera de enseñar es como muy puntual. Normalmente no dejo tarea, ustedes sí
+les voy a dejar, pero yo no dejo tareas. Mi mi la calificación de la universidad
+es 100% examen cuando es conmigo. Este, pero fuera de eso soy como muy
+permisivo, soy muy este si veo si veo interés en los muchachos los perdono.
+Ajá. Este, pero por les digo, pero siempre he
+sido muy abierto con los muchachos. Es si ustedes se acercan conmigo y me
+dicen, "Oiga, esto o un tema que no entiendan y quieren que lo veamos
+privado, también lo vemos, no pasa nada." Ahí les paso una documentación,
+algún libro que recomiende, mínimo para que lo lean.
+Ah, yo siento que sí vamos lento. Es que nada con siento que creo que era un
+sector, pero se entiende la necesidad. Lo más orientado que se pueda la
+automotriz. Sí, claro, Carlos, no te preocupes. De hecho, es lo que trato de
+hacer, ¿no? Ahorita pues me cuesta un poco eh al principio orientarlos lo más
+posible a la motriz debido a que como son conceptos muy teóricos puramente me
+cuesta. Pero, por ejemplo, la máquina de estados, ahorita que vamos a ver los
+ejemplos de cómo modelarla desde cero, que es lo que les va a servir a ustedes
+también. Aparte de esto básico, querá que vieran, que entendieran cuál es la
+estructura básica de la máquina. Ahorita que les ponga ejemplos de, por ejemplo,
+un problema donde diga, a ver, tenemos esta, ¿cómo la podemos pasar una especie
+de diagrama mínimo para poder entender bien la máquina? Yo tenía pensado usar
+algún ejemplo del sensor este de proximidad de la parte trasera del
+vehículo, que es un es un es un sensor que tiene alimentación y una señal de
+estado que nos está diciendo si sirve o no sirve. Ah, y una señal que nos indica
+la medida. Claro que sí, son cuatro cables. Entonces, ejemplo, ese lado ya
+quiere empezar a aplicarlo. Ahorita que veamos requerimientos también, eso sí
+los puedo aplicar más, pero pues hablando de pseudocódigo básico y eso,
+sí me costaba, pero yo sí estoy empujando mucho en que se se oriente y
+hasta ahorita he tratado lo más posible, pero me voy a esforzar más de ese lado,
+no te preocupes. Entonces, sí, este, ¿cómo se dice?
+¿Cómo decirles? Este, pero les preguntaba por eso, porque me gusta
+sondear, me gusta estar sondeando este tipo de cosas para para mejorarlo
+y porque me gusta que aprendan. Sí, sí, sí, porque no pero sí quería en los
+grupos me estoy tomando ese tiempo para preguntarles así en no es no es como en
+mala onda ni nada, sino quiero quiero saber exactamente qué pasa. Va que va.
+Pues les digo, conmigo se pueden acercar también, no pasa nada. Va que va.
+Entonces, este voy a dejar una tarea de eso, ¿les parece? Voy a dejar un
+pseudocódigo porque estamos conseudos todavía. Todavía no les puedo meterse
+sin justificar que ya lo vieron conmigo. Este, voy a estoy pensando en cuál
+dejarles. Ahorita entre hoy y mañana lo pongo para que lo hagan el fin de
+semana. Lo intentan y si no le sale o algo me lo vemos aquí de rapidito, ¿no?
+Alguna solución. Va que va. Entonces, ay, se me olvidó dejar de grabar. Dejo
+de grabar. M.
