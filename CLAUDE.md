@@ -199,3 +199,92 @@ void loop() {
 ```
 
 El loop se ejecuta indefinidamente monitoreando sensores y eventos.
+
+## 🔍 Índice del Proyecto (Codebase Memory MCP)
+
+El proyecto está **indexado** con `codebase-memory-mcp`. Para cualquier consulta sobre la estructura, arquitectura o contenido del proyecto, usa las siguientes herramientas:
+
+### Herramientas Disponibles
+
+**1. Explorar la Arquitectura:**
+```bash
+get_architecture(aspects=['all'])
+```
+- Ver estructura general del proyecto
+- Componentes principales
+- Dependencias
+
+**2. Buscar Funciones/Clases/Archivos:**
+```bash
+search_graph(name_pattern="*turniquete*")
+search_graph(label="file")
+```
+- Encontrar archivos por patrón
+- Localizar funciones/clases
+- Buscar por etiquetas
+
+**3. Obtener Código Específico:**
+```bash
+get_code_snippet(qualified_name="Algoritmo_Torniquete")
+```
+- Extraer código exacto de una función/archivo
+- Obtener rangos de líneas específicas
+
+**4. Rastrear Llamadas y Flujos:**
+```bash
+trace_path("function_name", mode="calls")
+trace_path("function_name", mode="data_flow")
+```
+- Ver qué llama a una función
+- Entender flujos de datos
+- Analizar dependencias
+
+**5. Buscar en el Código:**
+```bash
+search_code("máquina de estado")
+search_code("torniquete")
+```
+- Búsqueda de texto en todo el proyecto
+- Patrones de código
+
+### Archivo de Índice
+
+- **Ubicación:** `.codebase-memory/graph.db.zst`
+- **Tipos:** 278 nodos, 276 relaciones
+- **Contenido:** Estructura completa del proyecto indexada
+- **Compartible:** Commit este archivo para compartir el índice con el equipo
+
+### Cuándo Usar
+
+✅ **Úsalo para:**
+- Explorar la estructura del proyecto
+- Encontrar archivos/funciones específicas
+- Entender relaciones entre componentes
+- Analizar dependencias
+- Localizar código relacionado
+- Auditoría de código
+
+❌ **No lo uses para:**
+- Leer contenido de archivos (usa `Read` directamente)
+- Ediciones (edita con `Edit`)
+- Operaciones de git (usa `Bash`)
+
+### Ejemplo de Consulta
+
+**"¿Dónde está definida la máquina de estados del torniquete?"**
+```
+search_graph(name_pattern="*torniquete*")
+→ Encuentras los archivos .psc
+```
+
+**"¿Qué archivos usan máquinas de estado?"**
+```
+search_code("Segun estado Hacer")
+→ Encuentras todos los archivos con esta patrón
+```
+
+**"¿Cuál es la estructura completa del proyecto?"**
+```
+get_architecture(aspects=['all'])
+→ Ves toda la arquitectura indexada
+```
