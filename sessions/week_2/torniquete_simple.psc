@@ -12,42 +12,44 @@ Algoritmo Torniquete_Simple
 	Mientras salir = Falso Hacer
 
 		Escribir ""
-		Escribir "Estado: "
-		
-		Segun estado Hacer
-			0:
-				Escribir "BLOQUEADO"
-			1:
-				Escribir "DESBLOQUEADO"
-		FinSegun
-		
+		Si estado = 0 Entonces
+			Escribir "ESTADO: BLOQUEADO"
+		Sino
+			Escribir "ESTADO: DESBLOQUEADO"
+		FinSi
 		Escribir "Contador: " contador
+
 		Escribir "1=Moneda, 2=Empujar, 0=Salir"
 		Leer evento
 
-		Segun evento Hacer
-			1:
-				Segun estado Hacer
-					0:
-						Escribir "Desbloqueado"
-						estado <- 1
-					1:
-						Escribir "Ya esta desbloqueado"
-				FinSegun
-			2:
-				Segun estado Hacer
-					0:
-						Escribir "Acceso denegado"
-					1:
-						contador <- contador + 1
-						Escribir "Paso " contador " registrado"
-						estado <- 0
-				FinSegun
-			0:
+		// ESTADO BLOQUEADO
+		Si estado = 0 Entonces
+			Si evento = 1 Entonces
+				Escribir "Desbloqueado"
+				estado <- 1
+			FinSi
+			Si evento = 2 Entonces
+				Escribir "Acceso denegado"
+			FinSi
+			Si evento = 0 Entonces
 				salir <- Verdadero
-			De Otro Modo:
-				Escribir "Evento invalido"
-		FinSegun
+			FinSi
+		FinSi
+
+		// ESTADO DESBLOQUEADO
+		Si estado = 1 Entonces
+			Si evento = 2 Entonces
+				contador <- contador + 1
+				Escribir "Paso " contador " registrado"
+				estado <- 0
+			FinSi
+			Si evento = 1 Entonces
+				Escribir "Ya esta desbloqueado"
+			FinSi
+			Si evento = 0 Entonces
+				salir <- Verdadero
+			FinSi
+		FinSi
 
 	FinMientras
 

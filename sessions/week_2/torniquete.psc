@@ -21,12 +21,11 @@ Algoritmo Torniquete
 		Escribir ""
 		Escribir "Estado actual:"
 		
-		Segun estado Hacer
-			0:
-				Escribir "BLOQUEADO"
-			1:
-				Escribir "DESBLOQUEADO"
-		FinSegun
+		Si estado = 0 Entonces
+			Escribir "BLOQUEADO"
+		Sino
+			Escribir "DESBLOQUEADO"
+		FinSi
 
 		Escribir "Pasos registrados: " contador_pasos
 		Escribir ""
@@ -38,38 +37,45 @@ Algoritmo Torniquete
 		Escribir "Ingresa evento: "
 		Leer evento
 
-		Segun evento Hacer
-			1:
-				Segun estado Hacer
-					0:
-						Escribir "Moneda insertada"
-						Escribir "Torniquete DESBLOQUEADO - Puedes pasar"
-						estado <- 1
-					1:
-						Escribir "Ya esta desbloqueado"
-				FinSegun
-
-			2:
-				Segun estado Hacer
-					0:
-						Escribir "ACCESO DENEGADO"
-						Escribir "El torniquete esta bloqueado"
-						Escribir "Inserta una moneda para desbloquear"
-					1:
-						Escribir "Paso registrado"
-						contador_pasos <- contador_pasos + 1
-						Escribir "Persona " contador_pasos " paso"
-						Escribir "Torniquete BLOQUEADO nuevamente"
-						estado <- 0
-				FinSegun
-
-			0:
+		// ESTADO 0: BLOQUEADO
+		Si estado = 0 Entonces
+			Si evento = 1 Entonces
+				Escribir "Moneda insertada"
+				Escribir "Torniquete DESBLOQUEADO - Puedes pasar"
+				estado <- 1
+			FinSi
+			
+			Si evento = 2 Entonces
+				Escribir "ACCESO DENEGADO"
+				Escribir "El torniquete esta bloqueado"
+				Escribir "Inserta una moneda para desbloquear"
+			FinSi
+			
+			Si evento = 0 Entonces
 				salir <- Verdadero
 				Escribir "Programa terminado"
+			FinSi
+		FinSi
 
-			De Otro Modo:
-				Escribir "Evento invalido"
-		FinSegun
+		// ESTADO 1: DESBLOQUEADO
+		Si estado = 1 Entonces
+			Si evento = 2 Entonces
+				Escribir "Paso registrado"
+				contador_pasos <- contador_pasos + 1
+				Escribir "Persona " contador_pasos " paso"
+				Escribir "Torniquete BLOQUEADO nuevamente"
+				estado <- 0
+			FinSi
+			
+			Si evento = 1 Entonces
+				Escribir "Ya esta desbloqueado"
+			FinSi
+			
+			Si evento = 0 Entonces
+				salir <- Verdadero
+				Escribir "Programa terminado"
+			FinSi
+		FinSi
 
 		Escribir ""
 
