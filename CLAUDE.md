@@ -200,6 +200,61 @@ void loop() {
 
 El loop se ejecuta indefinidamente monitoreando sensores y eventos.
 
+## Máquinas de Estado - Implementaciones
+
+Se proporcionan implementaciones de máquinas de estado en múltiples lenguajes para fines educativos:
+
+### Torniquete (Turnstile)
+
+**Ubicación**: `sessions/week_2/`
+
+**Archivos disponibles:**
+- **`torniquete.psc`** - Pseudocódigo PSeInt (ejecutable en PSeInt IDE)
+- **`torniquete_simple.psc`** - Versión simplificada de PSeInt
+- **`torniquete.py`** - Implementación en Python con OOP (ejecutable y debuggable)
+- **`torniquete_multiples_lenguajes.md`** - Ejemplos en PSeInt, Python y C++
+- **`README_TORNIQUETE.md`** - Guía de uso y debugging
+
+### Ejecutar Torniquete en Python
+
+**Terminal:**
+```bash
+python3 sessions/week_2/torniquete.py
+```
+
+**VS Code con Debug (Recomendado):**
+1. Abre VS Code: `Ctrl+Shift+D`
+2. Selecciona: **Python: Torniquete**
+3. Presiona: **F5** (o ▶️)
+
+**Controles de Debug:**
+- F5: Continuar/Ejecutar
+- F10: Paso siguiente (Step Over)
+- F11: Entrar en función (Step Into)
+- Shift+F11: Salir de función (Step Out)
+
+### Características de la Implementación Python
+
+- ✅ **OOP**: Clase `Torniquete` con lógica encapsulada
+- ✅ **Enums**: Tipos seguros para `Estado` y `Evento`
+- ✅ **Tabla de transiciones**: Matriz (Estado, Evento) → (Nuevo Estado, Acción)
+- ✅ **Auditoría**: Contador de personas que pasaron
+- ✅ **Debugging**: Configurado en `.vscode/launch.json`
+- ✅ **Interfaz interactiva**: Menú en terminal con emojis
+
+### Puntos de Interrupción (Breakpoints)
+
+Para debugging efectivo:
+1. Click en número de línea para crear breakpoint (aparecerá punto rojo)
+2. Presiona F5 para ejecutar
+3. El programa se pausará en ese punto
+4. Inspecciona variables en panel izquierdo:
+   - `self.estado` - Estado actual
+   - `self.contador_pasos` - Contador
+   - `self.activo` - Estado del programa
+
+---
+
 ## 🔍 Índice del Proyecto (Codebase Memory MCP)
 
 El proyecto está **indexado** con `codebase-memory-mcp`. Para cualquier consulta sobre la estructura, arquitectura o contenido del proyecto, usa las siguientes herramientas:
