@@ -163,6 +163,22 @@ Navegación centralizada de todas las sesiones del curso por bloque, semana y fe
 - Terminal Linux: [Sesión 2.2](sessions/week_2/2026_07_14/resumen.md), [Sesión 2.3](sessions/week_2/2026_07_15/resumen.md)
 - **Máquinas de Estado**: [Sesión 2.4](sessions/week_2/2026_07_16/resumen.md) ⭐
 
+### Recursos de Máquinas de Estado
+
+**Material Complementario:**
+- 📄 [TORNIQUETE_CONTEXT.md](sessions/week_2/TORNIQUETE_CONTEXT.md) — Índice y guía general
+- 📄 [maquinas_de_estado_complementario.md](sessions/week_2/2026_07_16/maquinas_de_estado_complementario.md) — Material educativo profundo
+- 📄 [torniquete_solucion.md](sessions/week_2/2026_07_16/torniquete_solucion.md) — Solución completa en pseudocódigo
+- 📄 [torniquete_multiples_lenguajes.md](sessions/week_2/2026_07_16/torniquete_multiples_lenguajes.md) — Implementaciones en PSeInt, Python, C++
+
+**Implementaciones (Ejecutables):**
+- 🐍 [torniquete.py](sessions/week_2/torniquete.py) — Python con OOP y debugging (Recomendado para aprender)
+- 📝 [torniquete.psc](sessions/week_2/torniquete.psc) — PSeInt ejecutable
+- 📝 [torniquete_simple.psc](sessions/week_2/torniquete_simple.psc) — PSeInt versión simple
+
+**Guías:**
+- 📖 [README_TORNIQUETE.md](sessions/week_2/README_TORNIQUETE.md) — Cómo ejecutar y debuggear en VS Code
+
 ### Por Especialidad
 
 **Especialidad Automotriz (Vehicular):**
