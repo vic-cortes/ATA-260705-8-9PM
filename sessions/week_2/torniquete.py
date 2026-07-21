@@ -28,6 +28,7 @@ class Evento(Enum):
     SALIR = 0
 
 
+
 class Torniquete:
     """Máquina de estados del torniquete"""
 
@@ -37,12 +38,19 @@ class Torniquete:
         self.contador_pasos = 0
         self.activo = True
 
+    @property
+    def is_blocked(self) -> bool:
+        """Retorna True si el torniquete está bloqueado"""
+        return self.estado == Estado.BLOQUEADO
+    
+    @property
+    def is_unblocked(self) -> bool:
+        """Retorna True si el torniquete está desbloqueado"""
+        return self.estado == Estado.DESBLOQUEADO
+
     def mostrar_estado(self) -> str:
         """Retornar representación del estado actual"""
-        if self.estado == Estado.BLOQUEADO:
-            return "🔒 BLOQUEADO"
-        else:
-            return "🔓 DESBLOQUEADO"
+        return "🔒 BLOQUEADO" if self.is_blocked else "🔓 DESBLOQUEADO"
 
     def procesar_evento(self, evento: Evento) -> str:
         """
@@ -57,7 +65,7 @@ class Torniquete:
         mensajes = []
 
         # ESTADO BLOQUEADO
-        if self.estado == Estado.BLOQUEADO:
+        if self.is_blocked:
             if evento == Evento.MONEDA:
                 mensajes.append("💰 Moneda insertada")
                 mensajes.append("✓ Torniquete DESBLOQUEADO - Puedes pasar")
@@ -73,7 +81,7 @@ class Torniquete:
                 mensajes.append("👋 Programa terminado")
 
         # ESTADO DESBLOQUEADO
-        elif self.estado == Estado.DESBLOQUEADO:
+        elif self.is_unblocked:
             if evento == Evento.EMPUJAR:
                 mensajes.append("✅ Paso registrado")
                 self.contador_pasos += 1
@@ -104,7 +112,7 @@ class Torniquete:
         print("RESUMEN FINAL")
         print("=" * 40)
         print(f"Total de personas que pasaron: {self.contador_pasos}")
-        estado_final = "BLOQUEADO" if self.estado == Estado.BLOQUEADO else "DESBLOQUEADO"
+        estado_final = "BLOQUEADO" if self.is_blocked else "DESBLOQUEADO"
         print(f"Estado final: {estado_final}")
         print("=" * 40)
 

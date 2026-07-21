@@ -1,0 +1,7 @@
+[project]
+name = "ata-260705-8-9pm"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
