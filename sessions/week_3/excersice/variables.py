@@ -12,7 +12,6 @@ class Variable(ABC):
         self.value = value
         self.unit = unit
 
-    @abstractmethod
     def validate(self):
         """
         Abstract method to validate the variable's value.
@@ -55,3 +54,183 @@ class SpeedVariable(Variable):
         except (TypeError, ValueError) as e:
             print(f"Validation error for {self.name}: {e}")
             return False
+
+
+@dataclass
+class TemperatureVariable(Variable):
+    name: str = "Temperature"
+    value: float = 0.0
+    unit: str = "°C"
+
+    def _validate_type(self):
+        """
+        Validates the type of the temperature value.
+        """
+        if not isinstance(self.value, float):
+            raise TypeError(
+                f"Temperature value must be a float, got {type(self.value).__name__}."
+            )
+
+    def _validate_range(self):
+        """
+        Validates the range of the temperature value.
+        """
+        MIN_TEMP = -40.0  # °C
+        MAX_TEMP = 150.0  # °C
+
+        if not (MIN_TEMP <= self.value <= MAX_TEMP):
+            raise ValueError(
+                f"Temperature value {self.value} is out of range ({MIN_TEMP}-{MAX_TEMP} °C)."
+            )
+
+    def validate(self) -> bool:
+        try:
+            self._validate_type()
+            self._validate_range()
+            return True
+        except (TypeError, ValueError) as e:
+            print(f"Validation error for {self.name}: {e}")
+            return False
+
+
+class AirFlowVariable(Variable):
+    name: str = "Air Flow"
+    value: float = 0.0
+    unit: str = "m³/s"
+
+    def _validate_type(self):
+        """
+        Validates the type of the air flow value.
+        """
+        if not isinstance(self.value, float):
+            raise TypeError(
+                f"Air flow value must be a float, got {type(self.value).__name__}."
+            )
+
+    def _validate_range(self):
+        """
+        Validates the range of the air flow value.
+        """
+        MIN_FLOW = 0.0  # m³/s
+        MAX_FLOW = 100.0  # m³/s
+
+        if not (MIN_FLOW <= self.value <= MAX_FLOW):
+            raise ValueError(
+                f"Air flow value {self.value} is out of range ({MIN_FLOW}-{MAX_FLOW} m³/s)."
+            )
+
+    def validate(self) -> bool:
+        try:
+            self._validate_type()
+            self._validate_range()
+            return True
+        except (TypeError, ValueError) as e:
+            print(f"Validation error for {self.name}: {e}")
+            return False
+
+
+class RpmVariable(Variable):
+    name: str = "RPM"
+    value: float = 0.0
+    unit: str = "rev/min"
+
+    def _validate_type(self):
+        """
+        Validates the type of the RPM value.
+        """
+        if not isinstance(self.value, float):
+            raise TypeError(
+                f"RPM value must be a float, got {type(self.value).__name__}."
+            )
+
+    def _validate_range(self):
+        """
+        Validates the range of the RPM value.
+        """
+        MIN_RPM = 0.0  # rev/min
+        MAX_RPM = 10000.0  # rev/min
+
+        if not (MIN_RPM <= self.value <= MAX_RPM):
+            raise ValueError(
+                f"RPM value {self.value} is out of range ({MIN_RPM}-{MAX_RPM} rev/min)."
+            )
+
+    def validate(self) -> bool:
+        try:
+            self._validate_type()
+            self._validate_range()
+            return True
+        except (TypeError, ValueError) as e:
+            print(f"Validation error for {self.name}: {e}")
+            return False
+
+
+class OilPressureVariable(Variable):
+    name: str = "Oil Pressure"
+    value: float = 0.0
+    unit: str = "Pa"
+
+    def _validate_type(self):
+        """
+        Validates the type of the oil pressure value.
+        """
+        if not isinstance(self.value, float):
+            raise TypeError(
+                f"Oil pressure value must be a float, got {type(self.value).__name__}."
+            )
+
+    def _validate_range(self):
+        """
+        Validates the range of the oil pressure value.
+        """
+        MIN_PRESSURE = 0.0  # Pa
+        MAX_PRESSURE = 100000.0  # Pa
+
+        if not (MIN_PRESSURE <= self.value <= MAX_PRESSURE):
+            raise ValueError(
+                f"Oil pressure value {self.value} is out of range ({MIN_PRESSURE}-{MAX_PRESSURE} Pa)."
+            )
+
+    def validate(self) -> bool:
+        try:
+            self._validate_type()
+            self._validate_range()
+            return True
+        except (TypeError, ValueError) as e:
+            print(f"Validation error for {self.name}: {e}")
+            return False
+
+
+class OilTemperatureVariable(Variable):
+    name: str = "Oil Temperature"
+    value: float = 0.0
+    unit: str = "°C"
+
+    def _validate_type(self):
+        """
+        Validates the type of the oil temperature value.
+        """
+        if not isinstance(self.value, float):
+            raise TypeError(
+                f"Oil temperature value must be a float, got {type(self.value).__name__}."
+            )
+
+    def _validate_range(self):
+        """
+        Validates the range of the oil temperature value.
+        """
+        MIN_TEMP = -40.0  # °C
+        MAX_TEMP = 150.0  # °C
+
+        if not (MIN_TEMP <= self.value <= MAX_TEMP):
+            raise ValueError(
+                f"Oil temperature value {self.value} is out of range ({MIN_TEMP}-{MAX_TEMP} °C)."
+            )
+
+    def validate(self) -> bool:
+        try:
+            self._validate_type()
+            self._validate_range()
+            return True
+        except (TypeError, ValueError) as e:
+            print(f"Validation error for {self.name}: {e}")

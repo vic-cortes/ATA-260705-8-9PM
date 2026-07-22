@@ -1,18 +1,25 @@
 from dataclasses import dataclass
 from enum import Enum, auto
 
-from variables import SpeedVariable
+from variables import (
+    AirFlowVariable,
+    OilPressureVariable,
+    OilTemperatureVariable,
+    RpmVariable,
+    SpeedVariable,
+    TemperatureVariable,
+)
 
 MIN_TIME_DIFFERENCE_BETWEEN_MESSAGES = 0.1  # seconds
 
 
 class CarSensors:
     speed: SpeedVariable = SpeedVariable()
-    motor_temperature: float
-    air_flow: float
-    rpm: float
-    oil_pressure: float
-    oil_temperature: float
+    motor_temperature: TemperatureVariable = TemperatureVariable()
+    air_flow: AirFlowVariable = AirFlowVariable()
+    rpm: RpmVariable = RpmVariable()
+    oil_pressure: OilPressureVariable = OilPressureVariable()
+    oil_temperature: OilTemperatureVariable = OilTemperatureVariable()
 
 
 class State(Enum):
