@@ -97,6 +97,7 @@ class TemperatureVariable(Variable):
         self._validate_range()
 
 
+@dataclass
 class AirFlowVariable(Variable):
     name: str = "Air Flow"
     value: float = 0.0
@@ -127,6 +128,7 @@ class AirFlowVariable(Variable):
         self._validate_range()
 
 
+@dataclass
 class RpmVariable(Variable):
     name: str = "RPM"
     value: float = 0.0
@@ -157,6 +159,7 @@ class RpmVariable(Variable):
         self._validate_range()
 
 
+@dataclass
 class OilPressureVariable(Variable):
     name: str = "Oil Pressure"
     value: float = 0.0
@@ -187,6 +190,7 @@ class OilPressureVariable(Variable):
         self._validate_range()
 
 
+@dataclass
 class OilTemperatureVariable(Variable):
     name: str = "Oil Temperature"
     value: float = 0.0
