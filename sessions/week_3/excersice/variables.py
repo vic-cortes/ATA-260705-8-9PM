@@ -1,4 +1,4 @@
-from abc import ABC, abstractmethod
+from abc import ABC
 from dataclasses import dataclass
 
 
@@ -12,12 +12,28 @@ class Variable(ABC):
         self.value = value
         self.unit = unit
 
-    def validate(self):
+    def validate_type(self):
+        """
+        Validates the type of the variable's value.
+        """
+        try:
+            self._validate_type()
+            return True
+        except Exception as e:
+            print(f"Validation error for {self.name}: {e}")
+            return False
+
+    def validate(self) -> bool:
         """
         Abstract method to validate the variable's value.
         Should be implemented by subclasses.
         """
-        pass
+        try:
+            self._validate()
+            return True
+        except Exception as e:
+            print(f"Validation error for {self.name}: {e}")
+            return False
 
 
 @dataclass
@@ -46,14 +62,8 @@ class SpeedVariable(Variable):
                 f"Speed value {self.value} is out of range (0-{MAX_SPEED} km/h)."
             )
 
-    def validate(self) -> bool:
-        try:
-            self._validate_type()
-            self._validate_range()
-            return True
-        except (TypeError, ValueError) as e:
-            print(f"Validation error for {self.name}: {e}")
-            return False
+    def _validate(self) -> None:
+        self._validate_range()
 
 
 @dataclass
@@ -83,14 +93,8 @@ class TemperatureVariable(Variable):
                 f"Temperature value {self.value} is out of range ({MIN_TEMP}-{MAX_TEMP} °C)."
             )
 
-    def validate(self) -> bool:
-        try:
-            self._validate_type()
-            self._validate_range()
-            return True
-        except (TypeError, ValueError) as e:
-            print(f"Validation error for {self.name}: {e}")
-            return False
+    def _validate(self) -> None:
+        self._validate_range()
 
 
 class AirFlowVariable(Variable):
@@ -119,14 +123,8 @@ class AirFlowVariable(Variable):
                 f"Air flow value {self.value} is out of range ({MIN_FLOW}-{MAX_FLOW} m³/s)."
             )
 
-    def validate(self) -> bool:
-        try:
-            self._validate_type()
-            self._validate_range()
-            return True
-        except (TypeError, ValueError) as e:
-            print(f"Validation error for {self.name}: {e}")
-            return False
+    def _validate(self) -> None:
+        self._validate_range()
 
 
 class RpmVariable(Variable):
@@ -155,14 +153,8 @@ class RpmVariable(Variable):
                 f"RPM value {self.value} is out of range ({MIN_RPM}-{MAX_RPM} rev/min)."
             )
 
-    def validate(self) -> bool:
-        try:
-            self._validate_type()
-            self._validate_range()
-            return True
-        except (TypeError, ValueError) as e:
-            print(f"Validation error for {self.name}: {e}")
-            return False
+    def _validate(self) -> None:
+        self._validate_range()
 
 
 class OilPressureVariable(Variable):
@@ -191,14 +183,8 @@ class OilPressureVariable(Variable):
                 f"Oil pressure value {self.value} is out of range ({MIN_PRESSURE}-{MAX_PRESSURE} Pa)."
             )
 
-    def validate(self) -> bool:
-        try:
-            self._validate_type()
-            self._validate_range()
-            return True
-        except (TypeError, ValueError) as e:
-            print(f"Validation error for {self.name}: {e}")
-            return False
+    def _validate(self) -> None:
+        self._validate_range()
 
 
 class OilTemperatureVariable(Variable):
@@ -227,10 +213,5 @@ class OilTemperatureVariable(Variable):
                 f"Oil temperature value {self.value} is out of range ({MIN_TEMP}-{MAX_TEMP} °C)."
             )
 
-    def validate(self) -> bool:
-        try:
-            self._validate_type()
-            self._validate_range()
-            return True
-        except (TypeError, ValueError) as e:
-            print(f"Validation error for {self.name}: {e}")
+    def _validate(self) -> None:
+        self._validate_range()
