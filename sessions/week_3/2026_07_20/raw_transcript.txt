@@ -1,0 +1,787 @@
+Primero me gustaría preguntar cómo les fue con la con la tarea. Yo apenas iba
+hoy iba a ver si la revisaba porque no no había tenido mucho chance. Déjame
+ver. Trabajo en clase. Creo que hubo cuatro entregados.
+Este, ¿alguien quiere enseñarnos su solución? ¿Alguien se anima?
+Alguien que me diga. Yo sí me la aventé. Si no le
+si no vemos cuál habría sido una posible o alguien que le haya dado dudas que me
+sabes que no se me ocurre cómo hacerlo sin sin pena. Díganme, díganme
+los que son nuevos es que hubo la semana la clase pasada fue la el jueves fue
+máquina de estados. Es un tema un poquito denso, pero se vio está grabado
+de todos modos. Dime, Alejandro.
+con estos chavos. Este está grabado, entonces lo pueden revisar porque sí va
+a ser necesario ahorita para la primera evaluación, pero de todos modos ahorita
+voy a dejar unas clases para dudas de esta evaluación. Dime Alejandro.
+Sí, si gustan pueden podemos checar mi código nada más
+la PC va.
+No, no te preocupes. O si quieres yo lo comparto. Si quieres, si me das chance
+descargo el tuyo y lo comparto para que no te cambies.
+Sí, sí, mucho mejor. Va, deja, deja lo busco. Es Alejandro, es este.
+Deja lo descargo. Listo. Y voy a
+abrirlo. Les comparto pantalla. Está rápido para ver qué solución se le
+ocurre. Alejandro, archivo. Abrir.
+Les comparto pantalla. ¿Qué car? Voy a quitar esto.
+Okay. A ver, Alejandro, ahí lo vamos moviendo.
+Andas, andas por ahí. Sí. Eh,
+a ver, eh, pues bueno, primero empezamos con
+las definiciones. Eh, empecé con la parte de moneda. Es un
+operador lógico que puede utilizar en el desarrollo.
+Y la definición de ejecutar es la que me
+permite saber cuándo se va a interrumpir el el
+ciclo. Okay.
+Eh, la parte de ciclos va a ser como la función del contador y la variable de OP
+es para el la función de ah la función de según.
+Okay. Ah, y después tengo eh estado, lock,
+error y aviso. Son cadenas. Eso fue nada más como para eh simplificar la parte de
+de los textos durante el desarrollo de la lógica.
+Para que va. Ah, sí, aquí los guardaste, ¿no?
+Sí. Eh, exactamente. Y lo siguiente pues es darle el valor a cada uno de los eh
+de las variables que vamos a utilizar, que es lo un log. Eh, tengo un una
+cadena para error, una para aviso, ejecutar lo pongo como verdadero en el
+primer ciclo y el estado en el primer ciclo pues es lock.
+Okay. Decidí empezar con un mientras y
+ahí evaluamos pues la el estado de ejecutar. Como en el primer ciclo es
+verdadero, pues va a entrar en el ciclo. Eh, después evalúo el estado de moneda,
+si es verdadero, entonces me va a setear el estado como un lock y si no va a
+estar como lock. ¿Okay?
+Y después entramos al al menú principal. Vamos a decirle así, nos va a mostrar el
+estado actual y el número de ciclos eh que han pasado.
+Después tenemos las opciones. Tenemos tres opciones que el el número uno es
+ingresar moneda, el número dos es empujar y el número tres es salir.
+Después empezamos con el ciclo según. Eh, con la opción número uno,
+lo primero que vemos es evaluar el estado de monedas. Si ya tenemos moneda,
+eh, entonces nos va a escribir ahí como un mensaje de error que va a decir que
+has ingresado una moneda y que lo siguiente es empujar el torniquete.
+¿Okay? Y si
+no había moneda previamente, entonces va aar el estado de moneda como verdadero,
+va a limpiar la pantalla y va a poner eh un aviso de que el siguiente paso es
+empujar el torniquete. Okay.
+Okay. Y finaliz, ¿no? Dos es empujar.
+Ahí nuevamente evalúa el estado de eh la moneda, si ya hay una moneda que es como
+verdadero. Eh, entonces limpia la pantalla y nos va
+a mostrar el número de ciclos y lo va a aumentar en uno.
+Sí, al finalizar nos va a poner el estado de
+la moneda en falso y va a terminar el ciclo. Si no hay
+moneda previamente nos va a escribir ahí el error de que no se ha ingresado una
+moneda y que hay que volver a intentar, es decir, va a seguir bloqueado.
+Y como opción número tres es pues para finalizar la ejecución.
+Okay. Y terminan todos aquí, ¿no? Okay. Para qué va a ver. Vamos a calarlo. Está
+guardado. Lo voy a ejecutar. Y nos da las opciones, ¿no? A ver, vamos
+a ingresar una moneda. No, que si ingresas una moneda, ya me debe
+funcionar el empujar, ¿verdad? Con dos.
+Sí, me parece que hay que hacer un poquito más grande el
+Sí, la ventana.
+Ah, perdón. Ay, espérame. Voy a reiniciar. Ahí está.
+Okay, entonces está bloqueado, ¿no? Nos dice el número de ciclo es cero, o sea,
+no no hemos hecho nada y está bloqueado, ¿no? Entonces si ingreso una moneda,
+aparece que está desbloqueado. Es cuando el torniquete le metes o le pasas la
+tarjeta o lo que tengas y empieza a pitar, ¿no? Para que pases.
+Sí. Arriba nos indica que hay que empujar el torno.
+Hay que con el dos, ¿no? Empujar y ya vuel estar bloqueado, ¿no? Y hay un
+ciclo ya de un giro el torniquete. A ver, vamos a intentar empujar sin meter
+moneda. A ver, voy a poner dos. Ahí, dejen que
+me deje escribir. Como que se bugó esta cosa. Voy a
+volverlo a ejecutar. A ver. Empujar sin moneda
+nos manda el bloqueado. No, no nos deja hacer nada. Creo que aquí te bloquea.
+Ahí está. No ha ingresado una moneda, ¿no? Error. Okay.
+Y pues son los estados que tenemos nada más, ¿no? Porque si usamos el tres nos
+va a sacar, ¿no? Ahí está. Okay. Está muy bien, Alejandro. Y se fijan ahí cómo
+lo podríamos, por ejemplo, mejorar. Muy bien, Alejandro. Eh, muy buen trabajo.
+Está perfecto. Este, ejemplo, ¿cómo lo podríamos mejorar ya después? Digamos
+que si ingresas una moneda se desbloquea el torniquete, ¿no? Nos dice, "Ya está
+desbloqueado, ya puedes hacer ahí acciones." Digamos que si la persona no
+empuja, si ustedes han usado torniquetes, si tú te tardas
+normalmente, ¿qué pasa con el torniquete? se vuelve a cerrar, ¿no?
+Entonces, podemos agregar un cuarto estado aquí en el en nuestra en nuestra
+máquina de estados que nos regrese al bloqueado, ¿no? Un un estado transitorio
+que sería este esperando y en ese estado, no sé, algún contador, algún for
+o algún weight que nos permita volver a cerrar el torniquete si la persona no
+empuja en ciertos segundos, ¿no? Después de meter la moneda. Va, que va. Muchas
+gracias, Alejandro. Muy bien, muy bien. ¿Alguien tiene alguna duda de lo que
+hizo Alejandro aquí? Tomo este código nada más para que
+practicaran, ¿eh? No se preocupen los que no alcanzaron a a mandarlo. Va, que
+va. Perfecto. Entonces, bueno, hay muchas personas nuevas. Nada más que hoy
+tengo pensado que empecemos con su evaluación.
+Obviamente este no va a estar tan sencilla. Les voy a explicar, les voy a
+dar una clase de teoría de eso y es un trabajo que van a tener que
+hacer. Nada más que estoy revisando más o menos cuántos somos ahora, que hay
+personas nuevas. porque está planeado que lo hagan en equipos, o sea, no va a
+ser solos porque sí es trabajo un poco largo, van a tener que hacerlo de varias
+personas. La idea es que el trabajo que se haga en esta unidad, en este rango,
+se reúce para los siguientes rangos. O sea, cada rango ustedes van a mejorar el
+arquitectura que me propongan, el código que me propongan. O sea, cada rango le
+van a agregar algo nuevo, un catch de errores, cosas así. Ahorita vamos a
+empezar con que casi casi definan la la definan el esqueleto de lo que va a ser.
+Este caso, como ustedes van para la automotriz, eh su
+ojito máximo va a ser que terminen una un ACU, un EQ automotriz, que es el que
+es el la unidad de control inteligente, ¿no?, que tienen los vehículos.
+Obviamente va a ser una simulación en código, pero pues ese código va a ir
+orientado a que sea funcional, ¿no? O sea, mi idea es que el código que
+ustedes generen sea parecido al que de verdad se utiliza en lo que es la
+industria automotriz, que es la que yo estuve trabajando. Entonces, mi idea es
+enfocarlo a ese lado, que el código que ustedes generen se parezca al que se
+utiliza en ese tipo de lugares. Vamos a simular un ACU normal, un control, un
+getway grway. Bueno, pero antes de seguir les voy a explicar, tengo aquí
+una pequeña parte de la presentación que va a ser que les va a explicar más o
+menos cómo va a funcionar su su tarea. Este es el primer el primer reto desde
+el rango cero en el que estamos ahorita, que es el más básico, que es el rango
+donde ni siquiera hemos estado visto programación real. En este rango lo que
+van a hacer es el diseño lógico de su de su ACU. No se preocupen, ahorita les voy
+a explicar qué es un ACU. Espérenme, llegó un mensaje. Sepa que es. Okay,
+entonces el diseño lógico y pues este va a ser el primerito, se los voy a
+explicar, ¿no? Okay, entonces ahorita les voy a explicar qué es esto, que es
+una unidad electrónica de control de DCU, los diferentes que vamos a tener en
+un vehículo, identificar señales, lujo y okay, ustedes lo que necesitan
+entregarme en este primerito sea la lista de entregar. Amos todo esto, se
+los voy a pasar un documento en PDF más bonito porque aquí en en el latex en las
+presentaciones, las las figuras se deforman. No me gusta eso. Voy a pasar
+un PDF también el latex, pero más agradable donde venga las pasos a
+seguir, que vengan las instrucciones exactas. Okay, ahora les quiero dar un
+poquito de teoría de qué es el ACU para tener un contexto de qué es más o menos
+lo que ustedes van a tener que crearme en una máquina de estados. Okay, va que
+va. Bueno, cu en resumen es un electronic control unit, o sea, una
+unidad electrónica de control. es literalmente la computadora del
+vehículo que pues se dedica de recibir señales, ahí les pone prestar
+información, decisiones, actuadores, comunicarse con otras ICU. Ahorita les
+voy a explicar por qué otras y porque hay diferentes. Y pues lo más
+importante, ¿no? Está trabajando con las fallas, reportar y detectar fallas. Lo
+que les decía el otro día, la explicación de la máquina de estados,
+esas chiquititas. Luego de repente este tipo de ECU recibe una señal de state 2
+o state de error de de algún sensor o una parte importante del vehículo.
+Entonces, pues a ti te lo indica con un pequeño testigo en el en el motor, ¿no?
+Te dice, "Oye, este, checkin, ¿no? Checa el cheque checkin, se f o te indica alta
+temperatura o depende cuál sea la falla, ¿no? El modelo básico es una entrada, o
+sea, le llegan entradas, pueden ser de sensores, mensajes, solicitudes, puede
+ser lo que tú quieras, se procesa, hay que validarlo, hay que hacer cálculos y
+tomar una decisión, pues para dedicar una salida, ¿no? Puede ser el actuador,
+alarmas, mensajes. Sí, es sencillo. El ACU se parece a cualquier sistema básico
+de control. Okay. Ejemplo, un ejemplo. Aquí se los
+voy a todo se va a pasar, no se preocupen. Ejemplo, un sensor de una un
+sensor de temperatura está reportando su temperatura constantemente. Sí. En ese
+caso, el sensor de temperatura se puede decir que es simplemente un lector. Toda
+como máquina de estado. Simplemente nos está diciendo, en este caso nos está
+diciendo, "¿Qué temperatura tengo en valores centígrados?" En grados
+centígrados, por ejemplo, puede ser 115, puede ser 120, 130, 90 gr cent. Okay.
+Okay. Entonces, ese sensor es el encargado de enviarnos el valor de
+temperatura a la ICU y ya la ICU es la encargada de revisarlo. Por ejemplo, lo
+va a comparar contra un límite. La temperatura tiene que ser, por ejemplo,
+te dice la temperatura es mayor, si es mayor que 105º. En este caso, pues se
+cumple la condición, ¿no? La temperatura sí es mayor que 105. Hay que tomar una
+decisión. Puede ser este limitar la operación que no es más, no es muy
+recomendable. La que más normalmente aplica es que se activa el ventilador
+cuando empiezas a escuchar ahí el ahí todo el todo el no se ha pasado luego
+con los carros viejitos. Yo tengo un carro que que ya no uso, pero está
+bastante viejito. Este luego cuando me bajo el ventilador queda prendido como
+media hora. Ese indicio de que pues usted la parte del enfriamiento está
+mal, pero ya es parte de de que lleva tiene más de de 20 años, ¿no? Entonces
+ese vehículo pues prende un ventilador que suena horrible y dura rato sendido y
+es parte de las decisiones que toma ese o sea dice, "Bueno, la temperatura está
+muy alta. ¿Qué puedo hacer? Pues activo el ventilador, ¿no? Después de
+compararlo con un con una con una variable de una variable de control, le
+decimos a esto, ¿no? Un límitem aquí les pone una idea central que
+entonces lo van a llevar. El chi transforma una medición física en una
+decisión lógica. Ajá. Entonces tomamos una medición física que es la del la del
+sensor, decidimos algo y posteriormente a partir de la decisión hacemos algo.
+¿Sí? Okay. Que son este los componentes del EQ. Es
+un micocontrolador. Aquí les voy a poner una imagen. Por aquí tenía yo una.
+¿Dónde la dejé? Acá está. Esta la saqué de de internet. ejemplo, que les pone
+varios componentes, micocontrolador, pues alguno de repente tienen uno que
+otro microcontrolador por aquí que son la parte del circuito integrado, tienen
+memoria para estar guardando datos, datos volátiles, porque probablemente
+generalmente, bueno, ya algunos vehículos nuevos guardan datos, pero la
+mayoría son datos volátiles. Cuando cuando tú este aplicas el ciclo de
+edición, o sea, lo enciendes, normalmente los datos están reseteados,
+o sea, no hay nada y empieza a recolectar el vehículo y cuando tú lo
+apagas generalmente esa memoria se pierde. Sí, hay nuevos vehículos que ya
+empiezan a guardar cosas o mandan cosas a la nube, pero ya son muy muy
+avanzados, ¿no? Pero generalmente es una memoria muy básica. Sí. Fuente de
+alimentación para guardarlo, entradas y salidas que generalmente están acá abajo
+en el arnés con el que se conecta a los sensores y a todo lo demás. las
+interfaces de comunicación, puede ser Cam, puede ser Ethernet, el software
+embebido, o sea, el código que nosotros tenemos que hacer, o sea, lo que nos
+toca a nosotros generalmente, el software, que es cómo va a trabajar con
+las entradas, salidas, cómo va a reportar, qué va, qué decisiones va a
+tomar, funciones de diagnóstico, que más adelante cuando veamos la parte de de
+cómo diagnosticar y mecanismos de seguridad general. Mm. Okay. Bueno,
+les digo, ¿por qué por qué les decía que comunicarse con otras ACU? A los
+vehículos más nuevos ya generalmente son tienen diferentes tienen diferentes este
+ECUs. ¿Por qué? Porque es mucho más fácil trabajar con esto. Esto lo
+llamamos arquitectura zonal. Suena chistoso, ¿no? Pero la arquitectura
+zonal es literalmente que trabaja por zonas. En vez de tener una arquitectura
+dividida, ¿sí? dividida en varias donde cada
+este parte del vehículo reporta algo. Por ejemplo, cada sensor esté reportando
+cosas, pues eso es demasiado. O sea, el vehículo tiene diferentes sensores,
+diferentes entradas que pues probablemente causarían hay un un
+desastre, ¿no?, en la en la parte de cómo analizas todo y cómo lo procesas.
+Entonces, trabajamos con algo que se llama arquitectura zonal. Lo que hacemos
+es dividir cada parte del vehículo en una zona y trabajar con eso como su
+minimáquina de estados. Entonces, por ejemplo, puedes tener la la generalmente
+lo dividimos en parte frontal delanter de perdón, delantera izquierda,
+delantera derecha, trasera izquierda y trasera derecha, ¿no? O frontal frontal
+izquierda, frontal derecho y trasero izquierdo, trasero derecho. ¿Sí?
+Entonces, ejemplo, a veces lo dividimos en cuatro y cada parte del vehículo se
+trabaja de diferente manera. o este tipo de arquitatura zonal que ven aquí,
+divide el motor en grandes partes. Por ejemplo, un ACU, perdón, el vehículo en
+grandes partes, ejemplo, un ACU para la parte total del motor, todo lo que es el
+motor que está dentro de la cajuela, un ECU de la transmisión, ejemplo, las
+transmisiones mecánicas es generalmente no tienen salidas, pero algunas sí
+reportan algo, las que son este estándar, las mecánicas, pero las
+transmisiones automáticas pues son, si ustedes abren una transmisión automática
+se van a encontrar con un montón de circuitería en parte, aparte de la parte
+mecánica. Es esos normalmente ya tienen un ECU
+propio que también está reportando uno para los frenos, bolsas de aire,
+dirección, bla bla, carrocería, batería, el sistema ADAS que vamos a ver después
+ya mucho, mucho más adelante porque eso es algo más es mi especialidad, pero es
+algo mucho más complejo. Un Getway central que se dedica a distribuir todos
+los todos los este, ¿cómo se dice? los datos que recibe el el gateway, así como
+su nombre lo dice, como de puertas, se encarga de distribuir los datos, ya sea
+al usuario en la pantallita, en su parte del la interfaz o ya sea entre ECU, ¿no?
+La ECU, el motor le transmite, no sé, la de bolsas de aire, la de dirección, la
+de la transmisión le avisa al de los frenos, no sé, ya va a depender de cómo
+diseñen esa comunicación y módulo de diagnóstico que se está pues revisando,
+¿no? Y ahí donde le ejemplo tú llegas con tu con tu escáner OBS, ¿no? te
+fijas, te pones a revisar ahí si si hay algún código de error y todo eso. Tiene
+un módulo para trabajar esa parte. Okay.
+La getway es, como les decía, lo que hace es administrar la comunicación, o
+sea, agarra mensajes, agarra agarra agarra entradas o agarra lo que reciba y
+se encarga de redistribuirlo así como una especie de API, sí, pero mecánica,
+pero electrónica, perdón. Entonces, recibe datos, decide qué hacer con ellos
+y ya sabe a dónde enviarlos, ¿no? Es como es como el centro de distribución.
+Aquí se les pone analogía, es centro de distribución que decide la información
+que puede circular y hacia dónde. Hm. Aquí hay un diagrama, lo voy a mejorar.
+Discúlpeme, es que el latex en las diapositivas se pone bien loco, pero a
+ver, el getway está el azul que está acá atrás, eh, cuando lo mejor ya lo van a
+ver mejor, pero ahí está el getway y el getway recibe datos del motor, del ex,
+de los frenos, sensores y decide a dónde enviarlos, ejemplo, lo envía el el la LQ
+de control, por ejemplo, si recibe datos de motor, frenos y sensores, la ICU de
+control lo que se va a encargar es de trabajar con la parte de ADAS, por
+ejemplo, de eh actuar para frenar, de prenderte un LED del punto ciego,
+decirte que hay un objeto ahí porque el sensor lo detectó, se de control. Ahí va
+a estar trabajando el panel. Pues generalmente es el panel donde está la
+vista para el usuario, que es un pantallas o es un estéreo o lo que sea,
+donde te está reportando cosas o en el tablero. En el tablero vas a tener ahí
+este tus tus este testigos, tu velocímetro, tu tacómetro, todo lo demás
+y pues también el diagnóstico, ¿no? Para que el diagnóstico esté checando que
+todo esté bien. Le ACU de control, de las más
+importantes, es la que se la que recibe señales generalmente del getway, que es
+el que recibe de todo lo demás, que las redistribuye. De repente le llegan
+señales, pues las analiza, evalua condiciones, este, y decide qué va a
+hacer. No puede decirte el de control puede tomar la decisión de que todo está
+mal, está fallando y pues puede cambiar el estado de la operación del vehículo,
+¿okay? a un a un testigo que te esté diciendo que algo está mal, activa
+desactiva funciones, o sea, tiene tiene actuadores, por ejemplo, el frenado
+automático que te que te regula la velocidad cuando hay colisión inminente
+frontal. Te es unas camionetas que de repente sientes como que te da un
+frenecito para que no vayas a chocar. H ese tipo de actuadores los puede activar
+el ACU de control y trabaja de todo estén trata de que todo esté en una
+óptima condición segura, ¿no? Aquí también su sus diferencias, ¿no? Getway
+solo administra la información, o sea, la redistribuye y el control actúa, o
+sea, es el que aplica las acciones. Aquí les pone una una comparativa,
+después la pueden revisar más a gusto. Por ejemplo, normalmente este tipo de
+cosas al principio se representan como diagramas de flujo antes de máquinas de
+estados. Entonces, por ejemplo, el diagrama de flujo del algoritmo sería
+así. Tienes un sensor, reporta una temperatura, el gateway recibe el
+mensaje, valida el formato. ¿Por qué? Porque hay que revisar que el formato,
+el rango y y el tiempo, el stamp, o sea, el tiempo donde se recibe es correcto.
+No puedes tener un mensaje que sea en el en el tiempo tal. Normalmente el stamp
+se mide en millones de de de millones de microsegundos, ¿sí? Desde que empiezan
+desde que se enciende el vehículo. Si tú tienes un time stamp millones de
+microsegundos, pues es un segundo, un millón de microsegundos. Si tienes un
+time stop este después del anterior, todo está bien, ¿no? Si recibo un valor
+uno al en el tiempo uno y dos en el tiempo dos, pues vamos en serie, ¿no? Es
+1 2 3. Pero si recibes el siguiente valor, estabas en el tiempo uno y tu
+siguiente valor dice que es el tiempo cuatro, pues ahí hubo una pérdida de
+datos, ¿no? O si tú estabas en el tiempo cuatro y de repente el valor dice tiempo
+tres, pues ya no tiene sentido, ¿no? Cóm no hay manera de que hayamos retrocedido
+en el tiempo. Entonces revisa ese tipo de cosas. revisa formato, que el formato
+sea válido, revisa el rango, o sea, si no son mediciones inválidas y pues claro
+que revisa el tiempo, ¿no? Para que tengan coherencia.
+Eso se lo pasa el Hu de control, evalúa el dato y pues cambia el estatus, ¿no?
+Puede ser que tengas una falla, en este caso lo puse degrade, pero puede ser
+otro tipo de estatus. Puede ser el estatus este safe state, que es el de
+que la falla es crítica. El estadio, estado degrade es cuando la falla es
+normalita, entra engrade, pero es una falla que que no es crítica, que se
+puede como que manejar, pero tenemos la falla, ¿no? Y tenemos el estatus que no
+cambia. Oye, pues todo está bien, pues no hacemos nada. Okay. Okay. Hablando de
+todo eso que le estoy diciendo, pues recibe señales, hace cosas. ¿Qué son las
+señales en los vehículos? Pues una señal es una variable, así como las que hemos
+estado viendo, nada más que es una variable que está cambiando porque es
+una señal, cambia con el tiempo. Sí, es una señal. generalmente son discretas, o
+sea, los valores no son continuos porque pues te la va a dar en puntos, o sea, te
+va a decir la señal de velocidad ahorita vale eran eran 40 km/h y después fue 44
+km/h y luego 50 km/h, 20 km/h, te va dando puntos, ¿no?, que tú puedes
+interpretar como una señal. Obviamente es discreta, pero pues se puede hacer la
+analogía que sea también una señal análoga, que sea continua, ¿sí? Pero
+generalmente te lo va dando como datos continuos uno tras otro, tan tan, tan,
+perdón, como datos discretos uno tras otro. Sí, puedes tener 40 km porh y
+después 40 40.5 km/h, pero eso no significa que sea un dato continuo,
+sigue siendo un dato discreto porque te lo estoy dando en pasitos. Sí,
+acuérdense que discreto no significa este literalmente que sea entero, sí, no
+que los pasos están discretizados, que son uno tras otro, no hay una
+continuidad. Okay. Revoluciones por minuto. Ejemplo,
+la velocidad, pues este se mide, ejemplo, una unidad que tiene
+propiedades, unidad, origen y destino, rango válido, tipo de dato, tipo de
+actualización. Por ejemplo, aquí les pongo varios, ¿no? Velocidad, este,
+revoluciones por minuto, temperatura, acelerador, voltaje. La velocidad, las
+propiedades, pues unidades normalmente son kilómetros porh, pueden ser metros
+sobre segundo. El origen y destino, pues generalmente la velocidad, su su origen
+se da en el en el sensor el tacómetro, el que revisa el este el de velocidad
+que luego está en las llantas y el destino pues probablemente va a ser el
+ACU de control o tu tablero. El gateway los podrá mandar a diferentes. Si tú
+tienes un ICU de control que está revisando posibles colisiones, pues va a
+recibir la velocidad y pero generalmente la velocidad se va se va al ACU del
+panel, que es el que el gateway lo mueve para allá para que tú lo puedas ver en
+tu en tu velocímetro, en el tablero. Revisamos el rango válido. Por ejemplo,
+no podemos tener velocidades negativas, o sea, un rango válido sería que la
+velocidad empezara en cero y de ahí fuera creciendo, ¿no? Hacia arriba en la
+lectura. Si tienes una velocidad de -40 o -20, pues hay algún problema. Tipo de
+dato, que sea una sea un dato flotante, por ejemplo, o sea, un dato que puede
+tener decimales y el tiempo de actualización, o sea, ver cada cuánto
+tiempo se checa esa velocidad. No sé, por ejemplo, en los sensores de
+velocidad generalmente la la tasa de refresco es muy chica, es de
+microsegundos o de o menos nanoseegundos a veces, que lo que nos dice que cada
+cada cada cada cada que tanto tiempo vamos a recibir un nuevo dato de
+velocidad y se va ir actualizando la tasa de refresco. Le decimos con RPM
+podemos hacer lo mismo, temperatura, acelerador, voltaje. Okay. Entonces, las
+señales son variables que representan valores en el tiempo. Sí, puedes tú
+definir una variable velocidad y estarla cambiando en un código, pero
+generalmente esa variable velocidad se va a estar alimentando de los datos que
+vienen de de este sensor o el sensor que sea el que esté midiéndolo.
+¿Okay? Este caso, para este para esta primer parte yo propongo cinco cinco
+variables que son las que les puse hace rato. O sea, ahorita ustedes que van a
+tener que definirme su primera ACU, me van a tener que definir qué señales son
+las que van a estar recibiendo, ¿no? Para trabajar. Yo propongo estas cinco,
+pero es son opcionales, ustedes pueden cambiar, pero quisiera yo mínimo cinco.
+Si hacen más, chido. Si me cambian alguna por otra, también no tengo
+problema. Yo propongo estas cinco que son la velocidad, este, revoluciones por
+minuto, temperatura, acelerar, voltaje y también propongo estos rangos. Le pongo
+que son didácticos, ¿no? Porque porque no representan exactamente los
+comerciales, no porque no existan en los rangos así, sí existen en la industria,
+pero los estoy manejando como didácticos porque cada marca de vehículos tiene los
+propios. Generalmente el de temperatura es es este es general, nada que cada
+motor es diferente. También el tipo de motor. Un motor tiene temperatura de
+operación diferente, un motor normal. Sí. El motorer es el que los cilindros
+están acostados. El motor normal es el puede estar en V arriba. Los cilindros
+hacen esto, ¿no? Uno uno se mueve y empuja al otro, ¿no? Con el cigüeñal. El
+motor Botser es así como el del Bocho. Exactamente. El Bocho es un motor boter.
+Y si ustedes tienen la oportunidad de abrir el motor de un Volkswagen, de un
+escarabajo, se van a dar cuenta el sub, ¿no? Todos los Subarus, casi todos los
+Subarus son motor boter. Ejemplo, los Subarus son carros muy buenos, pero su
+problema es que son motor boter. Es muy raro el mecánico que puede reparar un
+motor, o sea, no es que sea difícil, sino que pues si te si te ondea, ¿no? Si
+tú eres un mecánico de toda la vida. Este, así como se oye, Botser, ya te lo
+déja te lo escribo en el chat. Es motor
+Botser, así como el como el Chon. Te lo voy a poner como los calzones. Deja te
+lo pongo en chat. Motor Botser. Sí, sí, sí. Yo también cuando lo escucho
+me da me da risa. Le hace falta ver más bot. Deja se los pongo aquí para que lo
+tengan guardado. Ah, es que está el mensaje. No escribo.
+¿Dónde está el chat? No está el chat. ¿Dónde está el chat?
+Ahí está. Nada más para que no haya problema. Así como va. Creo que lleva un
+acento la palabra boter en la o no me acuerdo, pero se escribe así. Es el
+motor es como que hace referencia a que es una caja. No estoy seguro el por qué
+le pusieron el nombre, pero su distribución es así. O sea, los
+cilindros están acostados, así están trabajando así. Este tiene tiene, ¿cómo
+se? Tiene tiene ventajas, es más potente, generalmente es más potente, es
+más eficiente que los motores normales, este pero tiene sus desventajas también,
+gasta más gasolina y todo o sea, va a depender de eso no nos metemos ahorita.
+Pero bueno, este les digo, eh, por eso les digo que no
+son didácticos, porque no todas las marcas manejan estos rangos
+operacionales. Ya va a depender del tipo de de vehículo. Ya después si ustedes
+quieren ver un motor bot un día busquen algún video o si tienen algún
+Volkswagen, si un día alguien lo va a abrir o algo, van a ver ahí el motor
+Botser. En verdad, el del Volkswagen es un el bocho es un un botser. Okay. Yo
+propongo estos rangos, ¿no? Propongo este.
+Ah, precisamente ah, Genny, mira, está más curioso que pensé que era por una
+caja. Es porque es bots, como si estuviera botseando. Qué curioso. Bueno,
+entonces el rango didáctico lo pongo aquí, ¿no? Y dije, bueno, yo propongo
+que la velocidad vaya de 0 250 hasta ahí porque pues la verdad 250 ya es un
+montón, ¿no? Si ya vas a 250 vehículos que ni siquiera lo alcanzan y 250 ya es
+un montón. Obviamente hay unos que lo superan, pero ya es demasiado. Entonces
+yo digo 250 se me hace suficiente. RPM de 08,000 Hormente lo que vas a tener en
+tu tacómetro. Las revoluciones por minuto es las velocidades que da el
+motor literalmente, digo, perdón, las giros que da el motor en un minuto es
+una especie de frecuencia de giro. Acuérdense, revoluciones por minuto es
+qué tantas revoluciones, a qué tantos giros da el motor en un minuto. Entre
+mayor sea, pues está dando más giros tu motor en en cada minuto. No
+necesariamente las revoluciones son este proporcionales a la velocidad ni al
+revés. Sí, entre más velocidad lleves, obviamente vas a tener más revoluciones,
+pero por ejemplo, si tú le quitas la velocidad un motor, a un carro estándar,
+las revoluciones van a subir, va a girar más rápido el motor, pero como la caja
+está suelta, pues nada más lo vas a forzar, ¿no? Entonces, por eso se
+manejan como señales individuales, que las revoluciones te indican en este
+caso, qué tantas vueltas está dando tu motor para que también te des cuenta
+cuando se está forzando. Temperatura de -40 a 150º,
+o sea, está es una temperatura aceptable. El acelerador de 0 a 100,
+esto lo manejan, normalmente lo manejamos en porcentaje,
+y el voltaje de 9 a 16. Este voltaje digamos que es el de la batería, por
+ejemplo. Sí, este hay baterías que tienen más voltaje, por eso puse de 9 a
+16, pues que se esté revisando, ¿no? Que no esté, ejemplo, un voltaje menor a 9,
+pues ya es un problema. Esa batería ya está muerta literalmente. De hecho, un
+voltaje menor, normalmente la operación este general de la batería es de 12 y
+algo. 12 punto y algo significa que está bien cargada. Abajo de 12, por ejemplo,
+12 11.9 9 o.8 para mí también ya es un problema en la batería, pero este caso
+pues nada más estarlo monitoreando, ¿no? Decir, mira, eso ya lo van a decidir
+ustedes, por ejemplo, que me digan, yo quiero poner como este mi tope, o sea,
+cuando pase algo ahí, yo ya estoy en un en un rango malo.
+Entonces, pues definición de la señal, pues rápido, ¿qué representa? ¿Qué
+unidad utiliza? ¿Qué componente la genera? Cuando ustedes me definan sus
+señales, van a tener que decir, "Bueno, ¿qué representa?" Pues la velocidad,
+pues qué tan rápido va el vehículo, qué unidad utiliza, la que ustedes decidan.
+kilómetros o metros sobre segundo. ¿Qué componente la genera? Pues generalmente
+ese es el sensor de de velocidad que tiene el vehículo. ¿Qué componente la
+recibe? Ya de control, va a depender su rango válido. Ustedes lo van a definir.
+Yo propongo esto, pero pueden usar lo que quieren. Cada cuánto debe
+actualizarse. También la tasa de refresco va a depender de qué tan rápido
+se hace sucu. Generalmente la industria les digo que son microsegundos o
+milisegundos. Generalmente son milisegundos. Ya los más rápidos, ya los
+digitales trabajan con micros y pues ejemplo, ¿qué ocurre si es valor
+inválido? Que me digan pues, ¿qué va a pasar si el valor es inválido? Que esta
+esta señal se vuelva, no sé, se empieza a volver un un un
+state dos, que es error generalmente. ¿Y qué ocurre si deja de recibirse? ¿Qué
+estatus tenemos si deja de recibirse? No sé, estatus tres es que la señal es
+desconocida, ¿no? En un known desconocida.
+Entonces, ejemplo, valor válido y valor inválido. Por ejemplo, si tú dices que
+la velocidad tiene que ir entre 0 y 250, pues el valor, un valor válido sería
+como este, ¿no? Estamos dentro del rango.
+Ejemplo, este -40, lo que les decía, un valor inválido puede ser pues mayor a
+250 o menor a cer, un valor negativo. El valor está fuera del rango y pues yo lo
+pondría como inválido, o sea, pondría un state ahí también de que el valor es
+inválido. ¿Hay algún error? Mm.
+ejemplo, una señal ausente, un time up. Ese también es bueno porque es bueno
+considerarlo porque como les decía hace rato, eh normalmente los motores
+trabajan en una tasa de refresco. Cada cierto tiempo te manda te se revisa la
+señal y se está registrando el tiempo que revisa la señal. Ese tiempo se mide
+desde que se enciende el motor generalmente, no es que haya no es que
+haya algún algún reloj universal que el vehículo tenga. No es como las
+computadoras que tienen una especie de minibatería para su BIOS para manejar
+para mantener la hora. Generalmente la hora que ves en la pantalla y eso pues
+ya depende de de los vehículos más avanzados pues del internet y cosas de
+la conexión que luego hacen para trabajar con mapa y todo eso, pero
+dentro de la ACU del vehículo generalmente no hay como un traqueo de
+la hora. No estoy seguro si en algunos sí, eso sí yaó que desconozco, pero
+generalmente los conozco, no no hay como un traqueo de horas, sino que cuando
+encientes el vehículo empezamos a contar de ahí el cero y empezamos a aumentar el
+tiempo. Por ejemplo, si tu si tu tasa de refresco del del time stop, o sea, que
+es el que el paso del tiempo en el vehículo es de microsegundos y tú dices
+cada 1000 microsegundos quieres que pase un segundo pues que sería pues este,
+pero milisegundos cada 1000 milisegundos quieres que pase un segundo, pues tiene
+sentido porque 1000 milisegundos es un segundo. Entonces, si tu brinco es de
+milisegundos, de 1000 milisegundos, vas a tener el tiempo cero, el tiempo 1000
+milisegundos, el tiempo 2000 milisegundos, 3000 milisegundos.
+Entonces, cada tiempo se deberá de estar reportando valores de las señales. Si tú
+indicas cada cuándo lo vas a revisarm, por ejemplo, aquí lo que hablamos es que
+pues la la temperatura puede estar bien, o sea, nos da un valor adecuado,
+pero imagínate que no se ha estado actualizando. Este valor se recibió hace
+10 segundos según el time stop, el refresco que tú tienes para revisar.
+te revisó hace 10 segundos y tú habías tú habías dicho que cada 100
+milisegundos pues que eras una actualización. si esto ya no pasó, si ya
+no se volvió a actualizar y las los demás valores pues ya no los tienes,
+sino que se quedó aquí y ya no te volvió a reportar nada, pues ya no es
+confiable, ¿no? Deberías decir, "No, pues a ver, vamos a revisar qué está
+pasando." Esa señal se considera como ausente,
+o sea, una señal fuera de rango, perdón, una señal ausente, pero es diferente de
+señal fuera de rango, porque fuera de rango puede ser esto, puedes tener una
+señal superactualizada, pero pues tener un rango inválido. Obviamente esto lo
+tiene que estar, esto que está viviendo aquí lo está lo revisa la ACU de
+Gateway. según las atareas que le citamos a la Gateway, que es la que
+recibe estos datos de los sensores, los revisa. A ver, vamos a ver hace cuánto
+fue, si está el rango válido, si el tipo de de datos es válido, o sea, se se
+cumple que es un flotante, algo así, y que sus unidades también son válidas y
+si todo pues la señal está bien, o sea, la señal es buena.
+Mm. Entonces podemos poner estatus, ¿no?, de esa señal, ejemplo de la señal,
+para que ya se vaya haciendo más entendible lo que estamos explicando,
+para que diga, "No manches, todo lo que está haciendo es un chingo de
+información y y nada me estoy confundiendo." Bueno, yo lo que haría en
+su lugar para ahorita empezar a a ver qué es lo que van a cuál ser los
+entregables, sería ejemplo, cuando se pongan a definir sus señales. Definimos
+las cinco señales, ¿no? y decimos, "Okay,
+vamos a decir la señal válida es la que va a cumplir,
+que esté dentro del rango, o sea, lo de revisar el rango y que también el tiempo
+se cumpla. Una señal inválida es el estatus inválida va a ser la señal que
+esté fuera de rango y el estatus ausente va a ser para la señal que no terminó
+con el tiempo permitido. Este caso yo les hago válido todo, o sea, yo yo lo yo
+lo considero bueno. Y por ejemplo, aunque la señal cumpla ambos casos,
+ejemplo, la señal está fuera de rango y es inválida, o sea, perdón, y lleva hace
+mucho que no se refresca, que me entreguen alguno de los dos, digan, "No,
+pues se cumplió primero esto, entonces yo inmediatamente la hago inválida o se
+cumplió primero el tiempo, la hago docente, aunque tenga ambos casos." Pero
+si ustedes se quieren poner acá más más este más estrictos, pueden crear un caso
+estado donde sea una señal errónea completamente y sea solo si se cumplen
+ambos. Eso esa es decisión de ustedes. Yo con que una de las dos opciones en
+caso de que se cumpla alguna aparezca para mí ya es suficiente. Válida. Eso
+sí, válida. Solo va a funcionar si ambos si están dentro del rango y el tiempo
+está bien. Entonces, el ACU va a recibir los valores y va a validarlos. Okay.
+Este, los mensajes pues son este, ya hablando de otra cosa que ya no han
+señalado, son los mensajes son este son una manera de que el motor transporta
+varias señales a la vez. Sí, por ejemplo, este pone aquí este
+identificador del mensaje porque pues le pone su nombre, no sé, yo le pondría
+aquí mensaje motor. Es el ejemplo conceptual que dice, "A ver, el mensaje
+del motor va a llevar, se va a llamar así para identificarlo. Va a tener una o
+varias señales, en este caso le metimos tres, que nos diga cuántas revoluciones
+lleva el motor, en cuántas revoluciones está, a qué temperatura está, o sea, qué
+tan caliente está y que nos diga el estatus del estado. Bueno, pues anda más
+o menos, ¿no? Y generalmente lleva una marca de tiempo, ¿no? Podrán agregar
+aquí coma y el tiempo en que se mandó. El estado de validez que sería este que
+esté que que la señal las señales estén bien, o sea, que todas estén okay.
+Información de diagnóstico. Ahorita lo lleva, pero ahorita ignoren. Ahorita no
+quiero que nos metamos mucho con esto. Okay. Entonces, entonces se entiende la
+diferencia, ¿no? Una señal es pues estos valores y un mensaje puede ser una
+aglomeración de varias como para ahorrarnos análisis. Por ejemplo,
+podemos decir que vamos a estar revisando este que es mensaje de motor,
+que es una especie de sí, lo vamos a tratar de hacer en el
+PSLN, pero aquí lo que más me importa, ustedes entregable es que me entregue,
+que me hagan una máquina, una máquina pequeña de estados que me representen.
+Así es como quiero que trabaje miu. Este va a ser como mi diagrama de que va a
+regir el comportamiento de mi primer mi primer bueno, van a ser dos en este
+caso, un ECU de control y un gateway. Este va a ser mi primer par de de ECUs y
+los va a regir este comportamiento de máquinas. Ya lo del lo del pseudocódigo
+es por ahorita le explico más o menos cómo quiero ver esa parte. Aquí ahita me
+interesa más que lo definan porque ahorita como va a ser pseudocódigo pues
+no pasa tanto. Más adelante, ejemplo, el siguiente rango que tenemos este ECU que
+me van a proponer, quiero que ahora me lo hagan con señales, que simulemos
+señales en C++ y ustedes estén trabajando con stream con este con
+cadenas de señales y me vayan trabajando con eso. Después en el rango dos quiero
+que su ACU ya no sea un ACU de código normal, sino que me lo conviertan a
+objetos, o sea, que me lo programen como instancias. Incluso ECU va a ser Getway
+va a ser un objeto y su control va a ser otro objeto, ¿no? Y relacionarlos entre
+sí. Obviamente cada uno va a tener más objetos, su clases. Vamos a tener clases
+para trabajar en la siguiente en la en dos rangos. Sí, pero por ahora lo que
+más me interesa es que ahorita preguntó este Ismael que
+y que el fif frene no no no tanto, o sea, la idea al final yo lo que quiero
+es que tengan un ECU funcional funcional, o sea, que se comporte como
+los de verdad. Incluso si logro hacer bien el experimento,
+quiero que tengan que que ACCU vemos si lo ese código lo podamos en meter en
+bebido en alguna placa de control barata, ya sea un un SP32 que puede
+correrse más más sin problema y ver qué pasa, ¿no? Tener dos SP, uno con un ECU
+cada uno y ver si los podemos comunicar. Pero eso ya sería mucho, mucho más
+adelante y apenas estoy pensando si sí es viable
+este porque generalmente el SP32 pues no se usa mucho en la industria, pero sería
+lo más barato porque las placas de verdad pues ya son muy difíciles de
+conseguir, pero si se van a trabajar ese lado, pues usted dice, "¿Sabes que yo
+puedo yo puedo generar código que ya vive en embebido en placas?" Pues pues
+está super bien. Sé yo yo ahita te daría chamba si me dices eso. Dirá no manches,
+ya conoces eso. Este normalmente los microcontroladores
+que se usan en las puede variar, por ejemplo, este, a veces no son
+microcontroladores, a veces son literalmente placas placas que son mini
+computadoras. Por ejemplo, hay carros ya muy caros que en un proyecto que al
+final no funcionó porque pues era muy caro, se se se propuso que iban a usar
+una una Jetson Nano, por ejemplo. La Jetson Nano pues es muy cara. Ahorita
+como preguntó este este Eduardo en Carlos, perdón, en los mensajes, este es
+una Jetson Nano, la Jetson Nano es muy cara y pues no fue muy viable, ¿no? Ese
+tiene la Jetsonano tiene un microcontroladora dentro, ¿no? Pero ya
+es una mini computadora también la Raspberry, ¿no? He visto para mí
+proyectos donde usan Raspberry, incluso SP32 no lo he visto mucho, pero
+generalmente lo he visto más de lado con los con los este con los este camiones
+de carga pesada. Ahí sí llegué a ver, pero no, esa no es mi área, entonces no
+me metí mucho, pero llegué a ver que, ejemplo Chrysler con la línea de de la
+parte de carga de carga pesada y de remolque sí usaban su sí usaban un un
+SP32. Ese proyecto creo que también no se terminó porque Crylor entró en
+quiebra en aquel tiempo. Siempre está en quiebra, esos nunca salen de la quiebra
+esos. Este, pero bueno. Otro que he visto, ejemplo, uno de este, ¿cómo se
+llama? Esta que tiene como nombre de hueso. Alguien se la de saber cómo se
+llama el Bond, algo Black Bond o algo así se llama. Ese también lo he visto en
+varios. Bigle Bond. Ese, perdón, es este Bigle Bond. Sí, ese también lo he visto
+en algunos casos, pero también luego es medio caro
+este. Pero un SP32 nos puede ser suficiente para nosotros simular esto y
+tenerlo embebido. O sea, porque también quiero que entiendan eso, o sea, lo que
+hagan aquí en la computadora es código y va a funcionar. Por eso lo hacemos en
+Devian, porque lo que quiero es que después viva en un microcontrolador que
+tiene memoria limitada. Vamos a tener que trabajar con eso, ¿no? Ver ver que
+la memoria sea suficiente, que no la acabemos. Eso va a ser importante. Okay.
+Bueno, este en XP creo que sí también pues hay un montón hay un montón de este
+de de perdón de de placas. Alguien preguntó
+si empezamos a verse más. No, no, Flor, todavía no lo empezamos. De hecho, esta
+evaluación es para que empecemos a verlo después de esto, pero ahorita no te
+preocupes, todavía no vemos este lo básico. Todo va a ser muy básico al
+principio y muy rápido. No se preocupen, creo que quiero que abarme en dos días
+todo lo básico de C++ más para empezar a hacer programación más estructurada.
+Bueno, este, déjen les explico esta parte porque se nos está acabando el
+tiempo. El flujo del flujo de las señales. Les voy a explicar cómo más o
+menos funciona. Uno, el sensor genera el valor. Dos, se construye un mensaje. Sí.
+O sea, guardamos los valores de los sensores. Puede ser que el mensaje nada
+más traiga un valor de la de de un sensor. Hm. Ustedes, por ejemplo, pueden
+meterme cinco sensores y que los cinco vayan a un solo mensaje, ¿no? Una manera
+de guardarme los datos en un lado, pero pueden crear una cadena, una cadena que
+tenga los valores siempre actualizados. Una cadena de cinco valores donde cada
+cada componente de la cadena sea un valor de los sensores. Sí, esa valera,
+ese mensaje lo va a recibir el getway. El gateway lo va a validar, lo que vimos
+ahorita. Vamos a ver si están en los rangos correctos, si funciona. El
+gateway se lo va a distribuir alu de control y este pues va a decidir, ¿no? Y
+ejecuta una opción, va a decir, "No, pues esto está mal, esto está bien,
+así." Okay, entonces vamos a repetirlo para que nos quede claro. El sensor
+genera un valor, no sé, el sensor de temperatura da 20 y el sensor de RPM
+nos da 100. 100,000, perdón, 1000, perdón, 1000,
+1000, 1000, 1000 para que no sea tanto, ¿no? 100,000 es un montón, ¿no? Este era
+bien gacho. Okay, entonces 100,000. Okay, esto de aquí, ahorita nada más con
+dos se va a convertir en un mensaje. Digamos que del motor nos viene una
+cadena que incluye, no sé, le vamos a poner motor a la cadena de motor. Ah, lo
+voy a hacer con el mejor con este de acá porque si no aquí nos van a hallar.
+Así recibimos el mensaje motor, que sería
+una cadena que, por ejemplo, podría tener
+adentro el valor t de temperatura, que sería 20 dijimos, y el valor de 1000 de
+los rpm. Okay, llega el mensaje. Este mensaje viene al gateway. El gateway va
+a revisar, no sé, voy a revisar que la temperatura sea este esté en el rango
+adecuado, no sé. La temperatura puede tener valores de -40.
+Este, a ay mayúsculas, no me deja poner.
+Ah, 150, ¿no? Por ejemplo, con la temperatura, lo mismo con los RPM, ¿no?
+Revisamos Getway, revisa el valor, revisa que esté en rangos adecuados y
+revisa que no sea muy viejo, no sé, revisa cuándo fue la última vez que
+actualizamos este mensaje, ¿no? Ustedes ahí pueden hacer juegos, ¿no? de repente
+no mandar un mensaje y que y que por ejemplo con los ciclos que hizo
+Alejandro con el torniquete diga, "Ah, bueno, ya pasaron dos ciclos sin que el
+mensaje se hubiera visto." Entonces, este mensaje ya no es válido. Sí. Okay.
+Entonces, getway recibe el mensaje, lo valida, o sea, estas cosas y lo manda
+ahora sí al siguiente, que es el control. El control revisa, okay, por
+ejemplo, para la temperatura, yo tengo una condicional en el control que dice
+que si la temperatura supera los 100 los 100 100 gr, debo de ejecutar una acción,
+la que sigue. Y la acción puede ser, no sé, eh prender el ventilador. Ejemplo,
+en este caso, revisa la temperatura que viene de 20, es menor, si es menor a a
+no es no cumple la condición de ser mayor a 100, entonces pues no hace nada.
+La la acción es que por ahora está okay este valor. Si llegara a ser, no sé, la
+temperatura llegara a ser 200, pues ahí ya vamos a tener un problema.
+Primero, la la Gateway no lo recibiría, perdón, no lo validaría porque ya
+estamos fuera del rango, pero imagínense que está dentro del rango y se lo pasa a
+la ECU. elu de control, lau de control, esta va a decir, "Ah, ya super el
+valor." Entonces, primero marcamos como el state del ACU de control que hay un
+problema y ejecutamos una acción, no sé, prender ventiladores o lo que quieran,
+no sé, este, limitar la operación también puede ser otra opción. Okay,
+esto para los mensajes, esto también los voy a dejar aquí por aquí para que lo
+vean quién lo genera, qué señales contiene, qué debe recibirlo, cómo se
+valida. Okay. Mensaje de voltaje, módulo de alimentación, viene el voltaje, el
+gatway lo recibe, el ACU recibe el dato porque lo valida el gateway y pues, por
+ejemplo, si todo está bien, pues continuamos en operacional. Sí. Ejemplo,
+si este si este voltaje fuera de nueve, de ocho, que ya es muy bajo, cambiamos a
+a safe state, que significa el estado seguro, significa que tenemos una falla
+crítica y ya no podemos seguir trabajando normal. Por ejemplo, si el
+voltaje fuera 11.9, ya se considera bajo, pero pues yo lo
+pondría aquí como degrade, que es un estado donde no hay tanto problema. O
+sea, es un es un est es un estado de de que pues es una falla mínima. Mm
+les pone un ejemplo. Voltaje crítico 7.5. El mínimo permitido es esto.
+Entonces.55 menor a 9. El gatewayight identifica el valor fuera de rango. La
+IQ de control gasifica la falla como crítica y como es crítica, o sea, el
+voltaje es muy bajo. El sistema cambia a safe state. Sí. En este caso todavía no
+les todavía no les este les explico la máquina de estados. Voy a tratar de
+avanzar hoy lo más que pueda. Si hoy no terminamos, porque seguramente vamos a
+acabar porque es mucha información. Hoy vayan pensando en cómo vamos a empezar
+el trabajo. Ahorita hoy vayan dense la tarea de qué señales ustedes quieren
+meter, si quieren usar estas, usar otras y vayan pensando en valores y todo eso
+lo de la tabla. ¿Okay? Bueno, esa es una regla en suocódigo que se me ocurrió
+poner aquí. Por ejemplo, pueden tener una regla que esté revisado temperatura.
+Si temperatura es mayor a 105, temperatura elevada y el estatus general
+lo mandamos a degrade. Sí, ese estatus sería como del del vehículo. El estatus
+sería del estatus del vehículo general que trabaja con las dos ACU. Vamos a
+tener que estar declarando varias cosas, ¿no? Una, yo lo que quería sería dividir
+el pseudocódigo en en minialgoritmos. algoritmo de de revise, un algoritmo,
+perdón, que sea de la ACU normal, la de Gateway, la que valida datos, un ACU de
+control y un minialgoritmo que sea, no sé, el generador de los mensajes, que
+sea el motor, por ejemplo, y ese motor está trabajando todos los valores y los
+está enviando a los otros. Uno valida y el otro está ejecutando. Hay cositas que
+generalmente va a ser que pues que esté imprimiendo cosas, ¿no? Y cambiando
+estatus. Mm.
+Eh, bueno, aquí les pongo la separación. El ACU de gateway recibe señal, verifica
+formato, revisa rango, comprueba lo del time out y dice, "Es válido." Vamos,
+vámonos para el de control. Si es válido, entonces analizamos la señal,
+clasificamos la falla, cambia el estatus, evitamos funciones, ordenamos
+una respuesta, o sea, analizamos la señal, la clasificamos. Puede que no
+haya falla, puede que la falla sea crítica o la falla sea falla normal.
+Entonces, cambiamos estatus. Si la falla, si no hay falla, pues seguimos
+operacional. O sea, okay, si la falla es crítica, nos vamos a safe state, o sea,
+el peor de los casos. Y si la falla es normalita, pues nos vamos a degrade, que
+es como que una advertencia. Te marco ahí algo poquillo y te digo, "Oye, güey,
+pues cuando tengas chance darle una checada, ¿no? Casi casi limitamos
+funciones. Ejemplo, si entramos en el estatus de safe state, hay que limitar
+funciones, ¿no? Para, ejemplo, que no siga calentando el motor o cosas así. Y
+ordenamos una respuesta que sería pues que no sé, se inclina el ventilador.
+Ejemplo, una validación. Vemos la el rango. Si ejemplo en el
+getway pod hacer una validación de ese estilo, poner si velocidad es mayor a
+cero y velocidades es es mayor a cero o igual o menor o igual a 250. Estamos en
+el rango de 0 a 250. Entonces, la velocidad es válida, o sea, el velocidad
+válida es verdadero y si no velocidad válida es falso. Sí, lo ideal sería que
+todo su su flujo se estuviera manejando por variables donde digamos la velocidad
+vaya acompañada de su de su de su validador, que era lo de los mensajes, y
+pues el getway lo vaya lo vaya modificando también para irlo pasando.
+Okay. ejemplo, dentro del ACU de control. Este, ah, vas a Okay, no te
+preocupes. Revisas la este, Ismael, sí, está bien, ¿no? Adelante. Si mañana
+mañana vemos todo esto, terminamos, pero voy vayan pensando en lo de en qué
+señales quieren simular. Sí. Okay. Entonces, ejemplo, un ejemplo de
+decisión. Pónganle que ya dentro de su ICU de control reciben los mensajes, o
+sea, reciben reciben los valores y van a tener diferentes decisiones. Porque, por
+ejemplo, si tienen una señal de voltaje, pues debe haber una decisión para el
+voltaje. Si hasta aquí llegó una señal de voltaje válida que está dentro del
+rango, que es de nuevo, eh, perdón, que es una señal válida que está dentro del
+rango, también cumplió que no es muy vieja, entonces va a llegar hasta
+nosotros y va a llegar como válida. Entonces, si voltaje es menor a nu, si
+el estado se va saate, porque el de nueve ya ya es muy crítico, ¿no? El
+estado es de que pues pasamos al peor. Si no la medimos temperatura, ¿no?
+Ejemplo aquí, si temperatura es alto, estado degrade. Si no, estado
+operacional, ¿no? Y así aquí pueden juntar varias condicionales. Ahí van a
+decidir ustedes cuál va a ser la que la que ustedes consideren que es un una
+falla crítica, una falla normal. Estos son estos son recomendaciones, ¿no?
+Ustedes obviamente pueden hacer algo diferente.
+Ejemplo, el estado, el estado que les digo, ejemplo, para el estado general
+del sistema podemos yo propongo un estado init, que es el inicio. El
+sistema realiza pruebas, el sistema funciona normalmente. El estado okay,
+operacional funciona con limitaciones, es el degreed. El degrade.
+El sistema se encuentra en una condición segura, pues el también yo lo pondría
+operacional, ¿no? Ese no me acuerdo por qué lo agregué. El sistema está apagado,
+está en off. Okay. La máquina de estado es lo que vimos el otro día. El estado
+actual, un evento, una condición, los lleva al siguiente. Yo propongo estos
+seis. Sí, ustedes si quieren pueden proponer más o menos.
+Yo quisiera mínimo cinco, pero si ustedes pueden proponer, si ustedes
+quieren trabajar con estos seis, trabajamos estos seis. Init el estado
+inicial, un self des el primer el primer testing como general y el estatus
+operacional. Mientras ACU Getway esté reportando datos.
+Sí, sí, sí. Puedes puedes poner uno de error. Sí. En este caso, yo que agregué
+para crítico es safe state. Es el estatus, el estatus de de que debemos de
+pasar al estado seguro. O sea, detectamos una falla crítica y para que
+no se siga este eh removiendo algo, pasamos un estatus
+seguro donde limitamos operaciones. El degrade es una falla normalita, o sea,
+está hay algo mal, pero no pasa nada si sigues manejando. Este aquí, ¿sabes qué?
+te voy a empezar a limitar velocidades y eso. No tienen que limitarla, sino nada
+más ponerme que safe state, o sea, que y el vehículo va a iniciar su su fase de
+de que quiere entrar en la fase segura y hecho down de que se está pagando, ¿no?
+Ese este este ejemplo en vez de poner f state si quieren para que no sea tan
+confuso como dice este Carlos, pueden ponerlo como error, ¿sí? Como puso
+ahorita en el chat. Mm. Entonces, sí va a depender de ustedes como ustedes
+quieren. Yo propongo estos seis para trabajar.
+Ejemplo, aquí les explico cada uno de los estados, pero ya me quedan 2 minutos
+y quiero pasarles lista. Entonces, por hoy vayan pensando, ahorita les voy a
+subir parte de la información, vayan pensando qué you quieren hacer. Yo
+también voy a ir decidiendo equipos de cuántas personas van a ser porque a ver,
+ahorita viendo la lista de una vez vemos.
+No, no se lo van a aventar solo, no se preocupen. A ver. Ay,
+a ver. Son de 89. Les paso lista, pero más o menos las
+personas que han estado viniendo. 1 2 3 4 5 6 7 8 9 10 11 12. Esta persona
+sí regresó. 12. Son 12. Yo creo que para que no se haga
+tan largo. ¿Ustedes creen que equipos de tres sean
+muchos? Los hacemos de dos. Si creen que son muchos.
+equipos de tres. Podría ser cuatro equipos de tres y cada uno propone la
+suya. No importa si sean parecidas, chiste es que cada uno me propondría y
+defendería su su propuesta. O prefieren que sean de dos, serían seis equipos de
+dos más o menos. Pónganme en el chat cuál prefieren. Yo
+no tengo problema cualquiera de las dos combinaciones. Tomo, la idea es que
+también empiecen a ver el trabajo en equipo. Entonces, no me preocupa, no. Yo
+yo de esto de que los pongo a trabajar en equipo es más que nada también para
+que empiecen a ver diferentes puntos de vista y entiendan después afuera. Nunca
+van a estar solos, siempre van a tener que estar con otros, ya sea ya sea
+discutiendo o o llegando a acuerdos. Ahita les voy poniendo asistencia.
+A ver, ¿dónde está? Ay, es este. Ustedes díganme en el chat qué prefieren
+en lo que yo termino esto de pasarles lista.
+De a tres, ¿para qué va? Para qué va. Entonces, hoy vayan pensando de a tres
+personas, este, si quieren yo los armo para que no
+haya problemas. Y este, ¿cómo se dice?
+Trabajan así. Espérame nada más, es que ya son las 9, no voy a alcanzar a a
+brincar la otra clase, entonces voy a sacarles, no, este, no.
+Voy a sacarles una captura. Le pica al Steam.
+Bueno, no se vayan, nada más dejen sacar una captura de quiénes están. Yo ratito
+paso, meto eso a la lista para brincar a la otra clase, pero ahorita su trabajo
+va a ser pensar qué vamos a hacer, que mañana quiero verle más de la
+información porque es mucha, la verdad es mucha, es muy densa. Quiero ver
+mañana qué dudas tienen y ya dejamos el trabajo. Y les parece, lo voy a dejar
+toda la semana, como sé que muchos trabajan, sería toda la semana hasta
+casi casi el próximo lunes. Serían las clases ahora serían de ir avanzando
+temas, pero también ir checando sus dudas para no dejarlos que no se vayan a
+a confundir ni nada. Me falta aquí otra captura y ya los dejo
+para que se puedan retirar a lo de hoy. ¿Tienen dudas?
+¿Alguna duda así crítica que me digan? ¿Todo bien? Va que va. Puede ser muy
+denso, pero todo esto va a ir en va a ir en información. Sí, va que va. Entonces,
+voy a parar la grabación

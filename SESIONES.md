@@ -18,6 +18,12 @@ Navegación centralizada de todas las sesiones del curso por bloque, semana y fe
 |--------|--------|---|---|
 | **2** | 13-16/07/2026 | Linux terminal, máquinas de estado | [📖 SEMANA_RESUMEN.md](sessions/week_2/SEMANA_RESUMEN.md) |
 
+### Bloque 1: Especialidad Automotriz - Sistemas ECU
+
+| Semana | Fechas | Tema Principal | Resumen |
+|--------|--------|---|---|
+| **3** | 20-24/07/2026 | ECU, arquitectura automotriz, primera evaluación (ACU) | [📖 SEMANA_RESUMEN.md](sessions/week_3/SEMANA_RESUMEN.md) |
+
 ---
 
 ## 📅 Sesiones por Fecha
@@ -78,6 +84,28 @@ Navegación centralizada de todas las sesiones del curso por bloque, semana y fe
 |---------|---|
 | 📄 [resumen.md](sessions/week_1/2026_07_09/resumen.md) | Resumen estructurado |
 | 📋 [raw_transcript.txt](sessions/week_1/2026_07_09/raw_transcript.txt) | Transcript completo |
+
+---
+
+### Week 3: Bloque 1 - Sistemas Automotrices
+
+#### Sesión 1 - Domingo 20/07/2026
+**ECU y Arquitectura Automotriz**
+- Revisión de tarea: Solución del torniquete (Alejandro)
+- **ECU - Electronic Control Unit**: concepto fundamental
+- Componentes de un ECU (microcontrolador, memoria, I/O)
+- **Arquitectura zonal** de vehículos modernos
+- Gateway y ECU Control: roles diferentes
+- **Señales**: definición, propiedades, validación
+- **Mensajes**: agregación de señales
+- Flujo de datos: sensor → gateway → control → actuador
+- Clasificación de fallas (SAFE_STATE, DEGRADE, OPERATIONAL)
+- **Primera evaluación**: Diseño de ACU (trabajo en equipos de 3)
+
+| Archivo | Descripción |
+|---------|---|
+| 📄 [resumen.md](sessions/week_3/2026_07_20/resumen.md) | Resumen estructurado (completo y detallado) |
+| 📋 [raw_transcript.txt](sessions/week_3/2026_07_20/raw_transcript.txt) | Transcript completo |
 
 ---
 
@@ -195,11 +223,11 @@ Navegación centralizada de todas las sesiones del curso por bloque, semana y fe
 
 | Métrica | Valor |
 |---------|-------|
-| **Bloques completados** | 2 (Bloque 0, Bloque 0→1 en progreso) |
-| **Semanas** | 2 |
-| **Sesiones** | 8 |
-| **Horas totales** | ~14.2 (390 min + 460 min) |
-| **Archivos de sesión** | 16 (8 resumen.md + 8 raw_transcript.txt) |
+| **Bloques en progreso** | 3 (Bloque 0 ✓, Bloque 0→1 ✓, Bloque 1 en progreso) |
+| **Semanas** | 3 |
+| **Sesiones** | 9 |
+| **Horas totales** | ~19.1 (390 min + 460 min + 287 min) |
+| **Archivos de sesión** | 18 (9 resumen.md + 9 raw_transcript.txt) |
 
 ---
 

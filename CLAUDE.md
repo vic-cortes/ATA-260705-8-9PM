@@ -83,6 +83,14 @@ Cada semana tiene un archivo `SEMANA_RESUMEN.md` con:
 - Diagramas de transición
 - Implementación en PSeInt y C++
 
+**Bloque 1 (Week 3+):**
+- **ECU - Electronic Control Unit** (arquitectura automotriz)
+- Gateway y Control: roles diferenciados
+- Señales y mensajes en vehículos
+- Validación y clasificación de fallas
+- Arquitectura zonal de vehículos
+- **Primera evaluación**: Diseño de ACU (trabajo en equipos)
+
 ## Docker & Makefile (Bloque 1+)
 
 Ambiente containerizado para C++. **Sin instalación local de compiladores.**
@@ -252,6 +260,38 @@ Para debugging efectivo:
    - `self.estado` - Estado actual
    - `self.contador_pasos` - Contador
    - `self.activo` - Estado del programa
+
+## Evaluaciones del Curso
+
+### Bloque 0 - Evaluación (Proyecto en equipos)
+
+**Tema**: Menú de operaciones sobre arreglos  
+**Formato**: Pseudocódigo PSeInt  
+**Habilidades**: Validación, ciclos, condicionales, arreglos  
+
+### Bloque 1 - Primera Evaluación (En progreso)
+
+**Tema**: Diseño de ACU - Electronic Control Unit  
+**Formato**: Diseño lógico + pseudocódigo + defensa  
+**Equipos**: 3-4 personas  
+**Habilidades**: Máquinas de estado, arquitectura, señales, validación  
+
+**Entregables:**
+1. Definición de 5+ señales (rango, unidad, origen, destino)
+2. Definición de mensajes (estructura, validación)
+3. Máquina de estados (Gateway + Control en pseudocódigo)
+4. Reglas de decisión (condicionales específicas)
+
+**Cronograma:**
+- Teoría: 20/07/2026
+- Dudas: 21/07/2026
+- Desarrollo: 22-27/07/2026
+- Presentación: 28/07/2026 (tentativo)
+
+**Recursos:**
+- 📖 [ACU_CONTEXT.md](sessions/week_3/ACU_CONTEXT.md) — Guía rápida
+- 📖 [SEMANA_RESUMEN.md](sessions/week_3/SEMANA_RESUMEN.md) — Resumen semanal
+- 📄 [resumen.md](sessions/week_3/2026_07_20/resumen.md) — Sesión 20/07
 
 ---
 
