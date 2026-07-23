@@ -107,9 +107,14 @@ Algoritmo ECU
 
 			// === 3) Reglas de decisión (evaluadas por severidad) ===
 			Si estado = SELF_TEST Entonces
-				// Transiciones permitidas: OPERATIONAL / DEGRADED / SAFE_STATE
-				Si tempMotor > 120 O humedadMotor >= 90 O presionAceite > 50 O (rpmNormal Y flujoAire < 0.1) Entonces
+				// Transiciones permitidas: OPERATIONAL / DEGRADED / SAFE_STATE / SHUTDOWN
+				// Prioridad 1 - falla fatal: apagado inmediato
+				Si tempMotor > 120 O humedadMotor >= 90 Entonces
+					estado <- SHUTDOWN
+				// Prioridad 2 - falla crítica: estado seguro
+				Sino Si presionAceite > 50 O (rpmNormal Y flujoAire < 0.1) Entonces
 					estado <- SAFE_STATE
+				// Prioridad 3 - falla recuperable: operación limitada
 				Sino Si tempAceite > 120 O tempAmbiente < -10 O tempAmbiente > 45 O flujoAire < 0 O flujoAire > 0.5 O humedadMotor > 40 Entonces
 					estado <- DEGRADED
 				Sino
@@ -123,12 +128,12 @@ Algoritmo ECU
 				// Prioridad 2 - falla crítica: estado seguro
 				Sino Si presionAceite > 50 O (rpmNormal Y flujoAire < 0.1) Entonces
 					estado <- SAFE_STATE
-				// Prioridad 3 - mantenimiento por kilometraje
-				Sino Si kilometraje >= 14000 Entonces
-					estado <- MAINTENANCE
-				// Prioridad 4 - falla recuperable: operación limitada
+				// Prioridad 3 - falla recuperable: operación limitada
 				Sino Si tempAceite > 120 O tempAmbiente < -10 O tempAmbiente > 45 O flujoAire < 0 O flujoAire > 0.5 O humedadMotor > 40 Entonces
 					estado <- DEGRADED
+				// Prioridad 4 - mantenimiento por kilometraje (menos severo)
+				Sino Si kilometraje >= 14000 Entonces
+					estado <- MAINTENANCE
 				// Sin fallas: operación normal
 				Sino
 					estado <- OPERATIONAL
@@ -179,6 +184,7 @@ FinAlgoritmo
 - `SELF_TEST` -> `OPERATIONAL`
 - `SELF_TEST` -> `DEGRADED`
 - `SELF_TEST` -> `SAFE_STATE`
+- `SELF_TEST` -> `SHUTDOWN`
 - `OPERATIONAL` -> `DEGRADED`
 - `OPERATIONAL` -> `MAINTENANCE`
 - `OPERATIONAL` -> `SHUTDOWN`
@@ -195,6 +201,7 @@ stateDiagram-v2
     SELF_TEST --> OPERATIONAL
     SELF_TEST --> DEGRADED
     SELF_TEST --> SAFE_STATE
+    SELF_TEST --> SHUTDOWN
     
     OPERATIONAL --> DEGRADED
     OPERATIONAL --> MAINTENANCE
