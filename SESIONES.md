@@ -106,6 +106,16 @@ Navegación centralizada de todas las sesiones del curso por bloque, semana y fe
 |---------|---|
 | 📄 [resumen.md](sessions/week_3/2026_07_20/resumen.md) | Resumen estructurado (completo y detallado) |
 | 📋 [raw_transcript.txt](sessions/week_3/2026_07_20/raw_transcript.txt) | Transcript completo |
+| 📖 [ECU_CONTEXT.md](sessions/week_3/ECU_CONTEXT.md) | Guía rápida de ECU |
+
+**Ejercicio: Implementación ECU en Python** (`sessions/week_3/excercise/`)
+
+| Archivo | Descripción |
+|---------|---|
+| 🐍 [ecu.py](sessions/week_3/excercise/ecu.py) | Máquina de estados, sensores y gateway |
+| 🐍 [variables.py](sessions/week_3/excercise/variables.py) | Clases de sensores tipadas con validación |
+| 🐍 [utils.py](sessions/week_3/excercise/utils.py) | Generador de datos de sensores simulados |
+| 📄 [homework.md](sessions/week_3/excercise/homework.md) | Diseño de estados + diagrama Mermaid + requerimientos |
 
 ---
 
@@ -240,6 +250,6 @@ Navegación centralizada de todas las sesiones del curso por bloque, semana y fe
 
 ---
 
-**Última actualización**: 17/07/2026  
-**Resúmenes disponibles**: ✅ Semanas 1-2 completas  
+**Última actualización**: 22/07/2026  
+**Resúmenes disponibles**: ✅ Semanas 1-2 completas · 🔄 Semana 3 en progreso (1/5 sesiones)  
 **Próxima actualización**: Post-sesión week 3

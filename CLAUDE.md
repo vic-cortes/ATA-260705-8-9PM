@@ -289,9 +289,42 @@ Para debugging efectivo:
 - Presentación: 28/07/2026 (tentativo)
 
 **Recursos:**
-- 📖 [ACU_CONTEXT.md](sessions/week_3/ACU_CONTEXT.md) — Guía rápida
+- 📖 [ECU_CONTEXT.md](sessions/week_3/ECU_CONTEXT.md) — Guía rápida
 - 📖 [SEMANA_RESUMEN.md](sessions/week_3/SEMANA_RESUMEN.md) — Resumen semanal
 - 📄 [resumen.md](sessions/week_3/2026_07_20/resumen.md) — Sesión 20/07
+- 🐍 [excercise/](sessions/week_3/excercise/) — Implementación ECU en Python
+
+## Implementación ECU en Python (Bloque 1)
+
+**Ubicación**: `sessions/week_3/excercise/`
+
+Implementación de referencia de una ECU (Electronic Control Unit) con máquina
+de estados, sensores tipados y validación de rangos.
+
+**Archivos:**
+- `ecu.py` — Máquina de estados (`State`), `CarSensors`, `EcuGatewayMiddleware`,
+  `EcuControl` y el loop principal (`main`)
+- `variables.py` — Clases `@dataclass` por sensor (`SpeedVariable`, `TemperatureVariable`,
+  `RpmVariable`, `AirFlowVariable`, `OilPressureVariable`, `OilTemperatureVariable`)
+  con validación de tipo/rango
+- `utils.py` — `generate_random_sensor_data()` para simular lecturas de sensores
+- `homework.md` — Diseño de la máquina de estados (estados, transiciones, diagrama
+  Mermaid) y requerimientos funcionales de la evaluación
+
+**Estados del ECU** (`State` enum): `INIT`, `SELF_TEST`, `SELF_STATE`,
+`OPERATIONAL`, `DEGRADED`, `SHUTDOWN`
+
+**Ejecutar / debuggear:**
+```bash
+python3 sessions/week_3/excercise/ecu.py
+```
+En VS Code: seleccionar **Python: ECU Gateway** en el panel de Debug (F5).
+Config en `.vscode/launch.json`.
+
+**Convenciones:**
+- Imports absolutos entre módulos del ejercicio (`from variables import ...`,
+  `from utils import ...`) — no relativos, para poder ejecutar el archivo directamente
+- Cada sensor es una clase con su rango válido y método `validate_type()`
 
 ---
 

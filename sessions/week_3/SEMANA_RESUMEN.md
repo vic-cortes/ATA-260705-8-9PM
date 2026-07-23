@@ -5,8 +5,8 @@ periodo: "20-24/07/2026"
 tema_principal: "ECU y Sistemas Automotrices"
 objetivo: "Introducción a arquitectura de control electrónico automotriz"
 evaluacion: "Primera evaluación: Diseño lógico de ACU"
-sesiones_completadas: 1
-sesiones_planeadas: 5
+sesiones_completadas: 2
+sesiones_planeadas: 4
 ---
 
 # Resumen de Semana 3: ECU y Sistemas Automotrices
@@ -96,6 +96,87 @@ En vehículos modernos, el sistema de control se divide en **zonas**:
 - **Analiza** señales
 - **Clasifica** fallas (crítica / normal / sin falla)
 - **Ejecuta** acciones
+
+---
+
+## Sesión 2 - 21/07/2026: Máquina de Estados, Requisitos y Rúbrica
+
+### Tema Central
+
+Cierre de la teoría de la evaluación: **máquina de estados detallada**, **requisitos funcionales** y **rúbrica/mecánica de entrega**.
+
+### Estudiantes Nuevos
+
+Se integraron 3 estudiantes al curso (total: **15 estudiantes**, **5 equipos de 3**):
+- **Camila Olguín** — estudiante de preparatoria
+- **Ramón** — profesional (industria de almacenamiento), fuerte en C/Python, interesado en robótica/automotriz
+- **Alejandro** — nuevo integrante
+
+Los nuevos no cursaron el Rango 0; se apoyarán en grabaciones y en sesiones de setup de Linux.
+
+### Máquina de Estados del ACU (Detallada)
+
+Estados propuestos (mínimo 5 requeridos, sin máximo, nombres editables):
+
+```
+INIT → SELF_TEST
+SELF_TEST → OPERATIONAL | DEGRADED | SAFE_STATE
+OPERATIONAL → DEGRADED (falla menor) | SHUTDOWN (apagado)
+DEGRADED → OPERATIONAL (se recupera) | SAFE_STATE (empeora)
+SAFE_STATE → SHUTDOWN (única salida)
+SHUTDOWN → terminal (sin regreso a INIT)
+```
+
+**Ejemplo de temperatura**: límite 120°C; detectar 121°C → DEGRADED (prender ventilador); si sube a 150-160°C → SAFE_STATE.
+
+**Recomendación**: empezar por el camino feliz (INIT → SELF_TEST → OPERATIONAL → SHUTDOWN) y luego agregar variantes.
+
+### Validación de Ciclos Perdidos (Gateway)
+
+Nuevo detalle sobre validación por timestamp — con ciclo de 200 ms:
+- Mensaje 300 ms, anterior 100 ms → Δ = 200 → **válido**
+- Mensaje 500 ms, anterior 100 ms → Δ = 400 → **ciclo perdido → inválido**
+
+### Requisitos Funcionales
+
+**Estructura**: `[El sistema X] + [deberá] + [acción] + [condición]`
+
+> "El sistema (Gateway) deberá validar que la velocidad se encuentre dentro del rango permitido (0-250 km/h) antes de enviarla al ACU de control."
+
+- ❌ Vago: "El sistema deberá funcionar correctamente"
+- ✅ Atómico/verificable: "El sistema deberá marcar como inválido un valor de acelerador menor a 0% o mayor a 100%"
+
+**Se requieren mínimo 10 requisitos** por equipo; el pseudocódigo debe cumplirlos.
+
+### Rúbrica (100 puntos)
+
+| Criterio | Puntos |
+|----------|--------|
+| Pseudocódigo | 35 |
+| Máquina de estados | 25 |
+| Requerimientos | 20 |
+| Presentación (video) | 20 |
+
+Evaluación mayormente **cualitativa**: importa el flujo claro/coherente, que la máquina de estados coincida con el pseudocódigo y que se cumplan los requisitos propios. NO se evalúa optimización de código ni el proceso, solo resultados.
+
+### Mecánica de Entrega
+
+- **Presentación en video** (YouTube/Drive), duración y formato libres — no exposición en clase
+- Tarea + equipos publicados en Classroom el 21/07
+- 22-23/07: clases dedicadas a **dudas** (sin tema nuevo)
+- **Entrega: lunes 27/07** (martes 28/07 máximo)
+- Trabajar solo es válido pero se advierte la carga
+- Regla: no se avanza de rango hasta que todos aprueben
+
+### Notas Técnicas de la Sesión
+
+- Validaciones **en secuencia** en PSeInt (no hay hilos; hilos se verán en C++)
+- El usuario ingresa valores de señales a mano (sin random en PSeInt)
+- Agregar señales a futuro es barato; cambiar la **estructura** es costoso
+- Todo se basa en 2 ACUs: **Gateway** (valida) y **Control** (decide)
+- Proyecto acumulativo: Rango 1 introduce **Git** para versionar; luego OOP, testing y meta embebida (placa o simulación)
+- IA permitida, pero hay que **entender y validar** lo que genera
+- Setup Linux: **Debian vía WSL** (`wsl --install -d Debian`); Raspbian descartado (muy pesado); VM Debian existente es aceptable
 
 ---
 
@@ -264,20 +345,32 @@ Crear el **diseño lógico** (no implementación) de una ACU funcional para un v
 | Aspecto | Detalle |
 |---------|---------|
 | **Lenguaje** | Pseudocódigo PSeInt (por ahora) |
-| **Trabajo** | Equipos de 3 personas |
-| **Equipos** | 4 equipos totales |
+| **Trabajo** | Equipos de 3 personas (individual permitido, con advertencia de carga) |
+| **Equipos** | 5 equipos totales (15 estudiantes) — asignados por el profesor |
 | **Libertad** | Cada equipo propone su versión (pueden ser similares) |
-| **Defensa** | Cada equipo explica y defiende su propuesta |
-| **Deadline** | Semana completa (hasta 28/07) |
+| **Defensa** | Video explicando la solución (YouTube/Drive, duración libre) |
+| **Deadline** | Lunes 27/07 (martes 28/07 máximo) |
 
-### Cronograma Estimado
+### Rúbrica (definida el 21/07)
+
+| Criterio | Puntos |
+|----------|--------|
+| Pseudocódigo | 35 |
+| Máquina de estados | 25 |
+| Requerimientos (mín. 10) | 20 |
+| Presentación (video) | 20 |
+| **Total** | **100** |
+
+### Cronograma Actualizado
 
 | Fecha | Actividad |
 |-------|-----------|
-| 20/07 (hoy) | Teoría completa |
-| 21/07 | Resolver dudas, empezar brainstorming |
-| 22-27/07 | Desarrollo de propuesta en equipos |
-| 28/07 | Presentación y defensa (tentativo) |
+| 20/07 | Teoría completa |
+| 21/07 | Máquina de estados, requisitos, rúbrica; tarea + equipos publicados |
+| 22-23/07 | Clases dedicadas a dudas (sin tema nuevo) + setup Linux para nuevos |
+| 24-26/07 | Desarrollo de propuesta en equipos |
+| 27/07 (lunes) | **Último día de entrega** (28/07 máximo) |
+| 27-28/07 | Inicia nuevo temario (Rango 1) |
 
 ### Iteraciones Futuras
 
@@ -327,6 +420,12 @@ R: Gateway marca como AUSENTE, ECU Control interpreta como falla y cambia a SAFE
 **P: ¿Puede el voltaje ser mayor a 16V?**  
 R: Sí, pero es sobrecarga. Daña componentes. Por eso el rango máximo es 16V.
 
+**P: ¿Agregar señales nuevas después obliga a rediseñar todo?** *(21/07)*  
+R: No. Agregar señales es barato (una validación extra en el mismo flujo). Lo costoso es cambiar la estructura de los 2 ACUs (Gateway + Control).
+
+**P: ¿Cómo instalar el Linux del curso?** *(21/07)*  
+R: Debian vía WSL (`wsl --install -d Debian` en PowerShell como admin). No requiere particionar. Raspbian descartado (muy pesado). Una VM Debian existente también es válida.
+
 ---
 
 ## Diferencias vs Week 2
@@ -355,17 +454,19 @@ R: Sí, pero es sobrecarga. Daña componentes. Por eso el rango máximo es 16V.
 
 ### Para Estudiantes
 
-1. **Hoy**: Leer resumen completo
-2. **Mañana (21/07)**: Resolver dudas en clase
-3. **Semana**: Desarrollar propuesta en equipo
-4. **28/07**: Presentar defensa (fecha tentativa)
+1. **Revisar la tarea en Classroom** (equipos, rúbrica, diapositivas)
+2. **22-23/07**: Traer dudas a clase; nuevos configurar Debian/WSL
+3. **Semana/fin de semana**: Desarrollar los 3 entregables (pseudocódigo, máquina de estados, 10 requisitos)
+4. **Grabar video** de presentación y subirlo (YouTube/Drive)
+5. **27/07 (lunes)**: Entregar (28/07 máximo)
 
 ### Para Profesor
 
-1. Generar PDF mejorado de presentación
-2. Formar equipos si es necesario
-3. Dar feedback sobre propuestas conforme avanzan
-4. Preparar material de C++ para Bloque 1→2
+1. Subir tarea, equipos y material "tuneado" (diagramas) a Classroom ✓ (21/07)
+2. Agregar a los estudiantes nuevos al WhatsApp/Classroom
+3. Atender dudas en sesiones 22-23/07 y apoyar setup Linux de nuevos
+4. Revisar videos y entregas; emitir calificaciones
+5. Preparar material del Rango 1 (C++, Git) para el 27-28/07
 
 ---
 
@@ -373,18 +474,19 @@ R: Sí, pero es sobrecarga. Daña componentes. Por eso el rango máximo es 16V.
 
 | Métrica | Valor |
 |---------|-------|
-| Sesiones completadas | 1 |
+| Sesiones completadas | 2 |
 | Sesiones planeadas | 5 (con posibilidad de extender) |
-| Conceptos introducidos | 12+ |
+| Conceptos introducidos | 15+ |
 | Duración sesión 1 | 287 minutos (4h 47 min) |
-| Estudiantes presentes | 12 |
-| Equipos formados | 4 (de 3 personas cada uno) |
-| Evaluaciones activas | 1 (Diseño de ACU) |
+| Duración sesión 2 | ~60 minutos |
+| Estudiantes registrados | 15 (3 nuevos: Camila, Ramón, Alejandro) |
+| Equipos formados | 5 (de 3 personas cada uno) |
+| Evaluaciones activas | 1 (Diseño de ACU — entrega 27/07) |
 
 ---
 
-**Última actualización**: 20/07/2026  
-**Completitud**: 1/5 sesiones  
+**Última actualización**: 21/07/2026  
+**Completitud**: 2/5 sesiones  
 **Estado**: En progreso  
-**Próxima sesión**: 21/07/2026 (aclaraciones de teoría)
+**Próxima sesión**: 22/07/2026 (sesión de dudas + setup Linux para nuevos)
 

@@ -1,11 +1,11 @@
 {
     "schema_version": 2,
-    "commit": "422c901b85d6d3e4245961ca3270289dbfbc4aed",
-    "indexed_at": "2026-07-23T03:15:10Z",
+    "commit": "c8c80f864f36bd2fe3f2240a00611b7ed8e83f7b",
+    "indexed_at": "2026-07-23T04:24:05Z",
     "project": "Users-vic-Documents-repos-github-personal-ATA-260705-8-9PM",
-    "nodes": 585,
-    "edges": 763,
+    "nodes": 639,
+    "edges": 815,
     "original_size": 2555904,
-    "compressed_size": 173272,
+    "compressed_size": 182313,
     "compression_level": 3
 }

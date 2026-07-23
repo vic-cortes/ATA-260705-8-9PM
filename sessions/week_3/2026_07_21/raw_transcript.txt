@@ -1,0 +1,806 @@
+de que teaste o algo así.
+Pues voy en la preparatoria. Ah, okay.
+Sí, voy a entrar a segundo de preparatoria y
+pues no he ido a la universidad, no me dedico a nada, soy estudiante.
+Okay. No, no pasa nada. No pasa nada. No, no, no me esperaba que que
+estuvieras en la prepa. No pasa nada. Este, va que va. No te preocupes,
+acabamos de empezar. Acabamos de empezar. Este es la es el primer rango.
+Se está terminando ahora. El rango uno que vamos a empezar a ver a partir de
+que esta esta evaluación termine va a ser va a ser ya programación directa,
+pero de todos modos no sigue no es tan tan avanzada como para causarles
+problemas. Obviamente tal vez hay unas cosas que tengan que repasar del cero,
+pero con las grabaciones se pueden apoyar. Y también les digo, tanto tú
+como Ramón me pueden contactar, eh, creo que los agregaron al grupo de WhatsApp,
+espero me pueden ahí contactar para dudas o al correo sin problemas. Yo
+siempre estoy como la disposición de de estarlos ayudando. Este, entonces no
+creo que vayas a tener problema con el avance, no te preocupes. Sí, este, solo
+tendrías tal vez problemitas porque no estuvieron en el rango cero, pero ya no
+nos podemos regresar. Ya quisiera este empezar a avanzar más rápido. Okay,
+entonces les voy a, ya estoy grabando, voy a presentar pantalla. Muchas gracias
+por presentarte. Este, Camila, mucho gusto. Bienvenida.
+Sí, ya, ya, Ramón, ya te ya te ya te escucho.
+Okay, correcto. Va que va. No sé si me quieras dar una
+presentación rápida tuya, unos dos minutitos, no sé a qué te dedicas, este,
+¿qué estudiaste? Ah, yo pues sí me dedico a a Prom. Eh,
+okay. Eh,
+he trabajado con C+ más, pero no tanto. Este, mi fuerte es C y Python. Okay.
+Eh, ahorita estoy tratando de repasar este
+volver a aprender C+ más este porque me quedé en versiones muy viejas de C+ más
+y como trabajo en la industria de almacenamiento, este, quería expandirme
+hacia sobre todo robótica. Okay. Entonces, ¿estás interesado en la
+parte automotriz, verdad? Sí, automotriz y robótica más que nada.
+Va, qué va. Sí, cuando lleguemos a Ross eso es aplicado a la robótica también.
+Va que va, va que va. Bueno, pues bienvenidos,
+mucho gusto, gracias por unirse. Este, entonces hoy quiero seguir con
+esta parte que es la evaluación de sus compañeros. Ayer revisamos esta toda
+esta información porque le estaba explicando más o menos qué es lo que yo
+quería que viéramos. Este, les di un poquito de introducción de los ACUs, qué
+son los ACUs, cómo funcionan, enseñar la parte de las señales y ahora me gustaría
+este indicarles qué es lo último que que quisiera enseñarles, que es la parte de
+los requerimientos para así pasar a qué es lo que voy a requerir de ustedes para
+esta evaluación y también enseñarles una rúbrica, ¿no? Y también me digan si
+están de acuerdo con la rúbrica. Obviamente esas son editables. Yo va a
+ser la rúbrica que yo les propongo y ustedes me dicen, "No, pues la neta está
+muy pesada, ¿no? O si la ven bien, va que va.
+Ayer revisamos hasta estas partes de los de los mensajes, ¿sí? Que les enseñé
+estas pedacitos deudocódigo que puede funcionarles a ustedes.
+Eh, otro pedacito de sudocódigo. Llegamos a esto de los estados de la
+plataforma y si no me equivoco también revisamos la mini máquina de estados que
+está aquí generada, ¿no? Sí, la revisamos, ¿verdad? ¿Me puede confirmar?
+No la revisamos ahorita en que puedo poner ahí un dedito arriba
+o algo, no la recuerdo.
+Okay, entonces la revisamos. Okay, okay, okay, okay. No pasa nada. Bueno, una vez
+que les estaba comentando la parte del del diagrama del de cómo va a fluir su
+señal, que lo vimos, ahorita les enseño más a fondo eso para que no haya
+confusión. Mm. Pues les hablo de la parte de la máquina de estados que
+también va a ser requerida para esta parte, que es este diseñar una máquina
+de estados que me hagan el diagrama, que me lo generen sin como ustedes gusten,
+no se preocupen. La idea es que me puedan ejemplificar cuál es el flujo de
+esta máquina que van a generar, que va a ser los ACU que van a estar trabajando.
+¿Sí? Entonces, la máquina de estados, como vimos antes, pues define todos los
+estados posibles de un sistema, las acciones que llevan a diferentes
+estados. Como les decía, la máquina de estados no solo se pregunta qué pasó,
+sino en qué estado estábamos. Hm. Entonces, tenemos que tienen que también
+definir ese tipo de cosas, la acción que nos lleva a cambio de estados y también
+la transición, los eventos, ejemplo, que producen cambios, las condiciones de la
+transición y un estado inicial. Siempre es importante saber cuál es el estado de
+fa inicial cuando empiezas a operar. Una transición se ve así, generalmente
+es tu estado al nuevo estado y la dirección de la transición. acompañada
+del evento que lo desencadenó. Yo proponía estos seis, les decía ayer,
+estos seis estados de la máquina, ustedes pueden cambiarlos, ejemplo, safe
+state, cambiármelo a a error o a lo que ustedes quieran para que sea más
+entendible, pero yo propongo a estos seis, sí, tienen que tener cinco mínimo,
+¿sí? El máximo, no hay máximo. Pueden proponerme los estados que ustedes
+quieran, si quieren ponerse un poquito más más avanzado. Y como les decía ayer,
+la idea de esto es que conozcan el ciclo de desarrollo del software, de ese tipo
+de software, de ese tipo de de de desarrollo, porque este es desarrollo
+embebido, ¿sí? Que la idea es que viva en una placa al final de todo. Entonces,
+acompañado de Git, que vamos a ver en el siguiente rango, cuando empecemos a ver
+código, vamos a empezar a ver Git. Yo quiero que empiecen a versionar este
+proyecto, así que este proyecto empiece como código al principio, código básico
+que va a ser el rango uno. Después lo empecemos a refactorizar objetos,
+después le empezamos a meter testing, cosas así, pero su proyecto va a ser el
+mismo, solo que se va a estar manejando por versiones con el versionado de Git.
+Entonces es la idea de que desde el inicio tengamos ya bien definido qué es
+lo que queremos hacer durante la marcha. Ya se pueden cambiar ciertas cosas, ¿no?
+Entonces, la segunda parte de la de lo que yo les voy a solicitar es la máquina
+de estados. Por ejemplo, el estado self test. Bueno,
+bueno, aquí está. Voy a explicarles varios, ¿no? El inita,
+como cuando tú inicies tu máquina de estado, ejemplo, en el pseudocódigo
+inician a correr su pseudocódigo de los ACU. El estatus general del sistema
+generalmente va a ser init, o sea, va a empezar como init. lo van a declarar
+así, no sé, estado igual a eh si ustedes consideran que INIT sea el de estado
+cero, INIT va a ser el ese estatus que con el que va a empezar la máquina y
+después va a pasar a self test, que va a ser un self test rápido de todo lo que
+esté pasando. Entonces va a revisar, no sé, van ustedes por ahí tener una que
+otra variable que revise y si todo está bien, self test nos va mandar nos va a
+mandar a uno de estos tres estados. Ese es el siguiente los siguientes caminos
+que puede tomar. Si todo está bien, nos vamos a ir al estado recurrente de esta
+máquina que va a ser y el y el que va a ser el okay y el que vamos a querer que
+siempre esté es el operacional. Sí, si encuentra una falla recuperable, digit y
+y si encuentra algo crítico, nos vamos a safe state, que es el estatus que les
+digo donde el auto entra en su estado seguro, que es limitar operaciones,
+incluso ya no permitirte salir del estado seguro, que lo único que pueda
+hacer es apagar el motor. Entonces, si todo está bien, que generalmente yo les
+recomiendo que en los primeros casos siempre trabajen con un selfest self
+test positivo que los lleve operacionalm y ya después hacemos las variantes, ¿no?
+Pero fíjense, la transición, la transición más básica va a ser de init a
+self test y de self test operacional en vez de los otros dos. Luego el estado
+operacional es la operación normal, les digo, es el más deseado, recibe
+mensajes, los valida, o sea, recibe mensajes con en la ICU Gateway, los va a
+validar ahí también en el Gateway y va a mandarlo al ACU de control que va a
+tomar decisiones, detectar fallas y pues va a ejecutar funciones, ¿no? Va a
+ejecutar funciones en caso de que algo salga mal. Hm. Cuando entremos a Dig,
+ejemplo, cuando el el getway o el ACU de control detecten que algo está mal, como
+estos que pones ejemplos, temperatura elevada, voltajes bajos, pérdida de
+señal, esto estos estos ejemplos pues van a depender de las señales que
+ustedes propongan. pueden usar las que yo propuse, pero ustedes pueden proponer
+nuevas, como les dije. Entonces, si entramos en digit va a ser en caso de
+una de una falla, una falla recuperable, por ejemplo, que les decía ayer, la
+temperatura, por si decimos que la temperatura máxima que queremos es 120
+en el motor y de repente detectamos un 121, es válido decir que estamos en un
+estado de digit. ¿Por qué? Porque es una falla, pues está un poquito subida la
+temperatura, es una falla recuperable. aplicamos la acción de prender el
+ventilador, por ejemplo, ¿no?, del vehículo o o lo refrigeramos de alguna
+manera para tratar de regresar a una temperatura estable. Pero si la
+temperatura de repente ya no es 120, sino es 150, 160, o sea, ya está
+superalta, en vez de irnos a Digrid, aquí les pongo aquí que Digrid es para
+la falla. Si el sistema se recupera, regresamos a operacional. Si la falla
+empeora, nos vamos a safe state, que es el estado crítico. Mm. Entonces digo, si
+la temperatura sube, tratamos de arreglarla y no baja y sigue subiendo,
+pues nos va a tocar irnos al estado malo. En caso de que sí se arregle,
+regresamos al anterior, que es el estado el estado común, el estado bueno, el
+estado okay. Pero bueno, si nos vamos al estado al estado safe state, pues ya es
+un ya es una condición ya es una condición con una falla crítica que pues
+indica que hay que limitar operaciones, hay que hay que desactivar funciones no
+esenciales. O sea, ustedes me pueden indicar qué pasó, ¿no? Entramos en safe
+state, entramos en modo este en modo crítico, con eso ya es suficiente, ¿no?
+Que indique que está en estado crítico y el estado shutdown que es el apagar el
+motor. Así como el init del inicio, como ustedes elijan la opción de apagar, pues
+vamos a entrar en shutdown y se va a terminar apagando la máquina de estados,
+¿sí? Que es el vehículo. Detiene todo, guarda registros en caso de que ustedes
+tengan una manera ahí de guardar, si no no pasa nada. Hace todo, finaliza la
+ejecución. Este caso Safe State, la opción más
+lógica para Safe State después de de estar aquí es irnos a chatdown. Sí,
+generalmente en este caso no es este no está recuperable como el degre.
+Entonces, generalmente la opción más lógica es irnos a irnos a shutdown, que
+les pone que no siempre significa pagar, pero sí significa que vamos a reducir el
+riesgo, ¿no? En lo que apagamos el motor e desde ese estado que del que no
+podemos salir, pues se mantiene ese estatus, se mantiene el estatus de
+crítico, o sea, que está la el sistema limitado hasta que por fin hagamos el
+shutdown, que es la única salida que vamos a tener. Aquí les pongo el
+diagrama, el diagrama este, perdón, el diagrama ya con flujo. Lo
+empezamos en init, que les comento, una vez que se termina todo, hacemos un set,
+que es el que está aquí, hacemos el testeo y pues aquí va a haber ya tres
+caminos, ¿no? Como pusimos acá en los en las en los diapositivas anteriores. Si
+no hay fallas, vamos a pasar al operacional. Sí, todo va a estar normal.
+Vamos a entrar a la fase chida. Si hay una falla recuperable, vamos a ir al
+degrid. Y si hay una falla crítica, nos vamos a ir al safe state directamente.
+Okay. Vamos a considerar uno de los caminos. Vamos el el más chido, el más
+perdón, el camino más común y el de todos los días cuando manejas. El auto
+se inicia con init, hace un self test, no pasó nada, estamos en operacional y
+ahí nos mantenemos toda la conducción o todo toda la ejecución del código en
+este caso y de repente decidimos apagar, nos vamos hasta shutdown y ya se acabó
+la ejecución. Sí, se fijan de shutdown no hay otra no
+hay un regreso al initm les enseñé la otra vez máquinas de estado de este
+estilo, ¿no? Que hay ciertos ciclos dentro o algunas no tienen ciclos y el
+movimiento es lineal. Llega un punto en que ya no es recuperable directamente la
+máquina de estados. ¿Cuál va a ser la acción que nos regrese otra vez al init?
+Pues va a ser que el usuario vaya y le meta un llavazo al carro de regreso.
+¿Sí? Entonces, cuando se apague, ya se detuvo la ejecución. va a ser como su
+salir en los códigos que hemos hecho de ejemplo.
+Okay. Entonces, otro caso que puede pasar, voy a quitar
+esto que no se estorbe. Otro caso que podría pasar es que lo enciendes, hace
+un self test, hace el testeo y nos vamos a falla recuperable, ¿no? Entramos al
+digit. Aquí si nos recuperamos en recuperación
+podemos irnos al operacional ahora sí y trabajar y otra vez volverlo a pagar.
+Otra otra otra posibilidad sería hacer el self test, irnos operacional y de
+repente aparece una falla menor, nos vamos a Digrip, ¿sí? Y ya si esa falla
+no se recupera, falla crítica, nos vamos a safe state. Sí. Otro otro caso es el
+test, nos va directo falla crítica, nos vamos a safe state y si se fijan de safe
+state de perdón, de safe de safe state no hay ninguna otra flecha de salida más
+la que nos lleva a pagar. O sea, puede estar aquí lo que quiera, pero la única
+salida va a ser volver a pagar el vehículo, volver a pagar tu máquina de
+estados en este caso. Y hay otras más combinaciones, ¿no? Pero si las
+revisamos todas pues son un montón. Okay, aquí también agregué esto. Todos
+estos se los voy a subir un poquito más más tuneadito para que no se vea tan
+feo. Los voy a subir para que lo puedan este revisar a la hora de trabajar la
+tabla de estados. Y aquí con el diagrama de contacto esto creo que van a entender
+un poquito mejor lo que queremos. Sí. Este, el diagrama de contexto, esto no
+me lo tienen que hacer, se los pongo nada más para entender. Va a ser para
+que entiendan un poquito mejor cómo hacer el pseudocódigo. Yo lo que les
+recomendaría para el pseudo, para el pseudocódigo, es declarar o ustedes
+generar sus variables, estar generando variables a mano, que va a ser creo la
+única manera de que ustedes generen esos valores, generar variables a mano, por
+ejemplo, el sensor de velocidad, de sensores en general, ¿sí? Sensor de
+temperatura, alimentación, que la ACU del motor esté dando RPM y acelerador.
+Sí. Y fíjense, todas esas señales van a irse, se pueden empaquetar en un en un
+mensaje, como les dije, una Ray que mantenga que tenga el valor actual de
+cada una, tenga el instante del tiempo de de donde se tomaron los valores y
+también indique su estatus actual, no sé, el ascensor de velocidad va con
+estatus correcto, estos RPM y acelerador también, sensor de temperatura también,
+alimentación y ya Gateway se va a encargar de administrar eso. Gateway va
+a revisar los valores, por ejemplo, primero va a revisar que todos los
+valores de los sensores que llegaron en el mensaje sean correctos, o sea, están
+estén dentro de los rangos que ustedes van a establecer.
+Van a establecerlos ustedes, va a revisar que estén dentro de los rangos,
+después va a revisar que no se hayan perdido ciclos. Ustedes van a definir,
+okay, yo quiero que cada 200 milisegundos esté revisando el estatus.
+Entonces, si el mensaje que llegó ahorita tiene 300 milisegundos y el
+anterior tenía tenía tenía 100 milisegundos, la resta 300 - 100 nos va
+a dar 200. Entonces es correcto. Pero si ahorita me llega un mensaje que trae 500
+milisegundos y el anterior era 100 milisegundos, la resta me da 400, me da
+400. Entonces hay un ciclo, hay un ciclo perdido entre los dos. Entonces esos
+mensajes ya serían inválidos. Por ejemplo, la mayoría pueden manejar
+también un un una variable temporal para cada uno si quieren para manejarlos por
+separado. Para mí con que tengan una variable temporal para todos también ya
+es suficiente. Sí, pero pueden manejar una para cada uno si quieren verse un
+poquito más estrictos. Okay. Entonces, todo va a llegar a la getway que va a
+revisar, validar, va a ver que se cumpla lo de los tiempos, va a ver que se
+cumpla lo de los rangos, va a revisar que no haya valores ahí medio raros y si
+todo está bien y aunque no esté bien lo va a pasar al ACU de control. con el ICU
+control ya le van a llegar las señales validadas, lo que significa que eh
+alguien levantó la mano. Adelante, adelante. No alcanzo a ver quién es.
+Adelante. E no sé este si la persona está
+hablando. A ver, ¿quién era? Déjenme ver si
+alcanzo a ver. Ya no aparece la mano. Okay, tal vez se
+equivocó. No pasa nada. Si se equivocaron también allá. Dígame. Me
+equivoqué. que levanté por accidente. Bueno, entonces el ACU va a recibir las
+señales validadas, o sea, las señales que ustedes metieron acá, esos
+valorcitos, les digo, no tiene que ser una señal como tal, sino el mensaje va a
+ser valores de las señales. Ustedes los van a ir generando por el con el tiempo,
+por ejemplo, a la a la ejecución le van a estar diciendo, "No, que ahorita el
+valor de velocidad es esto, el valor de de RPM es esto y esto, ¿no? Y bajo las
+condiciones que ustedes indiquen, esos valores que ustedes estén dándole, pues
+el getway va a validarlos. Entonces, por ejemplo, alu de control le van a llegar
+las señales validadas. Si ustedes manejan un estatus por señal, digamos
+que le llegan todas válidas. En el primer caso, todas le llegan válidas.
+Entonces, el ICU de control va a empezar a trabajar con todas. Va a revisar qué
+condiciones cumplen ahora de su lado. A diferencia del getway, que nada más
+valida formatos, este, rangos y todo eso que es como valida que la señal venga
+buena, el ACU de control lo que va a validar es que la señal estén esté
+cumpliendo cierta condición. Por ejemplo, la de temperatura que esté por
+debajo de cierto valor, este, la de velocidad también que no supere cierta
+cierta dirección, no sé, o también simplemente recibe la velocidad y lo
+está guardando para estarlo mostrando en el tacómetro.
+Este, la alimentación que el voltaje no esté menor a a 9 V de que 9 V ya es una
+batería muerta. El ACU ya va a revisar eso. Sí, va a
+estar trabajando con esos valores. Y digamos que después en un caso el
+gateway le pasa una que otra señal inválida. El ACU si alguna es inválida,
+pues lo que debe de hacer es mandar a mandarlo a falla, ¿no? Esa señal. Y
+también ver qué va a pasar con tu máquina de estado. Si tú ya decides que
+una sola falla es suficiente para hacer estatus, estatus safe state, pues lo
+pasas para allá. Si una falla nada más te manda degreedit o si la falla no es
+muy grave, te manda degreit. O sea, ese va a depender de ustedes. Van a tener
+diferentes caminos, pero el diagrama lo que les dice es que pues ven las
+señales, se van al getway, el ACU de control las compara nada más para ver
+qué acciones vamos a tomar y pues ya decide qué hace, ¿no? Dice, "No sé.
+Este, el sensor de velocidad dice que vas muy rápido, te las te disminuye la
+velocidad o la temperatura es muy altísima, entonces pues eso ya es una
+falla crítica. Yo directamente hago el cambio de la de la de la máquina de
+estados a un safe state. ¿Sí? Entonces, lo que tenemos que hacer es trabajar con
+estas velocidad, con estos estos valores, que el gateway los clasifique y
+los revise, el ACU toma las decisiones que es el que va a estar diciéndonos qué
+estatus, en qué estatus vamos a estar en la máquina de estados. Sí, si se fijan
+arriba, lo de la máquina de estados es nada más un ejemplo de cómo podemos
+movernos entre los estados. Ustedes pueden variar esto también pueden tener
+otras combinaciones, pero esto de aquí nada más nos dice, "Los estados van a
+moverse así." Sí, esto no nos indica cómo se comporta el código, nada más nos
+dice, "Los estados podemos trabajarlos así."
+Sí, aquí donde vemos más o menos cómo se va
+a comportar el código. Recibimos valores, los trabajamos, los revisamos
+para hacer acciones y de control es el que decide cómo movernos entre los
+diferentes estados de la máquina de estados. Va, que va. Hasta aquí, hasta
+aquí no hay dudas. Es que les digo, la información es muy densa.
+Las variaciones son paralelas. Eh, yo diría que las hicieras en secuencia para
+no meterte en problemas. Sí, por ejemplo, no hay no hay hilos. Creo que
+en el PCIN, eso que es algo que vamos a ver en C++, perdón, los hilos también
+que es importante en los vehículos generalmente la la manera de trabajar es
+sincrónica, que es está más difícil que la sincrónica porque estás comunicando.
+Entonces este va a ser necesario revisar eso. Sí, en la vida real es así y
+normalmente no trabajamos por sensor en la vida real. En la industria automotriz
+generalmente lo que se hace es trabajar por arquitectura zonal. Lo que les decía
+ayer, que dividimos el auto en partes, no sé, decimos que una parte es el
+motor, la otra es la transmisión o dividimos en pedazos la zona frontal
+izquierda, frontal derecha y así y cada parte está trabajando por su cuenta,
+pero se están comunicando entre sí, entonces tiene que trabajar de manera
+síncrona para funcionar. Entonces, las validaciones ahí se hacen paralelo y
+después se comparan todo. Ya al final una la computadora del
+vehículo es la que toma las decisiones. ¿Okay? Entonces este pueden hacer las
+valiciones una por una, no pasa nada. Todo toda esta arquitectura va a
+depender de ustedes. ¿Sí? Y lo último que les voy a pedir, o sea, vamos a
+hacer pseudocódigo, vamos a hacer máquina de estados. Sí. Y lo último que
+les voy a pedir, lo único intervalo que van a tener al final es que me me
+describan ustedes los requisitos de su sistema. ¿Qué es un requisito? Pues
+literalmente, ¿cómo queremos que opere el sistema? Hay que crearlos. Un
+requisito funcional se ve así. Aquí les puse, les voy a poner la ecuación de
+requisito funcional. Este es un ejemplo burdo, o sea, normalmente se ven así,
+pero es una manera de que el requisito sea que de verdad funcione. Generalmente
+la ecuación es el sistema, esta palabra no para, no, perdón, esta parte esta
+palabra, perdón, esta frase indica que es a qué nos estamos refiriendo en este
+caso, el sistema sería la getway, ¿sí? Después va el deberá, que es es
+obligatorio, el deberá una acción validar y la condición. Por ejemplo, si
+lo leemos junto, es el sistema que es la gateway, deberá validar y ahora sí la
+condición que la velocidad se encuentre dentro del rango permitido antes de
+enviarla a la ICU de control. Esto lo podrás modificar, podrías decir getway
+ACU deberá validar que la velocidad se encuentre en el rango permitido de, no
+sé, de 0 a 250 km/h antes de enviar la LCU de control. Entonces, estos
+requisitos también quisiera que se que los redactaran. Obviamente no tienen que
+ser super así super avanzados, sino que me generen algunos. Yo nada más les voy
+a pedir seis, perdón, 10 requisitos, perdón, que ustedes generen 10
+requisitos y después me digan, "No, pues y a partir de los requisitos que que
+generen es de dónde van a partir para hacer su pseudocódigo, ¿no? Ustedes sus
+requisitos se deben de cumplir en su pseudocódigo. Aquí mismo ustedes se van
+a poner sus reglas. A eso me refiero con un requisito. Los proyectos de este
+estilo, vas con el cliente, que normalmente es una marca de autos, y
+ellos te dan su lista de requisitos, ellos te los definen. Tú como tú como el
+desarrollador o el el ejemplo en Continente la Siera, tú como el
+desarrollo de la parte del radar tenías que revisar los requisitos y ver si son
+posibles y enviarle tu revisión, decirle, "Oye, esto no, esto sí." Y
+después se negociaba a ver cuáles aceptábamos, cuáles no. Pero una vez que
+tú aceptabas un requisito, que tú decías este requisito sí se puede, ya te ahí tú
+mismo te ahorcabas porque pues ya se tenía que cumplir sí o sí. Entonces,
+ustedes van a proponer los 10, no sé, estos son los 10 requisitos que yo
+propongo. Obviamente pues van a salir de lo que ustedes propongan, de qué señales
+se van a revisar, qué rangos van a tener. Yo mínimo quiero 10 nada más que
+me los escriban, digan, ahí están sus requisitos. Y estos se están cumpliendo
+en mi pseudocódigo. Mm. Ejemplo, aquí una comparación
+también para que se den cuenta. El sistema deberá funcionar correctamente.
+Es un requisito vago. ¿Por qué? porque pues es muy ambiguo, no indica cuál es
+el funcionamiento correcto, no cómo se verifica. ¿Cómo se verifica? Pues pues
+para verificarlo debería ser más atómico. Lo que me refiero con atómico
+es que nada más compare una cosa a la vez. El caso del sistema deberá marcar
+como inválido un valor de acelerador menor de 0% o mayor a 100%. Esto es
+verificable, ¿no? Pues si se sale del rango, pues es está fallando. Sí. Este
+de acá, pues, ¿cómo lo verificas? Pues realmente es muy ambiguo, hay muchas
+maneras y no hay un no hay como una manera de que puedas comprobarlo. Aquí
+si te indica, pues hay que revisar que no esté entre 0 y 100%, que esté entre 0
+y 100%. Va que va, va que va. Okay. Entonces, hasta ahorita eso entonces es
+lo que yo quiero. Son esos tres entregables. Todos van a ir en la tarea
+y ahí mismo cuando suba la tarea ya voy a poner los equipos. Si alguien no está
+de acuerdo con su equipo, mándame mensaje y vemos cómo lo cambiamos
+también. Yo voy a hacer equipos ahorita. A ver. Ahorita ya son 1 2 3 4 5 6 7 8 9
+10 11 12 13 14 15. Okay, toda me todas me salen de tres. Todo va a ser en
+equipo porque también quiero que vivan esa experiencia de de que esto se haga
+en equipo, o sea, que haya varias opciones, que vaya haya varias opiniones
+e incluso va a haber discusión, me imagino, y también va a haber
+negociación, va a haber va a haber puntos a favor o puntos donde estén de
+acuerdo, puntos donde no, que es realmente lo que pasa allí afuera.
+Siempre nunca vas a trabajar solo en estas cosas. Va que va. Entonces, ¿hasta
+ahora tienen alguna duda antes de pasar a la rúbrica? Ah, perdón, se me olvidaba
+algo para que se entendiera un poquito mejor. ¿Dónde está?
+antes de que aquí hice un pequeñito un pequeñito diagrama para que se entienda
+un poquito. Cuando ustedes hagan suudocódigo, generalmente les va a dar a
+ustedes la opción de generar un diagrama de eso a partir de ese. Sí, aquí yo hice
+un diagramita para que también se puedan basar en este para más o menos pensar en
+su código. Imagínense, iniciamos todo, ¿no? Inicio, iniciamos las variables,
+¿no? O entramos al este, la única variable que yo iniciaría sería que el
+estado inicial sea init. Eso lo haría yo en el PCI. Si el estado es init al
+inicio, esa es mi variable, ¿no? Pero puedo agregar otras aquí mismo, que una
+vez todas las todas las señales al inicio sean cero o general así. Después
+yo crearía algún algún mensaje que sea una cadena. Sí, ¿dónde se vayan a estar
+metiendo esos valores para estarlos revisando cuando se lo estés pasando tú
+al ACU, al ACU Gateway? Ahora se hace el set test, se hace una autoprueba y
+después se preguntamos si salió bien. Si salió bien, nos vamos a operacional. Si
+no salió bien, aquí me quedó sobre encima. Lo voy a arreglar. No sé por qué
+se me sobre ahí puó, pero ese también es de para ir para abajo. El no, si sale
+mal pues nos vamos pues a algo crítico, ¿no? O también puede podemos irnos al
+digrit. Aquí no lo alcancé a conectar, pero también debe haber una flecha para
+este. Es una esto es una variación de lo que les enseñé hace rato. Si todo está
+bien, nos vamos al operacional y empezamos a leer y validar señales. O
+sea, ahí el usuario les empieza ustedes como usuario, porque no no creo que no
+hay manera de generar datos random, ustedes como usuarios van a empezar a
+darle ahí paquetes de señales, ¿no? A cada valor. No sé, de repente le doy un
+20 a la velocidad, un 30, a la RPM le doy un 1000, le doy un 5,000,
+a la a la temperatura le doy un 150, le doy un 100, le doy un 110. Sí.
+Entonces ustedes van a empezar a leer y validar esas variables. Sí, si
+encuentras una falla de repente pues te vas a safe state si es crítica. Si no,
+falla no crítica, también revisas. Si sí, pues te vas a Digit.
+Y si se vuele crítica con el tiempo, te vas a te vas otra vez a te vas otra vez
+al safe state, ¿no? Si no es si no es falla crítica la degred, pues el sistema
+se recupera y regresamos operacional. Sí. Ustedes todos cuando lo hagan
+enseudocódigo y generen el diagrama les va a dar algo así.
+Luego este si la autoprueba no salió correcta nos vamos directo al safe state
+y la única salida del safe state se fijan otra vez es solicitud de apagado
+que nos lleva shutdown y termina termina otra vez nuestra nuestra ejecución. Y
+aquí, se fijan, hay muchas combinaciones, ¿no? No, si las vemos
+todas, pues no acabamos, pero más o menos es como para que se den una idea
+más o menos lo que yo espero en el pseudocódigo.
+Luego necesito su máquina de estados, que es diferente. Fíjense, este es un
+pseudocódigo. La máquina de estados, se fijan nada más es una la máquina de
+estado lo único que quiero que me indiquen es qué estados tienen y cuál es
+la relación que hay entre ellos, nada más. Sí, en el seudo código pues ya se
+indica más o menos operaciones que se hagan y decisiones.
+Y acá pues me indican cuáles son los estados. Aquí no se dice aquí no aquí no
+dice generalmente cómo funciona el código, sino nada más qué acciones nos
+llevan al siguiente estado y cómo se conectan entre ellos. ¿Qué estados, por
+ejemplo, como este, la única salida pues es esta? Sí, hay estados que tienen más
+salidas. Ustedes tiene tres, se puede ir para acá, para acá, para acá. Sí, no se
+entiende esa parte. Hasta aquí. ¿Alguien tiene algún algún
+alguna duda? Si no, pasamos a la rúbrica.
+Perfecto. Todos modos, esto no lo van a hacer
+solos, ¿no? Esto se va a ser acompañado, o sea, no. Y aparte yo también los voy a
+ayudar, o sea, no significa que ahorita les diga, esto va a ser la tarea y el
+proyecto de evaluación y ya háganlo. Si no, sí lo van a hacer ustedes, pero pues
+obviamente yo voy a estar ahí este para lo que necesiten. Y ahita les voy a
+explicar cómo va a ser la mecánica ahorita para sus entregables. Pero
+bueno, la rúbrica que yo diseñé es esta, 100 puntos de calificación total. Eh,
+normalmente en los tecnológicos esos ya me quedé acostumbrado a los 100 puntos.
+Entonces, 100 puntos. Pseudocódigo es el que más tiene valor, 35, la máquina de
+estados 25, los requerimientos que les decía, 20. Y pues hay que te tienen que
+presentar para para se me gustaría ver que en vez de tener que revisar todo
+esto a mano, que también lo tengo que revisar, ustedes me presenten lo que
+hicieron. No va a ser no va a ser este con un, ¿cómo se dice? No va a ser
+ejemplo en clase porque sería mucho tiempo el que se tomaría cada
+presentación. Me pueden hacer un video, por ejemplo, me lo suben a YouTube, me
+lo suben a algún lado y me dicen, "Ahí está el video. Puede ser de 5, 4
+minutos, 10 minutos, de lo que ustedes quieran, el tiempo que ustedes quieran
+que dure. Va a ser en equipo, como lo hac en equipo, no sé, lo pueden hacer
+por partes, lo juntan como ahí va a ser opción de va a ser como ustedes gusten.
+Yo no tengo este problema con la el formato que ustedes elijan y tampoco el
+tiempo de la exposición. No tengo ningún tiempo mínimo ni máximo. ¿Por qué?
+Porque pues ahí va a depender de lo cómo ustedes lo quieran explicar y qué tanto
+quieran profundizar. Sí, si se fijan, aquí va a haber diferentes diferentes
+este diferentes este status para cada para
+cada criterio. Entonces, por ejemplo, en excelente el flujo es completo, claro,
+coherente, validaciones, fallas, bueno, pues que presenta que está casi
+completo, algunos errores menores y faltan decisiones, ¿no? El peor pues es
+incompleto y los en la mayoría se repiten, ¿no? Incluye todos los estados.
+En la segunda parte, en la máquina de estados, incluye casi todos los estados.
+Faltan estados. Los requerimientos son claros, específicos, mayormente claros.
+Si se fijan, todos los la mayoría de los de los de las calificaciones son
+cualitativas, no son cuantitativas. ¿Por qué? Por ejemplo, en los requerimientos
+y en la presentación pues es cuantitativo porque pues va de no puedo
+ahí como que calificarlos con una con una rúbrica numérica. ¿Por qué? porque
+pues es más subjetivo la calificación que se va a obtener ahí. De todos modos,
+yo la verdad con que la presentación sea este suficiente que digan, "Ah, mira,
+explico eso y diga, pues queda claro, con eso para mí pues ya es para darles
+el total en los requerimientos." Con que los requerimientos sean entendibles, ya
+también para darse el total. Todo es cualificativo. Si se fijan aquí en el
+pseudo código y máquina de estados, pues si se fijan, no hay una evaluación
+directa del código en el pseudocódigo. Este caso lo que más me interesa porque
+el pseudocódigo pues no es código como tal, o sea, no es tan tan avanzado. Aquí
+no me interesa como que revisarles, no sé, me meto me meto al pseudocódigo y
+digo, "No, pues aquí pudieron ahorrar, pudieron ahorrar líneas y eso eso no lo
+voy a evaluar, no se preocupen." ¿Por qué? Porque yo sé que para cada tipo de
+de programa, para cada mente pues es diferente, o sea, hay un montón de
+mentes, todos piensan diferente. Entonces, pues para este problema que
+les estoy poniendo hay diferentes soluciones, diferentes maneras de
+abordarlo. Cada quien va a proponer tal vez sus señales si no quiere usar las
+que les propongo. Entonces, este ese tipo de cosas no es algo con lo que me
+vaya a fijar mucho lo o sea como optimizar o cómo programaron. En
+realidad lo que me preocuparía más es cómo pensaron, cómo lo planearon y cómo
+quedó su flujo en general. O sea, que su flujo sea claro, que sea ordenado, que
+sea coherente, o sea, que lo que hagan sí funcione como la máquina de estados y
+el y el diagrama o algo que entreguen como para explicarme el flujo, ¿sí? Que
+se cumpla y que se cumplan los requisitos que ustedes pusieron. Sí, es
+lo que me va a interesar. Entonces, fíjense, todo es cualificativo y eso se
+va a agregar en el también ahí a la tarea para que sepan cuál va a ser como
+como el rango de para poder ponerles calificación. la máquina de estados
+igual no voy a criticar estados que usen o cómo los usen, sino que pues las
+transiciones sean coherentes, que y que y que esta máquina de estados coincida
+con el pseudo código, o sea, la manera en que se comporten los estados debe de
+coincidir en cómo los usas en el pseudo código. Eso también va a ser importante
+que se cumpla. Sí, y de todos modos también no soy muy estricto, no se
+preocupen. O sea, no es como que me voy a poner así muy exagerado. Yo la verdad
+espero que a todos les vaya muy bien porque pues la mayoría tiene buena
+experiencia, entonces no creo que tengan problemas. Sí, a los que los dos que son
+nuevos, pues espero no estén asustados diciendo, "Ah, no manches, llegamos y es
+este evaluación directamente, no, no se preocupen. Ahorita de todo también con
+ustedes pues hay que ser un poquito más este consciente de que van llegando y
+van a tener que revisar lo anterior para más o menos darse cuenta. Lastimosamente
+también no hay clases que no se grabaron porque yo llegué, había otros profesores
+que daban esta clase, este, yo llegué ya después y antes de eso creo que no se
+grabaron muchas cosas. Yo fui el que empezó a grabarlas a diario, pero pero
+puede haber alguna información perdida, pero en general este es lo que se tiene
+que entregar, lo que van a tener que realizar. No sé si haya dudas de esto,
+que digan hay algo que no me queda quedado claro y para explicarles cómo va
+a estar la mecánica de entrega. Van a tener varios días.
+Ah, voy a subir todo esto, Jorge. Voy a subir todo, todo esto. Sí, va a ser en
+la tarea y en la tarea va a ir todo a punto, ir a junto. Van a ir ejemplos.
+Sí, no te preocupes, Jorge. Entonces, este se va a hacer así la mecánica de
+entrega, porque esto no va a ser de un día para otro, no se preocupen. Yo la
+verdad quería darles, hoy es martes, quería darles toda la semana que resta,
+el lunes, quería ver si el lunes cerraba la entrega y el martes este hacíamos una
+retro o algo, pero ya empezábamos también quiero empezar el nuevo temario.
+Entonces, quisiera que lo que quiero hacer es que tengan hasta el lunes,
+martes máximo para entregar esto todos. Este, las videos y eso pues ya los
+reviso yo, reviso lo que hagan, no pasa nada, eso ya los reviso yo en privado,
+no se preocupen para que no piensen que aquí vamos a venir a ponerlos.
+Normalmente cuando les pido poner aquí en clase o que traigan, que me enseñen
+el código que hicieron, lo de las tareas, este es opcional. Siempre les
+pregunto quién quiere pasar, pero aquí no lo no se preocupen, no lo vamos a
+revisar, pero si alguien también quiere aquí presentarlo después también lo
+traemos, pero yo voy a revisar todo eso acá. Voy a ver los videos, voy a revisar
+el código y a partir de eso voy a emitir una calificación. Sí. Entonces se va a
+quedar hasta la siguiente semana esto abierto para que se entregue. Este ahí
+voy a poner la tarea. Voy a poner también ahí mismo los equipos. Ahí
+pueden revisar con quién les tocó. Si alguien me dice, "¿Sabes qué? Yo me lo
+quiero aventer solo." Pues también se lo puede aventar solo, la verdad.
+Este, no, no este del proceso. Si, bueno, cuando me hagan la exposición,
+tal vez en la misma en la exposición que me hagan, en el video que me hagan,
+este, alguno de ustedes puede aventarse la ejecución, ¿no? Pero el proceso de
+cómo lo están diseñando y todo no es necesario, no se preocupen. Yo nada más
+quiero sus resultados, resultados finales, ejemplo, que me pongan los
+requerimientos, la máquina de estados, me pongan el pseudo código y en la
+presentación pues que me la enseñen, me digan, "No, pues aquí se hizo esto, o
+sea, la de M Stado la diseñamos así, así. Ahí me puedes platicar tal vez sí
+del proceso, pero pues no tienes que grabármelo todo, o sea, cómo lo cómo lo
+porque pues va a ser tardado, no va a ser de un día. Entonces, la idea es que
+ahí en el video mejor cuéntame cómo lo hiciste, ¿no? Que que si pensaste es lo
+que más me interesa a mí para darles una evaluación, ver cómo pensaron en la
+solución de esto. Sí. Y recuerden que esto que vayan a hacer pues es lo que se
+va a estar reutilizando para los siguientes rangos. Obviamente cada rango
+va a ser más difícil, esto se va a hacer más grande, más escalable, más modular.
+Sí, la idea es que esto se vuelva un un producto un producto estilo ya de de
+release de producción. Sí. Entonces, pues ahorita vayan pensando más o menos
+cómo lo quieren hacer. A futuro se pueden hacer cambios, pero yo preferiría
+que fueran mínimos, pero también son válidos, no pasa nada. todos los
+proyectos pasa que hay cambios, este, desfases, cambios de fecha y todo eso.
+Okay, todo se va a ir eso a línea. Este, si alguien cuando suba los equipos me
+dice, pues yo quiero estar solo, también es válido. Nada más que pues tengan en
+cuenta que es mucho chamba para una sola persona, o sea, no tantos para alguien
+si como ustedes trabajan pues ahí considero pues que si es mucha chamba
+para una persona que está trabajando o los que vayan a la escuela o así estar
+combinando esto con su escuela o con su trabajo pues también les consume tiempo,
+¿no? también tienen que dedicarle tiempo a lo demás. Entonces, este, esto sería
+más o menos la idea que se tiene, cómo se va a trabajar. Y las clases de mañana
+y pasado van a ser para esto, porque tenemos que terminarlo antes de que de
+empezar lo demás. Este, es una regla que me pusieron antes de avanzar. tenemos
+que terminar esto. Este, obviamente, una vez que se entregue, ejemplo, el lunes,
+que ya va a ser el último día, el lunes sí seguimos con tema, o el martes, sí,
+pero las clases ahora van a ser para esto. Ejemplo, van a empezar y yo mañana
+me voy a conectar, obviamente aquí voy a estar, pero va a ser casi casi todo esto
+para dudas, dudas que tengan, este, cosas que me quieran preguntar o o si no
+quedó muy claro algún tema explicado, aquí lo podemos repasar. Esa esas dos
+clases de hoy y mañana va a ser para preguntas que tengan de la unidad. Si
+tienen chance de ver las grabaciones, los que no han podido ver algunas, ahí
+también les pueden salir dudas. Entonces, si vienen, si mañana y jueves,
+este no va a ser clase como como tal de de seguir habiendo temas, sino que
+tenemos que sacar eso. Entonces, ejemplo, si ustedes revisan grabaciones
+o hay un tema durante la unidad que no les quedó muy claro o dentro de la de
+este entregable no saben cómo hacer algo, pues aquí lo revisamos en clase,
+¿no? Vemos posibles soluciones, lo empezamos a trabajar, pero yo voy a
+estar aquí. O sea, yo voy a estar conectando, va a estar va a estar a la
+misma hora, pero como no podemos avanzar sin que ustedes acaben esto, porque es
+lo que me comentaron, que no tendría sentido avanzar porque si alguien no lo
+aprueba, pues tendríamos que regresar con esa persona, tendría que regresar.
+Entonces, la lo único que quiero es que empujemos esto para que todos salgan
+bien, salgan bien y yo pueda justificar su pase, su pase de rango de todos.
+Entonces, este, les comento eso, pues, para que tomen en
+cuenta que va a ser un ratito ahorita de,
+¿cómo se dice? de de perdón de esta parte de esa evaluación, porque si se
+fijan, no es porque quiera no quiere avanzar, sino porque no podemos y la
+tarea pues no es corta, o sea, si es larga, o sea, si va a ser larga, a menos
+que se la metan una que yo les recomendaría que no, porque esto se va a
+seguir retomando y y lo mejor es que desde ahorita estén entendiendo qué está
+pasando con el sistema que están proponiendo. Se pueden apoyar de una,
+obviamente, no, no pasa nada, yo no estoy en contra de eso, pero este lo
+importante es entender qué les está dando y cómo y cómo lo pueden validar.
+Okay, entonces lo vamos a estar trabajando así. No sé si todos estén de
+acuerdo o alguien no le guste la idea de que de que de que usemos esto para que
+avancen en la tarea. O sea, no es que no vaya a haber clase, aquí voy a estar y
+seguramente va a haber dudas. O alguien que diga mañana que ya empiece con algo
+y me diga, "Oye, esto aquí me está dando error o no sé cómo proponerlo." Pues
+aquí les puedo yo hacer una una propuesta o proponerles una solución que
+puedan usar. O aquí mismo podemos intentar hacer código para ver qué
+podemos hacer con su problema. Sí, pero aquí voy a estar. O o o si hay dudas de
+clases pasadas, ¿sabes qué? Esto no me acuerdo cómo lo puedo implementar. ¿Se
+acuerda? Pues aquí mismo vemos los temas otra vez. O sea, es una manera de poder
+retomar temas sin que haya sin que haya problema, pero el chiste es que ustedes
+saquen esta saquen esta, ¿cómo se dice? Esta esta este estejito
+para que se termine su primer pasen de rango, ¿no? A lo que voy. No sé si
+alguien por ahí le gusta, no le gusta la idea, pero si todos estamos de acuerdo,
+así le vamos a hacer. Sí. Esto lo hago con la idea de que no
+saturarlos, no saturarlos antes de avanzar y porque
+pues también es una regla que si no avanzamos, si no pasan esto, pues no
+avanzamos. Se supone que para avanzar el siguiente paso tienen que demostrar que
+que dominan esto, que obviamente a nadie le va a ir mal y estoy seguro que a
+todos les va a ir muy bien, todos son muy buenos y aparte este primer rango es
+muy fácil. Este este este primer rango es muy
+fácil. Entonces, la verdad dudo que alguien le va a ir mal.
+El video lo podemos subir. Sí, sí. De hecho, cuando suba, cuando les ponga la
+tarea, pueden apuntar cualquier tipo de dato, ¿no? Pueden ahí subir los videos,
+eh, ahí mismo pueden subirlo a Drive y a juntarlo ahí con permisos, nada más. Va
+que va. Entonces, si les agrada la idea, así le vamos a hacer. Sí. Entonces, hoy,
+mañana y pasado va a ser para eso, para que terminen esto. Obviamente, pues van
+a quedarse también los días del viernes y el fin de semana para que completen lo
+que haga falta. El lunes va a ser el último día para que
+entreguen. El lunes probablemente empezamos con nuevo tema porque ya
+tendrían suficiente tiempo en lo que yo empiezo a revisar, ¿no? Los que ya
+tengamos. Yo lo hago así porque con la tengo la confianza de que no les va a ir
+mal. Entonces, para no perder más tiempo me gustaría el lunes empezar, pero sí
+tengo que darles un o dos días porque así me lo piden, unos dos días que
+ustedes tengan para poder desarrollar bien este trabajo. Más que nada porque
+les repito, esto se va a reutilizar. Entonces, no lo no lo tomen a la ligera,
+no lo tomen como una simple tarea. Este va a ser como su primer su primer
+esqueleto de lo más de lo que de algo más grande que se va a ir llevando ojito
+por jito hasta que lleguemos a algo embebido literalmente en una placa si es
+que podemos, si es que me permiten a mí meterles lo de las plaquitas que les
+decía. Como ya estoy buscando una manera de simularlas, tal vez no consigamos
+físicas, veo la manera de que lo puedan simular y pues también les sirve, ¿no?
+Mínimo simulado. Okay. Yo estoy ahí viendo la manera de
+de traer esto, ¿no? Es que es muy difícil traer esto más realista porque
+pues no cada quien tendría que tener un carro, ¿no? Para hacer esto
+superrealista. Pero yo buscaré la manera, no se
+preocupen. Okay. Entonces, le vamos a hacer así. ¿Están de acuerdo?
+Entonces, si todo está bien,
+eh, vamos a tenemos que terminar hoy porque pues no podemos hacer nada más.
+Tenemos que darle esto. Pero quiero preguntarles, ¿hay alguna duda o algo?
+Yo pues todavía no se termina la hora. Aquí voy a estar.
+Una duda, algo que tengan, una pregunta de esto sobre esto ya para irlo sacando
+esto del mañana me voy a meter. Aquí voy a estar
+desde toda la hora. Este, quien quiera entrar y preguntar y empieza a trabajar
+hoy. Ahorita terminando mi clase de 9 a 10, voy a voy a redactarlo de la tarea y
+subirles esta información para que la tengan a la mano y van a ver su equipo
+ahí y van a empezar a trabajar. Ah, no estás en el de WhatsApp ahorita.
+Este, ah, no estás en el carro tampoco. Ay, este. Y tú, Camila, ¿sí estás? La
+otra persona que eres nueva. Yo sí estoy en el WhatsApp y en el
+Classroom. Ah, okay. A ver, este, Ramón, este, bueno, nada más ponme aquí tu
+número y tu correo y ahorita yo pido que te agreguen de una vez. Te les digo con
+urgencia, porfa, Ramón.
+Okay, entonces así le vamos a hacer. Si los demás no tienen dudas, este,
+empecía empezaríamos a trabajar con esto. Bueno, empezaríamos a revisar sus
+dudas puntuales cuando empiecen a trabajar mañana.
+Soy, déjenme, voy a ir redactando su el escrito de la tarea para que lo tengan a
+la mano. Dejen, ahorita voy viendo también lo de Ramón. Va que va,
+va que va. Entonces, este, échenle ganas esta esta tarea. Les digo, no la tomen a
+la ligera. Es este sí es importante, aunque no lo parezca, si es importante,
+más que nada porque este esta este temario es un es una es adaptación mía.
+Entonces, yo lo estoy pensando así. Entonces, no no no estamos confiando a
+ciegas. Yo lo pensé así para que sea de esa manera que les dije, como una
+especie de acumulativo. Antes de que se me vaya nada más voy a
+pasarles lista para tener la la asistencia que me la
+piden también porque también es parte de su eso ya no lo califico yo, pero supone
+que tienen que tener cierto número de asistencias.
+Soy nuevo, Alejandro. Okay, tú ya son más es un más.
+Este, ¿tú tampoco estás o sí estás? Dime lo que les paso. Lista. Déjame agrego a
+los nuevos aquí. Okay, igual que este
+Ay, malo con los nombres, perdón que Roberto,
+ponme aquí tus tus datos, porfa. Esperalta.
+Y el otro es Roberto. Ramón, perdón, le dije Roberto. Perdón,
+Ramón, soy bien malo con los nombres. Y es Camila. Camila, ¿qué? Perdón.
+Olguín. Camila Olguín. Perfecto. Sí, para poderte diferenciar aquí. Okay. Voy
+a acomodar esto
+y voy a empezar aquí. Ustedes tres pues son los nuevos. Entonces, pues ustedes
+tres sí están. Ya me puse su número aquí también.
+Bueno, lo reviso. Está Alejandro, está Alejandro también. El otro peralta
+está Arturo, Camila, también ya la puse. Está Carlos
+Kenny a Fernando Gutiérrez
+Loré Ismael.
+Ah, sí, los nuevos sí. Ahorita que los agregue, traten de revisar las clases
+porque en algunas les explico cómo ir seteando lo de lo de este lo de Linux.
+Estaría bien que lo tuvieran también de una vez.
+Sánchez ya está,
+ya está. Juan Cocosino,
+Felia. Ahí está. Me falta Ramón, ya lo puse. Y Víctor
+son 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15. Y acá tengo 17. Sí, son 15. Menos los
+dos que soy yo. Que entonces ahorita pido con urgencia que agreguen a las dos
+personas que no están y este subo subo hoy la tarea para que la
+empiecen a trabajar. Perdón. Entonces, échenle échenle ganas
+eso, ¿eh? Sí, no digo, no se lo tomen a la ligera. La verdad, aquí lo que me
+interesa es ver cómo ustedes plantean la solución, cómo me genera ese tipo de
+esqueleto y es el que se va a seguir trabajando, ¿no? Entonces, les digo que
+piensen bien más o menos qué es lo que quieren, qué es lo que quieren señalar.
+Entonces, voy a dejar esa información de las señales que yo propongo, si las
+quieren usar, va que va. Entonces, los veo mañana a los que vengan con las
+dudas pueden meter todos. Ejemplo, si alguien quiere venir a ver si alguien
+más tiene dudas o alguna parecida, este, entra, no pasa nada.
+A que vale, levantó la mano. Ah, ¿qué pasó? Dime, Jorge.
+Hola, buenas noches, maestro. Este, yo sí tengo una pequeña duda. Este,
+como vi cómo hizo la presentación, este, y puso ahí este pues los datos de
+entrada de manera sencilla, creo que puso cinco, algo este muy, ¿cómo se
+llama? Eh, pues es básico, pero necesario, ¿no? Lo que es velocidad,
+sensor de temperatura, este, y los otros tres. No, no recuerdo, no recuerdo,
+parece, pero lo que iba a mi pregunta es si yo puedo trabajar con esos cinco
+datos que que son básicos en un auto y y realizo lo que es este el pseudocódigo,
+la máquina de estados y y el otro este punto cuando eh usted comenta que que
+vamos a seguir trabajando con con este trabajo o esta tarea más adelante, este,
+¿será que más adelante tendremos que que añadir más este más datos de entrada
+como s, ahorita yo estoy pensando presión de llantas, este temperatura de
+llantas, este temperatura de la zona de confort, este eh otro tipo de de
+variables, este que se que se puedan pensar más adelante, ¿no? Porque si se
+si se tienen esas variables que son todavía más nuevas, este, por así
+decirlo, este, pues si se va a modificar todo el el entregable o o el trabajo.
+Eh, bueno, cuando hablamos de entradas, no no hay tanto problema, no te
+preocupes. Por ejemplo, lo que me refiero ahorita de que van a basarse en
+esto, en que, por ejemplo, en la estructura que propongan es la que más
+me preocupa porque es la que se van a basar más. Las entradas, como les decía,
+pueden tomar las mías o tomar otras o agregar las que ustedes quieran, agregar
+más, agregar menos, porque cuando hablamos de entrada no se preocupen
+tanto porque como todas van a ser señalas que van a entrar a ser
+validadas, todas juntas, si tú adelante más adelante con los siguientes
+entregables que sean ya sé la ICU ya hecha en código o la ICU separada por
+clases, que es programización orientada objetos, este, me dices que un nuevo
+atributo va a ser una nueva entrada, por ejemplo, yo no tengo problema con eso,
+no pasa nada. Les decía que los proyectos pasa a lo largo que hay
+ciertos cambios de ese estilo. Mientras no vengas y me cambies toda la
+estructura, eh, que creo que ahí te sería más problemático, ¿no?
+Pero una entrada no habría problema. Por ejemplo, si agregas presión de llantas,
+pues va como parte de las señales que se van a ir a clasificar. Sí.
+Okay. Okay. Al final todo se va a basar en dos ACUs.
+Una ACU Getateway que va a clasificar y una ACU control que va a hacer
+validaciones, que va a hacer, perdón, este decisiones, que va a tomar
+decisiones, que va a funcionar como la computadora principal. Entonces, este,
+si tú agregas una señal más a validar, no habría problema, pues simplemente se
+valida una señal extra. Sí. Ah, ya.
+Entonces, no te preocupes, si a futuro se te ocurre otro cambio, otra otra
+señal, pues la agregamos. Dime, perdón. Sí, es eh ese era mi mi duda. Si el
+número de señales que que tenía considerarme cambiar la estructura, pero
+ya ya entendí que no no necesariamente. Sí, no te digo no necesariamente. No no
+no no te preocupes con eso. Va, que va. Entonces, gracias por la pregunta porque
+sí varios tenían esa duda también. Sí, no, no se preocupen ese estilo como
+entradas y eso. Yo dije, "No, pues eh les puedo decir que no hay problemas si
+agregan una extrap. Yo con yo con problemas de cambios me refiero a que
+todo el esqueleto que diseñan ahorita después lo tienen que cambiar, pues se
+puede hacer, o sea, no están obligados a quedarse, pero pues yo supongo que les
+va a dar más problemas más si cuando sea programación orientada objetos o así.
+Dime, Jorge, eh otra pregunta, esto ya es un poco
+fuera de lo de lo que es la la tarea que nos está pidiendo. Este, bueno, había
+comentado algo de de Linux que que se vieron en las primeras dos semanas.
+Este, ¿qué qué sería ese pues esa tarea de Linux o esa este
+búsqueda de de Linux? Ah, hay una es que normalmente todo este
+curso se va a llevar en una distribución Linux, se llama Devian. Como es la de
+las distribuciones más ligeras, es muy fácil llevarla a vivir en bebida en un
+código. O sea, código generado con con Debian puede estar en placas de mi
+controlador sin problema. Entonces yo quería que todo este curso a partir del
+rango uno, que es va a ser el que pase ahorita que terminen ustedes esta
+evaluación, va a trabajarse todo en ese sobre ese
+esa distribución que es Devian. Entonces, a lo que me refiero es que
+deben de tenerla instalada, ¿no? Eh, hubo una clase que dedicamos a eso, a
+instalar y a los que salieran errores, pues también checamos para que pues
+resolverlos y que lo tuvieran todo listo. Hay una clase que se trató de eso
+por digo que hay que revisarlas y por ejemplo mañana si no hay tantas dudas
+pues también ustedes que son nuevos puedo dedicarle a que instalen su Linux
+también, por ejemplo. Entonces, por eso no veo problema en dejar estas clases
+para que avancen con eso, porque también yo puedo dedicarme a las personas nuevas
+que también tengan todo listo, up to date, ¿no? para para trabajar en lo
+demás. Okay. Sería una distribución este eh de
+este sí en el video se explica, pero les
+puedo dar un resumen, ¿no? Este pueden ustedes usar el el el la herramienta de
+Windows que es WSL de Windows Subsystem Linux o algo así se llama. Así WSL se
+manda a llamar de la Power Shell como administrador y esa de ahí les va a
+permitir instalar las distribuciones WSL GU- GU install D y escriben Devian con D
+mayúscula, les va a instalar la distribución, ¿no? Pero para cada compu
+hay ciertas variantes, entonces lo mejor es que vean el video para que vean ahí
+más o menos qué puede pasar, pero con va a ser con WSL. Ya la casi todos los
+Windows 10 y 11 lo tienen por default. ¿Sabe
+usted qué clase de? Perdón. Ah, híjole,
+no me acuerdo, pero las reviso ahorita y te pongo un comentario ahí te etiqueto.
+Es que no me acuerdo porque ya son muchas.
+Y bueno, entonces lo que va a hacer ahí para que no se preocupen, los nuevos no
+van a instalar, no van a hacer una una partición de su disco ni nada por el
+estilo. No se preocupen, eso es muy invasivo. Van a usar esa herramienta que
+ya viene activa en Windows que les permite tener un subsistema de Linux, o
+sea, sin problema. Ese su sistema se puede borrar cuando ustedes quieran con
+la misma herramienta. Ya viene de parte de Windows, entonces no tienen que
+particionar ni crear boots ni nada. Sí, ya va a vivir ahí en su computadora como
+un mini Linux y no pesa casi nada de bien, entonces no les va a estorbar.
+Sí, porque bueno, de hecho eso que comenta usted este pues es un poco nuevo
+para mí porque yo sí pensaba hacer este como una partición a la computadora y si
+no este no sé si preguntarle si se podría trabajar con Rasbian o Raspberry
+OS, pero Rasbian es más pesado. Es que Rasbian
+vive no vive en un mecocontrolador, sino que vive en un procesador porque ya es
+una computadora el este el la Raspberry, pues la distribución de Rasbian es un
+poquito más pesada. Este,
+este, trabajo con no tengo problem. Sí, pero digo, con la herramienta WCL no te
+va a dar problemas. Con que la tenga instalada tu Windows, no no va a dar
+problemas. Normalmente ya lo trae ya lo trae por default los los Windows. Este,
+vas a ver en los videos que literalmente es como como usar una comandera.
+Entonces, no se preocupen por ese lado. La idea es que lo tengan nada más para
+estandarizar. Sí, en ese sentido este sí estoy un poco
+ya más familiarizado con la con pues meterla comandos en la terminal por la
+Ah, perfecto, ¿no? Pues perfecto, perfecto con eso también porque hubo una
+clase también de eso, pero si ya los conoces pues mejor y también en la clase
+los pueden revisar. Entonces, la documentación les va a dar un resumen de
+todas las de todas las posibles este comandos. Sí. Okay, va que va. No,
+gracias Jorge, no te preocupes. Va que va. Ya está. Entonces los veo
+mañana. Les digo, si varios quieren entrar y todos los que quieran entrar,
+no pasa nada, aquí voy a estar. Si no se preocupen, pero hoy voy a subir eso y
+quiero que empiecen. O sea, yo les recomiendo que empezaran para que
+aprovecharan estos días para que me pregunten cualquier cosa porque pues
+pueden salir cosas mal, ¿no? No se confíen. Sí. Okay, yo sé que les va
+bien, no se preocupen. Adelante, Camila. Profe, de eso que habla de Linux es lo
+como instalar una máquina virtual. Sí, pero no es una no va a ser exactamente
+una virtual machine, va a ser un va a ser una un subsistema nada más.
+Es que yo ya tengo la máquina virtual instalada.
+Oh, ya tienes ahí tienes Devian. Sí. Ah, pues puedes trabajar con ese, no
+te preocupes. Pero ejemplo WSL te vas a dar cuenta que es más sencillo porque no
+te instala una máquina virtual, sino un subsistema que solo es accesible con la
+comandera, entonces te gasta menos espacio porque pues no creas una nueva
+computadora dentro de la tuya. Sí, es una especie de es una especie es
+como conectarse un miniervidor viviendo ahí como en Hostinger.
+Entonces ese también lo instalo, ¿no? Si gustas. Si no, trabajamos con el que
+ya tienes. Sí. Okay. Revisa la opción. Los voy a
+etiquetar entonces a los tres, yo creo. Revisen la opción si les conviene y les
+gusta instálenlo. Sí, se revisen cómo se vio en la clase y
+cómo se comportó y van a decir, "Ah, mira, tal vez sí me conviene o tal vez
+ya no." Pero si alguien ya tiene de Devian,
+trabaje con ese Devian si quiere también no pasa nada.
+Okay, gracias. Va que va. Entonces, sí, los veo mañana
+porque ya tengo que brincar a la otra. Entonces, este, los vería mañana y
+mañana ahora sí traigo la cámara. Perdón, se me hoy hoy no la pude hacer
+funcionar. ¿Quién sabe? Porque ya está sale. Cuídense mucho. Deseo muy
+buenas noches y échenle ganas esa tarea, ¿eh? No, no se pongan nerviosos y y todo
+va a salir bien. Entonces, este es el entregable más sencillo. Los demás iban
+a ser más demandantes. Gracias ustedes, cuídense mucho.

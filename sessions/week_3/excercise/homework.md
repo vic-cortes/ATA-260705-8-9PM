@@ -9,7 +9,7 @@
 - `OPERATIONAL`: Estado considerada operacion normal
 - `DEGRADED`: Operación limitada
 - `SAFE_STATE`: Mantener en condiciones seguras
-- `SHUT_DOWN`: Estatus que realiza el el apagado para evitar daños en carro
+- `SHUTDOWN`: Estatus que realiza el apagado para evitar daños en el carro
 - `MAINTENANCE`: Estado donde el ECU funciona como estatus normal. Simplemente muestra el mensaje que el mantenimiento es requerido
 
 ## Diagrama general de estados
