@@ -12,6 +12,8 @@ from variables import (
     TemperatureVariable,
 )
 
+from .utils import generate_random_sensor_data
+
 MIN_TIME_DIFFERENCE_BETWEEN_MESSAGES = 0.1  # seconds
 
 
@@ -50,6 +52,7 @@ class State(Enum):
     SHUTDOWN = auto()
 
 
+@dataclass
 class EcuGatewayMiddleware:
     """
     Middleware for handling ECU gateway functionality.
@@ -57,9 +60,8 @@ class EcuGatewayMiddleware:
     the ECU and other components of the system.
     """
 
-    def __init__(self, state: State, car_sensors: CarSensors) -> None:
-        self.state: State = state
-        self._car_sensors: CarSensors = car_sensors
+    state: State
+    car_sensors: CarSensors
 
     @property
     def is_init_state(self) -> bool:
@@ -75,21 +77,19 @@ class EcuGatewayMiddleware:
         """
 
         VALID_SENSOR_VARIABLES = [
-            self._car_sensors.speed,
-            self._car_sensors.motor_temperature,
-            self._car_sensors.air_flow,
-            self._car_sensors.rpm,
-            self._car_sensors.oil_pressure,
-            self._car_sensors.oil_temperature,
+            self.car_sensors.speed,
+            self.car_sensors.motor_temperature,
+            self.car_sensors.air_flow,
+            self.car_sensors.rpm,
+            self.car_sensors.oil_pressure,
+            self.car_sensors.oil_temperature,
         ]
 
         # Run validation for each sensor variable
         for variable in VALID_SENSOR_VARIABLES:
             variable.validate_type()
 
-        self.state = State.SELF_TEST
-
-    def run(self):
+    def process(self):
         if self.is_init_state:
             self.set_self_state()
 
@@ -98,33 +98,8 @@ class EcuGatewayMiddleware:
 
 @dataclass
 class EcuControl:
-    pass
-
-
-def generate_random_sensor_data(quantity: int = 1) -> list[dict]:
-    reading_list = []
-
-    # Tiempo inicial (puedes usar el tiempo actual del sistema)
-    current_time = time.time()
-
-    for _ in range(quantity):
-        # Simulación de valores en rangos automotrices lógicos
-        sensor_data = {
-            "speed_value": round(random.uniform(0.0, 180.0), 2),  # km/h
-            "motor_temp_value": round(random.uniform(70.0, 105.0), 2),  # °C
-            "air_flow_value": round(random.uniform(2.0, 40.0), 2),  # g/s
-            "rpm_value": round(random.uniform(800.0, 6500.0), 2),  # RPM
-            "oil_pressure_value": round(random.uniform(20.0, 60.0), 2),  # PSI
-            "oil_temp_value": round(random.uniform(80.0, 110.0), 2),  # °C
-            "time_stamp": round(current_time, 4),
-        }
-
-        reading_list.append(sensor_data)
-
-        # Incrementa el tiempo en un intervalo (ej. 0.5 segundos por lectura)
-        current_time += 0.5
-
-    return reading_list
+    state: State
+    car_sensors: CarSensors
 
 
 def read_car_sensors(state: State) -> CarSensors:
@@ -146,17 +121,23 @@ def ecu_process(state: State, car_sensors: CarSensors) -> State:
     """
 
     ecu_gateway = EcuGatewayMiddleware(state=state, car_sensors=car_sensors)
-    ecu_gateway.run()
+    last_ecu_state = ecu_gateway.state
 
-    return ecu_gateway.state
+    ecu_control = EcuControl(state=last_ecu_state, car_sensors=car_sensors)
+
+    return ecu_control.state
 
 
 def main():
-    init_state = State.INIT
+    ecu_current_state = State.INIT
 
     while True:
-        current_car_data = read_car_sensors()
-        ecu_process(state=init_state, car_sensors=current_car_data)
+        ecu_current_data = read_car_sensors(state=ecu_current_state)
+        ecu_current_state = ecu_process(
+            state=ecu_current_state, car_sensors=ecu_current_data
+        )
+
+        time.sleep(0.1)
 
 
 if __name__ == "__main__":
