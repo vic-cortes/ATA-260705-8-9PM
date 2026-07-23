@@ -11,8 +11,7 @@ from variables import (
     SpeedVariable,
     TemperatureVariable,
 )
-
-from .utils import generate_random_sensor_data
+from utils import generate_random_sensor_data
 
 MIN_TIME_DIFFERENCE_BETWEEN_MESSAGES = 0.1  # seconds
 
