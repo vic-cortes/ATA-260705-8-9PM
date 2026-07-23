@@ -4,19 +4,50 @@
 
 ## Estados
 
-- INIT: Estado inicial del ECU
-- SELF_TEST: Estado en donde revisa funcionalidad basica de componentes
-- OPERATIONAL: Estado considerada operacion normal
-- DEGRADED: Operación limitada
-- SAFE_STATE: Mantener en condiciones seguras
-- SHUT_DOWN: Estatus que realiza el el apagado para evitar daños en carro
-- MAINTENANCE: Estado donde el ECU funciona como estatus normal. Simplemente muestra el mensaje que el mantenimiento es requerido
+- `INIT`: Estado inicial del ECU
+- `SELF_TEST`: Estado en donde revisa funcionalidad basica de componentes
+- `OPERATIONAL`: Estado considerada operacion normal
+- `DEGRADED`: Operación limitada
+- `SAFE_STATE`: Mantener en condiciones seguras
+- `SHUT_DOWN`: Estatus que realiza el el apagado para evitar daños en carro
+- `MAINTENANCE`: Estado donde el ECU funciona como estatus normal. Simplemente muestra el mensaje que el mantenimiento es requerido
 
 ## Diagrama general de estados
 
-INIT -> SELF_TEST
+- `INIT` -> `SELF_TEST`
+- `SELF_TEST` -> `OPERATIONAL`
+- `SELF_TEST` -> `DEGRADED`
+- `SELF_TEST` -> `SAFE_STATE`
+- `OPERATIONAL` -> `DEGRADED`
+- `OPERATIONAL` -> `MAINTENANCE`
+- `OPERATIONAL` -> `SHUTDOWN`
+- `DEGRADED` -> `MAINTENANCE`
+- `DEGRADED` -> `OPERATIONAL`
+- `MAINTENANCE` -> `DEGRADED`
+- `MAINTENANCE` -> `SHUTDOWN`
 
 ```mermaid
+stateDiagram-v2
+    [*] --> INIT
+    
+    INIT --> SELF_TEST
+    SELF_TEST --> OPERATIONAL
+    SELF_TEST --> DEGRADED
+    SELF_TEST --> SAFE_STATE
+    
+    OPERATIONAL --> DEGRADED
+    OPERATIONAL --> MAINTENANCE
+    OPERATIONAL --> SHUTDOWN
+    
+    DEGRADED --> MAINTENANCE
+    DEGRADED --> OPERATIONAL
+    
+    MAINTENANCE --> DEGRADED
+    MAINTENANCE --> SHUTDOWN
+    
+    SAFE_STATE --> SHUTDOWN
+    
+    SHUTDOWN --> [*]
 ```
 
 # Requerimientos funcionales: funciones que el sistema deberá cumplir.
