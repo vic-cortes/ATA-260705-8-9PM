@@ -2,6 +2,16 @@
 
 # Máquina de estados: estados, transiciones y condiciones de cambio.
 
+## Estados
+
+- INIT: Estado inicial del ECU
+- SELF_TEST: Estado en donde revisa funcionalidad basica de componentes
+- OPERATIONAL: Estado considerada operacion normal
+- DEGRADED
+- SAFE_STATE
+- SHUT_DOWN
+- MAINTENANCE: Estado donde el ECU funciona como estatus normal. Simplemente muestra el mensaje que el mantenimiento es requerido
+
 ## Diagram ageneral de estados
 
 INIT -> SELF_TEST
@@ -17,9 +27,10 @@ INIT -> SELF_TEST
 - Presion de Aceite
 - Temperatura de Aeite
 - Temperatura de motor
-- Humedad
+- Humedad de motor
 - RPM
 - Velocidad
+- Kilometraje
 - Temperatura ambiente
 
 ## Funciones del sistema
@@ -33,5 +44,9 @@ El sistema debe:
 - monitorear el flujo de aire que sea el adecuado para el motor entre 0 y 0.5 m3/s
 - Si el las RPM estan en condiciones normales, pero no existe flujo de aire entonces inmediatamente cambiar `SAFE_STATE`
 - Si la temperatura del motor sobrepasa los 500 Grados automaticamente cambiar a estado `SHUTDOWN`
+- Si la presion de aceite sobre pasa los 50 PSI, cambiar a estatus de `SAFE_STATE`
+- Despues de los 15,000 kms recorridos, cambiar a estatus de `MAINTENANCE`
+- Si la humedad de motor es superior al 40% marcar estatus `DEGRADED`
+- Si la humedad de motor es del 100% cambiar a `SHUT_DOWN`
 
 # Presentación del proyecto: explicación clara y coherente de la propuesta.
