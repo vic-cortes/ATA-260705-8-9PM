@@ -117,7 +117,7 @@ class AirFlowVariable(Variable):
         Validates the range of the air flow value.
         """
         MIN_FLOW = 0.0  # m³/s
-        MAX_FLOW = 100.0  # m³/s
+        MAX_FLOW = 0.5  # m³/s
 
         if not (MIN_FLOW <= self.value <= MAX_FLOW):
             raise ValueError(
