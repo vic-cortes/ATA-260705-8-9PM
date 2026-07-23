@@ -11,6 +11,7 @@ from variables import (
     SpeedVariable,
     TemperatureVariable,
 )
+
 from utils import generate_random_sensor_data
 
 MIN_TIME_DIFFERENCE_BETWEEN_MESSAGES = 0.1  # seconds
@@ -120,6 +121,7 @@ def ecu_process(state: State, car_sensors: CarSensors) -> State:
     """
 
     ecu_gateway = EcuGatewayMiddleware(state=state, car_sensors=car_sensors)
+    ecu_gateway.process()
     last_ecu_state = ecu_gateway.state
 
     ecu_control = EcuControl(state=last_ecu_state, car_sensors=car_sensors)
