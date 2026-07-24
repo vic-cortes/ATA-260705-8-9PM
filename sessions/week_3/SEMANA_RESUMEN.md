@@ -5,7 +5,7 @@ periodo: "20-24/07/2026"
 tema_principal: "ECU y Sistemas Automotrices"
 objetivo: "Introducción a arquitectura de control electrónico automotriz"
 evaluacion: "Primera evaluación: Diseño lógico de ACU"
-sesiones_completadas: 2
+sesiones_completadas: 3
 sesiones_planeadas: 4
 ---
 
@@ -177,6 +177,104 @@ Evaluación mayormente **cualitativa**: importa el flujo claro/coherente, que la
 - Proyecto acumulativo: Rango 1 introduce **Git** para versionar; luego OOP, testing y meta embebida (placa o simulación)
 - IA permitida, pero hay que **entender y validar** lo que genera
 - Setup Linux: **Debian vía WSL** (`wsl --install -d Debian`); Raspbian descartado (muy pesado); VM Debian existente es aceptable
+
+---
+
+## Sesión 3 - 22/07/2026: Dudas, Repaso de la Evaluación y Setup del Entorno
+
+### Tema Central
+
+Sesión **sin tema nuevo**: repaso acelerado de toda la evaluación para un estudiante que se integra, y **troubleshooting en vivo** del entorno WSL + Debian.
+
+### Precisiones sobre la Clasificación de Señales
+
+Regla explícita del profesor:
+
+- **VÁLIDA** ⟺ dentro de rango **Y** en tiempo
+- **INVÁLIDA** ⟺ fuera de rango (ej. velocidad negativa)
+- **AUSENTE** ⟺ se perdió la coherencia temporal (timeout)
+
+> **Ausente ≠ fuera de rango.** Ejemplo: la señal tiene valor correcto pero debía refrescarse cada 10-100 ms y lleva 10 s sin actualizarse → deja de ser confiable.
+
+Un **cuarto estado** (señal completamente errónea) es opcional; con dos clasificaciones es suficiente para aprobar.
+
+### Estructura del Mensaje
+
+Cadena con los valores de las señales **+ estatus**. Dos opciones:
+- **Estatus por señal** (recomendado — el Gateway actualiza el estatus de cada señal)
+- **Estatus general** del mensaje (más fácil, aceptable)
+
+Los datos los ingresa el **usuario** en este hito. Diseño libre: una cadena por ciclo (cada cadena = nuevo tiempo) o un mensaje por sensor. Se sugiere probar con valores y tiempos inválidos.
+
+### Aclaraciones sobre la Máquina de Estados
+
+- **INIT**: primera parte del pseudocódigo — `estado ← INIT` + inicializar señales (velocidad 0, batería 11-12 V, RPM 0…)
+- **SELF_TEST**: revisa que las variables iniciales no sean atípicas (velocidad ≠ 0 al encender no tiene sentido; batería con voltaje bajo hace fallar la prueba)
+- **La máquina NO es cíclica**: de SHUTDOWN no se vuelve a INIT sin reiniciar. El "llavazo" apagado→encendido es una **acción externa**; en simulación = detener y volver a ejecutar el programa
+- **La máquina de estados no representa el funcionamiento completo**: solo dice qué estados hay y cómo se pasa de uno a otro. El **pseudocódigo y el diagrama son cosas distintas**
+- Faltan flechas en el diagrama de ejemplo: debe poder llegarse a **SHUTDOWN** desde OPERATIONAL y DEGRADED
+
+### Cómo Llegar a los 10 Requisitos
+
+Estrategia sugerida para quien no conoce el dominio:
+1. **5 requisitos de señales** — uno por señal: *"El Gateway deberá revisar que la señal X esté dentro del rango [min, max]"*
+2. **Requisitos del ACU de Control** — ej. *"deberá cambiar el estatus a DEGRADED si la temperatura supera 100 °C"*, *"a SAFE_STATE si el voltaje es menor a 9 V"*
+
+Mejora de especificidad: en vez de "dentro del rango permitido", escribir "**dentro del rango de 0 a 250**".
+
+> Lo importante es **respetar el formato**; el contenido técnico se irá mejorando. Los requisitos **deben cumplirse en el pseudocódigo**.
+
+### Hitos del Proyecto (ciclo completo)
+
+| Hito | Actividad |
+|------|-----------|
+| **0 (actual)** | Diseño conceptual: pseudocódigo + máquina de estados + requisitos |
+| **1** | Pasar a **código** C++ con **Git** y repositorio versionado |
+| **2** | Refactor a **OOP** (clases) |
+| **3** | **Autodiagnóstico** |
+| **4** | Arquitectura con **mejores prácticas** |
+| **5** | **Optimización de memoria** |
+
+**Git** se verá en 1-2 clases rápidas al arrancar C++. Requisito del hito 1: **no crear carpetas nuevas por versión** — versionar la misma carpeta en el repositorio.
+
+### Setup del Entorno (troubleshooting en vivo)
+
+**Aclaración sobre WSL**: no es una VM clásica, es un **subsistema** administrado por Microsoft; más ligero y vive aparte. Que Windows 10/11 separe los archivos del subsistema de los del sistema **es normal**. `/mnt` monta el disco de Windows.
+
+**El problema real encontrado**: los `apt install` fallaban porque nunca se corrió `apt update`.
+
+```bash
+sudo apt update                          # PRIMERO (lista de paquetes)
+sudo apt upgrade                         # DESPUÉS
+sudo apt install build-essential git gdb
+sudo apt install cmake                   # se verá más adelante
+g++ --version && git --version           # verificar
+```
+
+> **Regla**: toda distribución Linux recién instalada requiere `update` + `upgrade`. No se actualiza sola como Windows.
+
+**Compilación manual** (así se trabajará, sin depuradores del IDE por ahora):
+```bash
+g++ source.cpp -o source
+./source
+```
+
+Otros: nombre correcto es `build-essential` (singular); `Ctrl+C` destraba la terminal; desde PowerShell admin → `wsl --list` y `wsl -d Debian`; copiar/pegar en la terminal de Windows es poco confiable.
+
+### Visual Studio Professional vs VS Code
+
+- VS Code: más fácil y básico → hitos 0-1. Professional: especializado en C/C++, algunas funciones avanzadas requieren **licencia**
+- **Nadie tiene que cambiarse por ahora**; migración prevista para el hito 1 o 2 (el profesor lo consultará con la academia)
+- La extensión de WSL de VS Code **no existe** en Professional; usar **Ver → Terminal → Debian**
+- Contexto de industria: las funciones avanzadas se usan más para **C** que para C++. Mucho código del carro sigue siendo **C** (radares gen. 5 hacia atrás son puro C; los nuevos combinan o son puro C++)
+- **Depuradores del IDE: no usarlos aún** — se trabaja en terminal por control y limpieza; debuggear en este entorno es distinto y se verá después
+
+### Notas Administrativas
+
+- **Asistencia libre** en esta sesión
+- Grabación del 21/07 publicada en Classroom durante la clase
+- Se integra un estudiante nuevo; se le recomienda ver **mínimo las dos últimas grabaciones** (ECU + máquina de estados) y la de setup de Linux
+- Dudas por chat del curso o WhatsApp en cualquier momento
 
 ---
 
@@ -367,7 +465,8 @@ Crear el **diseño lógico** (no implementación) de una ACU funcional para un v
 |-------|-----------|
 | 20/07 | Teoría completa |
 | 21/07 | Máquina de estados, requisitos, rúbrica; tarea + equipos publicados |
-| 22-23/07 | Clases dedicadas a dudas (sin tema nuevo) + setup Linux para nuevos |
+| 22/07 | ✅ Dudas + repaso de la evaluación + setup WSL/Debian y compilación con g++ |
+| 23/07 | Dudas; revisión de **avances** de los equipos |
 | 24-26/07 | Desarrollo de propuesta en equipos |
 | 27/07 (lunes) | **Último día de entrega** (28/07 máximo) |
 | 27-28/07 | Inicia nuevo temario (Rango 1) |
@@ -426,6 +525,18 @@ R: No. Agregar señales es barato (una validación extra en el mismo flujo). Lo 
 **P: ¿Cómo instalar el Linux del curso?** *(21/07)*  
 R: Debian vía WSL (`wsl --install -d Debian` en PowerShell como admin). No requiere particionar. Raspbian descartado (muy pesado). Una VM Debian existente también es válida.
 
+**P: WSL me separó los archivos del subsistema de los de Windows, ¿es normal?** *(22/07)*  
+R: Sí. WSL no es una VM clásica sino un **subsistema** de Microsoft; vive aparte y no afecta los archivos de la computadora. `/mnt` monta el disco de Windows dentro de Linux.
+
+**P: `sudo apt install` no encuentra los paquetes, ¿qué falta?** *(22/07)*  
+R: Correr **`sudo apt update`** (y luego `upgrade`) antes de instalar. Una distribución recién instalada tiene la lista local de paquetes vacía y, a diferencia de Windows, no se actualiza sola.
+
+**P: ¿Sigo con Visual Studio Professional o me cambio a VS Code?** *(22/07)*  
+R: No pasa nada, sigue con el que tengas mientras encuentres los comandos. La migración a Professional está prevista para el hito 1 o 2. En Professional la terminal de Debian está en **Ver → Terminal** (la extensión de WSL es exclusiva de VS Code).
+
+**P: ¿Cómo redacto requisitos si no conozco estos sistemas?** *(22/07)*  
+R: Respeta el formato. 5 requisitos de señales (uno por señal con su rango) + requisitos del ACU de Control (cambios de estado por umbral). Lo exigible es que **se cumplan en el pseudocódigo**.
+
 ---
 
 ## Diferencias vs Week 2
@@ -474,19 +585,20 @@ R: Debian vía WSL (`wsl --install -d Debian` en PowerShell como admin). No requ
 
 | Métrica | Valor |
 |---------|-------|
-| Sesiones completadas | 2 |
+| Sesiones completadas | 3 |
 | Sesiones planeadas | 5 (con posibilidad de extender) |
 | Conceptos introducidos | 15+ |
 | Duración sesión 1 | 287 minutos (4h 47 min) |
 | Duración sesión 2 | ~60 minutos |
+| Duración sesión 3 | ~60 minutos (dudas + soporte técnico) |
 | Estudiantes registrados | 15 (3 nuevos: Camila, Ramón, Alejandro) |
 | Equipos formados | 5 (de 3 personas cada uno) |
 | Evaluaciones activas | 1 (Diseño de ACU — entrega 27/07) |
 
 ---
 
-**Última actualización**: 21/07/2026  
-**Completitud**: 2/5 sesiones  
+**Última actualización**: 22/07/2026  
+**Completitud**: 3/5 sesiones  
 **Estado**: En progreso  
-**Próxima sesión**: 22/07/2026 (sesión de dudas + setup Linux para nuevos)
+**Próxima sesión**: 23/07/2026 (dudas + revisión de avances de los equipos)
 

@@ -1,0 +1,672 @@
+Aparte aparte de la automotriz. De la automotriz. Perfecto. No, sí, sí,
+sí. Está es el lugar correcto porque exactamente lo que buscamos optimizar la
+memoria. Ya empecé a grabar, perdón. Este, se me había pasado.
+Este, ah, pues bienvenido. Entonces, eres estudiante todavía. No, está muy
+bien. Uno que vas a terminar. Este rápido. Yo soy Óscar Godíes, voy a ser
+tu profesor. Eh, soy ingeniero en mecatrónica y maestro en ciencias y
+doctorante en ciencias de la ingeniería. está estudiante de doctorado y mi
+experiencia laboral está en esa área, ¿no? Yo trabajé más de 4 años en
+industria automotriz, más que nada en Continental, más del lado de desarrollo
+de tecnología para diferentes marcas de vehículos. Entonces, ahí tengo
+experiencia en diferentes en diferentes plataformas.
+Eh, generalmente yo me encargaba de algoritmos de radar, entonces son
+algoritmos embebidos. Había que buscar que fueran óptimos.
+Va, qué va. Entonces, en lo que viene alguien que me diga que tiene alguna
+duda o algo así, te voy a dar un poquito de contexto a ti. Todos modos las clases
+están grabadas. Hoy voy a subirla de ayer. Apenas me fijé ya está lista. La
+tarde no alcancé, ahorita la voy a adjuntar. Eh, ay, no sé. ¿Me escuchan
+los demás? Ah, creo que sí. Este, sí me escuchan,
+¿verdad? No confírmenme alguien. Okay, gracias Víctor.
+Entonces, te voy a dar un poquito de contexto de lo que va a pasar por
+arribita porque sí era era bastante denso lo que estábamos revisando, pero
+ya en las grabaciones te puedes dar un poquito de idea.
+Este, lo que sí voy a ocupar es que este revises la algunas algunas otras
+grabaciones porque en algunas explico cómo configurar sus su ambiente
+principal que va a ser el vamos a trabajar en una distribución deviant.
+Tal vez lo ubicas una distribución devian que es este el
+el papá el papá de Ubuntu, el papá de Ubuntu porque Ubuntu está
+basado en Devian. Nada más que Devian es mucho más ligero. Sí, Ubuntu ya es una
+una distribución más amigable al usuario, pero sacrifica optimización.
+Sí, obviamente no es tan amigable, o sea, pero sí es un poquito más fácil de
+usar para el usuario. Devian sacrifica esa parte y se vuelve más óptimo, es más
+ligero, pero funcionan casi igual. están basados enunto está basado en Devian.
+Entonces vamos a trabajar con Devian. ¿Por qué? Porque es normalmente el que
+se utiliza para el desarrollo en esta área y también porque como al final mi
+idea es que el software que hagamos se vuelva embebido a una placa si es que lo
+logramos, eh, o si si conseguimos una placa ideal que podamos correr para
+simular, pues va a ser mucho más fácil así. ¿Okay? Entonces el rango cero es
+bastante sencillo. Toda no llegamos a programación, entonces tod estás to tod
+No te preocupes porque de hecho la idea es que pasen estejito para poder yo
+avanzarle para que la academia a mí me valide que ya están listos para avanzar.
+Entonces por eso quería dedicar estas dos clases a esto, a a preguntas. ¿Por
+qué? Porque no quiero que nos echen nada para atrás. Entonces el rango cero es el
+diseño lógico de una plataforma vehicular, un ACU, un un Electronic
+Control Unit. Bueno, en este caso son dos. explico por qué y la idea es que
+ahorita nada más casi casi vaya a papel, o sea, que sea un pseudocódigo. Ustedes
+diseñan el flujo de cómo va a funcionar todo esto en un pseudocódigo. ¿Por qué?
+Porque en el siguiente ejito lo que van a hacer es pasarlo a código. Después en
+el siguiente ejito, en el en el tercero, van a pasarlo a po a a clases a
+orientado objetos. Después quiero que lo empiecen a autodiagnosticar. Después
+quiero que lleven la arquitectura una mejor práctica. Después optimizar
+memoria, que es como el cuatro y así nos vamos a ir. Sí, por eso desde el
+principio quiero que diseñen un buen ACU.
+¿Por qué? Porque quiero que este sea el esqueleto para después para que se
+parezca lo más posible. Quiero que se parezca este curso a lo que es el la
+vida de el ciclo de desarrollo de este tipo de softwares que empieza desde un
+diseño conceptual, que es lo que estamos haciendo ahorita, que me entregue un
+diseño, un buen diseño, un pseudocódigo para intentar intentar explicar cómo va
+a funcionar y ya tener claro qué va a pasar y a partir de eso irlo mejorando.
+Sí, igual desde ahorita pido requerimientos, todo porque es lo que
+después tenemos que testear. Entonces, un ICU es esto, un electronic control
+unit. Este es el modelo básico, son entradas,
+se procesan y pues la salida, la salida va a depender en el procesamiento. Vamos
+a decidir qué es válido, qué qué decisiones tomamos y la salida pues ya
+puede ser actuador, alarmas, mensajes, ¿no? Voy a irme rápido, eh, por si o
+algo, si te quieres que lo profundice más, me avisas. Todos en la clase está
+desglosado en las grabadas. Yo sé que es pesado verlas, pero pero este en ratos
+libres intenta. Sí, gracias. Lo voy a echar.
+No es necesario que las veas todas. Por ejemplo, las primeras puedes ver, "Ah,
+me la salto." No, ya entiendo esto. Pero las últimas dos mínimo, que fue de todo
+esto, estaría bien. Okay. Y si tienes problemas con el Linux, me avisas y lo
+checamos personalmente también. Okay. Entonces, bueno, un ejemplo sencillo.
+Recibimos temperatura de un sensor. Mm. Ya la cómo meterle los datos, tus
+compañeros te van a explicar con los que estés. Este, este caso, como los datos
+no los podemos simular todavía hasta el siguiente hijito que va a ser con
+código, ahorita lo que vamos a hacer es que el mismo usuario se los esté
+proporcionando. Lo que quiero que que ustedes tengan ya presente y claro y y
+diseñado es cómo va a responder la ICU a diferentes tipos de datos. Se f el dato
+del sensor se compara en un límite y pues si es mayor a 105 pues tomamos una
+decisión que puede ser activar ventilador o limitar la operación. Sí,
+si te has fijado, si te has fijado, todo esto se empieza a parecer a lo que
+conocemos como una máquina de estados. Eh, luego en tu carrera generalmente ahí
+sí ven ese tema que es la máquina de estados, que son sistemas que están
+reportando su estatus constantemente y el nuevo estatus depende del anterior
+más una acción. Entonces, la idea central es que tomamos una medición
+física y la convertimos en una decisión lógica y posteriormente ejecutamos algo.
+¿Sí? Por ejemplo, si la temperatura no está muy arriba del umbral, activar el
+ventilador puede ser una buena solución, pero si sigue subiendo, pues ya nos toca
+irnos a limitar la operación porque algo está muy mal con el motor o con en
+general donde estemos midiendomm. Entonces, por ejemplo, en este caso
+vamos a trabajar con dos ACUs, una ACU getway, que va a ser la que va a tomar
+los valores y los va a distribuir. En este caso, getway lo que va a hacer es
+tomar los valores, validar que estén en ciertos rangos, que cumplan ciertas
+condiciones y si todo está bien, se los va a pasar un ECU de control, que es el
+que va a tomar las decisiones, ¿no? Vamos a diseñar dos en este caso
+comunicadas entre sí. Sí, ejemplo, la getway, que es la la primera, lo que va
+a hacer es recibir mensajes, o sea, este cadenas con valores de los sensores.
+Va a revisar que los datos estén bien, o sea, los va a validar, los va a filtrar
+y los va a validar y los va a reenviar a la ACU de control. Te explico más o
+menos. Y fíjate, llegan los datos a la getway que está tapadita y se los manda
+a los demás. Este, me doy mal, ¿no? Este, sí, input
+va a haber, pero los inputs va a ser van a ser generados por ustedes. Les decía
+el otro día, así como hicimos las máquinas de estado la vez pasada
+enseudocódigo, este, Ismael, lo que vamos a esperar ahorita es que
+literalmente tú tengas una opción donde tú metes valores, ¿sí? Valores de los ya
+puedes decir cómo los quieres hacer. Por ejemplo, a mí se me ocurre que pueden
+hacer una cadena donde den valores y cada cadena que mandense un nuevo tiempo
+con nuevos valores. Ustedes, por ejemplo, pueden jugar ahí agregar
+valores inválidos, agregar tiempos inválidos, cosas así. Sí, Ismael.
+Entonces, lo que pueden hacer es eso o pueden hacer un mensaje por cada
+ascensor. Ustedes deciden cómo lo quieren trabajar.
+Entonces, pero los datos se los van a dar por ahora ustedes ya en el siguiente
+hito, que vamos a poder simular señales o hacer randoms. Lo vamos a hacer.
+Mm. Entonces, el ACU de control, que es el otro, qué va a hacer analizar
+señales, evaluar señales que va a recibir del getway, del otro que ya
+vienen validadas. Va a evaluar condiciones, va a ver si ejemplo si el
+getway me manda una señal que es inválida, o sea, me la mandó, pero él él
+determinó que era inválida, a mí me llega como inválida, entonces yo tengo
+que tomar una decisión a partir de eso, decir, "Okay, una señal inválida me
+lleva una falla." O si señales vienen buenas, reviso, si
+entran en ciertos rangos. Entonces, las diferencias, todo esto,
+todo esto ya está arriba en la en la tarea.
+Este, por ejemplo, sensor con temperatura, recibe el mensaje del
+getway, revisa el formato, el rango y el tiempo y se lo pasa alu para que evalúe
+el dato. Si el el el sensor tiene cierta temperatura un poco elevada, lo
+cambiamos el estatus de nuestra máquina principal a degreed. Sí, significa que
+el sistema del vehículo pasa a estar operacional a estar un estatus de pues
+que hay una posible falla. Ya me voy a saltar todo esto. Estas son las señales
+que yo les propongo. Les pongo un rango aquí. Ejemplo, el gateway va a revisar
+que los rangos se encuentran aquí para considerar que son válidas y también va
+a verificar que no haya señales atípicas. Y lo otro que va a verificar
+es que vengan temporalmente coherentes, que no se hayan perdido datos en ciertos
+ciclos. Es son casos de cómo definir una señal.
+Por ejemplo, un valor válido es que cumpla que este cierto rango y pues que
+sea coherente. Por ejemplo, un valor inválido de velocidad sería negativa,
+¿no? Ese caso, ese valor lo debería clasificar directamente como inválido.
+Una señal ausente, un time out es, por ejemplo, esta señal viene correcta, ¿sí?
+Pero se debe de estar reflecando cada 10 milisegundos, 100 milisegundos y esto no
+se ha recibido después de 10 segundos, se nos ha actualizado. Entonces, el
+valor ya se considera como ausente, entonces ya no es confiable. Yo también
+lo daría como una señal inválida. Sí, fíjate que ausente es diferente de estar
+fuera de rango. Entonces yo les digo, las señales son válidas, sí, solo sí. Se
+cumple que estén dentro del rango y estén en el tiempo.
+Inválida si está fuera de rango y ausente si ya se perdió la coherencia
+temporal. Ustedes pueden agregar un cuarto estado que si no cumplen ninguna
+de las dos es una señal completamente errónea, pero con que me indiquen dos
+con eso para mí es suficiente. Un mensaje, como les decía, es una
+especie que una cadena que que entregue, por ejemplo, los valores de las señales
+y un estatus. Ustedes podrán agregar un estatus por señal también. Eso es más,
+eso es mejor para que el getway les esté cambiando su estatus a cada señal. O
+puedes tener un estatus general si quieres hacerlo un poquito más fácil.
+Aquí les hice un un un otro esquema. Se genera la señal, se construye el mensaje
+con las señales, el getway lo recibe, lo valida y después se lo pasa
+distribuyéndolo a la ICU de control. Y ya la ICU revisa las señales. Si alguna
+viene inválida, pues le mandamos acá un error. Si todas vienen válidas, pero por
+ejemplo alguna está un poco elevada y ya supera el umbral de temperatura, pues
+decimos que hay un un ligero sobrecalentamiento. Nos vamos a Digit.
+Sí, está muy alto. Por ejemplo, la batería nos marca 8 vol. Esa batería
+está muerta. Entonces, yo me diría directamente al estatus peor que sería
+safe state, que es el estado seguro donde tenemos una falla crítica.
+Voy a bajar más para irme directamente a la máquina de voltaje. Digo, la a la,
+ejemplo, aquí es es un voltaje muy bajo. Abajo de nueve ya está muertísima esta
+cosa. Vamos a irnos a aquí unos ejemplos de su
+código que ya está arriba. Todo esto ya está arriba. Vamos a irnos a la máquina
+de estados. Una máquina de estados es una máquina
+que está reportando su estatus constantemente, que es el estado en el
+que está. Sí. Ejemplo, el estado es la condición en la que estamos, el
+funcionamiento. Estamos en todo, ¿okay? Ejemplo, una máquina de estado simple es
+la lámpara que puede estar apagada o encendida, tiene solo dos estados. ¿Y
+cómo cambias de estatus? presionando el botón de encendido.
+Es un botonazo nos lleva apagado, otro botonazo nos lleva encendido. Hay una
+clase grabada también de máquina de estados donde desgloso más esto.
+Discúlpame ahorita que vaya rápido, es que pues ahorita no nos va a dar tanto
+tiempo. Entonces, una máquina de estados es una
+máquina que donde se definen estados posibles. Ejemplo, la que te digo, tiene
+dos estados, la lámpara, las acciones de cada estado. O sea, que ¿qué pasa cuando
+estás en cada estatus? Por ejemplo, la lámpara pues no hace nada, nada más
+enciende y apaga, entonces no hay acciones. Los eventos que se producen
+para los cambios, el evento es el botonazo. Cada botonazo te cambia de
+evento, te cambia de estatus, perdón. Un botón enciende, repetir el mismo, la
+misma acción lleva a pagar. Hay máquinas de estado que no, la misma acción no te
+lleva a lo mismo. Por ejemplo, hay máquina de estado que puede ser que una
+acción te lleve un estatus y otra acción te lleve de ese mismo estatus a un nuevo
+estatus. Ahorita te enseño un ejemplo. Las condiciones de la transición, que es
+que pasa durante la transición y el estado inicial. Hay que indicar cuál es
+el estatus con el que siempre empezamos, el default.
+Ejemplo, la transición se expresa así, el estado actual, el evento, nuevo
+estado. Sí, los estados de ejemplo en este caso yo
+yo este propongo seis estados, el init que
+es el el default, el inicial, un self test, que es que va a revisar que todo
+esté bien y si todo está bien, pasamos operacional, un status de grid, que es
+para fallas mínimas, fallas chiquitas y un safe state que es para fallas muy
+graves y shutdown que va a ser cuando tú le digas quieres apagar el vehículo, es
+el nuevo estatus. Okay. El estado INIT representa el
+inicio del sistema y su única transición posible es irse de INIT a self test.
+Self test dependiendo cómo salga se va a una de estas tres y sale todo bien,
+operacional sale algo mal. Degrade y una safe state es que la falla es muy mala.
+El estado operacional se representa así. Es el estado como de donde vamos a estar
+ciclándonos. Ahí vamos a estar siempre, casi siempre, a menos que pase algo
+malo. Voy a saltarme ya hasta la máquina de estados para que los veas todos. Ahí
+está. Voy a borrar esto.
+Okay. La máquina de estados, en este caso, el diagrama yo lo recomiendo así.
+¿Por qué? Cuando tú enciendes el carro, estás aquí, te vas a init. A partir de
+eso, init inicializa las variables. Con init me refiero a que va a ser las
+primeras partes de tu pseudocódigo donde vas a decir el estatus actual es init.
+Inicializo mis señales, las que voy a estar trabajando, velocidad en cero,
+batería en 12 volts o 11 vol, que son estados son estatus buenos para la
+batería. Este, RPMs en cero, etc., etc. Sí. El CELT test que va a revisar, va a
+revisar esas variables iniciales nada más para ver que ninguna esté atípica.
+Por ejemplo, las que tienen que estar en cero, que estén en cero. Pero, por
+ejemplo, si la si la batería viene con un voltaje bajo, ahí puedes jugar con
+eso, que el voltaje inicial sea ese test, pues va a salir mal, ¿sí? o de
+repente un valor diferente de cero a la velocidad no tiene sentido porque acabas
+de encender el carro. Entonces pasamos a self test y de self test podemos pasar a
+tres posibles. No hay fallas, nos vamos para acá. Hay una falla chiquita, nos
+vamos para acá. Hay una falla crítica, nos vamos para acá. En el caso de que
+nos vayamos a operacional, que es la normal, aquí vamos a empezar a recibir a
+a estar actualizando las señales y cada ciclo vamos a revisar. Si hay una falla
+menor, nos vamos a digrit. De repente, si se recupera, regresamos a
+operacional. Sí. Si tenemos una falla menor que no se recupera, se vuele
+crítica y nos vamos a safe state. Sí. Y de safe state, fíjate que no hay ninguna
+salida. La única de safe state es que apaguemos el vehículo. Y shutdown
+también puede salir desde acá. Si te vas para acá, apagas también porque pues es
+el llavazo de apagado. Y si te fijas, esta máquina de estados no es cíclica
+porque no hay manera de shutdown pasar init sin que reinicies todo. O sea, lo
+que nos va a llevar de shutdown init va a ser el llavazo de apagado y después de
+encendido, que va a ser una acción externa del usuario. En este caso, lo
+vas a simular con apagarla, detener la ejecución y volver a iniciar la
+ejecución. Sí, esta máquina de estados no representa exactamente el
+funcionamiento. Aquí solo me dice qué estados tenemos y cómo podemos pasar de
+uno otro para que quede claro. Esta es una máquina de estados. El pseudocódigo
+y el diagrama son otras cosas. Aquí hay más información. Más
+información. Diagrama de contexto que te digo. Vienen las vienen las señales,
+todas van al getway, las validamos, van el ACU y ya el ACU decide qué hace, si
+demanda alerta, si cambia el estatus y etc. Etc.
+El requisito que es lo último entregable que tienen que hacer es derratarme
+mínimo 10 requisitos de su sistema. Obviamente esos requisitos se tienen que
+cumplir en su pseudocódigo y en su máquina de estados. Por ejemplo, el
+sistema, este es la fórmula de un requisito más o menos válido. Sería
+decir el sistema que es la getway deberá validar que es una acción verificable y
+una condición. Deberá validar que es la acción y la condición es que la
+velocidad se encuentre dentro del rango permitido antes de enviar la ley yo de
+control. Esto todo se puede mejorar. Podrías poner en vez de poner dentro del
+rango permitido decir que la velocidad se encuentre dentro del rango de 0 a 250
+antes de enviarla a la de control, que es más específica todavía.
+Un requisito vago es como este, el sistema deberá funcionar correctamente,
+pues no te dice nada, ¿cómo lo testeas? Este pues ya es más verificable. El
+sistema deberá marcar como inválido que es la acción y la condición. Cualquier
+valor de acelerador menor de cero o mayor de 100%. Sí, más o menos. Hasta
+ahorita tienes alguna dudilla, nada más que sí va a ver seguramente, pero hasta
+ahorita no puedo ir tan lento. Eh, está bien. Sí, vamos.
+Ah, gracias Emilio. Estamos en la clase, está desglosado esto mejor. Y también
+hay clases donde les explico exactamente qué hace una máquina de estados.
+Bueno, entregable. Puedo preguntar en tu chat o en
+WhatsApp. No habría problem. Sí, sí, sí, sí, sí. Cuando las estés
+viendo, sin problema. Vale.
+Sí, sí, sí. O aunque no las veas. Si te sale una duda durante algo, dime, no
+pasa nada. No, con confianza. Para eso estoy. Okay.
+Entonces, si se fijan, va a tener que escribir los
+10 requisitos y el último entregable es que pues me expliquen lo que hicieron
+nada más en algún videío, ¿no? Pues hicimos esto, lo pensamos así, este,
+etc., etc. Y la rúbrica también está en la tarea,
+ahí la puedes revisar. Dice más o menos cuánto vale cada uno de los entregables.
+Aquí te enseño un te voy a enseñar un, ¿cómo se dice?
+un diagramita de más o menos cómo se vería el pseudocódigo. Obviamente este
+no va a ser exactamente el de ustedes, es una ejemplificación nada más.
+Este de aquí el segudo código va a ser así. Ejemplo,
+inicias el programa, inicializamos las variables. En ese caso nada más puse
+init, pero van a ser todas tus variables. Self te revisa las variables
+y si sale todo bien, nos vamos a operacional. Si sale mal, pues nos va a
+tocar irnos al estatus de error, pero si sale todo bien, empezamos a estar
+operacional y empezamos a leer y validar mensajes y en cada ciclo vamos a
+revisar, okay, hay una falla, no hay una falla crítica tampoco.
+Entonces regresamos a operacional. Después en el siguiente ciclo nos
+volvemos a preguntar, ¿hay falla crítica?
+No, perdón, hay una falla, una falla, ¿no? Hay una falla no crítica. Sí,
+híjole. Pues entramos a este cada estado, después nos preguntamos si la
+falla mejora o empeora, si ahora sí falla crítica. Si sí hay, pues nos vamos
+a ir al peor estatus que es el CF state. Si no, después vemos si se recupera el
+sistema. Si se recupera, nos vamos a operacionarlo otra vez. Si no,
+regresamos a Safe State. Y si te fijas, Safe State solo tiene una salida. Es o
+solitar apagado. Si le dices que no, nos regresamos al mismo estatus y y si le
+dices que sí, se apaga. Es la única salida que tenemos. También otra manera
+de llegar a safe state es que salga mal la prueba y nos vayamos directo para acá
+o de operacional si la falla crítica es sí nos vamos también directo para acá.
+Sí. Entonces este es el funcionamiento más o menos porque faltan más flechas.
+Deberías tener manera de irte a shoot down desde operacional de grid o donde
+tú quieras. Qué va. Entonces más o menos así se ve.
+Los ejemplos de segudo código los puse en otro.
+Aquí hay unos ejemplos del pseudocódigo como estos, ¿no? Ejemplos de cómo
+podrías tú en el sudocódigo indicar cambios de estado de la máquina de
+estados o validaciones, por ejemplo. Va que va. Entonces, de esto, ¿tienes
+alguna duda así así que digas, hijo? Esto no entendí nada.
+No, viendo. Va, perfecto. No te preocupes, con
+confianza. Cuando veas las clases también me dices porque ahí la
+explicación es más detallada, pero pero pues también pueden salir dudas y se es
+válido. De hecho, voy a ir voy a ir adjuntando aquí de una vez. Voy a ir
+apuntando la grabación. ¿Dónde está? ¿Dónde está? ¿Dónde está?
+Está aquí está la clase. Aquí de una vez voy a agregar nuevo
+anuncio. Ayer fue 21, clase martes.
+Fue el último que vimos ayer. Sí. Ya aparece lista. Martes 21
+julio. Déjenme agregarla aquí desde el drive.
+Nada más déjenme fijarme cómo se llama esa esa grabación. Va a ser 21 de julio,
+ayer a las 20 horas. Yo debe de ser esta.
+Las 20 horas son las 8. Aquí buscamos es esta.
+Listo, ya está añadida aquí también. Aquí más,
+por ejemplo, esta de ayer es de la tarea, la segunda parte, la primera
+tarte de la tarea se había el lunes. El jueves estábamos viendo máquinas de
+estados. La del miércoles es esta, como que
+quedaron revueltas la semana pasada. Sí, aquí van a salir 16. Esta es la del 15,
+la del 14, el 13. Por aquí debe estar la de Linux también,
+nada más que lo malo es que no les pone un título y tenemos clase hasta el 7 de
+julio, no hay tantas. ¿Por qué? Porque nada más hemos tenido con esta van ocho
+o 10 clases en total. Esta es de otra profesora, pero aquí nada más les agregó
+siete información, una que estaba antes. Okay, va que va. ¿Tienes alguna alguna
+dudita, algo? Ya te agregué, según yo. Ya aparece esto. Entonces, lo puedes
+revisar, pero con confianza nada más. Pregúntame todos los demás también. Sí,
+cualquiera que tenga duda. H, ¿alguien más de aquí tiene dudas?
+¿Algo, algo que ya hayan pensado o quieran preguntar? ¿Sabes que me diga?
+No, tengo más o menos una idea cómo la ve o cosas así. Aprovechando una vez.
+Una cosa no más, maestro. Este, dime, dime, dime.
+Tengo la idea bien en abstracto de de los requerimientos y eso, pero pues no
+conozco estos sistemas, ¿no? Entonces, algunas cosas a lo mejor van a tener la
+forma, pero van a ser pura tontería, la verdad. Ah, no, no se preocupen por eso.
+Si lo que me refería es que me gustaría nada más que respetaran el formato, ¿no?
+De la, por ejemplo, me puedes poner, como no conoces del sistema, no pasa
+nada, más o menos por base de lo que les expliqué, pueden hacerme cinco
+requerimientos que sean de las señales. Pues son cinco señales, ¿no? Voy a
+hacerme cinco un requerimiento por cada señal que diga la getway va a revisar
+que la señal esta esté dentro del rango que ustedes propongan, ¿no? Y así para
+las 5. Sí, con eso es suficiente. Sí, nada más lo que quiero es que esos
+requerimientos se cumplan en el pseudocódigo. Si las cinco señales me
+dices qué rango va a tener en el seudocódigo, hay que revisar que se esté
+revisando eso, que las cinco señales se variden en el rango. Y luego me puedes
+poner unas para el ACU de control para cada cosa. Si la temperatura supera el
+umbral de algo, el bueno, el ICU de control deberá
+deberá cambiar el estatus de la máquina de estado agrita,
+supera el umbral de los 100 gr cent, ¿no? De la señal de temperatura. Otro
+que podrías hacer, la ICU de control deberá cambiar el estatus de la máquina
+de estado a safe a safe state si el voltaje de la batería es menor a 9 volts
+y así te va. Sí, son son hay que poner hay que crear
+requerimientos de los que vayas a usar arriba, ¿sí? No, no tienen que ser
+exactamente relacionados con esto. La idea es que más o menos entiendan la la
+este la manera de hacerlos, porque cuando empecemos a hacer código
+hay que más o menos vaciarnos basarnos en eso, ¿no? Con el tiempo los vamos a
+ir mejorando también. La idea es que conozcan el ciclo que les
+digo completo, que es desde que planeas todo hasta que lo empiezas a crear,
+luego lo empiezas a mejorar. Ahorita que también que veamos Git, que es el que
+sigue, ahorita que empecemos a programar en C, vamos a ver a la par o en en una o
+dos clases, vamos a terminar de ver git de rápido para que el siguiente ejito
+que va a ser en código ya sea un repositorio, que ustedes en el siguiente
+versión pues me creen una nueva versión del repositorio, o sea, que no me creen
+nuevas carpetas, sino que esa carpeta esté versionada entre cada entre cada
+ajito que vayamos creando. ¿Para qué va? ¿Alguien más tiene una
+duda? La que gusten, no pasa nada.
+Este, dime, dime, Jorge. No. Eh, bueno, mi duda ahorita es este
+en cuestión de de lo que estuve viendo las clases pasadas sobre los comandos de
+Linux que este comentó y este y vi que ocupa el
+Visual Studio Code, pero bueno, yo descargué el Visual Studio de el grande,
+el al profesional.
+Ajá. Este, y ya vi cómo instalar lo que es este el WSL.
+Y bueno, pues a mí me generó como un icono este aparte de Devian y ya cuando
+me meto a ese icono me aparece lo que es la terminal y no me aparece así este eh,
+¿cómo se llama? Eh, pues los datos, o sea, te aparece lo que es tu usuario y
+enseguida la carpeta home no me apareció como como usted le parece que es con
+Windows System 32. Entonces yo estoy investigando y me comenta, por ejemplo,
+un asistente que es eso es normal, que esa instalación ya Windows este al menos
+en la última de Windows 10 y 11 ya te lo te lo genera así para no este causar
+conflictos con los archivos de de tu computadora normal.
+Ah, es que WS es un subsistema. La idea es que no teas crear como una especie de
+máquina virtual clásica. Es una back in virtual, se supone, pero es mucho más
+pequeña, es una versión más pequeña y como tiene Devian, pues no te estorba y
+es un subsistema que vive aparte. Wsl se encarga de de administrarlo. Ws una
+herramienta de Microsoft, entonces este pues no te va a afectar nada, no te
+preocupes. De hecho, si quieres compárteme y vamos a checar tu caso de
+una vez para dejar a ver si está todo listo. Sí,
+sí, si tienes chance de compartir, si no no
+pasa nada. Sí. No te no te apures. No te apures.
+Ah, ok. A ver, voy a dejar de compartir yo para
+que nos salla como principal. Okay. A ver, déjame ver. Okay. A ver,
+enséñame qué es lo que me decías. Este, bueno, yo cuando instalé lo lo que
+fue el WSL, me salió aquí el icono de Devian y se me
+hizo más práctico, este, y ya no me salió lo que es este esta
+parte. Eh, por ejemplo, si yo le ponía LS, yo veía que en sus clases este
+eh salía lo que era la lista de de sus archivos en en Windows System 32, pero
+pues aquí ya no ya no me apareció nada de eso. Entonces vi que enseguida ya me
+puso después de la instalación este digamos que los archivos que irían
+directamente pues en este subsistema de Linux.
+Ajá. Entonces, este, le comenté que que lo
+había checado con un asistente y me el asistente me comentó que me escribió y
+que eso era normal, que ya este después de instalar WSL ahora Windows pues como
+que te separaba los archivos del subsistema con los archivos del sistema
+que ya si quería hacer un traspaso de de archivos entre subsistema y sistema, me
+recomendó unas este, ¿cómo se llama?, unos comandos este extra para poder
+hacer el traspaso de de archivos y mi segunda duda era pues integrar esta
+terminal así como lo tenía usted pues en en Windows este cómo se llama en en
+Visual Studio, porque yo vi que lo tenía como en Visual Studio Code, pero no
+sabía si era este más o menos igual en Visual Studio
+el profesional y ya lo que hice fue irme a
+excepciones, según excepciones debe de funcionar.
+No, no me aparecía en extensiones. En extensiones me aparecía este, por
+ejemplo, voy a dar administrar. Cierra ese, cierra ese. Administrar
+extensiones. Extensiones.
+Exensiones. Administrones y busca IWSL.
+A ese sí no me lo apareció porque yo pensaba instalar instalarlo directo de
+de aquí, pero no me apareció. A ver, escribe Linux nada más.
+Es que probablemente no va a ser compatible con esta versión del
+profesional. No sé si se refería a este.
+No, ese es el de bugueador. Ese es para net, que es otro es otra manera de
+programar aquí. Es que Visual Studio Profesional está orientado a lenguajes
+más, ¿cómo decirlos? pues es es especializado para C++ más este, o sea,
+se puede usar con otros lenguajes, ¿no? Este, pero
+pero por ejemplo aquí yo tengo este eh aquí yo abrí un pequeño programa,
+entonces este está en en C++ de ejemplo este y ya por ejemplo la lo que es la
+terminal que usted lo tenía acá este a mí en en el asistente me decía, "Vete a
+la pestaña ver y ya este vete a terminal y entonces en terminal ya me sale la
+opción de deviant y de hecho Aquí abajo están las pestañas.
+Ah, pues ahí está. Ya me sale, por ejemplo, aquí MNT, por
+lo que entendí es este mi disco duro de de mi computadora y ya lo que es este la
+ruta de de mis archivos de de Windows. Y aquí me pone otra pestaña de lo que es
+este el puro Derian, el puro subsistema y me pone otras este pestañas de de lo
+que sería al menos esto que sea símbolo de sistema y al menos esto el Power
+Shell de Visual Studio, pero no sé si si esto sí me me pueda funcionar como lo
+hizo usted en las clases anterior. Yo creo que sí. A ver, escribe escribe y
+más escribe y guion guion versión y
+G+ más. Ajá.
+De todos modos, este, visual el estudio profesional tiene herramientas para
+compilación. Este, de hecho está especializado en ese tipo de cosas.
+O sea, yo no dale guion espacio guion guion versión.
+¿En qué estuvo que preferiste el profesional?
+Otro otro guion guion guion versión. ¿En qué estuvo que elegiste usar el
+profesional? Así.
+Sí. No, no lo tienes. Vamos a tener que
+instalarlo, no pasa nada. Este, ¿qué estuvo que elegiste? Professional es por
+alguna razón. No tiene nada de malo, pero quisiera saber.
+Ah, ¿por qué lo elegí? Sí, sí, sí.
+Ah, ¿por qué lo elegí? Ah, porque en la clase muestra, este, pues vi que era muy
+práctico en en una clase muestra que que había impartido el el administrador
+Alfonso, ¿no? Sí, sí, sí.
+Este, entonces, este, vi que era muy práctico y ya cuando estuve
+investigando, pues sí me daban las opciones en en lo que es el repositorio
+Microsoft de instalar o el Visual Studio C o el Studio.
+Sí, sí, sí. Está la opción, la desventaja, la única desventaja de
+profesional es que para algunas cosas te pide licencia, pero para lo que vamos a
+hacer no es necesario. Sí. Entonces, ¿qué qué me recomiendas?
+¿Seguir trabajando con el Visual Studio o con
+Sí? Eh, no pasa nada. Mientras mientras encuentres los comandos. De hecho, en
+algún punto tenemos que mudarnos. Sí. A a profesional. para cuando tengamos que
+hacer código más complejo, yo pensaba mudarnos, pero quería que vieran ambos
+mundos, ¿no? Por ejemplo, para cosas más básicas pueden vivir en Visual Studio
+Code, que es más fácil de trabajar, y en algún punto nos mudamos a a
+Professional. Hace años que yo no uso Professional, pero sí lo usé. Es
+generalmente teníamos licencias pagadas porque normalmente se usa este para
+cosas más especializadas, pero al principio quería que fuéramos
+como para no complicárselos tanto, pero en momento nos vamos a mover. Si lo
+quiero usar de una vez, no tengo problema.
+Este, que hace mucho que no lo uso. Entonces, esta esta. A ver, abre el otro
+devian que tienes ahí. Eh, este.
+Ajá. Escribe lo mismo en este. Sería G+ más espacio versión.
+Ajá. Si no, ahorita lo instalamos con con el comando de instalación.
+S. No está. Okay. Entonces, vamos a instalar. Eh, vete al otro que es una
+raíz, al que estabas. Parece que son el mismo, nada más que están en diferentes
+en diferentes posiciones. Escribe sudo aptal.
+Tienes tu contraseña de superusuario, ¿verdad?
+Sí. Espacio.
+Vas a escribir, escribe buil guion essentials
+con i con D, perdón. Es a guion junto todo. Guion
+essentials con doble s eh con tsentials.
+Essentials. Eh, ajá. Essen en vez de ser una i.
+Essential. Ah, okay.
+Essentials. Una s. Okay. Espacio. Escribe git.
+Espacio escribe g. DB
+y por ahora instala estos. Vamos a ver qué pasa. Dale enter.
+Te va a pedir tu superusuario de de Windows, digo, de Linux.
+Te dice que no le encuentra. Okay.
+Uy, creo que aquí te va a tocar bajarlos antes de
+A ver, escribe solo git. Sí, porque si no nos va a tocar. Lo que
+no entiendo es por qué te lo instaló diferente a nosotros.
+Así sudo PT instal
+antes de Ajá. Hace mucho que no uso esta cosa.
+Generalmente ya nos daban computadoras con con todo en Linux. Okay, no pasa
+nada. Vete a la Power Shell. Escribe Power Shell en tu en tu si
+quieres mejor por fuera de de Visual Studio.
+Hay que abrirla con administrador. Ah, está como ya está como
+administrador. Ahí es arriba. Ahí escribe WSL gu- listo
+guion list. Ajá. A ver si ya te reconoce la distribución.
+Ahí está Devian. Escribe WSL- D y escribe Devian
+e con mayúscula la D, como va escrito ahí. Ajá.
+Listo. Dale enter. Okay. Aquí se ve un poquito mejor. Desde
+aquí escribe ahora sí sudo aptall git espacio enter. Perdón.
+Ahora si tu contraseña. Sí, yo tenía planeado mudarlos a ¿Qué onda con tu con
+tu subsistema? A ver, espérame poquito. ¿Qué puede
+estar pasando? ¿Por qué no te responden los comandos
+normales? Es medio raro tu.
+A ver, a ver, a ver. ejecuta sudo aptade a ver si te lo responde, si sí hace una
+si hace una consulta y lo ejecuta. Sumari. Okay, ahora escribe update.
+Perdón, era primero update, después upgrade. Dale update. Cambiar por
+update. Siempre me confundo con estos dos. Okay,
+está haciendo las consultas bien. Ahora revisar ahora el upgrade.
+Dile que sí. de leyes. A ver,
+a ver, intento otra vez. Instal, ¿no?
+Sí, ahí está. Parece que no se no se había
+actualizado la lista inicial de de este, ¿cómo se dice? De de paquetes, la lista
+local que tienes. Ah, sí. No, no había aplicado lo que era
+update ni Ah, okay. No, entonces si no se había
+actualizado, no tenía información todavía de las paquetes.
+Es que yo como me había asustado. Ajá. Como me acuerdo
+que había comentado que instalaba la última versión de Vian, ya tampoco la
+apliqué ni UTI ni upgrade. Ah, no, sí, no, pero siempre que
+instales un Linux, una distribución Linux, hay que aplicarlos. Sí, como no
+no funcionan igual que Windows, que vienen como una especie de de
+actualizaciones o se actualizan solitos. A veces sí, algunos puedes programar
+porque se actualicen solitos, pero la mayoría no lo hace. La primera vez que
+lo haces hay que actualizarlo. Sí, ahí sí, ahí sí me me faltó este aplicar.
+No pasa nada, no pasa nada, no pasa nada. Ahora sí aplica los demás de una
+vez. Vas a escribir sudo aptal Will Essential
+JDB, perdón, GDB
+y estoy pensando si no se me olvida uno. Déjame fijo cuál es la otra herramienta
+que estamos usando. De una vez instala de C make que lo vamos a ver en algún
+punto más adelante, nada más para ver si una vez también te
+lo instala bien. Lo puedo hacer desde acá. A ver,
+intenta. Tal vez te voy a pedir que reinicie la terminal, pero a ver,
+inténtale primero. ¿Qué pasó? Ahí está. A ver, dale ese.
+Ah, es que tod no lo instalamos. Perdón, es Git el que instalamos ahorita.
+Ah, okay. Dale. Git versión.
+Acá es el mismo, nada más que estás en otra
+carpeta. Estoy viendo que te está dando el mismo
+usuario. Dile sí, Git, pues te va a decir que ya
+lo instaló, no lo encontró otra vez. Órale. Ah, es que a ver este reinicio
+esa terminal. Mejor hazlo en el otro. Hazlo en el otro y ahorita reiniciamos
+esa terminal. ¿Se puede copiar aquí?
+Sí, según yo debería de dejar. Selecciónalo, dale control C.
+O sea, selecciónalo y dale control C. O sea, pásale el cursor por encima así,
+déjalo presionado ahí, más o menos.
+Ahora sí. Y según yo te aunque te dice el salto, te lo debe haber pegado. Acá
+dale control V. ¿Qué hizo? Ah, te pegó otra cosa. No, entonces no lo copió. No,
+no se puede copiar. Envío al estudio Code. Si te deja, ya no te va a dejar.
+Escríbelo. No pasa nada. No, no pasa nada. Aquí tenemos chance todavía.
+Lo quiero es que estén instalados. Ahorita reiniciamos visto el estudio
+professional porque a veces hay que reiniciarlo para que aplique ciertos
+cambios. Buil guion, todo junto. Essential que te lo pego aquí en el
+chat. Bueno, ya ya casi lo terminas y nada más
+escribe GDB. Espacio GDB. Según yo por ahora con esos dos es
+suficiente. Instal ahora nada más que de B. Entonces
+siento que estoy siento que estamos escribiendo mal el esencial. Déjame fijo
+el nombre exacto. Escribe nada, escribe lo mismo, solo que
+no pongas bully, nada más escribe GBD. GDB, perdón.
+A ver, dale ahí. Ahí va. Okay. Siento que estamos
+escribiendo mal el nombre. Espérame,
+lo voy a escribir. Es en la S.
+Se me olvidó. Perdón, te lo dije mal. No me esas cosas de memoria. Luego como se
+te buguea así, un enter te ayuda y si no te funciona, esperamos. Okay.
+No, parece que sí está. A ver, dale otro.
+Okay, entonces va a tocar esperar. Ahí está. En caso de que no se destrabe,
+control C eh detiene detiene la la ejecución, o sea, cancela todo lo que
+está pasando y ya y vuelves a intentar con el comando.
+A ver si escribes su aptale la S nada más. Borra también GVD. ¿Por qué lo
+instalaste? Borra, si quieres todo desde el final
+hasta la S. Ahí está.
+Sí. A ver qué pasa. Y esa se me fue además. Dile que sí otra
+vez. Y se supone que tener todo listo.
+Ahorita hacemos una prueba
+ahorita para no meternos a las herramientas de compilación avanzadas de
+de Fisual estudio profesional. Vamos a, ¿cómo se dice? Vamos a hacerlo de la
+manera este clásica. Después los voy a mudar al
+profesionales, no se preocupen. Sí, lo vamos a ver. Nada más que quería
+evitarnos la complejidad que luego lleva. Una vez que dominan visual el
+estudio code profesional, ya no se vuele tan difícil.
+Entonces, ya sea todo. Debería de estar listo. No te preocupes. Vamos a calarlo.
+Cierra si quieres esa. Sí, ciérrala. No pasa nada.
+Ahora sí. Este, no, no, no. Aquí vamos a checar. Escribe git version. Mínimo esa.
+Esa. Quiero ver que esté guion guion version. Perdón, se me
+olvidó. Guion guion. Échale. Ahí está. Ya está todo bien.
+Okay. Entonces, aquí lo que podemos hacer es primero hay que ver en qué
+carpeta estás. Sí. Aquí que escribiste este este código
+que estás haciendo. ¿De qué es? Ah, es este un código este de la clase
+muestra. Ah, okay. Okay. Vector. Ahora dale para
+abajo. Okay. Mensaje. Alerta.
+Dale por abajo. Es un es un
+Okay. Ah, okay, okay. Sí, es sí. Es que no me acordaba. Es el que les el que les
+dije para generar. Algo así vamos a hacer en el rango uno,
+pero me imagino que lo vamos a compilar ya con el con el sistema Linux.
+Sí, sí, sí, sí. Todo va a ser con Linux. Aquí me lo compilaba en la Power
+Shareell de la de la Windows. No, no. Eh, lo mejor es que sea todo ya
+en Linux. Lo vamos a hacer con Visual Studio Code y también con el
+profesional, no pasa nada. Si si yo hago el ejemplo ahorita de
+compilar este código en la terminal del Linux, se debería salir con la terminal
+del D devian, ¿no? Sí. A ver, escribe LS a ver si estás
+donde está ese código. M, creo que el código está acá en esta
+carpeta. Está en ese. Dale, LS. A ver,
+¿cómo se llamaba el ejercicio? Ejercicio uno. Yo le puse
+ejercicio uno. Okay. Okay. El código en C++ está como, o sea, lo
+detecta como so. Okay. Okay. Okay.
+Entonces, este, a ver, vamos a intentar copilarlo. Escribe G+ más. No tienes
+ningún archivo GMake por aquí, ¿verdad? No,
+no. G+ más. Este, dale espacio, escribe
+source. punto C++
+punto C++ sí C++ espacio no Ajá o
+o espacio y ponle un nombre a tu
+ejecutable pon si quieres el mismo source.
+Dale enter. Va a tardar un ratito. Si no hay ningún
+error, te lo va a copilar bien. Listo. Si te fijas, dale LS otra vez
+y vas a tener ahí un archivo punto excel que va a ser el ejecutable que puedes
+llamar. Vamos a ver. Como no conozco todos estos archivos, yo nada más
+recomendé la sintaxis de este código. En realidad no sé qué qué habrá hecho
+Alfonso, o sea, qué funciones ha diseñado Alfonso. Este, entonces dale
+punto diagonal, escribe sur punto et
+para ejecutarlo. Dale enter. Okay. Okay. Está bien.
+No, no sé qué es lo que haya diseñado en el código, o sea, no sé qué tengas que
+hacer. Pues te dije que lo quería ver, pero está bien.
+Pues por lo que yo entiendo es como una especie de ejemplo de clúster.
+Okay. Sí, sí. De hecho, es parecido a lo que vamos a hacer. Estamos haciendo con
+pseudocódigo. Lo que veo es que van ustedes a generar un una especie de
+máquina de estados un poquito más avanzada donde van a estar ustedes
+generando valores y viendo así cómo responden, ¿no? Como acá. Okay, se ve
+bien. Va, que va. Voy a ver la posibilidad de que mudemos
+a a profesional para el hito, para el hito,
+o sea, en vez de trabajar con Code, que me gustaría trabajarlo en el hito un
+porque es más sencillo y mudarlos en el hito dos. Si veo la posibilidad, voy a
+hablarlo acá con la academia, los mudo desde el hito uno. Sí,
+no pasa nada. Todo el mundo si se fijan la la
+configuración no es tan diferente. Yo quería que fuera más básico y algunas
+funciones en visto el estudio profesional están restringidas las
+avanzadas, pero generalmente las avanzadas se usan más para C solito, no
+para C++. Okay. Esas están restringidas a una
+licencia. Como mucho código del carro, todas se
+sigue haciendo en C. Los nuevos ya traen una combinación y algunos ya son puros
+C++, pero los radares viejos de la generación 5 hacia atrás siguen usando
+puro C. Entonces ahí huevo ocupabas una licencia y aparte lo que hagas para
+vender Visual Studio sí te pide que que tengas una licencia con ellos.
+Entonces sí nos pedían tener licencia. Va que va. Como este caso es académico,
+no debería haber problema. Sí se ve bien. Sig puedes ejecutar, puedes
+copilar. Entonces sí funciona. Sí. O sea, si compilo aquí.
+Ah, no, no. Esos depuradores ahorita no los uses. Ahorita nos vamos a entrar en
+pura comandera porque es más limpia. Controlas más.
+Sí. Ya cuando entendamos bien esto, les enseño también cómo depurar y cómo vamos
+a llegar a una parte que voy a enseñarlos a debuguear, porque debuguear
+aquí es un poco diferente al debug en otro tipo de lenguaje. Sí.
+¿Por qué? Pero por ahorita no nos vamos a meter en eso porque es eso son es un
+tema un poquito también medio medio gruesote. Pásame este código. No había
+visto que ya lo habían terminado. Yo les pasé la la les dije más o menos qué
+hiciéramos, pero pásamelo. De una vez sirvo sirve que veo qué hace
+y creo que nos va a servir para el siguiente.
+Se lo puedo poner. Obamente no va a ser igual. Sí, pégamelo
+ahí. Yo lo voy a revisar al rato. Muy bien. Lo bueno es que sí funcionó.
+¿Ves? Ya todo funciona. Okay. Voy a a quitar lo que es la
+comparición, pero ya ya me revolverí. Sí, mira, pícale arriba del código y
+dale control A. Control A. Te va te va a seleccionar
+todo. Dale copiar
+y pégalo. Ahora sí, porfa.
+Perfecto. Gracias. Gracias. Este Jorge, hay sub
+hay submódulos que ve que también tienen creados, pero eso no pasa nada. Nada más
+quería ver el main. Ya los demás este pues no, ahorita no necesito copilarlo,
+nada más quiero ver qué es lo que más o menos propusieron como muestra. Va, que
+va. Perfecto. ¿Alguien más tiene alguna duda? Nos
+quedan 2 minutos. Hoy la asistencia, no se preocupen. Este
+fa para todos. Sí. ¿Qué va? Si no hay dudas, los veo
+mañana. Ah, perdón, dime, Juan. Perdón.
+Ah, pensé que ibas a comentar algo. No, le iba a decir gracias más y ya.
+Ah, okay. Va, que va. Entonces, mañana yo creo que este si alguno ya ya tienen
+avances o algo, quieren checar algo específico también lo checamos, no se
+preocupen. Sí. Sí.
+Para que va todos ahorita no se vayan a preocupar por lo del viso al estudio
+profesional, eh, este el la mudanza se va se va va a realizar en algún momento.
+Sí, pero pues quería que vivieran los dos, ¿no? Porque vieran que se puede
+hacer en ambos y profesional. Por eso me saqué de onda. Dije, ¿por qué la
+elección desde ahorita? ¿Por qué complicarnos desde ahorita? Pero en
+algún punto tenemos que movernos, si para que no se vayan a confundir.
+Ahorita todo va a estar normal, pero si alguien quiere trabajar profesional de
+una vez y lo conoce más o menos, lo trabajamos.
+Cho, mi idea era que viéramos ese flujo de desarrollo. No pasa nada. Va,
+entonces nos ve, nos vemos mañana. Cuídense mucho, igual va a ser para ver
+qué avances tienen.

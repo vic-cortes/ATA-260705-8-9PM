@@ -89,7 +89,16 @@ Cada semana tiene un archivo `SEMANA_RESUMEN.md` con:
 - Señales y mensajes en vehículos
 - Validación y clasificación de fallas
 - Arquitectura zonal de vehículos
+- Setup del entorno: WSL + Debian, `apt update/upgrade`, `build-essential`, compilación manual con `g++`
 - **Primera evaluación**: Diseño de ACU (trabajo en equipos)
+
+**Hitos del proyecto acumulativo** (mismo esqueleto en todos):
+0. Diseño conceptual (pseudocódigo + máquina de estados + requisitos) ← actual
+1. Código en C++ + Git (repositorio versionado, sin carpetas nuevas por versión)
+2. Refactor a OOP (clases)
+3. Autodiagnóstico
+4. Arquitectura con mejores prácticas
+5. Optimización de memoria
 
 ## Docker & Makefile (Bloque 1+)
 
@@ -282,16 +291,21 @@ Para debugging efectivo:
 3. Máquina de estados (Gateway + Control en pseudocódigo)
 4. Reglas de decisión (condicionales específicas)
 
+**Rúbrica (100 pts):** Pseudocódigo 35 · Máquina de estados 25 · Requerimientos 20 · Video 20
+
 **Cronograma:**
 - Teoría: 20/07/2026
-- Dudas: 21/07/2026
-- Desarrollo: 22-27/07/2026
-- Presentación: 28/07/2026 (tentativo)
+- Máquina de estados, requisitos y rúbrica: 21/07/2026
+- Dudas + setup Linux: 22-23/07/2026
+- Desarrollo: 24-26/07/2026
+- Entrega: 27/07/2026 (máximo 28/07)
 
 **Recursos:**
 - 📖 [ECU_CONTEXT.md](sessions/week_3/ECU_CONTEXT.md) — Guía rápida
 - 📖 [SEMANA_RESUMEN.md](sessions/week_3/SEMANA_RESUMEN.md) — Resumen semanal
-- 📄 [resumen.md](sessions/week_3/2026_07_20/resumen.md) — Sesión 20/07
+- 📄 [resumen.md](sessions/week_3/2026_07_20/resumen.md) — Sesión 20/07 (ECU y arquitectura)
+- 📄 [resumen.md](sessions/week_3/2026_07_21/resumen.md) — Sesión 21/07 (máquina de estados, requisitos, rúbrica)
+- 📄 [resumen.md](sessions/week_3/2026_07_22/resumen.md) — Sesión 22/07 (dudas + setup WSL/Debian)
 - 🐍 [excercise/](sessions/week_3/excercise/) — Implementación ECU en Python
 
 ## Implementación ECU en Python (Bloque 1)
